@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="card shadow-sm">
+    <div class="card-body">
+      <h1 class="h4 mb-3">Upload a PDF to edit glyph mappings</h1>
+      <p class="text-muted">The tool will analyse textual content and let you remap how specific words are interpreted by downstream parsers.</p>
+      <form method="post" action="{{ url_for('analyze_pdf') }}" enctype="multipart/form-data">
+        <div class="mb-3">
+          <label for="pdf" class="form-label">PDF document</label>
+          <input class="form-control" type="file" id="pdf" name="pdf" accept="application/pdf" required />
+          <div class="form-text">Files stay in-memory for this session; refresh to reset.</div>
+        </div>
+        <button type="submit" class="btn btn-primary">Analyse document</button>
+      </form>
+    </div>
+  </div>
+{% endblock %}

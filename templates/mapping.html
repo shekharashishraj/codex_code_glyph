@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="row g-4">
+    <div class="col-lg-5">
+      <div class="card shadow-sm h-100">
+        <div class="card-body">
+          <h2 class="h5">Text preview</h2>
+          {% if preview %}
+            <textarea class="form-control" rows="18" readonly>{{ preview }}</textarea>
+          {% else %}
+            <p class="text-muted">No text preview available, but you can still attempt a remap if you know the words present.</p>
+          {% endif %}
+          {% if top_words %}
+            <div class="mt-3">
+              <h3 class="h6">Most frequent words</h3>
+              <div class="d-flex flex-wrap gap-2" data-role="word-suggestions">
+                {% for word, count in top_words %}
+                  <button type="button" class="btn btn-outline-secondary btn-sm" data-word="{{ word }}">
+                    {{ word }}<span class="text-muted"> ({{ count }})</span>
+                  </button>
+                {% endfor %}
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-7">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h2 class="h5">Define glyph remapping</h2>
+          <form method="post" action="{{ url_for('remap_pdf') }}" data-role="mapping-form">
+            <input type="hidden" name="pdf_data" value="{{ pdf_data }}" />
+            <div id="mapping-rows" class="mb-3">
+              <div class="row g-2 align-items-center mapping-row mb-2">
+                <div class="col-md-5">
+                  <label class="visually-hidden" for="original-0">Original word</label>
+                  <input type="text" class="form-control original-word" id="original-0" name="original" placeholder="Original word" />
+                </div>
+                <div class="col-md-5">
+                  <label class="visually-hidden" for="replacement-0">Replacement word</label>
+                  <input type="text" class="form-control" id="replacement-0" name="replacement" placeholder="Replacement word" />
+                </div>
+                <div class="col-md-2 text-end">
+                  <button type="button" class="btn btn-link text-danger p-0" data-action="remove-row" title="Remove mapping">Remove</button>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn btn-outline-secondary mb-3" data-action="add-row">Add another mapping</button>
+            <div>
+              <button type="submit" class="btn btn-primary">Generate remapped PDF</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
