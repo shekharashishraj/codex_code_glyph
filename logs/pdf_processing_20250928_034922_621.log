@@ -1,0 +1,369 @@
+2025-09-28 03:49:22,621 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20250928_034922_621 ===
+2025-09-28 03:49:22,624 |     INFO |            remap_pdf:  82 | Starting PDF remapping with 4 mappings in overlay mode
+2025-09-28 03:49:22,625 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250928_034922_621/input.pdf (77879 bytes)
+2025-09-28 03:49:22,625 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-09-28 03:49:22,625 |     INFO |         log_mappings:  81 | Word mappings to apply: 4 total
+2025-09-28 03:49:22,626 |     INFO |         log_mappings:  83 |   'ReLU' → 'Adam'
+2025-09-28 03:49:22,626 |     INFO |         log_mappings:  83 |   'Vanishing' → 'Exploding'
+2025-09-28 03:49:22,626 |     INFO |         log_mappings:  83 |   '0.9:' → '9.0'
+2025-09-28 03:49:22,626 |     INFO |         log_mappings:  83 |   '1.2:' → '0.2'
+2025-09-28 03:49:22,626 |     INFO |         log_mappings:  81 | Word mappings to apply: 4 total
+2025-09-28 03:49:22,626 |     INFO |         log_mappings:  83 |   'ReLU' → 'Adam'
+2025-09-28 03:49:22,626 |     INFO |         log_mappings:  83 |   'Vanishing' → 'Exploding'
+2025-09-28 03:49:22,626 |     INFO |         log_mappings:  83 |   '0.9:' → '9.0'
+2025-09-28 03:49:22,626 |     INFO |         log_mappings:  83 |   '1.2:' → '0.2'
+2025-09-28 03:49:22,645 |     INFO | log_pattern_building:  99 | Building regex pattern for 4 words (ignore_case=True)
+2025-09-28 03:49:22,645 |    DEBUG | log_pattern_building: 100 | Words to match: ['ReLU', 'Vanishing', '0.9:', '1.2:']
+2025-09-28 03:49:22,645 |    DEBUG | log_pattern_building: 101 | Compiled pattern: Vanishing|ReLU|1\.2:|0\.9:
+2025-09-28 03:49:22,649 |     INFO | _apply_overlay_mode_mapping: 297 | Processing page 1 with 89 operations
+2025-09-28 03:49:22,649 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 1: b'BT' with 0 operands
+2025-09-28 03:49:22,649 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 2: b'Tf' with 2 operands
+2025-09-28 03:49:22,649 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 3: b'Td' with 2 operands
+2025-09-28 03:49:22,649 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 4: b'TJ' with 1 operands
+2025-09-28 03:49:22,649 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['RNNs', 'and', 'LSTM', 'Quiz']
+2025-09-28 03:49:22,649 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'RNNsandLSTMQuiz'
+2025-09-28 03:49:22,649 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 5: b'Tf' with 2 operands
+2025-09-28 03:49:22,649 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 6: b'Td' with 2 operands
+2025-09-28 03:49:22,649 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 7: b'TJ' with 1 operands
+2025-09-28 03:49:22,649 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['Multiple', 'Choice', 'Questions']
+2025-09-28 03:49:22,649 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'MultipleChoiceQuestions'
+2025-09-28 03:49:22,649 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 8: b'Tf' with 2 operands
+2025-09-28 03:49:22,649 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 9: b'Td' with 2 operands
+2025-09-28 03:49:22,649 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 10: b'TJ' with 1 operands
+2025-09-28 03:49:22,649 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['Q1.', 'What', 'is', 'the', 'primary', 'b', 'ene\x0ct', 'of', 'stac', 'king', 'm', 'ultiple', 'RNN', 'la', 'y', 'ers', '(i.e.,', 's', 'tac', 'k', 'ed']
+2025-09-28 03:49:22,649 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'Q1.WhatistheprimarybenefitofstackingmultipleRNNlayers(i.e.,stacked'
+2025-09-28 03:49:22,649 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 11: b'Td' with 2 operands
+2025-09-28 03:49:22,649 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 12: b'TJ' with 1 operands
+2025-09-28 03:49:22,649 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['RNNs)?']
+2025-09-28 03:49:22,649 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'RNNs)?'
+2025-09-28 03:49:22,649 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 13: b'Td' with 2 operands
+2025-09-28 03:49:22,649 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 14: b'TJ' with 1 operands
+2025-09-28 03:49:22,650 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['A.']
+2025-09-28 03:49:22,650 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'A.'
+2025-09-28 03:49:22,650 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 15: b'Tf' with 2 operands
+2025-09-28 03:49:22,650 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 16: b'TJ' with 1 operands
+2025-09-28 03:49:22,650 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['F', 'aster', 'training']
+2025-09-28 03:49:22,650 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'Fastertraining'
+2025-09-28 03:49:22,650 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 17: b'Tf' with 2 operands
+2025-09-28 03:49:22,650 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 18: b'Td' with 2 operands
+2025-09-28 03:49:22,650 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 19: b'TJ' with 1 operands
+2025-09-28 03:49:22,650 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['B.']
+2025-09-28 03:49:22,650 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'B.'
+2025-09-28 03:49:22,650 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 20: b'Tf' with 2 operands
+2025-09-28 03:49:22,650 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 21: b'TJ' with 1 operands
+2025-09-28 03:49:22,650 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['Lo', 'w', 'er', 'memory', 'usage']
+2025-09-28 03:49:22,650 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'Lowermemoryusage'
+2025-09-28 03:49:22,650 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 22: b'Tf' with 2 operands
+2025-09-28 03:49:22,650 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 23: b'Td' with 2 operands
+2025-09-28 03:49:22,650 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 24: b'TJ' with 1 operands
+2025-09-28 03:49:22,650 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['C.']
+2025-09-28 03:49:22,650 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'C.'
+2025-09-28 03:49:22,650 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 25: b'Tf' with 2 operands
+2025-09-28 03:49:22,650 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 26: b'TJ' with 1 operands
+2025-09-28 03:49:22,650 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['Better', 'learning', 'of', 'hierarc', 'hical', 'features']
+2025-09-28 03:49:22,650 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'Betterlearningofhierarchicalfeatures'
+2025-09-28 03:49:22,650 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 27: b'Tf' with 2 operands
+2025-09-28 03:49:22,650 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 28: b'Td' with 2 operands
+2025-09-28 03:49:22,650 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 29: b'TJ' with 1 operands
+2025-09-28 03:49:22,650 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['D.']
+2025-09-28 03:49:22,650 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'D.'
+2025-09-28 03:49:22,650 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 30: b'Tf' with 2 operands
+2025-09-28 03:49:22,650 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 31: b'TJ' with 1 operands
+2025-09-28 03:49:22,650 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['Simp', 'ler', 'arc', 'hit', 'ecture']
+2025-09-28 03:49:22,650 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'Simplerarchitecture'
+2025-09-28 03:49:22,650 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 32: b'Tf' with 2 operands
+2025-09-28 03:49:22,650 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 33: b'Td' with 2 operands
+2025-09-28 03:49:22,650 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 34: b'TJ' with 1 operands
+2025-09-28 03:49:22,650 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['Q2.', 'Whic', 'h', 'of', 'the', 'follo', 'wing', 'is', 'the', 'main', 'reason', 'RNNs', 'struggle', 'with', 'long-term', 'dep', 'en-']
+2025-09-28 03:49:22,650 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'Q2.WhichofthefollowingisthemainreasonRNNsstrugglewithlong-termdepen-'
+2025-09-28 03:49:22,650 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 35: b'Td' with 2 operands
+2025-09-28 03:49:22,650 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 36: b'TJ' with 1 operands
+2025-09-28 03:49:22,651 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['dencies?']
+2025-09-28 03:49:22,651 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'dencies?'
+2025-09-28 03:49:22,651 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 37: b'Td' with 2 operands
+2025-09-28 03:49:22,651 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 38: b'TJ' with 1 operands
+2025-09-28 03:49:22,651 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['A.']
+2025-09-28 03:49:22,651 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'A.'
+2025-09-28 03:49:22,651 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 39: b'Tf' with 2 operands
+2025-09-28 03:49:22,651 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 40: b'TJ' with 1 operands
+2025-09-28 03:49:22,651 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['Ov', 'er\x0ctting']
+2025-09-28 03:49:22,651 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'Overfitting'
+2025-09-28 03:49:22,651 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 41: b'Tf' with 2 operands
+2025-09-28 03:49:22,651 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 42: b'Td' with 2 operands
+2025-09-28 03:49:22,651 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 43: b'TJ' with 1 operands
+2025-09-28 03:49:22,651 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['B.']
+2025-09-28 03:49:22,651 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'B.'
+2025-09-28 03:49:22,651 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 44: b'Tf' with 2 operands
+2025-09-28 03:49:22,651 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 45: b'TJ' with 1 operands
+2025-09-28 03:49:22,651 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['V', 'anishing', 'gradien', 'ts']
+2025-09-28 03:49:22,651 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'Vanishinggradients'
+2025-09-28 03:49:22,651 |     INFO |     process_tj_array:  52 | TJ Array - Applied 1 replacements
+2025-09-28 03:49:22,651 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 46: b'Tf' with 2 operands
+2025-09-28 03:49:22,651 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 47: b'Td' with 2 operands
+2025-09-28 03:49:22,651 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 48: b'TJ' with 1 operands
+2025-09-28 03:49:22,651 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['C.']
+2025-09-28 03:49:22,651 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'C.'
+2025-09-28 03:49:22,651 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 49: b'Tf' with 2 operands
+2025-09-28 03:49:22,651 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 50: b'TJ' with 1 operands
+2025-09-28 03:49:22,651 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['Lac', 'k', 'of', 'non-linearit', 'y']
+2025-09-28 03:49:22,651 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'Lackofnon-linearity'
+2025-09-28 03:49:22,651 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 51: b'Tf' with 2 operands
+2025-09-28 03:49:22,651 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 52: b'Td' with 2 operands
+2025-09-28 03:49:22,651 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 53: b'TJ' with 1 operands
+2025-09-28 03:49:22,651 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['D.']
+2025-09-28 03:49:22,652 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'D.'
+2025-09-28 03:49:22,652 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 54: b'Tf' with 2 operands
+2025-09-28 03:49:22,652 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 55: b'TJ' with 1 operands
+2025-09-28 03:49:22,652 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['Insu\x0ecie', 'n', 't', 'data']
+2025-09-28 03:49:22,652 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'Insuffcientdata'
+2025-09-28 03:49:22,652 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 56: b'Tf' with 2 operands
+2025-09-28 03:49:22,652 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 57: b'Td' with 2 operands
+2025-09-28 03:49:22,652 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 58: b'TJ' with 1 operands
+2025-09-28 03:49:22,652 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['Q3.', 'What', 'di\x0beren', 'tiates', 'an', 'LSTM', 'cell', 'f', 'rom', 'a', 's', 'tanda', 'rd', 'RN', 'N', 'cell?']
+2025-09-28 03:49:22,652 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'Q3.WhatdiflerentiatesanLSTMcellfromastandardRNNcell?'
+2025-09-28 03:49:22,652 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 59: b'Td' with 2 operands
+2025-09-28 03:49:22,652 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 60: b'TJ' with 1 operands
+2025-09-28 03:49:22,652 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['A.']
+2025-09-28 03:49:22,652 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'A.'
+2025-09-28 03:49:22,652 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 61: b'Tf' with 2 operands
+2025-09-28 03:49:22,652 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 62: b'TJ' with 1 operands
+2025-09-28 03:49:22,652 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['It', 'uses', 'ReLU', 'instead', 'of', 'tanh']
+2025-09-28 03:49:22,652 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'ItusesReLUinsteadoftanh'
+2025-09-28 03:49:22,652 |     INFO |     process_tj_array:  52 | TJ Array - Applied 1 replacements
+2025-09-28 03:49:22,652 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 63: b'Tf' with 2 operands
+2025-09-28 03:49:22,652 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 64: b'Td' with 2 operands
+2025-09-28 03:49:22,652 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 65: b'TJ' with 1 operands
+2025-09-28 03:49:22,652 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['B.']
+2025-09-28 03:49:22,652 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'B.'
+2025-09-28 03:49:22,652 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 66: b'Tf' with 2 operands
+2025-09-28 03:49:22,652 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 67: b'TJ' with 1 operands
+2025-09-28 03:49:22,652 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['It', 'in', 'tro', 'duces', 'gates', 'to', 'con', 'tro', 'l', 'the', '\ro', 'w', 'of', 'inform', 'ation']
+2025-09-28 03:49:22,652 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'Itintroducesgatestocontroltheowofinformation'
+2025-09-28 03:49:22,653 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 68: b'Tf' with 2 operands
+2025-09-28 03:49:22,653 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 69: b'Td' with 2 operands
+2025-09-28 03:49:22,653 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 70: b'TJ' with 1 operands
+2025-09-28 03:49:22,653 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['C.']
+2025-09-28 03:49:22,653 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'C.'
+2025-09-28 03:49:22,653 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 71: b'Tf' with 2 operands
+2025-09-28 03:49:22,653 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 72: b'TJ' with 1 operands
+2025-09-28 03:49:22,653 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['It', 'has', 'few', 'er', 'parameters']
+2025-09-28 03:49:22,653 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'Ithasfewerparameters'
+2025-09-28 03:49:22,653 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 73: b'Tf' with 2 operands
+2025-09-28 03:49:22,653 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 74: b'Td' with 2 operands
+2025-09-28 03:49:22,653 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 75: b'TJ' with 1 operands
+2025-09-28 03:49:22,653 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['D.']
+2025-09-28 03:49:22,653 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'D.'
+2025-09-28 03:49:22,653 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 76: b'Tf' with 2 operands
+2025-09-28 03:49:22,653 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 77: b'TJ' with 1 operands
+2025-09-28 03:49:22,653 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['It', 'is', 'a', 'con', 'v', 'olutional', 'arc', 'hitecture']
+2025-09-28 03:49:22,653 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'Itisaconvolutionalarchitecture'
+2025-09-28 03:49:22,653 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 78: b'Tf' with 2 operands
+2025-09-28 03:49:22,653 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 79: b'Td' with 2 operands
+2025-09-28 03:49:22,653 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 80: b'TJ' with 1 operands
+2025-09-28 03:49:22,653 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['Q4.', 'In', 'a', 'standard', 'LSTM,', 'whic', 'h', 'gate', 'is', 'res', 'p', 'onsible', 'for', 'deciding', 'ho', 'w', 'm', 'uc', 'h', 'of', 'the']
+2025-09-28 03:49:22,653 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'Q4.InastandardLSTM,whichgateisresponsiblefordecidinghowmuchofthe'
+2025-09-28 03:49:22,653 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 81: b'Td' with 2 operands
+2025-09-28 03:49:22,653 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 82: b'TJ' with 1 operands
+2025-09-28 03:49:22,653 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['past', 'memory', 'to', 'k', 'eep?']
+2025-09-28 03:49:22,653 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'pastmemorytokeep?'
+2025-09-28 03:49:22,653 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 83: b'Td' with 2 operands
+2025-09-28 03:49:22,653 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 84: b'TJ' with 1 operands
+2025-09-28 03:49:22,653 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['A.']
+2025-09-28 03:49:22,653 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'A.'
+2025-09-28 03:49:22,653 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 85: b'Tf' with 2 operands
+2025-09-28 03:49:22,653 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 86: b'TJ' with 1 operands
+2025-09-28 03:49:22,653 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['Outp', 'ut', 'gate']
+2025-09-28 03:49:22,654 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'Outputgate'
+2025-09-28 03:49:22,654 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 87: b'Td' with 2 operands
+2025-09-28 03:49:22,654 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 88: b'TJ' with 1 operands
+2025-09-28 03:49:22,654 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['1']
+2025-09-28 03:49:22,654 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: '1'
+2025-09-28 03:49:22,654 |    DEBUG | log_content_stream_operation: 136 | Page 1, Op 89: b'ET' with 0 operands
+2025-09-28 03:49:22,659 |     INFO | _apply_overlay_mode_mapping: 297 | Processing page 2 with 100 operations
+2025-09-28 03:49:22,659 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 1: b'BT' with 0 operands
+2025-09-28 03:49:22,659 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 2: b'Tf' with 2 operands
+2025-09-28 03:49:22,659 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 3: b'Td' with 2 operands
+2025-09-28 03:49:22,659 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 4: b'TJ' with 1 operands
+2025-09-28 03:49:22,659 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['B.']
+2025-09-28 03:49:22,659 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'B.'
+2025-09-28 03:49:22,659 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 5: b'Tf' with 2 operands
+2025-09-28 03:49:22,659 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 6: b'TJ' with 1 operands
+2025-09-28 03:49:22,659 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['F', 'orget', 'gate']
+2025-09-28 03:49:22,659 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'Forgetgate'
+2025-09-28 03:49:22,659 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 7: b'Tf' with 2 operands
+2025-09-28 03:49:22,659 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 8: b'Td' with 2 operands
+2025-09-28 03:49:22,659 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 9: b'TJ' with 1 operands
+2025-09-28 03:49:22,659 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['C.']
+2025-09-28 03:49:22,659 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'C.'
+2025-09-28 03:49:22,659 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 10: b'Tf' with 2 operands
+2025-09-28 03:49:22,659 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 11: b'TJ' with 1 operands
+2025-09-28 03:49:22,659 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['Input', 'gate']
+2025-09-28 03:49:22,659 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'Inputgate'
+2025-09-28 03:49:22,659 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 12: b'Tf' with 2 operands
+2025-09-28 03:49:22,659 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 13: b'Td' with 2 operands
+2025-09-28 03:49:22,659 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 14: b'TJ' with 1 operands
+2025-09-28 03:49:22,659 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['D.']
+2025-09-28 03:49:22,659 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'D.'
+2025-09-28 03:49:22,659 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 15: b'Tf' with 2 operands
+2025-09-28 03:49:22,659 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 16: b'TJ' with 1 operands
+2025-09-28 03:49:22,659 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['Up', 'date', 'gate']
+2025-09-28 03:49:22,659 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'Updategate'
+2025-09-28 03:49:22,659 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 17: b'Tf' with 2 operands
+2025-09-28 03:49:22,659 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 18: b'Td' with 2 operands
+2025-09-28 03:49:22,659 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 19: b'TJ' with 1 operands
+2025-09-28 03:49:22,659 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['Descriptiv', 'e', 'Questions']
+2025-09-28 03:49:22,659 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'DescriptiveQuestions'
+2025-09-28 03:49:22,659 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 20: b'Tf' with 2 operands
+2025-09-28 03:49:22,659 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 21: b'Td' with 2 operands
+2025-09-28 03:49:22,659 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 22: b'TJ' with 1 operands
+2025-09-28 03:49:22,659 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['Q5.', 'Wh', 'y', 'is', 'the', 'forget', 'gate', 'bias', 'in', 'L', 'STMs', 'often', 'initialized', 'to', 'a', 'high', 'v', 'alue', '(e.g.,', '2', 'or']
+2025-09-28 03:49:22,660 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'Q5.WhyistheforgetgatebiasinLSTMsofteninitializedtoahighvalue(e.g.,2or'
+2025-09-28 03:49:22,660 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 23: b'Td' with 2 operands
+2025-09-28 03:49:22,660 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 24: b'TJ' with 1 operands
+2025-09-28 03:49:22,660 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['3)?', 'Explain', 'its', 'e\x0bect', 'on', 'long-term', 'dep', 'endency', 'le', 'a', 'rning.']
+2025-09-28 03:49:22,660 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: '3)?Explainitseflectonlong-termdependencylearning.'
+2025-09-28 03:49:22,660 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 25: b'Td' with 2 operands
+2025-09-28 03:49:22,660 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 26: b'TJ' with 1 operands
+2025-09-28 03:49:22,660 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['Q6.', 'Bidirectional', 'RNNs', 'are', 'often', 'used', 'for', 'POS', 'tagging', 'but', 'not', 'mac', 'hine', 'translation.']
+2025-09-28 03:49:22,660 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'Q6.BidirectionalRNNsareoftenusedforPOStaggingbutnotmachinetranslation.'
+2025-09-28 03:49:22,660 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 27: b'Td' with 2 operands
+2025-09-28 03:49:22,660 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 28: b'TJ' with 1 operands
+2025-09-28 03:49:22,660 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['Explain', 'wh', 'y', ',', 'considering', 'input-output', 'alignmen', 't', 'and', 'con', 'text', '\ro', 'w.']
+2025-09-28 03:49:22,660 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'Explainwhy,consideringinput-outputalignmentandcontextow.'
+2025-09-28 03:49:22,660 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 29: b'Td' with 2 operands
+2025-09-28 03:49:22,660 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 30: b'TJ' with 1 operands
+2025-09-28 03:49:22,660 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['Q7.', 'Designing', 'an', 'RNN', 'mo', 'del', 'for', 'v', 'ariable-length', 'legal', 'do', 'cumen', 'ts', 'with', 'long', 'dep', 'en-']
+2025-09-28 03:49:22,660 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'Q7.DesigninganRNNmodelforvariable-lengthlegaldocumentswithlongdepen-'
+2025-09-28 03:49:22,660 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 31: b'Td' with 2 operands
+2025-09-28 03:49:22,660 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 32: b'TJ' with 1 operands
+2025-09-28 03:49:22,660 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['dencies:']
+2025-09-28 03:49:22,660 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'dencies:'
+2025-09-28 03:49:22,660 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 33: b'Tf' with 2 operands
+2025-09-28 03:49:22,660 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 34: b'Td' with 2 operands
+2025-09-28 03:49:22,660 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 35: b'TJ' with 1 operands
+2025-09-28 03:49:22,660 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['(a)', 'Ch', 'o', 'ose', 'b', 'et', 'w', 'een', 'v', 'anilla', 'RNN', 'or', 'LSTM.']
+2025-09-28 03:49:22,660 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: '(a)ChoosebetweenvanillaRNNorLSTM.'
+2025-09-28 03:49:22,660 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 36: b'Td' with 2 operands
+2025-09-28 03:49:22,660 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 37: b'TJ' with 1 operands
+2025-09-28 03:49:22,660 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['(b)', 'S', 'tac', 'k', 'la', 'y', 'ers', 'o', 'r', 'k', 'eep', 'it', 'shallo', 'w?']
+2025-09-28 03:49:22,660 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: '(b)Stacklayersorkeepitshallow?'
+2025-09-28 03:49:22,660 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 38: b'Td' with 2 operands
+2025-09-28 03:49:22,660 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 39: b'TJ' with 1 operands
+2025-09-28 03:49:22,660 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['(c)', 'M', 'a', 'k', 'e', 'it', 'bidirectional?']
+2025-09-28 03:49:22,661 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: '(c)Makeitbidirectional?'
+2025-09-28 03:49:22,661 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 40: b'Td' with 2 operands
+2025-09-28 03:49:22,661 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 41: b'TJ' with 1 operands
+2025-09-28 03:49:22,661 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['Justify', 'eac', 'h', 'c', 'hoice', 'based', 'on', 'mo', 'del', 'b', 'eha', 'vior', 'and', 'task', 'needs.']
+2025-09-28 03:49:22,661 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'Justifyeachchoicebasedonmodelbehaviorandtaskneeds.'
+2025-09-28 03:49:22,661 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 42: b'Tf' with 2 operands
+2025-09-28 03:49:22,661 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 43: b'Td' with 2 operands
+2025-09-28 03:49:22,661 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 44: b'TJ' with 1 operands
+2025-09-28 03:49:22,661 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['Q8.', 'Consider', 'a', 'v', 'anilla', 'RNN', 'with', 'recurren', 't', 'w', 'eigh', 't', 'matrix']
+2025-09-28 03:49:22,661 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'Q8.ConsideravanillaRNNwithrecurrentweightmatrix'
+2025-09-28 03:49:22,661 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 45: b'Tf' with 2 operands
+2025-09-28 03:49:22,661 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 46: b'TJ' with 1 operands
+2025-09-28 03:49:22,661 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['W']
+2025-09-28 03:49:22,661 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'W'
+2025-09-28 03:49:22,661 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 47: b'Tf' with 2 operands
+2025-09-28 03:49:22,661 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 48: b'Td' with 2 operands
+2025-09-28 03:49:22,661 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 49: b'TJ' with 1 operands
+2025-09-28 03:49:22,661 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['h']
+2025-09-28 03:49:22,661 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'h'
+2025-09-28 03:49:22,661 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 50: b'Tf' with 2 operands
+2025-09-28 03:49:22,661 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 51: b'Td' with 2 operands
+2025-09-28 03:49:22,661 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 52: b'TJ' with 1 operands
+2025-09-28 03:49:22,661 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['and', 'sequence', 'length']
+2025-09-28 03:49:22,661 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'andsequencelength'
+2025-09-28 03:49:22,661 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 53: b'Td' with 2 operands
+2025-09-28 03:49:22,661 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 54: b'TJ' with 1 operands
+2025-09-28 03:49:22,661 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['50.', 'Analyze', 'gradien', 't', 'b', 'eha', 'vior:']
+2025-09-28 03:49:22,661 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: '50.Analyzegradientbehavior:'
+2025-09-28 03:49:22,661 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 55: b'Tf' with 2 operands
+2025-09-28 03:49:22,661 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 56: b'Td' with 2 operands
+2025-09-28 03:49:22,661 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 57: b'TJ' with 1 operands
+2025-09-28 03:49:22,661 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['(a)', 'If']
+2025-09-28 03:49:22,661 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: '(a)If'
+2025-09-28 03:49:22,661 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 58: b'Tf' with 2 operands
+2025-09-28 03:49:22,661 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 59: b'TJ' with 1 operands
+2025-09-28 03:49:22,661 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['k']
+2025-09-28 03:49:22,661 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'k'
+2025-09-28 03:49:22,661 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 60: b'Tf' with 2 operands
+2025-09-28 03:49:22,661 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 61: b'TJ' with 1 operands
+2025-09-28 03:49:22,661 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['W']
+2025-09-28 03:49:22,661 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'W'
+2025-09-28 03:49:22,661 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 62: b'Tf' with 2 operands
+2025-09-28 03:49:22,661 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 63: b'Td' with 2 operands
+2025-09-28 03:49:22,661 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 64: b'TJ' with 1 operands
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['h']
+2025-09-28 03:49:22,662 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'h'
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 65: b'Tf' with 2 operands
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 66: b'Td' with 2 operands
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 67: b'TJ' with 1 operands
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['k']
+2025-09-28 03:49:22,662 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'k'
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 68: b'Tf' with 2 operands
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 69: b'TJ' with 1 operands
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['=', '0']
+2025-09-28 03:49:22,662 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: '=0'
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 70: b'Tf' with 2 operands
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 71: b'TJ' with 1 operands
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: [':']
+2025-09-28 03:49:22,662 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: ':'
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 72: b'Tf' with 2 operands
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 73: b'TJ' with 1 operands
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['9:', 'Will', 'gradien', 'ts', 'v', 'anish', 'or', 'explo', 'de?', 'Justify', '.']
+2025-09-28 03:49:22,662 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: '9:Willgradientsvanishorexplode?Justify.'
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 74: b'Td' with 2 operands
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 75: b'TJ' with 1 operands
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['(b)', 'If']
+2025-09-28 03:49:22,662 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: '(b)If'
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 76: b'Tf' with 2 operands
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 77: b'TJ' with 1 operands
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['k']
+2025-09-28 03:49:22,662 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'k'
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 78: b'Tf' with 2 operands
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 79: b'TJ' with 1 operands
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['W']
+2025-09-28 03:49:22,662 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'W'
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 80: b'Tf' with 2 operands
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 81: b'Td' with 2 operands
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 82: b'TJ' with 1 operands
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['h']
+2025-09-28 03:49:22,662 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'h'
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 83: b'Tf' with 2 operands
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 84: b'Td' with 2 operands
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 85: b'TJ' with 1 operands
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['k']
+2025-09-28 03:49:22,662 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'k'
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 86: b'Tf' with 2 operands
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 87: b'TJ' with 1 operands
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['=', '1']
+2025-09-28 03:49:22,662 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: '=1'
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 88: b'Tf' with 2 operands
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 89: b'TJ' with 1 operands
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: [':']
+2025-09-28 03:49:22,662 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: ':'
+2025-09-28 03:49:22,662 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 90: b'Tf' with 2 operands
+2025-09-28 03:49:22,663 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 91: b'TJ' with 1 operands
+2025-09-28 03:49:22,663 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['2:', 'Will', 'gradien', 'ts', 'v', 'anish', 'or', 'explo', 'de?', 'Justify', '.', 'Suggest', 'an', 'easy', '\x0cx', 'and']
+2025-09-28 03:49:22,663 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: '2:Willgradientsvanishorexplode?Justify.Suggestaneasyfixand'
+2025-09-28 03:49:22,663 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 92: b'Td' with 2 operands
+2025-09-28 03:49:22,663 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 93: b'TJ' with 1 operands
+2025-09-28 03:49:22,663 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['explain', 'ho', 'w', 'it', 'helps.']
+2025-09-28 03:49:22,663 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'explainhowithelps.'
+2025-09-28 03:49:22,663 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 94: b'Tf' with 2 operands
+2025-09-28 03:49:22,663 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 95: b'Td' with 2 operands
+2025-09-28 03:49:22,663 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 96: b'TJ' with 1 operands
+2025-09-28 03:49:22,663 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['Hint:', 'Consider', 'eigenvalue', 'e\x0be', 'cts', 'on', 'gr', 'adient', 'pr', 'op', 'agation', 'over', 'time.']
+2025-09-28 03:49:22,663 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'Hint:Considereigenvalueeflectsongradientpropagationovertime.'
+2025-09-28 03:49:22,663 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 97: b'Tf' with 2 operands
+2025-09-28 03:49:22,663 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 98: b'Td' with 2 operands
+2025-09-28 03:49:22,663 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 99: b'TJ' with 1 operands
+2025-09-28 03:49:22,663 |    DEBUG | log_content_stream_operation: 148 |   TJ array texts: ['2']
+2025-09-28 03:49:22,663 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: '2'
+2025-09-28 03:49:22,663 |    DEBUG | log_content_stream_operation: 136 | Page 2, Op 100: b'ET' with 0 operands
+2025-09-28 03:49:22,677 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250928_034922_621/output.pdf (90817 bytes)
+2025-09-28 03:49:22,677 |     INFO |         finalize_run: 222 | === Run Complete: 20250928_034922_621 (Duration: 0.06s) ===
+2025-09-28 03:49:22,677 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20250928_034922_621
+2025-09-28 03:49:22,677 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250928_034922_621/run_metadata.json
+2025-09-28 03:49:22,677 |     INFO |         finalize_run: 233 | Run completed successfully with 4 mappings applied

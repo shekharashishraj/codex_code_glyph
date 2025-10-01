@@ -1,0 +1,14 @@
+2025-09-28 17:07:14,947 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20250928_170714_947 ===
+2025-09-28 17:07:14,948 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250928_170714_947/input.pdf (77879 bytes)
+2025-09-28 17:07:14,948 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-09-28 17:07:14,948 |     INFO |         log_mappings:  81 | Word mappings to apply: 2 total
+2025-09-28 17:07:14,948 |     INFO |         log_mappings:  83 |   '0.9:' → '9.0:'
+2025-09-28 17:07:14,948 |     INFO |         log_mappings:  83 |   '1.2:' → '0.2:'
+2025-09-28 17:07:14,948 |     INFO |         log_mappings:  81 | Word mappings to apply: 2 total
+2025-09-28 17:07:14,948 |     INFO |         log_mappings:  83 |   '0.9:' → '9.0:'
+2025-09-28 17:07:14,948 |     INFO |         log_mappings:  83 |   '1.2:' → '0.2:'
+2025-09-28 17:07:14,959 |    ERROR |            log_error: 177 | Error in apply_word_mapping(overlay): AttributeError: 'Page' object has no attribute 'get_text_length'
+2025-09-28 17:07:14,960 |     INFO |         finalize_run: 222 | === Run Complete: 20250928_170714_947 (Duration: 0.01s) ===
+2025-09-28 17:07:14,960 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20250928_170714_947
+2025-09-28 17:07:14,960 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250928_170714_947/run_metadata.json
+2025-09-28 17:07:14,960 |  WARNING |         finalize_run: 231 | Run completed with 1 errors

@@ -1,0 +1,19 @@
+2025-09-28 16:59:55,138 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20250928_165955_138 ===
+2025-09-28 16:59:55,139 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250928_165955_138/input.pdf (77879 bytes)
+2025-09-28 16:59:55,139 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-09-28 16:59:55,139 |     INFO |         log_mappings:  81 | Word mappings to apply: 2 total
+2025-09-28 16:59:55,139 |     INFO |         log_mappings:  83 |   '0.9:' → '9.0:'
+2025-09-28 16:59:55,139 |     INFO |         log_mappings:  83 |   '1.2:' → '0.2:'
+2025-09-28 16:59:55,139 |     INFO |         log_mappings:  81 | Word mappings to apply: 2 total
+2025-09-28 16:59:55,139 |     INFO |         log_mappings:  83 |   '0.9:' → '9.0:'
+2025-09-28 16:59:55,139 |     INFO |         log_mappings:  83 |   '1.2:' → '0.2:'
+2025-09-28 16:59:55,158 |     INFO | log_pattern_building:  99 | Building regex pattern for 2 words (ignore_case=True)
+2025-09-28 16:59:55,158 |    DEBUG | log_pattern_building: 100 | Words to match: ['0.9:', '1.2:']
+2025-09-28 16:59:55,158 |    DEBUG | log_pattern_building: 101 | Compiled pattern: 0\.9:|1\.2:
+2025-09-28 16:59:55,168 |     INFO | _apply_overlay_mode_mapping: 332 | Processing page 1 with 89 operations
+2025-09-28 16:59:55,172 |     INFO | _apply_overlay_mode_mapping: 332 | Processing page 2 with 100 operations
+2025-09-28 16:59:55,183 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250928_165955_138/output.pdf (86149 bytes)
+2025-09-28 16:59:55,183 |     INFO |         finalize_run: 222 | === Run Complete: 20250928_165955_138 (Duration: 0.04s) ===
+2025-09-28 16:59:55,183 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20250928_165955_138
+2025-09-28 16:59:55,183 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250928_165955_138/run_metadata.json
+2025-09-28 16:59:55,183 |     INFO |         finalize_run: 233 | Run completed successfully with 2 mappings applied

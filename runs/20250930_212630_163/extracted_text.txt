@@ -1,0 +1,200 @@
+ASHISH RAJ SHEKHAR
+Joint Holder :- JITENDRA SINGH
+S/O: JITENDRA SINGH,FRIENDS COLONY
+PAKARI ARA,BHOJPUR
+BHOJPUR
+Customer ID :906315578
+BIHAR
+IFSC Code :UTIB0004100
+802301
+MICR Code :802211103
+Nominee Registered : Y
+Registered Mobile No :XXXXXX7970
+Nominee Name :ANITA DEVI
+Registered Email ID:SAXXXX16@GMAIL.COM
+PAN :IWDPS6911M
+Scheme :SAVINGS-EASYACCESS
+Statement of Account No :921010020340608 for the period (From : 01-04-2022  To : 31-03-2023)
+Tran Date
+Chq No
+Particulars
+Debit
+Credit
+Balance
+Init.
+Br
+OPENING BALANCE
+            7578.42
+02-04-2022
+UPI/P2M/209112582959/Rapido/ICICI
+Ban/ROPPENTR
+                25.00
+             7553.42 4100
+02-04-2022
+UPI/P2M/209133006555/MALLAPPA /Paytm
+Pay/Oid2022
+                70.00
+             7483.42 4100
+02-04-2022
+UPI/P2M/209134468973/AJAYKUMAR/Paytm
+Pay/Oid2022
+                43.00
+             7440.42 4100
+02-04-2022
+UPI/P2A/209136727036/DHIRKSING/State
+Ban/Payment
+                50.00
+             7390.42 4100
+02-04-2022
+UPI/P2A/209189998379/Mr. AMIT /Central
+B/NA
+                87.00
+             7303.42 4100
+02-04-2022
+ECOM PUR/yulu bikes
+pv/Banglore/020422/14:24
+               249.00
+             7054.42 4100
+02-04-2022
+UPI/P2A/209217707949/SATISH KU/Canara
+Ba/Payment
+              
+3000.00
+             4054.42 4100
+03-04-2022
+UPI/P2M/209344575396/Kota kach/Yes Bank
+/Payment
+               179.00
+             3875.42 4100
+03-04-2022
+UPI/P2A/209322003314/KRISHAN M/Paytm
+Pay/Payment
+              
+3100.00
+             6975.42 4100
+03-04-2022
+UPI/P2A/209340897910/Amit  Gup/State
+Ban/Payment
+              
+2400.00
+             9375.42 4100
+03-04-2022
+UPI/P2A/209305307090/ASHISH RA/HDFC
+BANK/Rent
+              
+5000.00
+            14375.42 4100
+03-04-2022
+CreditCard Payment XXXX 2456
+Ref#SMR2PCJW6ZBSB0
+              
+9819.36
+             4556.06 4100
+04-04-2022
+IMPS/P2A/209410392188/ASHISHRA/HDFCBA
+NK/None
+              
+5000.00
+             9556.06 4100
+04-04-2022
+UPI/P2A/209412059822/ANSHUMAN /HDFC
+BANK/NA
+              
+1500.00
+            11056.06 4100
+04-04-2022
+UPI/P2A/209462075714/Mr. MALLI/Bank of
+M/Payment
+               500.00
+            10556.06 4100
+04-04-2022
+UPI/P2A/209403145883/MALLAPPA
+/INDUSIND /Payment
+                70.00
+            10486.06 4100
+04-04-2022
+VISA MERCH Refund/02-APR-22/yulu bikes pvt
+Banglo
+                58.94
+            10545.00
+100
+05-04-2022
+UPI/P2M/209513112370/AJAYKUMAR/Paytm
+Pay/Oid2022
+               103.00
+            10442.00 4100
+05-04-2022
+UPI/P2A/209516095168/PARINITA /Axis
+Bank/NA
+               400.00
+            10042.00 4100
+05-04-2022
+NACH-DR- Eduvanz Financing Pr
+              
+6417.00
+             3625.00 2567
+06-04-2022
+UPI/P2A/209601198854/ANSHUMAN /HDFC
+BANK/NA
+              
+2500.00
+             6125.00 4100
+06-04-2022
+UPI/P2A/209601783828/ANSHUMAN /HDFC
+BANK/NA
+              
+1350.00
+             7475.00 4100
+06-04-2022
+UPI/P2A/209635833253/ANSHUMAN /HDFC
+BANK/NA
+               500.00
+             6975.00 4100
+06-04-2022
+UPI/P2M/209649966864/AJAYKUMAR/Paytm
+Pay/Oid2022
+                36.00
+             6939.00 4100
+06-04-2022
+UPI/P2M/209659206422/Roppen Tr/State
+Ban/ROPPENT
+                48.00
+             6891.00 4100
+08-04-2022
+UPI/P2A/209811628855/DALJEET S/HDFC
+BANK/NA
+               800.00
+             7691.00 4100
+09-04-2022
+UPI/P2M/209964448855/Nagaraj G/Paytm
+Pay/Oid2022
+                54.00
+             7637.00 4100
+09-04-2022
+UPI/P2A/209939148845/IBRAHIM  /Kotak
+Mah/Payment
+               206.00
+             7431.00 4100
+10-04-2022
+UPI/P2A/210061115445/RAMAGIRI /Ujjivan
+S/Payment
+               350.00
+             7081.00 4100
+10-04-2022
+UPI/P2A/210012082674/ANSHUMAN /HDFC
+BANK/NA
+               400.00
+             6681.00 4100
+10-04-2022
+UPI/P2M/210026635672/DASHARATH/Paytm
+Pay/Oid2022
+                60.00
+             6621.00 4100
+11-04-2022
+UPI/P2M/210110699807/AJAYKUMAR/Paytm
+Pay/Oid2022
+                65.00
+             6556.00 4100
+11-04-2022
+UPI/P2M/210159977131/SUMAR JEE/Yes Bank
+/

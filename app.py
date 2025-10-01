@@ -14,6 +14,7 @@ from glyph_mapper import (
     generate_word_occurrences,
     summarise_vocabulary,
 )
+from glyph_mapper.logger import start_new_run
 
 
 def create_app() -> Flask:
@@ -54,6 +55,9 @@ def create_app() -> Flask:
 
     @app.post("/remap")
     def remap_pdf() -> Response:
+        # Start a new logging run
+        logger = start_new_run()
+        
         encoded_pdf = request.form.get("pdf_data")
         if not encoded_pdf:
             flash("Upload session expired. Please submit the PDF again.")
@@ -67,21 +71,35 @@ def create_app() -> Flask:
 
         originals = request.form.getlist("original")
         replacements = request.form.getlist("replacement")
+        processing_mode = request.form.get("processing_mode", "overlay")
+        
         mapping: Dict[str, str] = {
             original: replacement
             for original, replacement in zip(originals, replacements)
             if original.strip() and replacement.strip()
         }
 
-        remapped_pdf = apply_word_mapping(pdf_bytes, mapping)
-        output = io.BytesIO(remapped_pdf)
-        output.seek(0)
-        return send_file(
-            output,
-            mimetype="application/pdf",
-            download_name="glyph-remapped.pdf",
-            as_attachment=True,
-        )
+        logger.logger.info(f"Starting PDF remapping with {len(mapping)} mappings in {processing_mode} mode")
+        
+        try:
+            remapped_pdf = apply_word_mapping(pdf_bytes, mapping, mode=processing_mode)
+            output = io.BytesIO(remapped_pdf)
+            output.seek(0)
+            
+            # Create a more descriptive filename with run ID and mode
+            filename = f"glyph-remapped-{logger.run_id}-{processing_mode}.pdf"
+            
+            return send_file(
+                output,
+                mimetype="application/pdf",
+                download_name=filename,
+                as_attachment=True,
+            )
+        except Exception as e:
+            logger.log_error(e, "Flask remap_pdf route")
+            logger.finalize_run()
+            flash(f"Error processing PDF: {str(e)}")
+            return redirect(url_for("index"))
 
     return app
 
@@ -90,4 +108,4 @@ app = create_app()
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5001)
+    app.run(debug=True, port=5002)

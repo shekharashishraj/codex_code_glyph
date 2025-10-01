@@ -1,0 +1,11 @@
+2025-09-28 03:46:05,460 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20250928_034605_459 ===
+2025-09-28 03:46:05,462 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'Overfitting'
+2025-09-28 03:46:05,462 |     INFO |     process_tj_array:  52 | TJ Array - Applied 1 replacements
+2025-09-28 03:46:05,462 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'Overfitting'
+2025-09-28 03:46:05,462 |     INFO |     process_tj_array:  52 | TJ Array - Applied 1 replacements
+2025-09-28 03:46:05,462 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'Overfitting'
+2025-09-28 03:46:05,462 |     INFO |     process_tj_array:  52 | TJ Array - Applied 1 replacements
+2025-09-28 03:46:05,462 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'Overfitting'
+2025-09-28 03:46:05,462 |     INFO |     process_tj_array:  52 | TJ Array - Applied 1 replacements
+2025-09-28 03:46:05,462 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'Overfitting and ReLU'
+2025-09-28 03:46:05,462 |     INFO |     process_tj_array:  52 | TJ Array - Applied 2 replacements

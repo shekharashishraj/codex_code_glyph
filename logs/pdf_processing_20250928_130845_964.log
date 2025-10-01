@@ -1,0 +1,22 @@
+2025-09-28 13:08:45,964 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20250928_130845_964 ===
+2025-09-28 13:08:45,970 |     INFO |  log_text_extraction:  90 | Extracted text (107 chars): 'Testing number patterns:\nValue 0.9: should become 9.0:\nAnother 1.2: should become 0.2:\nAnd some normal text'
+2025-09-28 13:08:45,970 |    DEBUG |  log_text_extraction:  95 | Full extracted text saved to: /Users/ashishrajshekhar/codex_code_glyph/runs/20250928_130845_964/extracted_text.txt
+2025-09-28 13:08:45,970 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250928_130845_964/input.pdf (1502 bytes)
+2025-09-28 13:08:45,971 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-09-28 13:08:45,971 |     INFO |         log_mappings:  81 | Word mappings to apply: 2 total
+2025-09-28 13:08:45,971 |     INFO |         log_mappings:  83 |   '0.9:' → '9.0:'
+2025-09-28 13:08:45,971 |     INFO |         log_mappings:  83 |   '1.2:' → '0.2:'
+2025-09-28 13:08:45,971 |     INFO |         log_mappings:  81 | Word mappings to apply: 2 total
+2025-09-28 13:08:45,971 |     INFO |         log_mappings:  83 |   '0.9:' → '9.0:'
+2025-09-28 13:08:45,971 |     INFO |         log_mappings:  83 |   '1.2:' → '0.2:'
+2025-09-28 13:08:45,975 |     INFO | log_pattern_building:  99 | Building regex pattern for 2 words (ignore_case=True)
+2025-09-28 13:08:45,976 |    DEBUG | log_pattern_building: 100 | Words to match: ['0.9:', '1.2:']
+2025-09-28 13:08:45,976 |    DEBUG | log_pattern_building: 101 | Compiled pattern: 0\.9:|1\.2:
+2025-09-28 13:08:45,977 |     INFO | _apply_overlay_mode_mapping: 297 | Processing page 1 with 25 operations
+2025-09-28 13:08:45,984 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250928_130845_964/output.pdf (6466 bytes)
+2025-09-28 13:08:45,984 |     INFO |         finalize_run: 222 | === Run Complete: 20250928_130845_964 (Duration: 0.02s) ===
+2025-09-28 13:08:45,984 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20250928_130845_964
+2025-09-28 13:08:45,984 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250928_130845_964/run_metadata.json
+2025-09-28 13:08:45,984 |     INFO |         finalize_run: 233 | Run completed successfully with 2 mappings applied
+2025-09-28 13:08:45,986 |     INFO |  log_text_extraction:  90 | Extracted text (107 chars): 'Testing number patterns:\nValue 0.9: should become 9.0:\nAnother 1.2: should become 0.2:\nAnd some normal text'
+2025-09-28 13:08:45,986 |    DEBUG |  log_text_extraction:  95 | Full extracted text saved to: /Users/ashishrajshekhar/codex_code_glyph/runs/20250928_130845_964/extracted_text.txt

@@ -1,0 +1,24 @@
+2025-09-30 21:26:30,183 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20250930_212630_163 ===
+2025-09-30 21:26:30,190 |     INFO |            remap_pdf:  82 | Starting PDF remapping with 1 mappings in overlay mode
+2025-09-30 21:26:30,191 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_212630_163/input.pdf (82589 bytes)
+2025-09-30 21:26:30,191 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-09-30 21:26:30,191 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-09-30 21:26:30,192 |     INFO |         log_mappings:  83 |   '63,088' → '90,000'
+2025-09-30 21:26:30,192 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-09-30 21:26:30,192 |     INFO |         log_mappings:  83 |   '63,088' → '90,000'
+2025-09-30 21:26:30,228 |     INFO | log_pattern_building:  99 | Building regex pattern for 1 words (ignore_case=True)
+2025-09-30 21:26:30,228 |    DEBUG | log_pattern_building: 100 | Words to match: ['63,088']
+2025-09-30 21:26:30,228 |    DEBUG | log_pattern_building: 101 | Compiled pattern: 63,088
+2025-09-30 21:26:30,237 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 1 with 988 operations
+2025-09-30 21:26:30,238 |     INFO |  _apply_v2_processor:  81 | Tj replacement: '$  63,088' → '$  90,000'
+2025-09-30 21:26:30,238 |     INFO |  _apply_v2_processor:  81 | Tj replacement: '$  63,088' → '$  90,000'
+2025-09-30 21:26:30,238 |     INFO |  _apply_v2_processor:  81 | Tj replacement: '$  63,088' → '$  90,000'
+2025-09-30 21:26:30,248 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 2 with 476 operations
+2025-09-30 21:26:30,260 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 3 with 837 operations
+2025-09-30 21:26:30,295 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_212630_163/output.pdf (82339 bytes)
+2025-09-30 21:26:30,296 |     INFO |         finalize_run: 222 | === Run Complete: 20250930_212630_163 (Duration: 0.11s) ===
+2025-09-30 21:26:30,296 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_212630_163
+2025-09-30 21:26:30,296 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_212630_163/run_metadata.json
+2025-09-30 21:26:30,296 |     INFO |         finalize_run: 233 | Run completed successfully with 1 mappings applied
+2025-09-30 21:31:51,372 |     INFO |  log_text_extraction:  90 | Extracted text (3989 chars): 'ASHISH RAJ SHEKHAR\nJoint Holder :- JITENDRA SINGH\nS/O: JITENDRA SINGH,FRIENDS COLONY\nPAKARI ARA,BHOJPUR\nBHOJPUR\nCustomer ID :906315578\nBIHAR\nIFSC Code :UTIB0004100\n802301\nMICR Code :802211103\nNominee Registered : Y\nRegistered Mobile No :XXXXXX7970\nNominee Name :ANITA DEVI\nRegistered Email ID:SAXXXX16@GMAIL.COM\nPAN :IWDPS6911M\nScheme :SAVINGS-EASYACCESS\nStatement of Account No :921010020340608 for the period (From : 01-04-2022  To : 31-03-2023)\nTran Date\nChq No\nParticulars\nDebit\nCredit\nBalance\nIn...'
+2025-09-30 21:31:51,373 |    DEBUG |  log_text_extraction:  95 | Full extracted text saved to: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_212630_163/extracted_text.txt

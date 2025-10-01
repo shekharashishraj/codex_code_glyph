@@ -1,0 +1,74 @@
+2025-09-28 03:44:18,682 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20250928_034418_682 ===
+2025-09-28 03:44:18,682 |    DEBUG |     process_tj_array:  44 | TJ Array - Full text: 'Overfitting'
+2025-09-28 03:44:18,682 |     INFO |     process_tj_array:  55 | TJ Array - Applied 1 replacements
+2025-09-28 03:44:18,682 |     INFO |     process_tj_array:  57 |   'Overfitting' → 'Underfitting' at positions 0-11
+2025-09-28 03:44:18,682 |    DEBUG |    _rebuild_tj_array: 217 | Element 0: 'Ov' → 'Un'
+2025-09-28 03:44:18,682 |    DEBUG |    _rebuild_tj_array: 217 | Element 1: 'ertting' → 'derfittin'
+2025-09-28 03:44:18,683 |    DEBUG |     process_tj_array:  44 | TJ Array - Full text: 'Overfitting'
+2025-09-28 03:44:18,683 |     INFO |     process_tj_array:  55 | TJ Array - Applied 1 replacements
+2025-09-28 03:44:18,683 |     INFO |     process_tj_array:  57 |   'Overfitting' → 'Underfitting' at positions 0-11
+2025-09-28 03:44:18,683 |    DEBUG |    _rebuild_tj_array: 217 | Element 0: 'Ov' → 'Un'
+2025-09-28 03:44:18,683 |    DEBUG |    _rebuild_tj_array: 217 | Element 1: 'erfitting' → 'derfittin'
+2025-09-28 03:44:18,683 |    DEBUG |     process_tj_array:  44 | TJ Array - Full text: 'Overfitting'
+2025-09-28 03:44:18,683 |     INFO |     process_tj_array:  55 | TJ Array - Applied 1 replacements
+2025-09-28 03:44:18,683 |     INFO |     process_tj_array:  57 |   'Overfitting' → 'Underfitting' at positions 0-11
+2025-09-28 03:44:18,683 |    DEBUG |    _rebuild_tj_array: 217 | Element 0: 'O' → 'U'
+2025-09-28 03:44:18,683 |    DEBUG |    _rebuild_tj_array: 217 | Element 1: 'ver' → 'nde'
+2025-09-28 03:44:18,683 |    DEBUG |    _rebuild_tj_array: 217 | Element 2: 'fitting' → 'rfittin'
+2025-09-28 03:44:18,683 |    DEBUG |     process_tj_array:  44 | TJ Array - Full text: 'Overfitting'
+2025-09-28 03:44:18,683 |     INFO |     process_tj_array:  55 | TJ Array - Applied 1 replacements
+2025-09-28 03:44:18,683 |     INFO |     process_tj_array:  57 |   'Overfitting' → 'Underfitting' at positions 0-11
+2025-09-28 03:44:18,683 |    DEBUG |    _rebuild_tj_array: 217 | Element 0: 'O' → 'U'
+2025-09-28 03:44:18,683 |    DEBUG |    _rebuild_tj_array: 217 | Element 1: 'v' → 'n'
+2025-09-28 03:44:18,683 |    DEBUG |    _rebuild_tj_array: 217 | Element 2: 'e' → 'd'
+2025-09-28 03:44:18,683 |    DEBUG |    _rebuild_tj_array: 217 | Element 3: 'r' → 'e'
+2025-09-28 03:44:18,683 |    DEBUG |    _rebuild_tj_array: 217 | Element 4: 'f' → 'r'
+2025-09-28 03:44:18,683 |    DEBUG |    _rebuild_tj_array: 217 | Element 5: 'i' → 'f'
+2025-09-28 03:44:18,683 |    DEBUG |    _rebuild_tj_array: 217 | Element 6: 't' → 'i'
+2025-09-28 03:44:18,683 |    DEBUG |    _rebuild_tj_array: 217 | Element 8: 'i' → 't'
+2025-09-28 03:44:18,683 |    DEBUG |    _rebuild_tj_array: 217 | Element 9: 'n' → 'i'
+2025-09-28 03:44:18,683 |    DEBUG |    _rebuild_tj_array: 217 | Element 10: 'g' → 'n'
+2025-09-28 03:44:18,683 |    DEBUG |     process_tj_array:  44 | TJ Array - Full text: 'Overfitting'
+2025-09-28 03:44:18,683 |     INFO |     process_tj_array:  55 | TJ Array - Applied 1 replacements
+2025-09-28 03:44:18,683 |     INFO |     process_tj_array:  57 |   'Overfitting' → 'Underfitting' at positions 0-11
+2025-09-28 03:44:18,683 |    DEBUG |    _rebuild_tj_array: 217 | Element 0: 'Ov' → 'Un'
+2025-09-28 03:44:18,683 |    DEBUG |    _rebuild_tj_array: 217 | Element 1: 'ertting' → 'derfittin'
+2025-09-28 03:44:18,683 |    DEBUG |     process_tj_array:  44 | TJ Array - Full text: 'Over fitting'
+2025-09-28 03:44:18,684 |    DEBUG |     process_tj_array:  50 | TJ Array - No replacements needed
+2025-09-28 03:44:18,684 |    DEBUG |     process_tj_array:  44 | TJ Array - Full text: 'Overfitting and ReLU'
+2025-09-28 03:44:18,684 |     INFO |     process_tj_array:  55 | TJ Array - Applied 2 replacements
+2025-09-28 03:44:18,684 |     INFO |     process_tj_array:  57 |   'Overfitting' → 'Underfitting' at positions 0-11
+2025-09-28 03:44:18,684 |     INFO |     process_tj_array:  57 |   'ReLU' → 'Adam' at positions 16-20
+2025-09-28 03:44:18,684 |    DEBUG |    _rebuild_tj_array: 217 | Element 0: 'Over' → 'Unde'
+2025-09-28 03:44:18,684 |    DEBUG |    _rebuild_tj_array: 217 | Element 1: 'fitting' → 'rfittin'
+2025-09-28 03:44:18,684 |    DEBUG |    _rebuild_tj_array: 217 | Element 2: ' and ' → 'g and'
+2025-09-28 03:44:18,684 |    DEBUG |    _rebuild_tj_array: 217 | Element 3: 'Re' → ' A'
+2025-09-28 03:44:18,684 |    DEBUG |    _rebuild_tj_array: 217 | Element 4: 'LU' → 'da'
+2025-09-28 03:44:18,684 |    DEBUG |     process_tj_array:  44 | TJ Array - Full text: 'Overfitting  problem'
+2025-09-28 03:44:18,684 |     INFO |     process_tj_array:  55 | TJ Array - Applied 1 replacements
+2025-09-28 03:44:18,684 |     INFO |     process_tj_array:  57 |   'Overfitting' → 'Underfitting' at positions 0-11
+2025-09-28 03:44:18,684 |    DEBUG |    _rebuild_tj_array: 217 | Element 0: '' → 'Underfitting  proble'
+2025-09-28 03:44:18,684 |    DEBUG |    _rebuild_tj_array: 217 | Element 1: 'O' → 'U'
+2025-09-28 03:44:18,684 |    DEBUG |    _rebuild_tj_array: 217 | Element 3: 'verfitting' → 'nderfittin'
+2025-09-28 03:44:18,684 |    DEBUG |    _rebuild_tj_array: 217 | Element 6: ' problem' → '  proble'
+2025-09-28 03:44:18,684 |    DEBUG |     process_tj_array:  44 | TJ Array - Full text: 'Overfitting'
+2025-09-28 03:44:18,684 |     INFO |     process_tj_array:  55 | TJ Array - Applied 1 replacements
+2025-09-28 03:44:18,684 |     INFO |     process_tj_array:  57 |   'Overfitting' → 'Underfitting' at positions 0-11
+2025-09-28 03:44:18,684 |    DEBUG |    _rebuild_tj_array: 217 | Element 0: 'Ov' → 'Un'
+2025-09-28 03:44:18,684 |    DEBUG |    _rebuild_tj_array: 217 | Element 1: 'ertting' → 'derfittin'
+2025-09-28 03:44:18,684 |    DEBUG |     process_tj_array:  44 | TJ Array - Full text: 'A.Overfitting  is a neural network problem.'
+2025-09-28 03:44:18,684 |     INFO |     process_tj_array:  55 | TJ Array - Applied 3 replacements
+2025-09-28 03:44:18,684 |     INFO |     process_tj_array:  57 |   'Overfitting' → 'Underfitting' at positions 2-13
+2025-09-28 03:44:18,684 |     INFO |     process_tj_array:  57 |   'neural' → 'quantum' at positions 20-26
+2025-09-28 03:44:18,684 |     INFO |     process_tj_array:  57 |   'network' → 'computer' at positions 27-34
+2025-09-28 03:44:18,684 |    DEBUG |    _rebuild_tj_array: 217 | Element 2: 'Over' → 'Unde'
+2025-09-28 03:44:18,684 |    DEBUG |    _rebuild_tj_array: 217 | Element 4: 'fit' → 'rfi'
+2025-09-28 03:44:18,684 |    DEBUG |    _rebuild_tj_array: 217 | Element 6: 'ting' → 'ttin'
+2025-09-28 03:44:18,684 |    DEBUG |    _rebuild_tj_array: 217 | Element 8: ' is a ' → '  is a '
+2025-09-28 03:44:18,684 |    DEBUG |    _rebuild_tj_array: 217 | Element 9: 'neural' → 'quantu'
+2025-09-28 03:44:18,684 |    DEBUG |    _rebuild_tj_array: 217 | Element 11: ' ' → 'm'
+2025-09-28 03:44:18,684 |    DEBUG |    _rebuild_tj_array: 217 | Element 12: 'net' → ' com'
+2025-09-28 03:44:18,684 |    DEBUG |    _rebuild_tj_array: 217 | Element 13: 'work' → 'pute'
+2025-09-28 03:44:18,684 |    DEBUG |    _rebuild_tj_array: 217 | Element 14: ' problem.' → 'r problem'
+2025-09-28 03:44:18,684 |    DEBUG |     process_tj_array:  44 | TJ Array - Full text: 'Hello world'
+2025-09-28 03:44:18,684 |    DEBUG |     process_tj_array:  50 | TJ Array - No replacements needed

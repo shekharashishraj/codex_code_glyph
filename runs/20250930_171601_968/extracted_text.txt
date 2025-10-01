@@ -1,0 +1,63 @@
+Ashish Raj Shekhar
+Arrah, Bihar, India 802301 | shekharashishraj@gmail.com | +91-9534287970
+Education
+Manipal University Jaipur
+Rajasthan, India
+Bachelor of Technology in Computer Science
+August 2020-July 2022
+• CGPA: 8.5/10
+Manipal Institute of Technology (ICAS)
+Karnataka, India
+Bachelor of Technology in Computer Science; Twinning Program
+August 2018-May 2020
+• CGPA: 2.68/4
+Delhi Public School RK Puram
+New Delhi, India
+Science; XIIth
+May 2017
+• Percentage: 82
+D.A.V Public School, Arrah
+Bihar, India
+Xth
+May 2015
+• CGPA: 9.8/10
+Professional Experience
+Amazon
+Noida, India
+Data Engineer
+July 2022 – March 2023
+• Management and maintenance of AWS Redshift and EMR clusters .
+• Designed and implemented data architecture and pipelines for various use cases.
+• Implemented compliance regulations on data warehouse in accordance with GDPR, CCPA and CPRA.
+Cyborgintell
+Bangalore, India
+Associate Data Scientist
+January 2022 – July 2022
+• Developed algorithms for automatic outlier treatment for AutoML operations using four different outlier detection
+methods like Tukey’s method, Adjacent Box-Plot, Mean AD and 3MADe method.
+• Conducted statistical analysis and visualisation of financial data using Seaborn library.
+• Engineered algorithms for probabilistic analysis using KL divergence, JS divergence and Earth mover’s distance in
+PySpark.
+• Contributed to deployment of AutoML products using Docker Containers.
+Projects
+Billboard hit Predictor
+Machine Learning Model
+July 2021 - August 2021
+• Investigated using Machine Learning techniques to predict Billboard HOT-100 Hits from Spotify Data and Million Song
+Data-set.
+• Predicted the Billboard success of a song by performing benchmark analysis of standard machine-learning algorithms
+including Logistic Regression, GDA, SVM, Decision Trees and Neural Networks.
+Position of Responsibility
+Social Work
+India
+Managing Director
+June 2020 – December 2020
+• Lead a team of 8 people to start the venture ‘BODH’ operational in Arrah, Bihar, to provide online education to
+students from rural locations during the COVID-19 Lockdown period.
+• Negotiated and closed arrangements with academicians from all around the state.
+• Analyzed enrollment and attendance records, advertised the organization through various offline and online platforms
+including Instagram, hoardings, walk-ins, etc.
+Skills
+Technical: C++, Python, Flask, PySpark, Docker, Pandas, Numpy, Seaborn, SQL, OS(Linux, MacOS), AWS(Athena,
+DynamoDb, Redshift, EMR
+Languages: Fluent in English, Hindi

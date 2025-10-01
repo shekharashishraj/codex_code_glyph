@@ -1,0 +1,16 @@
+RNNSa ndL STMS Quiz
+Multiple Choice Questions
+Q1. What is the primary benefit of stacking multiple RNN layers (i.e., stacked
+RNNS)?
+A. Faster training
+B. Lower memory usage
+C. Better learning of hierarchical features
+D. Simpler architecture
+Q2. Which of the following is the main reason RNNS struggle with long-term depen-
+dencies?
+A. Overfitting
+B. Vanishing gradients
+C. Lack of non-linearity
+D. Insufficient data
+Q3. What diflerentiatesa nL STMS cell from a standard RNN cell?
+A. It uses ReLU inst

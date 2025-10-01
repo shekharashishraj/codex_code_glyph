@@ -1,0 +1,7 @@
+2025-09-28 13:17:43,293 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20250928_131743_293 ===
+2025-09-28 13:17:43,294 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 0: '= 0 1: 9:-436Will'
+2025-09-28 13:17:43,294 |    DEBUG | _find_split_decimal_patterns: 188 | Found split decimal: '= 0 1:' → '0.1:'
+2025-09-28 13:17:43,294 |    DEBUG | _find_split_decimal_patterns: 188 | Found split decimal: '= 0 1:' → '0.1:'
+2025-09-28 13:17:43,294 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 1: '1: 9:-436Will'
+2025-09-28 13:17:43,294 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 0: ' = 1 : 2:-652Will'
+2025-09-28 13:17:43,294 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 1: ': 2:-652Will'

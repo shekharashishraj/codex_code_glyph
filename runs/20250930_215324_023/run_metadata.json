@@ -1,0 +1,25 @@
+{
+  "run_id": "20250930_215324_023",
+  "start_time": "2025-09-30T21:53:24.025492",
+  "mode": "overlay",
+  "mappings": {
+    "UPI-ZOMATO": "UPI-DRUGS",
+    "LTD-ZOMATO-ORDER@PAYTM-PYTM01": "LTD-DRUGS-ORDER@PAYTM-PYTM01"
+  },
+  "steps": [],
+  "errors": [],
+  "results": {
+    "output_pdf": {
+      "filename": "output.pdf",
+      "size_bytes": 68521,
+      "path": "/Users/ashishrajshekhar/codex_code_glyph/runs/20250930_215324_023/output.pdf"
+    }
+  },
+  "input_pdf": {
+    "filename": "input.pdf",
+    "size_bytes": 58607,
+    "path": "/Users/ashishrajshekhar/codex_code_glyph/runs/20250930_215324_023/input.pdf"
+  },
+  "end_time": "2025-09-30T21:53:24.426699",
+  "duration_seconds": 0.401207
+}

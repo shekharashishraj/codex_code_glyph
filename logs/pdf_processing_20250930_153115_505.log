@@ -1,0 +1,108 @@
+2025-09-30 15:31:15,507 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20250930_153115_505 ===
+2025-09-30 15:31:15,510 |     INFO |            remap_pdf:  82 | Starting PDF remapping with 3 mappings in overlay mode
+2025-09-30 15:31:15,511 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_153115_505/input.pdf (34173 bytes)
+2025-09-30 15:31:15,511 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-09-30 15:31:15,511 |     INFO |         log_mappings:  81 | Word mappings to apply: 3 total
+2025-09-30 15:31:15,511 |     INFO |         log_mappings:  83 |   'multi-head' → 'single-head'
+2025-09-30 15:31:15,511 |     INFO |         log_mappings:  83 |   'exclusively' → 'NOT'
+2025-09-30 15:31:15,511 |     INFO |         log_mappings:  83 |   'bidirectional' → 'unidrectinal'
+2025-09-30 15:31:15,511 |     INFO |         log_mappings:  81 | Word mappings to apply: 3 total
+2025-09-30 15:31:15,511 |     INFO |         log_mappings:  83 |   'multi-head' → 'single-head'
+2025-09-30 15:31:15,511 |     INFO |         log_mappings:  83 |   'exclusively' → 'NOT'
+2025-09-30 15:31:15,511 |     INFO |         log_mappings:  83 |   'bidirectional' → 'unidrectinal'
+2025-09-30 15:31:15,530 |     INFO | log_pattern_building:  99 | Building regex pattern for 4 words (ignore_case=True)
+2025-09-30 15:31:15,531 |    DEBUG | log_pattern_building: 100 | Words to match: ['multi-head', 'exclusively', 'bidirectional', 'Bidirectional']
+2025-09-30 15:31:15,531 |    DEBUG | log_pattern_building: 101 | Compiled pattern: bidirectional|Bidirectional|exclusively|multi\-head
+2025-09-30 15:31:15,538 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 1 with 95 operations
+2025-09-30 15:31:15,539 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'CSE 576 Quiz 7 Transformer Pretraining Quiz'
+2025-09-30 15:31:15,539 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '1. Which of the following best explains how multi-head attention improves contextual'
+2025-09-30 15:31:15,539 |     INFO |     process_tj_array:  77 | TJ Array - Applied 1 replacements
+2025-09-30 15:31:15,539 |     INFO |     process_tj_array:  79 |   'multi-head' → 'single-head' at positions 44-54
+2025-09-30 15:31:15,539 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'understanding in Transformers?'
+2025-09-30 15:31:15,539 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'A) By reducing the total number of parameters through parallelization'
+2025-09-30 15:31:15,539 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'B) By enforcing uniform attention over the sequence to prevent bias'
+2025-09-30 15:31:15,539 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'C) By increasing computation speed through batch-wise attention'
+2025-09-30 15:31:15,539 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'D) By enabling diflerent heads to attend to diverse relational patterns across positions'
+2025-09-30 15:31:15,539 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '2. Which component of the Transformer architecture is exclusively utilized in GPT, mak-'
+2025-09-30 15:31:15,539 |     INFO |     process_tj_array:  77 | TJ Array - Applied 1 replacements
+2025-09-30 15:31:15,539 |     INFO |     process_tj_array:  79 |   'exclusively' → 'NOT' at positions 54-65
+2025-09-30 15:31:15,540 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'ing it more suited for generative tasks?'
+2025-09-30 15:31:15,540 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'A) Decoder layers with masked self-attention'
+2025-09-30 15:31:15,540 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'B) Encoder layers for input sequence modeling'
+2025-09-30 15:31:15,540 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'C) A hybrid encoder-decoder combination'
+2025-09-30 15:31:15,540 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'D) A purely feed-forward architecture'
+2025-09-30 15:31:15,540 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '3. What design choice in GPT restricts it from leveraging full bidirectional context, and'
+2025-09-30 15:31:15,540 |     INFO |     process_tj_array:  77 | TJ Array - Applied 1 replacements
+2025-09-30 15:31:15,540 |     INFO |     process_tj_array:  79 |   'bidirectional' → 'unidrectinal' at positions 63-76
+2025-09-30 15:31:15,540 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'what consequence does this have?'
+2025-09-30 15:31:15,540 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'A) Encoder-based design; restricts output generation'
+2025-09-30 15:31:15,540 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'B) Unidirectional left-to-right ow; limits full context understanding'
+2025-09-30 15:31:15,540 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'C) Bidirectional masking; leads to context overfitting'
+2025-09-30 15:31:15,540 |     INFO |     process_tj_array:  77 | TJ Array - Applied 1 replacements
+2025-09-30 15:31:15,540 |     INFO |     process_tj_array:  79 |   'Bidirectional' → 'unidrectinal' at positions 3-16
+2025-09-30 15:31:15,540 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'D) Cross-attention dependencies; increase inference latency'
+2025-09-30 15:31:15,541 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '4. Which of the following best characterizes the training objectives that enable BERT to'
+2025-09-30 15:31:15,541 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'capture both deep token-level context and inter-sentence semantics?'
+2025-09-30 15:31:15,541 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'A) Predicting the next token in a left-to-right fashion using unidirectional context'
+2025-09-30 15:31:15,541 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'B) Learning to generate a target sequence from an input sequence in an encoder-'
+2025-09-30 15:31:15,541 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'decoder setup'
+2025-09-30 15:31:15,541 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'C) Jointly optimizing masked token reconstruction and inter-sentence coherence dis-'
+2025-09-30 15:31:15,541 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'crimination'
+2025-09-30 15:31:15,541 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'D) Aligning image features with textual descriptions through cross-modal supervision'
+2025-09-30 15:31:15,541 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'Short Answer Questions'
+2025-09-30 15:31:15,541 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '5. What are the potential drawbacks of the two-stage process of pretraining on large'
+2025-09-30 15:31:15,541 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'corpora followed by fine-tuning on specific tasks in Transformer models?'
+2025-09-30 15:31:15,541 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: "6. What are the potential drawbacks of GPT's autoregressive training objective when"
+2025-09-30 15:31:15,541 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'applied to tasks requiring holistic understanding of text?'
+2025-09-30 15:31:15,541 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '7. BERT utilizes a masked language model (MLM) during pretraining. What is the'
+2025-09-30 15:31:15,542 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'primary challenge associated with the MLM approach, and how does it aflect the'
+2025-09-30 15:31:15,542 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: "model's downstream performance?"
+2025-09-30 15:31:15,542 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '8. GPT models are known for their unidirectional (left-to-right) processing. How does'
+2025-09-30 15:31:15,542 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'this design choice impact their performance on tasks like text generation compared to'
+2025-09-30 15:31:15,542 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'tasks like text classification?'
+2025-09-30 15:31:15,542 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '1'
+2025-09-30 15:31:15,542 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: 'CSE 576 Quiz 7 Transformer Pretraining Quiz 1. Which of the following best explains how single-head attention improves contextual understanding in Transformers?'
+2025-09-30 15:31:15,542 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 1: '1. Which of the following best explains how single-head attention improves contextual understanding in Transformers? A) By reducing the total number of parameters through parallelization'
+2025-09-30 15:31:15,542 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 2: 'understanding in Transformers? A) By reducing the total number of parameters through parallelization B) By enforcing uniform attention over the sequence to prevent bias'
+2025-09-30 15:31:15,542 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 3: 'A) By reducing the total number of parameters through parallelization B) By enforcing uniform attention over the sequence to prevent bias C) By increasing computation speed through batch-wise attention'
+2025-09-30 15:31:15,543 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 4: 'B) By enforcing uniform attention over the sequence to prevent bias C) By increasing computation speed through batch-wise attention D) By enabling diflerent heads to attend to diverse relational patterns across positions'
+2025-09-30 15:31:15,543 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 5: 'C) By increasing computation speed through batch-wise attention D) By enabling diflerent heads to attend to diverse relational patterns across positions 2. Which component of the Transformer architecture is NOT utilized in GPT, mak-'
+2025-09-30 15:31:15,543 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 6: 'D) By enabling diflerent heads to attend to diverse relational patterns across positions 2. Which component of the Transformer architecture is NOT utilized in GPT, mak- ing it more suited for generative tasks?'
+2025-09-30 15:31:15,543 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 7: '2. Which component of the Transformer architecture is NOT utilized in GPT, mak- ing it more suited for generative tasks? A) Decoder layers with masked self-attention'
+2025-09-30 15:31:15,543 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 8: 'ing it more suited for generative tasks? A) Decoder layers with masked self-attention B) Encoder layers for input sequence modeling'
+2025-09-30 15:31:15,543 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 9: 'A) Decoder layers with masked self-attention B) Encoder layers for input sequence modeling C) A hybrid encoder-decoder combination'
+2025-09-30 15:31:15,544 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 10: 'B) Encoder layers for input sequence modeling C) A hybrid encoder-decoder combination D) A purely feed-forward architecture'
+2025-09-30 15:31:15,544 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 11: 'C) A hybrid encoder-decoder combination D) A purely feed-forward architecture 3. What design choice in GPT restricts it from leveraging full unidrectinal context, and'
+2025-09-30 15:31:15,544 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 12: 'D) A purely feed-forward architecture 3. What design choice in GPT restricts it from leveraging full unidrectinal context, and what consequence does this have?'
+2025-09-30 15:31:15,544 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 13: '3. What design choice in GPT restricts it from leveraging full unidrectinal context, and what consequence does this have? A) Encoder-based design; restricts output generation'
+2025-09-30 15:31:15,544 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 14: 'what consequence does this have? A) Encoder-based design; restricts output generation B) Unidirectional left-to-right ow; limits full context understanding'
+2025-09-30 15:31:15,544 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 15: 'A) Encoder-based design; restricts output generation B) Unidirectional left-to-right ow; limits full context understanding C) unidrectinal masking; leads to context overfitting'
+2025-09-30 15:31:15,544 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 16: 'B) Unidirectional left-to-right ow; limits full context understanding C) unidrectinal masking; leads to context overfitting D) Cross-attention dependencies; increase inference latency'
+2025-09-30 15:31:15,544 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 17: 'C) unidrectinal masking; leads to context overfitting D) Cross-attention dependencies; increase inference latency 4. Which of the following best characterizes the training objectives that enable BERT to'
+2025-09-30 15:31:15,545 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 18: 'D) Cross-attention dependencies; increase inference latency 4. Which of the following best characterizes the training objectives that enable BERT to capture both deep token-level context and inter-sentence semantics?'
+2025-09-30 15:31:15,545 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 19: '4. Which of the following best characterizes the training objectives that enable BERT to capture both deep token-level context and inter-sentence semantics? A) Predicting the next token in a left-to-right fashion using unidirectional context'
+2025-09-30 15:31:15,545 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 20: 'capture both deep token-level context and inter-sentence semantics? A) Predicting the next token in a left-to-right fashion using unidirectional context B) Learning to generate a target sequence from an input sequence in an encoder-'
+2025-09-30 15:31:15,545 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 21: 'A) Predicting the next token in a left-to-right fashion using unidirectional context B) Learning to generate a target sequence from an input sequence in an encoder- decoder setup'
+2025-09-30 15:31:15,545 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 22: 'B) Learning to generate a target sequence from an input sequence in an encoder- decoder setup C) Jointly optimizing masked token reconstruction and inter-sentence coherence dis-'
+2025-09-30 15:31:15,545 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 23: 'decoder setup C) Jointly optimizing masked token reconstruction and inter-sentence coherence dis- crimination'
+2025-09-30 15:31:15,546 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 24: 'C) Jointly optimizing masked token reconstruction and inter-sentence coherence dis- crimination D) Aligning image features with textual descriptions through cross-modal supervision'
+2025-09-30 15:31:15,546 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 25: 'crimination D) Aligning image features with textual descriptions through cross-modal supervision Short Answer Questions'
+2025-09-30 15:31:15,546 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 26: 'D) Aligning image features with textual descriptions through cross-modal supervision Short Answer Questions 5. What are the potential drawbacks of the two-stage process of pretraining on large'
+2025-09-30 15:31:15,546 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 27: 'Short Answer Questions 5. What are the potential drawbacks of the two-stage process of pretraining on large corpora followed by fine-tuning on specific tasks in Transformer models?'
+2025-09-30 15:31:15,546 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 28: "5. What are the potential drawbacks of the two-stage process of pretraining on large corpora followed by fine-tuning on specific tasks in Transformer models? 6. What are the potential drawbacks of GPT's autoregressive training objective when"
+2025-09-30 15:31:15,546 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 29: "corpora followed by fine-tuning on specific tasks in Transformer models? 6. What are the potential drawbacks of GPT's autoregressive training objective when applied to tasks requiring holistic understanding of text?"
+2025-09-30 15:31:15,546 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 30: "6. What are the potential drawbacks of GPT's autoregressive training objective when applied to tasks requiring holistic understanding of text? 7. BERT utilizes a masked language model (MLM) during pretraining. What is the"
+2025-09-30 15:31:15,547 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 31: 'applied to tasks requiring holistic understanding of text? 7. BERT utilizes a masked language model (MLM) during pretraining. What is the primary challenge associated with the MLM approach, and how does it aflect the'
+2025-09-30 15:31:15,547 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 32: "7. BERT utilizes a masked language model (MLM) during pretraining. What is the primary challenge associated with the MLM approach, and how does it aflect the model's downstream performance?"
+2025-09-30 15:31:15,547 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 33: "primary challenge associated with the MLM approach, and how does it aflect the model's downstream performance? 8. GPT models are known for their unidirectional (left-to-right) processing. How does"
+2025-09-30 15:31:15,547 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 34: "model's downstream performance? 8. GPT models are known for their unidirectional (left-to-right) processing. How does this design choice impact their performance on tasks like text generation compared to"
+2025-09-30 15:31:15,547 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 35: '8. GPT models are known for their unidirectional (left-to-right) processing. How does this design choice impact their performance on tasks like text generation compared to tasks like text classification?'
+2025-09-30 15:31:15,547 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 36: 'this design choice impact their performance on tasks like text generation compared to tasks like text classification? 1'
+2025-09-30 15:31:15,547 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 37: 'tasks like text classification? 1'
+2025-09-30 15:31:15,577 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_153115_505/output.pdf (50285 bytes)
+2025-09-30 15:31:15,577 |     INFO |         finalize_run: 222 | === Run Complete: 20250930_153115_505 (Duration: 0.07s) ===
+2025-09-30 15:31:15,577 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_153115_505
+2025-09-30 15:31:15,577 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_153115_505/run_metadata.json
+2025-09-30 15:31:15,577 |     INFO |         finalize_run: 233 | Run completed successfully with 3 mappings applied
+2025-09-30 15:31:53,662 |     INFO |  log_text_extraction:  90 | Extracted text (2228 chars): 'Quiz 1 \n1.\u200bSelect the correct option: GPT-3 is a ____-gram model.\u200b\n\u200b\n(15 marks) \na.. 1024 \nb. 2048 \nc.  4096 \nd. 8192 \n2.\u200bIn one line, explain why hallucinations can still occur in LLMs despite using \nadvanced prompting techniques like Chain of Thought (CoT).\u200b\n(15 marks) \n3.\u200bIn one sentence, explain how Self-Verification helps reduce factual \nerrors in an LLM’s output. \u200b\u200b\n\u200b\n\u200b\n\u200b\n\u200b\n\u200b\n\u200b\n(15 marks) \n4.\u200bTrue or False: Advanced prompting techniques (such as Chain of Thought \nand Self-Ask) can enhance ...'
+2025-09-30 15:31:53,664 |    DEBUG |  log_text_extraction:  95 | Full extracted text saved to: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_153115_505/extracted_text.txt

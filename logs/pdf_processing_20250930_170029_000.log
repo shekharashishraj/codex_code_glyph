@@ -1,0 +1,23 @@
+2025-09-30 17:00:29,001 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20250930_170029_000 ===
+2025-09-30 17:00:29,001 |     INFO |            remap_pdf:  82 | Starting PDF remapping with 2 mappings in overlay mode
+2025-09-30 17:00:29,002 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_170029_000/input.pdf (4284 bytes)
+2025-09-30 17:00:29,002 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-09-30 17:00:29,002 |     INFO |         log_mappings:  81 | Word mappings to apply: 2 total
+2025-09-30 17:00:29,002 |     INFO |         log_mappings:  83 |   'partially' → 'entirely '
+2025-09-30 17:00:29,002 |     INFO |         log_mappings:  83 |   'Advantage' → 'disavtge'
+2025-09-30 17:00:29,002 |     INFO |         log_mappings:  81 | Word mappings to apply: 2 total
+2025-09-30 17:00:29,002 |     INFO |         log_mappings:  83 |   'partially' → 'entirely'
+2025-09-30 17:00:29,002 |     INFO |         log_mappings:  83 |   'Advantage' → 'disavtge'
+2025-09-30 17:00:29,012 |     INFO | log_pattern_building:  99 | Building regex pattern for 2 words (ignore_case=True)
+2025-09-30 17:00:29,012 |    DEBUG | log_pattern_building: 100 | Words to match: ['partially', 'Advantage']
+2025-09-30 17:00:29,012 |    DEBUG | log_pattern_building: 101 | Compiled pattern: Advantage|partially
+2025-09-30 17:00:29,017 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 1 with 336 operations
+2025-09-30 17:00:29,018 |     INFO |  _apply_v2_processor:  81 | Tj replacement: 'Q2. An environment is considered partially observable when:' → 'Q2. An environment is considered entirely observable when:'
+2025-09-30 17:00:29,021 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 2 with 359 operations
+2025-09-30 17:00:29,022 |     INFO |  _apply_v2_processor:  81 | Tj replacement: 'Q4. The Advantage term in ActorŒCritic methods is calculated as:' → 'Q4. The disavtge term in ActorŒCritic methods is calculated as:'
+2025-09-30 17:00:29,023 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 3 with 88 operations
+2025-09-30 17:00:29,035 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_170029_000/output.pdf (12467 bytes)
+2025-09-30 17:00:29,035 |     INFO |         finalize_run: 222 | === Run Complete: 20250930_170029_000 (Duration: 0.03s) ===
+2025-09-30 17:00:29,035 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_170029_000
+2025-09-30 17:00:29,035 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_170029_000/run_metadata.json
+2025-09-30 17:00:29,035 |     INFO |         finalize_run: 233 | Run completed successfully with 2 mappings applied

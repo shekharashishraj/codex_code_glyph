@@ -1,0 +1,120 @@
+2025-09-28 13:27:06,856 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20250928_132706_855 ===
+2025-09-28 13:27:06,860 |     INFO |            remap_pdf:  82 | Starting PDF remapping with 5 mappings in overlay mode
+2025-09-28 13:27:06,862 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250928_132706_855/input.pdf (34173 bytes)
+2025-09-28 13:27:06,862 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-09-28 13:27:06,862 |     INFO |         log_mappings:  81 | Word mappings to apply: 5 total
+2025-09-28 13:27:06,862 |     INFO |         log_mappings:  83 |   'generation' → 'creation'
+2025-09-28 13:27:06,862 |     INFO |         log_mappings:  83 |   'text' → 'pdf'
+2025-09-28 13:27:06,862 |     INFO |         log_mappings:  83 |   'improves' → 'reduces'
+2025-09-28 13:27:06,862 |     INFO |         log_mappings:  83 |   'GPT,' → 'CNN,'
+2025-09-28 13:27:06,862 |     INFO |         log_mappings:  83 |   'BERT' → 'LSTM'
+2025-09-28 13:27:06,862 |     INFO |         log_mappings:  81 | Word mappings to apply: 5 total
+2025-09-28 13:27:06,862 |     INFO |         log_mappings:  83 |   'generation' → 'creation'
+2025-09-28 13:27:06,862 |     INFO |         log_mappings:  83 |   'text' → 'pdf'
+2025-09-28 13:27:06,862 |     INFO |         log_mappings:  83 |   'improves' → 'reduces'
+2025-09-28 13:27:06,862 |     INFO |         log_mappings:  83 |   'GPT,' → 'CNN,'
+2025-09-28 13:27:06,862 |     INFO |         log_mappings:  83 |   'BERT' → 'LSTM'
+2025-09-28 13:27:06,882 |     INFO | log_pattern_building:  99 | Building regex pattern for 5 words (ignore_case=True)
+2025-09-28 13:27:06,883 |    DEBUG | log_pattern_building: 100 | Words to match: ['generation', 'text', 'improves', 'GPT,', 'BERT']
+2025-09-28 13:27:06,883 |    DEBUG | log_pattern_building: 101 | Compiled pattern: generation|improves|text|GPT,|BERT
+2025-09-28 13:27:06,888 |     INFO | _apply_overlay_mode_mapping: 297 | Processing page 1 with 95 operations
+2025-09-28 13:27:06,888 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'CSE576Quiz7TransformerPretrainingQuiz'
+2025-09-28 13:27:06,888 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: '1.Whichofthefollowingbestexplainshowmulti-headattentionimprovescontextual'
+2025-09-28 13:27:06,888 |     INFO |     process_tj_array:  52 | TJ Array - Applied 2 replacements
+2025-09-28 13:27:06,888 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'understandinginTransformers?'
+2025-09-28 13:27:06,888 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'A)Byreducingthetotalnumberofparametersthroughparallelization'
+2025-09-28 13:27:06,888 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'B)Byenforcinguniformattentionoverthesequencetopreventbias'
+2025-09-28 13:27:06,888 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'C)Byincreasingcomputationspeedthroughbatch-wiseattention'
+2025-09-28 13:27:06,889 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'D)Byenablingdiflerentheadstoattendtodiverserelationalpatternsacrosspositions'
+2025-09-28 13:27:06,889 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: '2.WhichcomponentoftheTransformerarchitectureisexclusivelyutilizedinGPT,mak-'
+2025-09-28 13:27:06,889 |     INFO |     process_tj_array:  52 | TJ Array - Applied 1 replacements
+2025-09-28 13:27:06,889 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'ingitmoresuitedforgenerativetasks?'
+2025-09-28 13:27:06,889 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'A)Decoderlayerswithmaskedself-attention'
+2025-09-28 13:27:06,889 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'B)Encoderlayersforinputsequencemodeling'
+2025-09-28 13:27:06,889 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'C)Ahybridencoder-decodercombination'
+2025-09-28 13:27:06,889 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'D)Apurelyfeed-forwardarchitecture'
+2025-09-28 13:27:06,889 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: '3.WhatdesignchoiceinGPTrestrictsitfromleveragingfullbidirectionalcontext,and'
+2025-09-28 13:27:06,889 |     INFO |     process_tj_array:  52 | TJ Array - Applied 1 replacements
+2025-09-28 13:27:06,889 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'whatconsequencedoesthishave?'
+2025-09-28 13:27:06,889 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'A)Encoder-baseddesign;restrictsoutputgeneration'
+2025-09-28 13:27:06,889 |     INFO |     process_tj_array:  52 | TJ Array - Applied 1 replacements
+2025-09-28 13:27:06,889 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'B)Unidirectionalleft-to-rightow;limitsfullcontextunderstanding'
+2025-09-28 13:27:06,889 |     INFO |     process_tj_array:  52 | TJ Array - Applied 1 replacements
+2025-09-28 13:27:06,889 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'C)Bidirectionalmasking;leadstocontextoverfitting'
+2025-09-28 13:27:06,890 |     INFO |     process_tj_array:  52 | TJ Array - Applied 1 replacements
+2025-09-28 13:27:06,890 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'D)Cross-attentiondependencies;increaseinferencelatency'
+2025-09-28 13:27:06,890 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: '4.WhichofthefollowingbestcharacterizesthetrainingobjectivesthatenableBERTto'
+2025-09-28 13:27:06,890 |     INFO |     process_tj_array:  52 | TJ Array - Applied 1 replacements
+2025-09-28 13:27:06,890 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'capturebothdeeptoken-levelcontextandinter-sentencesemantics?'
+2025-09-28 13:27:06,890 |     INFO |     process_tj_array:  52 | TJ Array - Applied 1 replacements
+2025-09-28 13:27:06,890 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'A)Predictingthenexttokeninaleft-to-rightfashionusingunidirectionalcontext'
+2025-09-28 13:27:06,890 |     INFO |     process_tj_array:  52 | TJ Array - Applied 1 replacements
+2025-09-28 13:27:06,890 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'B)Learningtogenerateatargetsequencefromaninputsequenceinanencoder-'
+2025-09-28 13:27:06,890 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'decodersetup'
+2025-09-28 13:27:06,890 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'C)Jointlyoptimizingmaskedtokenreconstructionandinter-sentencecoherencedis-'
+2025-09-28 13:27:06,890 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'crimination'
+2025-09-28 13:27:06,890 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'D)Aligningimagefeatureswithtextualdescriptionsthroughcross-modalsupervision'
+2025-09-28 13:27:06,890 |     INFO |     process_tj_array:  52 | TJ Array - Applied 1 replacements
+2025-09-28 13:27:06,890 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'ShortAnswerQuestions'
+2025-09-28 13:27:06,890 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: '5.Whatarethepotentialdrawbacksofthetwo-stageprocessofpretrainingonlarge'
+2025-09-28 13:27:06,891 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'corporafollowedbyfine-tuningonspecifictasksinTransformermodels?'
+2025-09-28 13:27:06,891 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: "6.WhatarethepotentialdrawbacksofGPT'sautoregressivetrainingobjectivewhen"
+2025-09-28 13:27:06,891 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'appliedtotasksrequiringholisticunderstandingoftext?'
+2025-09-28 13:27:06,891 |     INFO |     process_tj_array:  52 | TJ Array - Applied 1 replacements
+2025-09-28 13:27:06,891 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: '7.BERTutilizesamaskedlanguagemodel(MLM)duringpretraining.Whatisthe'
+2025-09-28 13:27:06,891 |     INFO |     process_tj_array:  52 | TJ Array - Applied 1 replacements
+2025-09-28 13:27:06,891 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'primarychallengeassociatedwiththeMLMapproach,andhowdoesitaflectthe'
+2025-09-28 13:27:06,891 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: "model'sdownstreamperformance?"
+2025-09-28 13:27:06,891 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: '8.GPTmodelsareknownfortheirunidirectional(left-to-right)processing.Howdoes'
+2025-09-28 13:27:06,891 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'thisdesignchoiceimpacttheirperformanceontasksliketextgenerationcomparedto'
+2025-09-28 13:27:06,891 |     INFO |     process_tj_array:  52 | TJ Array - Applied 2 replacements
+2025-09-28 13:27:06,891 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'tasksliketextclassification?'
+2025-09-28 13:27:06,891 |     INFO |     process_tj_array:  52 | TJ Array - Applied 1 replacements
+2025-09-28 13:27:06,891 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: '1'
+2025-09-28 13:27:06,891 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 0: 'CSE 576 Quiz 7 Transformer Pretraining Quiz 1 .Wh i ch ofthefo ll owingbe s texplainshowmulti-headattenti onreduc esco npdfual understanding in Transformers?'
+2025-09-28 13:27:06,892 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 1: '1 .Wh i ch ofthefo ll owingbe s texplainshowmulti-headattenti onreduc esco npdfual understanding in Transformers? A) By reducing the total number of parameters through parallelization'
+2025-09-28 13:27:06,892 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 2: 'understanding in Transformers? A) By reducing the total number of parameters through parallelization B) By enforcing uniform attention over the sequence to prevent bias'
+2025-09-28 13:27:06,892 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 3: 'A) By reducing the total number of parameters through parallelization B) By enforcing uniform attention over the sequence to prevent bias C) By increasing computation speed through batch-wise attention'
+2025-09-28 13:27:06,892 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 4: 'B) By enforcing uniform attention over the sequence to prevent bias C) By increasing computation speed through batch-wise attention D) By enabling diflerent heads to attend to diverse relational patterns across positions'
+2025-09-28 13:27:06,892 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 5: 'C) By increasing computation speed through batch-wise attention D) By enabling diflerent heads to attend to diverse relational patterns across positions 2. Which component of the Transformer architecture is exclusively utilized in CNN, mak-'
+2025-09-28 13:27:06,892 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 6: 'D) By enabling diflerent heads to attend to diverse relational patterns across positions 2. Which component of the Transformer architecture is exclusively utilized in CNN, mak- ing it more suited for generative tasks?'
+2025-09-28 13:27:06,893 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 7: '2. Which component of the Transformer architecture is exclusively utilized in CNN, mak- ing it more suited for generative tasks? A) Decoder layers with masked self-attention'
+2025-09-28 13:27:06,893 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 8: 'ing it more suited for generative tasks? A) Decoder layers with masked self-attention B) Encoder layers for input sequence modeling'
+2025-09-28 13:27:06,893 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 9: 'A) Decoder layers with masked self-attention B) Encoder layers for input sequence modeling C) A hybrid encoder-decoder combination'
+2025-09-28 13:27:06,893 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 10: 'B) Encoder layers for input sequence modeling C) A hybrid encoder-decoder combination D) A purely feed-forward architecture'
+2025-09-28 13:27:06,893 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 11: 'C) A hybrid encoder-decoder combination D) A purely feed-forward architecture 3 .Wh atdes ign c ho iceinGPT r est rictsitf rom leveragingfullbidirectionalco npdf,a nd'
+2025-09-28 13:27:06,893 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 12: 'D) A purely feed-forward architecture 3 .Wh atdes ign c ho iceinGPT r est rictsitf rom leveragingfullbidirectionalco npdf,a nd what consequence does this have?'
+2025-09-28 13:27:06,894 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 13: '3 .Wh atdes ign c ho iceinGPT r est rictsitf rom leveragingfullbidirectionalco npdf,a nd what consequence does this have? A )Encoder-b asedde sign;restrictso utput creation'
+2025-09-28 13:27:06,894 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 14: 'what consequence does this have? A )Encoder-b asedde sign;restrictso utput creation B )Unidirectionalleft-to-ri ghtow;limi t sful lco npdfu nderstanding'
+2025-09-28 13:27:06,894 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 15: 'A )Encoder-b asedde sign;restrictso utput creation B )Unidirectionalleft-to-ri ghtow;limi t sful lco npdfu nderstanding C )Bidirectionalmasking ;leadst ocon p dfove rfitting'
+2025-09-28 13:27:06,894 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 16: 'B )Unidirectionalleft-to-ri ghtow;limi t sful lco npdfu nderstanding C )Bidirectionalmasking ;leadst ocon p dfove rfitting D) Cross-attention dependencies; increase inference latency'
+2025-09-28 13:27:06,894 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 17: 'C )Bidirectionalmasking ;leadst ocon p dfove rfitting D) Cross-attention dependencies; increase inference latency 4. Which of the following best characterizes the training objectives that enable LSTM to'
+2025-09-28 13:27:06,895 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 18: 'D) Cross-attention dependencies; increase inference latency 4. Which of the following best characterizes the training objectives that enable LSTM to capturebothdeeptoken- le vel conpdfan dint er -sentencese mantics?'
+2025-09-28 13:27:06,895 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 19: '4. Which of the following best characterizes the training objectives that enable LSTM to capturebothdeeptoken- le vel conpdfan dint er -sentencese mantics? A )Predicti ng the nex t  tokeninaleft-to-rightfashi onusin guni directionalc onpdf'
+2025-09-28 13:27:06,895 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 20: 'capturebothdeeptoken- le vel conpdfan dint er -sentencese mantics? A )Predicti ng the nex t  tokeninaleft-to-rightfashi onusin guni directionalc onpdf B) Learning to generate a target sequence from an input sequence in an encoder-'
+2025-09-28 13:27:06,895 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 21: 'A )Predicti ng the nex t  tokeninaleft-to-rightfashi onusin guni directionalc onpdf B) Learning to generate a target sequence from an input sequence in an encoder- decoder setup'
+2025-09-28 13:27:06,895 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 22: 'B) Learning to generate a target sequence from an input sequence in an encoder- decoder setup C) Jointly optimizing masked token reconstruction and inter-sentence coherence dis-'
+2025-09-28 13:27:06,895 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 23: 'decoder setup C) Jointly optimizing masked token reconstruction and inter-sentence coherence dis- crimination'
+2025-09-28 13:27:06,896 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 24: 'C) Jointly optimizing masked token reconstruction and inter-sentence coherence dis- crimination D )Aligni ngim agefeat ure swithp dfualdescriptionsthrou ghcros s-modalsu pervision'
+2025-09-28 13:27:06,896 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 25: 'crimination D )Aligni ngim agefeat ure swithp dfualdescriptionsthrou ghcros s-modalsu pervision Short Answer Questions'
+2025-09-28 13:27:06,896 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 26: 'D )Aligni ngim agefeat ure swithp dfualdescriptionsthrou ghcros s-modalsu pervision Short Answer Questions 5. What are the potential drawbacks of the two-stage process of pretraining on large'
+2025-09-28 13:27:06,896 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 27: 'Short Answer Questions 5. What are the potential drawbacks of the two-stage process of pretraining on large corpora followed by fine-tuning on specific tasks in Transformer models?'
+2025-09-28 13:27:06,896 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 28: "5. What are the potential drawbacks of the two-stage process of pretraining on large corpora followed by fine-tuning on specific tasks in Transformer models? 6. What are the potential drawbacks of GPT's autoregressive training objective when"
+2025-09-28 13:27:06,896 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 29: "corpora followed by fine-tuning on specific tasks in Transformer models? 6. What are the potential drawbacks of GPT's autoregressive training objective when applie d tota sksrequi ringhol isticunderstandingo f pdf?"
+2025-09-28 13:27:06,897 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 30: "6. What are the potential drawbacks of GPT's autoregressive training objective when applie d tota sksrequi ringhol isticunderstandingo f pdf? 7. LSTM utilizes a masked language model (MLM) during pretraining. What is the"
+2025-09-28 13:27:06,897 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 31: 'applie d tota sksrequi ringhol isticunderstandingo f pdf? 7. LSTM utilizes a masked language model (MLM) during pretraining. What is the primary challenge associated with the MLM approach, and how does it aflect the'
+2025-09-28 13:27:06,897 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 32: "7. LSTM utilizes a masked language model (MLM) during pretraining. What is the primary challenge associated with the MLM approach, and how does it aflect the model's downstream performance?"
+2025-09-28 13:27:06,897 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 33: "primary challenge associated with the MLM approach, and how does it aflect the model's downstream performance? 8. GPT models are known for their unidirectional (left-to-right) processing. How does"
+2025-09-28 13:27:06,897 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 34: "model's downstream performance? 8. GPT models are known for their unidirectional (left-to-right) processing. How does thi sdesi gnch oicei mpac ttheirperformanceontas k slik ep dfc reationco mparedt o"
+2025-09-28 13:27:06,897 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 35: '8. GPT models are known for their unidirectional (left-to-right) processing. How does thi sdesi gnch oicei mpac ttheirperformanceontas k slik ep dfc reationco mparedt o task sl ike pdfclassification?'
+2025-09-28 13:27:06,897 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 36: 'thi sdesi gnch oicei mpac ttheirperformanceontas k slik ep dfc reationco mparedt o task sl ike pdfclassification? 1'
+2025-09-28 13:27:06,898 |    DEBUG | _find_cross_array_matches: 132 | Cross-array window 37: 'task sl ike pdfclassification? 1'
+2025-09-28 13:27:06,914 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250928_132706_855/output.pdf (55103 bytes)
+2025-09-28 13:27:06,914 |     INFO |         finalize_run: 222 | === Run Complete: 20250928_132706_855 (Duration: 0.06s) ===
+2025-09-28 13:27:06,914 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20250928_132706_855
+2025-09-28 13:27:06,914 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250928_132706_855/run_metadata.json
+2025-09-28 13:27:06,914 |     INFO |         finalize_run: 233 | Run completed successfully with 5 mappings applied
+2025-09-28 13:30:36,638 |     INFO |  log_text_extraction:  90 | Extracted text (0 chars): ''
+2025-09-28 13:30:36,639 |    DEBUG |  log_text_extraction:  95 | Full extracted text saved to: /Users/ashishrajshekhar/codex_code_glyph/runs/20250928_132706_855/extracted_text.txt
+2025-09-28 13:32:13,728 |     INFO |  log_text_extraction:  90 | Extracted text (0 chars): ''
+2025-09-28 13:32:13,729 |    DEBUG |  log_text_extraction:  95 | Full extracted text saved to: /Users/ashishrajshekhar/codex_code_glyph/runs/20250928_132706_855/extracted_text.txt

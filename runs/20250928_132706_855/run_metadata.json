@@ -1,0 +1,28 @@
+{
+  "run_id": "20250928_132706_855",
+  "start_time": "2025-09-28T13:27:06.856458",
+  "mode": "overlay",
+  "mappings": {
+    "generation": "creation",
+    "text": "pdf",
+    "improves": "reduces",
+    "GPT,": "CNN,",
+    "BERT": "LSTM"
+  },
+  "steps": [],
+  "errors": [],
+  "results": {
+    "output_pdf": {
+      "filename": "output.pdf",
+      "size_bytes": 55103,
+      "path": "/Users/ashishrajshekhar/codex_code_glyph/runs/20250928_132706_855/output.pdf"
+    }
+  },
+  "input_pdf": {
+    "filename": "input.pdf",
+    "size_bytes": 34173,
+    "path": "/Users/ashishrajshekhar/codex_code_glyph/runs/20250928_132706_855/input.pdf"
+  },
+  "end_time": "2025-09-28T13:27:06.914322",
+  "duration_seconds": 0.057864
+}

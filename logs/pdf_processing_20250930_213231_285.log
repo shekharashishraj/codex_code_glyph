@@ -1,0 +1,55 @@
+2025-09-30 21:32:31,289 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20250930_213231_285 ===
+2025-09-30 21:32:31,297 |     INFO |            remap_pdf:  82 | Starting PDF remapping with 1 mappings in overlay mode
+2025-09-30 21:32:31,297 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_213231_285/input.pdf (115270 bytes)
+2025-09-30 21:32:31,297 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-09-30 21:32:31,298 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-09-30 21:32:31,298 |     INFO |         log_mappings:  83 |   'JITENDRA' → 'SATINDRA'
+2025-09-30 21:32:31,298 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-09-30 21:32:31,298 |     INFO |         log_mappings:  83 |   'JITENDRA' → 'SATINDRA'
+2025-09-30 21:32:31,464 |     INFO | log_pattern_building:  99 | Building regex pattern for 1 words (ignore_case=True)
+2025-09-30 21:32:31,464 |    DEBUG | log_pattern_building: 100 | Words to match: ['JITENDRA']
+2025-09-30 21:32:31,464 |    DEBUG | log_pattern_building: 101 | Compiled pattern: JITENDRA
+2025-09-30 21:32:31,476 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 1 with 1612 operations
+2025-09-30 21:32:31,477 |     INFO |  _apply_v2_processor:  81 | Tj replacement: 'Joint Holder :- JITENDRA SINGH' → 'Joint Holder :- SATINDRA SINGH'
+2025-09-30 21:32:31,477 |     INFO |  _apply_v2_processor:  81 | Tj replacement: 'S/O: JITENDRA SINGH,FRIENDS COLONY' → 'S/O: SATINDRA SINGH,FRIENDS COLONY'
+2025-09-30 21:32:31,489 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 2 with 2065 operations
+2025-09-30 21:32:31,503 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 3 with 2119 operations
+2025-09-30 21:32:31,569 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 4 with 2085 operations
+2025-09-30 21:32:31,584 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 5 with 2055 operations
+2025-09-30 21:32:31,596 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 6 with 2059 operations
+2025-09-30 21:32:31,611 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 7 with 2109 operations
+2025-09-30 21:32:31,625 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 8 with 2057 operations
+2025-09-30 21:32:31,639 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 9 with 2073 operations
+2025-09-30 21:32:31,651 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 10 with 2063 operations
+2025-09-30 21:32:31,664 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 11 with 2063 operations
+2025-09-30 21:32:31,677 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 12 with 2053 operations
+2025-09-30 21:32:31,691 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 13 with 2137 operations
+2025-09-30 21:32:31,705 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 14 with 2171 operations
+2025-09-30 21:32:31,716 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 15 with 2071 operations
+2025-09-30 21:32:31,728 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 16 with 2121 operations
+2025-09-30 21:32:31,740 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 17 with 2117 operations
+2025-09-30 21:32:31,752 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 18 with 2053 operations
+2025-09-30 21:32:31,764 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 19 with 2125 operations
+2025-09-30 21:32:31,776 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 20 with 2067 operations
+2025-09-30 21:32:31,798 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 21 with 2121 operations
+2025-09-30 21:32:31,811 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 22 with 2125 operations
+2025-09-30 21:32:31,823 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 23 with 2113 operations
+2025-09-30 21:32:31,835 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 24 with 2067 operations
+2025-09-30 21:32:31,847 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 25 with 2121 operations
+2025-09-30 21:32:31,848 |     INFO |  _apply_v2_processor:  81 | Tj replacement: 'UPI/P2A/235402920777/JITENDRA /State' → 'UPI/P2A/235402920777/SATINDRA /State'
+2025-09-30 21:32:31,860 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 26 with 2113 operations
+2025-09-30 21:32:31,872 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 27 with 2057 operations
+2025-09-30 21:32:31,884 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 28 with 2131 operations
+2025-09-30 21:32:31,896 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 29 with 2123 operations
+2025-09-30 21:32:31,910 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 30 with 2057 operations
+2025-09-30 21:32:31,924 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 31 with 2169 operations
+2025-09-30 21:32:31,939 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 32 with 2129 operations
+2025-09-30 21:32:31,939 |     INFO |  _apply_v2_processor:  81 | Tj replacement: 'UPI/P2M/343918394624/Jitendra /Paytm' → 'UPI/P2M/343918394624/SATINDRA /Paytm'
+2025-09-30 21:32:31,945 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 33 with 821 operations
+2025-09-30 21:32:31,983 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_213231_285/output.pdf (122112 bytes)
+2025-09-30 21:32:31,983 |     INFO |         finalize_run: 222 | === Run Complete: 20250930_213231_285 (Duration: 0.69s) ===
+2025-09-30 21:32:31,983 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_213231_285
+2025-09-30 21:32:31,984 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_213231_285/run_metadata.json
+2025-09-30 21:32:31,984 |     INFO |         finalize_run: 233 | Run completed successfully with 1 mappings applied
+2025-09-30 21:35:00,722 |     INFO |  log_text_extraction:  90 | Extracted text (4000 chars): 'Date\nNarration\nChq./Ref.No.\nValue Dt\nWithdrawal Amt.\nDeposit Amt.\nClosing Balance\n30/11/23 UPI-ZOMATO LTD-ZOMATO-ORDER@PAYTM-PYTM01\n0000333449838402 01/12/23\n4,416.82\n34,983.28\n23456-333449838402-OIDZTHYPEUPIC234F0\n01/12/23 UPI-TANYA GUPTA-9319766454@PAYTM-NA-3335\n0000333564867705 01/12/23\n8,960.00\n26,023.28\n64867705-TANYA HOUSE POOJA\n01/12/23 UPI-ARIYAN THAPA-9798629388@YBL-NA-3335\n0000333566756890 01/12/23\n15,000.00\n11,023.28\n66756890-STIPEND\n02/12/23 UPI-ANUSHUMAN KUMAR SING-8217232787@HDFC\n0...'
+2025-09-30 21:35:00,723 |    DEBUG |  log_text_extraction:  95 | Full extracted text saved to: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_213231_285/extracted_text.txt

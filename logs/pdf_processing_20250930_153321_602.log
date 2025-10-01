@@ -1,0 +1,22 @@
+2025-09-30 15:33:21,603 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20250930_153321_602 ===
+2025-09-30 15:33:21,621 |     INFO |            remap_pdf:  82 | Starting PDF remapping with 2 mappings in overlay mode
+2025-09-30 15:33:21,623 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_153321_602/input.pdf (207029 bytes)
+2025-09-30 15:33:21,623 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-09-30 15:33:21,623 |     INFO |         log_mappings:  81 | Word mappings to apply: 2 total
+2025-09-30 15:33:21,623 |     INFO |         log_mappings:  83 |   'GPT-3' → 'GPT-2'
+2025-09-30 15:33:21,623 |     INFO |         log_mappings:  83 |   'Chain' → 'Train'
+2025-09-30 15:33:21,623 |     INFO |         log_mappings:  81 | Word mappings to apply: 2 total
+2025-09-30 15:33:21,623 |     INFO |         log_mappings:  83 |   'GPT-3' → 'GPT-2'
+2025-09-30 15:33:21,623 |     INFO |         log_mappings:  83 |   'Chain' → 'Train'
+2025-09-30 15:33:21,698 |     INFO | log_pattern_building:  99 | Building regex pattern for 2 words (ignore_case=True)
+2025-09-30 15:33:21,699 |    DEBUG | log_pattern_building: 100 | Words to match: ['GPT-3', 'Chain']
+2025-09-30 15:33:21,699 |    DEBUG | log_pattern_building: 101 | Compiled pattern: GPT\-3|Chain
+2025-09-30 15:33:22,001 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 1 with 25157 operations
+2025-09-30 15:33:22,055 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 2 with 2759 operations
+2025-09-30 15:33:22,099 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_153321_602/output.pdf (211249 bytes)
+2025-09-30 15:33:22,099 |     INFO |         finalize_run: 222 | === Run Complete: 20250930_153321_602 (Duration: 0.50s) ===
+2025-09-30 15:33:22,099 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_153321_602
+2025-09-30 15:33:22,099 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_153321_602/run_metadata.json
+2025-09-30 15:33:22,099 |     INFO |         finalize_run: 233 | Run completed successfully with 2 mappings applied
+2025-09-30 15:34:19,639 |     INFO |  log_text_extraction:  90 | Extracted text (3353 chars): 'Term: Fall 2025     Subject: Computer Science & Engineering (CSE)    Number: 512 \nCourse Title: Distributed Database Systems (CSE 512) \nHomework 01 (20 Points) \nDue on Monday, August 2nd at 11:59 pm \n \n \nMotivation: Multinational corporations operate in diverse locations and manage multiple \nprojects simultaneously. Tracking employees, responsibilities, project budgets, and \ncompensation across regions requires a robust relational database. A well-structured \ndesign ensures accurate reporting, r...'
+2025-09-30 15:34:19,641 |    DEBUG |  log_text_extraction:  95 | Full extracted text saved to: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_153321_602/extracted_text.txt

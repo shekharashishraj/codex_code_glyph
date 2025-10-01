@@ -1,0 +1,24 @@
+{
+  "run_id": "20250930_213231_285",
+  "start_time": "2025-09-30T21:32:31.289786",
+  "mode": "overlay",
+  "mappings": {
+    "JITENDRA": "SATINDRA"
+  },
+  "steps": [],
+  "errors": [],
+  "results": {
+    "output_pdf": {
+      "filename": "output.pdf",
+      "size_bytes": 122112,
+      "path": "/Users/ashishrajshekhar/codex_code_glyph/runs/20250930_213231_285/output.pdf"
+    }
+  },
+  "input_pdf": {
+    "filename": "input.pdf",
+    "size_bytes": 115270,
+    "path": "/Users/ashishrajshekhar/codex_code_glyph/runs/20250930_213231_285/input.pdf"
+  },
+  "end_time": "2025-09-30T21:32:31.983671",
+  "duration_seconds": 0.693885
+}

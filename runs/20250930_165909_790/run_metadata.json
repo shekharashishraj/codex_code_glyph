@@ -1,0 +1,24 @@
+{
+  "run_id": "20250930_165909_790",
+  "start_time": "2025-09-30T16:59:09.793127",
+  "mode": "overlay",
+  "mappings": {
+    "partially": "entirely"
+  },
+  "steps": [],
+  "errors": [],
+  "results": {
+    "output_pdf": {
+      "filename": "output.pdf",
+      "size_bytes": 8756,
+      "path": "/Users/ashishrajshekhar/codex_code_glyph/runs/20250930_165909_790/output.pdf"
+    }
+  },
+  "input_pdf": {
+    "filename": "input.pdf",
+    "size_bytes": 4284,
+    "path": "/Users/ashishrajshekhar/codex_code_glyph/runs/20250930_165909_790/input.pdf"
+  },
+  "end_time": "2025-09-30T16:59:09.824488",
+  "duration_seconds": 0.031361
+}

@@ -1,0 +1,26 @@
+{
+  "run_id": "20250928_170714_947",
+  "start_time": "2025-09-28T17:07:14.947892",
+  "mode": "overlay",
+  "mappings": {
+    "0.9:": "9.0:",
+    "1.2:": "0.2:"
+  },
+  "steps": [],
+  "errors": [
+    {
+      "context": "apply_word_mapping(overlay)",
+      "error_type": "AttributeError",
+      "error_message": "'Page' object has no attribute 'get_text_length'",
+      "timestamp": "2025-09-28T17:07:14.959880"
+    }
+  ],
+  "results": {},
+  "input_pdf": {
+    "filename": "input.pdf",
+    "size_bytes": 77879,
+    "path": "/Users/ashishrajshekhar/codex_code_glyph/runs/20250928_170714_947/input.pdf"
+  },
+  "end_time": "2025-09-28T17:07:14.959885",
+  "duration_seconds": 0.011993
+}

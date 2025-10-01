@@ -1,0 +1,26 @@
+{
+  "run_id": "20250930_143943_961",
+  "start_time": "2025-09-30T14:39:43.961869",
+  "mode": "overlay",
+  "mappings": {
+    "benefit": "flaw",
+    "keep?": "pass",
+    "LSTM": "CNN"
+  },
+  "steps": [],
+  "errors": [],
+  "results": {
+    "output_pdf": {
+      "filename": "output.pdf",
+      "size_bytes": 114826,
+      "path": "/Users/ashishrajshekhar/codex_code_glyph/runs/20250930_143943_961/output.pdf"
+    }
+  },
+  "input_pdf": {
+    "filename": "input.pdf",
+    "size_bytes": 100635,
+    "path": "/Users/ashishrajshekhar/codex_code_glyph/runs/20250930_143943_961/input.pdf"
+  },
+  "end_time": "2025-09-30T14:39:44.027795",
+  "duration_seconds": 0.065926
+}

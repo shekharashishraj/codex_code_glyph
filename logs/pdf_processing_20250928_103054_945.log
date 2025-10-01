@@ -1,0 +1,47 @@
+2025-09-28 10:30:54,945 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20250928_103054_945 ===
+2025-09-28 10:30:54,945 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: '=0'
+2025-09-28 10:30:54,945 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: '9:Will'
+2025-09-28 10:30:54,945 |    DEBUG | _find_cross_array_matches: 118 | Cross-array window 0: '=0 9:Will'
+2025-09-28 10:30:54,945 |    DEBUG | _find_split_decimal_patterns: 174 | Found split decimal: '=0 9:' → '0.9:'
+2025-09-28 10:30:54,945 |    DEBUG | _find_split_decimal_patterns: 174 | Found split decimal: '=0 9:' → '0.9:'
+2025-09-28 10:30:54,946 |     INFO | _find_cross_array_matches: 142 | Cross-array match: '0.9:' → '9.0:' in window 0
+2025-09-28 10:30:54,946 |     INFO | _find_cross_array_matches: 142 | Cross-array match: '0.9:' → '9.0:' in window 0
+2025-09-28 10:30:54,946 |    DEBUG | _apply_cross_array_replacement: 247 | Applied cross-array replacement to operation 0
+2025-09-28 10:30:54,946 |    DEBUG | _apply_cross_array_replacement: 247 | Applied cross-array replacement to operation 0
+2025-09-28 10:30:54,946 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'IfWh=1'
+2025-09-28 10:30:54,946 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: '2:Willgradients'
+2025-09-28 10:30:54,946 |    DEBUG | _find_cross_array_matches: 118 | Cross-array window 0: 'IfWh=1 2:Willgradients'
+2025-09-28 10:30:54,946 |    DEBUG | _find_split_decimal_patterns: 174 | Found split decimal: '=1 2:' → '1.2:'
+2025-09-28 10:30:54,946 |    DEBUG | _find_split_decimal_patterns: 174 | Found split decimal: '=1 2:' → '1.2:'
+2025-09-28 10:30:54,946 |     INFO | _find_cross_array_matches: 142 | Cross-array match: '1.2:' → '0.2:' in window 0
+2025-09-28 10:30:54,946 |     INFO | _find_cross_array_matches: 142 | Cross-array match: '1.2:' → '0.2:' in window 0
+2025-09-28 10:30:54,946 |    DEBUG | _apply_cross_array_replacement: 247 | Applied cross-array replacement to operation 0
+2025-09-28 10:30:54,946 |    DEBUG | _apply_cross_array_replacement: 247 | Applied cross-array replacement to operation 0
+2025-09-28 10:30:54,946 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'value0'
+2025-09-28 10:30:54,946 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: '.'
+2025-09-28 10:30:54,946 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: '5percent'
+2025-09-28 10:30:54,946 |    DEBUG | _find_cross_array_matches: 118 | Cross-array window 0: 'value0 . 5percent'
+2025-09-28 10:30:54,946 |    DEBUG | _find_cross_array_matches: 118 | Cross-array window 1: '. 5percent'
+2025-09-28 10:30:54,946 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'simpletext'
+2025-09-28 10:30:54,946 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'nonumbers'
+2025-09-28 10:30:54,946 |    DEBUG | _find_cross_array_matches: 118 | Cross-array window 0: 'simpletext nonumbers'
+2025-09-28 10:30:54,946 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: 'Thevalue0.9:shows'
+2025-09-28 10:30:54,946 |     INFO |     process_tj_array:  52 | TJ Array - Applied 1 replacements
+2025-09-28 10:30:54,946 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: '=0'
+2025-09-28 10:30:54,946 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: '9:Willgradientsvanish'
+2025-09-28 10:30:54,946 |    DEBUG | _find_cross_array_matches: 118 | Cross-array window 0: '=0 9:Willgradientsvanish'
+2025-09-28 10:30:54,946 |    DEBUG | _find_split_decimal_patterns: 174 | Found split decimal: '=0 9:' → '0.9:'
+2025-09-28 10:30:54,946 |    DEBUG | _find_split_decimal_patterns: 174 | Found split decimal: '=0 9:' → '0.9:'
+2025-09-28 10:30:54,946 |     INFO | _find_cross_array_matches: 142 | Cross-array match: '0.9:' → '9.0:' in window 0
+2025-09-28 10:30:54,946 |     INFO | _find_cross_array_matches: 142 | Cross-array match: '0.9:' → '9.0:' in window 0
+2025-09-28 10:30:54,946 |    DEBUG | _apply_cross_array_replacement: 247 | Applied cross-array replacement to operation 0
+2025-09-28 10:30:54,947 |    DEBUG | _apply_cross_array_replacement: 247 | Applied cross-array replacement to operation 0
+2025-09-28 10:30:54,947 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: '=1'
+2025-09-28 10:30:54,947 |    DEBUG |     process_tj_array:  45 | TJ Array - Combined text: '2:Willgradientsvanish'
+2025-09-28 10:30:54,947 |    DEBUG | _find_cross_array_matches: 118 | Cross-array window 0: '=1 2:Willgradientsvanish'
+2025-09-28 10:30:54,947 |    DEBUG | _find_split_decimal_patterns: 174 | Found split decimal: '=1 2:' → '1.2:'
+2025-09-28 10:30:54,947 |    DEBUG | _find_split_decimal_patterns: 174 | Found split decimal: '=1 2:' → '1.2:'
+2025-09-28 10:30:54,947 |     INFO | _find_cross_array_matches: 142 | Cross-array match: '1.2:' → '0.2:' in window 0
+2025-09-28 10:30:54,947 |     INFO | _find_cross_array_matches: 142 | Cross-array match: '1.2:' → '0.2:' in window 0
+2025-09-28 10:30:54,947 |    DEBUG | _apply_cross_array_replacement: 247 | Applied cross-array replacement to operation 0
+2025-09-28 10:30:54,947 |    DEBUG | _apply_cross_array_replacement: 247 | Applied cross-array replacement to operation 0

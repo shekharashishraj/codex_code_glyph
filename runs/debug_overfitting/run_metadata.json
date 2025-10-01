@@ -1,0 +1,26 @@
+{
+  "run_id": "debug_overfitting",
+  "start_time": "2025-09-28T03:46:24.431425",
+  "mode": "font",
+  "mappings": {
+    "overfitting": "underfitting",
+    "Overfitting": "Underfitting",
+    "OVERFITTING": "UNDERFITTING"
+  },
+  "steps": [],
+  "errors": [],
+  "results": {
+    "output_pdf": {
+      "filename": "output.pdf",
+      "size_bytes": 86531,
+      "path": "/Users/ashishrajshekhar/codex_code_glyph/runs/debug_overfitting/output.pdf"
+    }
+  },
+  "input_pdf": {
+    "filename": "input.pdf",
+    "size_bytes": 77879,
+    "path": "/Users/ashishrajshekhar/codex_code_glyph/runs/debug_overfitting/input.pdf"
+  },
+  "end_time": "2025-09-28T03:46:24.537463",
+  "duration_seconds": 0.106038
+}

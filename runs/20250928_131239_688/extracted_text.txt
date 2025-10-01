@@ -1,0 +1,4 @@
+Testing number patterns:
+Value 9.0: should become 9.0:
+Another 0.2: should become 0.2:
+And some normal text

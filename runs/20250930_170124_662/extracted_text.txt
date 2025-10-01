@@ -1,0 +1,43 @@
+CS221 Practice Midterm #1 
+ 
+Summer 2013 
+ 
+ 
+ 
+ 
+ 
+The following pages are excerpts from similar classes‟ midterms. The 
+content is similar to our midterm – but I have opted to give you a document 
+with more problems rather than one that follows the structure of the 
+midterm precisely. See the midterm handout for more details on what the 
+exam will look like. The midterm is 2 hours. It is open book and open 
+computer but closed Internet. 
+ 
+ 
+1. [Short Answers] Truth Test (10 points) 
+For the following questions, a correct answer is worth 2 points, no answer 
+is worth 1 point, and an incorrect answer is worth 0 points. Circle true or 
+false to indicate your answer. 
+a.  (true or false) If g(s) and h(s) are two admissible A* heuristics, then 
+their average f(s) = ½ g(s) + ½ h(s) must also be admissible.  
+b. (true or false) For a search problem, the path returned by uniform cost 
+search may change if we add a positive constant C to every step cost.  
+c. (true or false) The running-time of an efficient solver for tree-structured 
+constraint satisfaction problems is linear in the number of variables.  
+d.  (true or false) The amount of memory required to run minimax with 
+alpha-beta pruning is O(bd) for branching factor b and depth limit d.  
+e.  (true or false) For a discrete bayesian network with n variables, the 
+amount of space required to store the “joint” distribution table is O(n). 
+f.  (true or false) In a markov decision problem, there are no actions and 
+instead everything is controlled by “chance.” 
+g. (true or false) In a markov decision problem, there are no actions and 
+instead everything is controlled by “chance.” 
+h. (true or false) Assume the Bayes Net from class is a prefect 
+representation of the world: 
+ 
+  
+ 
+ 
+ 
+You know that you do not have a stomach bug. If you were to vomit, 
+would that information change the probability that you had a fever?

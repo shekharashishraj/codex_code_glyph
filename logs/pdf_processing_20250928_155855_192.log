@@ -1,0 +1,23 @@
+2025-09-28 15:58:55,193 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20250928_155855_192 ===
+2025-09-28 15:58:55,200 |     INFO |  log_text_extraction:  90 | Extracted text (299 chars): 'RNNs and LSTM Quiz\nMultiple Choice Questions\nQ1. What is the primary benefit of stacking multiple RNN layers (i.e., stacked\nRNNs)?\nA. Faster training\nB. Lower memory usage\nC. Better learning of hierarchical features\nD. Simpler architecture\nQ2. Which of the following is the main reason RNNs struggle'
+2025-09-28 15:58:55,200 |    DEBUG |  log_text_extraction:  95 | Full extracted text saved to: /Users/ashishrajshekhar/codex_code_glyph/runs/20250928_155855_192/extracted_text.txt
+2025-09-28 15:58:55,201 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250928_155855_192/input.pdf (77879 bytes)
+2025-09-28 15:58:55,201 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-09-28 15:58:55,201 |     INFO |         log_mappings:  81 | Word mappings to apply: 2 total
+2025-09-28 15:58:55,201 |     INFO |         log_mappings:  83 |   'RNNs' → 'RNNS'
+2025-09-28 15:58:55,201 |     INFO |         log_mappings:  83 |   'LSTM' → 'LSTMS'
+2025-09-28 15:58:55,201 |     INFO |         log_mappings:  81 | Word mappings to apply: 2 total
+2025-09-28 15:58:55,201 |     INFO |         log_mappings:  83 |   'RNNs' → 'RNNS'
+2025-09-28 15:58:55,201 |     INFO |         log_mappings:  83 |   'LSTM' → 'LSTMS'
+2025-09-28 15:58:55,216 |     INFO | log_pattern_building:  99 | Building regex pattern for 2 words (ignore_case=True)
+2025-09-28 15:58:55,216 |    DEBUG | log_pattern_building: 100 | Words to match: ['RNNs', 'LSTM']
+2025-09-28 15:58:55,216 |    DEBUG | log_pattern_building: 101 | Compiled pattern: LSTM|RNNs
+2025-09-28 15:58:55,225 |     INFO | _apply_overlay_mode_mapping: 297 | Processing page 1 with 89 operations
+2025-09-28 15:58:55,229 |     INFO | _apply_overlay_mode_mapping: 297 | Processing page 2 with 100 operations
+2025-09-28 15:58:55,244 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250928_155855_192/output.pdf (96171 bytes)
+2025-09-28 15:58:55,244 |     INFO |         finalize_run: 222 | === Run Complete: 20250928_155855_192 (Duration: 0.05s) ===
+2025-09-28 15:58:55,244 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20250928_155855_192
+2025-09-28 15:58:55,244 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250928_155855_192/run_metadata.json
+2025-09-28 15:58:55,244 |     INFO |         finalize_run: 233 | Run completed successfully with 2 mappings applied
+2025-09-28 15:58:55,247 |     INFO |  log_text_extraction:  90 | Extracted text (299 chars): 'RNNs and LSTM Quiz\nMultiple Choice Questions\nQ1. What is the primary benefit of stacking multiple RNN layers (i.e., stacked\nRNNs)?\nA. Faster training\nB. Lower memory usage\nC. Better learning of hierarchical features\nD. Simpler architecture\nQ2. Which of the following is the main reason RNNs struggle'
+2025-09-28 15:58:55,247 |    DEBUG |  log_text_extraction:  95 | Full extracted text saved to: /Users/ashishrajshekhar/codex_code_glyph/runs/20250928_155855_192/extracted_text.txt

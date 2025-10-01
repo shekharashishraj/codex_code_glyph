@@ -1,0 +1,28 @@
+2025-09-30 17:01:24,663 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20250930_170124_662 ===
+2025-09-30 17:01:24,664 |     INFO |            remap_pdf:  82 | Starting PDF remapping with 3 mappings in overlay mode
+2025-09-30 17:01:24,665 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_170124_662/input.pdf (4284 bytes)
+2025-09-30 17:01:24,665 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-09-30 17:01:24,665 |     INFO |         log_mappings:  81 | Word mappings to apply: 3 total
+2025-09-30 17:01:24,665 |     INFO |         log_mappings:  83 |   'partially' → 'entirely '
+2025-09-30 17:01:24,665 |     INFO |         log_mappings:  83 |   'Advantage' → 'disadvntge'
+2025-09-30 17:01:24,665 |     INFO |         log_mappings:  83 |   'stabilize' → 'deterify'
+2025-09-30 17:01:24,665 |     INFO |         log_mappings:  81 | Word mappings to apply: 3 total
+2025-09-30 17:01:24,665 |     INFO |         log_mappings:  83 |   'partially' → 'entirely'
+2025-09-30 17:01:24,665 |     INFO |         log_mappings:  83 |   'Advantage' → 'disadvntge'
+2025-09-30 17:01:24,665 |     INFO |         log_mappings:  83 |   'stabilize' → 'deterify'
+2025-09-30 17:01:24,676 |     INFO | log_pattern_building:  99 | Building regex pattern for 3 words (ignore_case=True)
+2025-09-30 17:01:24,676 |    DEBUG | log_pattern_building: 100 | Words to match: ['partially', 'Advantage', 'stabilize']
+2025-09-30 17:01:24,676 |    DEBUG | log_pattern_building: 101 | Compiled pattern: Advantage|stabilize|partially
+2025-09-30 17:01:24,680 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 1 with 336 operations
+2025-09-30 17:01:24,681 |     INFO |  _apply_v2_processor:  81 | Tj replacement: 'Q2. An environment is considered partially observable when:' → 'Q2. An environment is considered entirely observable when:'
+2025-09-30 17:01:24,684 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 2 with 359 operations
+2025-09-30 17:01:24,684 |     INFO |  _apply_v2_processor:  81 | Tj replacement: 'Q4. The Advantage term in ActorŒCritic methods is calculated as:' → 'Q4. The disadvntge term in ActorŒCritic methods is calculated as:'
+2025-09-30 17:01:24,684 |     INFO |  _apply_v2_processor:  81 | Tj replacement: 'Q5. (Multi-select) Techniques to stabilize deep-RL training include:' → 'Q5. (Multi-select) Techniques to deterify deep-RL training include:'
+2025-09-30 17:01:24,685 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 3 with 88 operations
+2025-09-30 17:01:24,698 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_170124_662/output.pdf (15200 bytes)
+2025-09-30 17:01:24,699 |     INFO |         finalize_run: 222 | === Run Complete: 20250930_170124_662 (Duration: 0.04s) ===
+2025-09-30 17:01:24,699 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_170124_662
+2025-09-30 17:01:24,699 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_170124_662/run_metadata.json
+2025-09-30 17:01:24,699 |     INFO |         finalize_run: 233 | Run completed successfully with 3 mappings applied
+2025-09-30 17:02:34,629 |     INFO |  log_text_extraction:  90 | Extracted text (1897 chars): 'CS221 Practice Midterm #1 \n \nSummer 2013 \n \n \n \n \n \nThe following pages are excerpts from similar classes‟ midterms. The \ncontent is similar to our midterm – but I have opted to give you a document \nwith more problems rather than one that follows the structure of the \nmidterm precisely. See the midterm handout for more details on what the \nexam will look like. The midterm is 2 hours. It is open book and open \ncomputer but closed Internet. \n \n \n1. [Short Answers] Truth Test (10 points) \nFor the f...'
+2025-09-30 17:02:34,630 |    DEBUG |  log_text_extraction:  95 | Full extracted text saved to: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_170124_662/extracted_text.txt

@@ -1,0 +1,20 @@
+2025-09-30 15:33:09,102 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20250930_153309_100 ===
+2025-09-30 15:33:09,108 |     INFO |            remap_pdf:  82 | Starting PDF remapping with 2 mappings in overlay mode
+2025-09-30 15:33:09,109 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_153309_100/input.pdf (207029 bytes)
+2025-09-30 15:33:09,109 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-09-30 15:33:09,109 |     INFO |         log_mappings:  81 | Word mappings to apply: 2 total
+2025-09-30 15:33:09,109 |     INFO |         log_mappings:  83 |   'GPT-3' → 'GPT-2'
+2025-09-30 15:33:09,109 |     INFO |         log_mappings:  83 |   'Chain' → 'Train'
+2025-09-30 15:33:09,109 |     INFO |         log_mappings:  81 | Word mappings to apply: 2 total
+2025-09-30 15:33:09,109 |     INFO |         log_mappings:  83 |   'GPT-3' → 'GPT-2'
+2025-09-30 15:33:09,109 |     INFO |         log_mappings:  83 |   'Chain' → 'Train'
+2025-09-30 15:33:09,190 |     INFO | log_pattern_building:  99 | Building regex pattern for 2 words (ignore_case=True)
+2025-09-30 15:33:09,190 |    DEBUG | log_pattern_building: 100 | Words to match: ['GPT-3', 'Chain']
+2025-09-30 15:33:09,190 |    DEBUG | log_pattern_building: 101 | Compiled pattern: GPT\-3|Chain
+2025-09-30 15:33:09,511 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 1 with 25157 operations
+2025-09-30 15:33:09,571 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 2 with 2759 operations
+2025-09-30 15:33:09,615 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_153309_100/output.pdf (211249 bytes)
+2025-09-30 15:33:09,615 |     INFO |         finalize_run: 222 | === Run Complete: 20250930_153309_100 (Duration: 0.51s) ===
+2025-09-30 15:33:09,616 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_153309_100
+2025-09-30 15:33:09,616 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_153309_100/run_metadata.json
+2025-09-30 15:33:09,616 |     INFO |         finalize_run: 233 | Run completed successfully with 2 mappings applied

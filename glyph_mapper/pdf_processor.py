@@ -12,6 +12,10 @@ import fitz  # PyMuPDF
 from PyPDF2 import PdfReader, PdfWriter
 from PyPDF2.generic import ArrayObject, ContentStream, NameObject, NumberObject, TextStringObject
 
+from .logger import get_logger
+from .tj_array_processor_v2 import process_tj_array_with_word_replacement_v2
+from .cross_array_processor import process_content_stream_with_cross_array_support
+
 
 WordRect = Tuple[float, float, float, float]
 
@@ -28,7 +32,8 @@ _SPACE_THRESHOLD = -120  # TJ adjustments more negative than this approximate a 
 
 def extract_text_preview(pdf_bytes: bytes, *, max_chars: int = 4000) -> str:
     """Return a concatenated text preview limited to ``max_chars`` characters."""
-
+    logger = get_logger()
+    
     doc = fitz.open(stream=pdf_bytes, filetype="pdf")
     try:
         chunks: List[str] = []
@@ -44,7 +49,10 @@ def extract_text_preview(pdf_bytes: bytes, *, max_chars: int = 4000) -> str:
             remaining -= len(page_text)
             if remaining <= 0:
                 break
-        return "".join(chunks).strip()
+        
+        full_text = "".join(chunks).strip()
+        logger.log_text_extraction(full_text)
+        return full_text
     finally:
         doc.close()
 
@@ -75,11 +83,18 @@ def summarise_vocabulary(word_index: Dict[str, Iterable[Dict[str, object]]], *, 
 
 
 def _build_pattern(words: Iterable[str], *, ignore_case: bool = False) -> Optional[Pattern[str]]:
+    logger = get_logger()
+    
     ordered = [re.escape(word) for word in sorted(set(words), key=len, reverse=True)]
     if not ordered:
+        logger.log_pattern_building([], "", ignore_case)
         return None
+    
     flags = re.IGNORECASE if ignore_case else 0
-    return re.compile("|".join(ordered), flags)
+    pattern = re.compile("|".join(ordered), flags)
+    
+    logger.log_pattern_building(list(words), pattern.pattern, ignore_case)
+    return pattern
 
 
 def _resolve_replacement(token: str, mapping: Dict[str, str], mapping_cf: Dict[str, str]) -> Optional[str]:
@@ -95,11 +110,17 @@ def _segment_text(
     mapping: Dict[str, str],
     mapping_cf: Dict[str, str],
 ) -> Optional[List[Tuple[str, Optional[str]]]]:
+    logger = get_logger()
+    
     matches = list(pattern.finditer(text))
     if not matches:
+        logger.log_text_segment_analysis(text, None, "", "")
         return None
+    
     segments: List[Tuple[str, Optional[str]]] = []
     last_idx = 0
+    found_replacements = []
+    
     for match in matches:
         start, end = match.span()
         if start > last_idx:
@@ -107,9 +128,17 @@ def _segment_text(
         original = match.group(0)
         replacement = _resolve_replacement(original, mapping, mapping_cf)
         segments.append((original, replacement))
+        if replacement:
+            found_replacements.append(f"{original}→{replacement}")
         last_idx = end
     if last_idx < len(text):
         segments.append((text[last_idx:], None))
+    
+    # Log detailed analysis
+    if found_replacements:
+        logger.log_text_segment_analysis(text, segments, "", "")
+        logger.logger.info(f"Found {len(found_replacements)} replacements in text segment: {found_replacements}")
+    
     return segments
 
 
@@ -119,15 +148,22 @@ def _rewrite_text(
     mapping: Dict[str, str],
     mapping_cf: Dict[str, str],
 ) -> Optional[str]:
+    logger = get_logger()
+    
     segments = _segment_text(text, pattern, mapping, mapping_cf)
     if not segments:
+        logger.log_replacement_attempt(text, pattern.pattern, mapping, None)
         return None
+    
     rebuilt: List[str] = []
     for segment_text, replacement in segments:
         if not segment_text:
             continue
         rebuilt.append(replacement if replacement is not None else segment_text)
-    return "".join(rebuilt)
+    
+    result = "".join(rebuilt)
+    logger.log_replacement_attempt(text, pattern.pattern, mapping, result)
+    return result
 
 
 def _array_to_text(array: ArrayObject) -> str:
@@ -163,13 +199,16 @@ def _collect_overlay_targets(
                 if replacement is None:
                     continue
                 rect = (float(x0), float(y0), float(x1), float(y1))
+                # Capture the ORIGINAL text as it appears in the PDF - perfect size matching
                 pix = page.get_pixmap(clip=fitz.Rect(*rect), dpi=220, alpha=False)
-                targets.append(OverlayTarget(page_number, rect, pix.tobytes("png")))
+                original_image = pix.tobytes("png")
+                targets.append(OverlayTarget(page_number, rect, original_image))
                 discovered.setdefault(token, replacement)
     finally:
         doc.close()
 
     return targets, discovered
+
 
 
 def _apply_overlays(pdf_bytes: bytes, overlays: List[OverlayTarget]) -> bytes:
@@ -193,8 +232,21 @@ def _apply_overlays(pdf_bytes: bytes, overlays: List[OverlayTarget]) -> bytes:
         doc.close()
 
 
-def apply_word_mapping(pdf_bytes: bytes, mapping: Dict[str, str]) -> bytes:
-    """Apply the provided ``mapping`` and return the modified PDF bytes."""
+
+def apply_word_mapping(pdf_bytes: bytes, mapping: Dict[str, str], mode: str = "overlay") -> bytes:
+    """Apply the provided ``mapping`` and return the modified PDF bytes.
+    
+    Args:
+        pdf_bytes: Original PDF content
+        mapping: Dictionary of word mappings
+        mode: Processing mode - "overlay" or "font"
+    """
+    logger = get_logger()
+    
+    # Log input
+    logger.log_input_pdf(pdf_bytes)
+    logger.log_mode_selection(mode)
+    logger.log_mappings(mapping)
 
     clean_mapping = {
         original.strip(): replacement.strip()
@@ -202,8 +254,32 @@ def apply_word_mapping(pdf_bytes: bytes, mapping: Dict[str, str]) -> bytes:
         if original.strip() and replacement.strip()
     }
     if not clean_mapping:
+        logger.logger.warning("No valid mappings provided after cleaning")
         return pdf_bytes
 
+    logger.log_mappings(clean_mapping)
+
+    # Route to appropriate processing mode
+    try:
+        if mode == "font":
+            result = _apply_font_mode_mapping(pdf_bytes, clean_mapping)
+        else:
+            result = _apply_overlay_mode_mapping(pdf_bytes, clean_mapping)
+        
+        logger.log_output_pdf(result)
+        logger.finalize_run()
+        return result
+        
+    except Exception as e:
+        logger.log_error(e, f"apply_word_mapping({mode})")
+        logger.finalize_run()
+        raise
+
+
+
+
+def _apply_overlay_mode_mapping(pdf_bytes: bytes, clean_mapping: Dict[str, str]) -> bytes:
+    """Apply word mapping using the original overlay technique."""
     mapping_cf = {key.casefold(): value for key, value in clean_mapping.items()}
     overlays, discovered_tokens = _collect_overlay_targets(pdf_bytes, clean_mapping, mapping_cf)
 
@@ -217,39 +293,98 @@ def apply_word_mapping(pdf_bytes: bytes, mapping: Dict[str, str]) -> bytes:
 
     reader = PdfReader(io.BytesIO(pdf_bytes))
     writer = PdfWriter()
+    logger = get_logger()
+    modified = False
 
-    for page in reader.pages:
+    for page_num, page in enumerate(reader.pages):
         content = ContentStream(page.get_contents(), reader)
-        new_ops: List[Tuple[List[object], bytes]] = []
-        modified = False
+        
+        logger.logger.info(f"Processing page {page_num + 1} with {len(content.operations)} operations")
 
-        for operands, operator in content.operations:
-            if operator == b"Tj" and operands:
-                text_obj = operands[0]
-                if isinstance(text_obj, TextStringObject):
-                    rewritten = _rewrite_text(str(text_obj), pattern, effective_mapping, mapping_cf)
-                    if rewritten is not None:
-                        modified = True
-                        new_ops.append(([TextStringObject(rewritten)], b"Tj"))
-                        continue
-
-            if operator == b"TJ" and operands:
-                array_obj = operands[0]
-                if isinstance(array_obj, ArrayObject):
-                    combined = _array_to_text(array_obj)
-                    rewritten_full = _rewrite_text(combined, pattern, effective_mapping, mapping_cf)
-                    if rewritten_full is not None:
-                        modified = True
-                        new_ops.append(([ArrayObject([TextStringObject(rewritten_full)])], b"TJ"))
-                        continue
-            new_ops.append((operands, operator))
-
-        if modified:
-            content.operations = new_ops
+        # Use cross-array processor to replace text in content stream
+        modified_operations, page_modified = process_content_stream_with_cross_array_support(
+            content.operations, pattern, effective_mapping, mapping_cf
+        )
+        
+        if page_modified:
+            content.operations = modified_operations
             page[NameObject("/Contents")] = content
+            modified = True
+        
         writer.add_page(page)
 
     remapped_bytes = io.BytesIO()
     writer.write(remapped_bytes)
 
     return _apply_overlays(remapped_bytes.getvalue(), overlays)
+
+
+def _apply_font_mode_mapping(pdf_bytes: bytes, clean_mapping: Dict[str, str]) -> bytes:
+    """Apply word mapping using font-level glyph modification."""
+    from .font_manipulator import (
+        create_character_mapping_from_words,
+        create_remapped_font,
+        extract_font_from_pdf,
+        embed_font_in_pdf,
+        analyze_font_characters
+    )
+    
+    # Extract or identify the primary font from the PDF
+    font_path = extract_font_from_pdf(pdf_bytes)
+    if not font_path:
+        # Fallback to overlay mode if no font can be extracted
+        return _apply_overlay_mode_mapping(pdf_bytes, clean_mapping)
+    
+    # Convert word mappings to character mappings
+    char_mappings = create_character_mapping_from_words(clean_mapping)
+    
+    if not char_mappings:
+        # If no character-level mappings possible, fallback to overlay mode
+        return _apply_overlay_mode_mapping(pdf_bytes, clean_mapping)
+    
+    # Check if all required characters are available in the font
+    all_chars = set(char_mappings.keys()) | set(char_mappings.values())
+    char_availability = analyze_font_characters(font_path, all_chars)
+    
+    missing_chars = [char for char, available in char_availability.items() if not available]
+    if missing_chars:
+        # Some characters not available in font, fallback to overlay mode
+        return _apply_overlay_mode_mapping(pdf_bytes, clean_mapping)
+    
+    # Create the remapped font
+    try:
+        remapped_font_bytes = create_remapped_font(font_path, char_mappings)
+        
+        # Apply text replacement in PDF content streams (same as overlay mode but without overlays)
+        mapping_cf = {key.casefold(): value for key, value in clean_mapping.items()}
+        pattern = _build_pattern(clean_mapping.keys(), ignore_case=True)
+        
+        if pattern is None:
+            return pdf_bytes
+        
+        reader = PdfReader(io.BytesIO(pdf_bytes))
+        writer = PdfWriter()
+        
+        for page in reader.pages:
+            content = ContentStream(page.get_contents(), reader)
+            
+            # Use cross-array processor for comprehensive pattern matching
+            modified_operations, page_modified = process_content_stream_with_cross_array_support(
+                content.operations, pattern, clean_mapping, mapping_cf
+            )
+            
+            if page_modified:
+                content.operations = modified_operations
+                page[NameObject("/Contents")] = content
+            
+            writer.add_page(page)
+        
+        remapped_bytes = io.BytesIO()
+        writer.write(remapped_bytes)
+        
+        # Embed the custom font into the PDF
+        return embed_font_in_pdf(remapped_bytes.getvalue(), remapped_font_bytes)
+        
+    except Exception:
+        # If font manipulation fails, fallback to overlay mode
+        return _apply_overlay_mode_mapping(pdf_bytes, clean_mapping)

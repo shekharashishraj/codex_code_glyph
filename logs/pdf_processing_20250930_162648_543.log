@@ -1,0 +1,20 @@
+2025-09-30 16:26:48,544 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20250930_162648_543 ===
+2025-09-30 16:26:48,544 |     INFO |            remap_pdf:  82 | Starting PDF remapping with 1 mappings in overlay mode
+2025-09-30 16:26:48,545 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_162648_543/input.pdf (4284 bytes)
+2025-09-30 16:26:48,545 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-09-30 16:26:48,545 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-09-30 16:26:48,545 |     INFO |         log_mappings:  83 |   'algorithms' → 'do not'
+2025-09-30 16:26:48,545 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-09-30 16:26:48,545 |     INFO |         log_mappings:  83 |   'algorithms' → 'do not'
+2025-09-30 16:26:48,557 |     INFO | log_pattern_building:  99 | Building regex pattern for 1 words (ignore_case=True)
+2025-09-30 16:26:48,557 |    DEBUG | log_pattern_building: 100 | Words to match: ['algorithms']
+2025-09-30 16:26:48,557 |    DEBUG | log_pattern_building: 101 | Compiled pattern: algorithms
+2025-09-30 16:26:48,564 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 1 with 336 operations
+2025-09-30 16:26:48,564 |     INFO |  _apply_v2_processor:  81 | Tj replacement: 'Q1. (Multi-select) Which algorithms belong to the policy-gradient' → 'Q1. (Multi-select) Which do not belong to the policy-gradient'
+2025-09-30 16:26:48,567 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 2 with 359 operations
+2025-09-30 16:26:48,570 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 3 with 88 operations
+2025-09-30 16:26:48,583 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_162648_543/output.pdf (9614 bytes)
+2025-09-30 16:26:48,584 |     INFO |         finalize_run: 222 | === Run Complete: 20250930_162648_543 (Duration: 0.04s) ===
+2025-09-30 16:26:48,584 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_162648_543
+2025-09-30 16:26:48,584 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20250930_162648_543/run_metadata.json
+2025-09-30 16:26:48,584 |     INFO |         finalize_run: 233 | Run completed successfully with 1 mappings applied

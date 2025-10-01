@@ -1,0 +1,28 @@
+{
+  "run_id": "20250930_170558_626",
+  "start_time": "2025-09-30T17:05:58.627323",
+  "mode": "overlay",
+  "mappings": {
+    "+": "-",
+    "also": "isn't",
+    "positive": "negtive",
+    "linear": "qartic",
+    "“chance.”": "probs"
+  },
+  "steps": [],
+  "errors": [],
+  "results": {
+    "output_pdf": {
+      "filename": "output.pdf",
+      "size_bytes": 168331,
+      "path": "/Users/ashishrajshekhar/codex_code_glyph/runs/20250930_170558_626/output.pdf"
+    }
+  },
+  "input_pdf": {
+    "filename": "input.pdf",
+    "size_bytes": 157387,
+    "path": "/Users/ashishrajshekhar/codex_code_glyph/runs/20250930_170558_626/input.pdf"
+  },
+  "end_time": "2025-09-30T17:05:58.709716",
+  "duration_seconds": 0.082393
+}
