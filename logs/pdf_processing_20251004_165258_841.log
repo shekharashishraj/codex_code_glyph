@@ -1,0 +1,82 @@
+2025-10-04 16:52:58,843 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20251004_165258_841 ===
+2025-10-04 16:52:58,882 |     INFO |            remap_pdf:  82 | Starting PDF remapping with 1 mappings in overlay mode
+2025-10-04 16:52:58,882 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_165258_841/input.pdf (1141864 bytes)
+2025-10-04 16:52:58,882 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-10-04 16:52:58,882 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-10-04 16:52:58,882 |     INFO |         log_mappings:  83 |   'cherry' → 'berry!'
+2025-10-04 16:52:58,882 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-10-04 16:52:58,882 |     INFO |         log_mappings:  83 |   'cherry' → 'berry!'
+2025-10-04 16:52:58,922 |     INFO | log_pattern_building:  99 | Building regex pattern for 1 words (ignore_case=True)
+2025-10-04 16:52:58,922 |    DEBUG | log_pattern_building: 100 | Words to match: ['cherry']
+2025-10-04 16:52:58,923 |    DEBUG | log_pattern_building: 101 | Compiled pattern: cherry
+2025-10-04 16:52:58,926 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: ''
+2025-10-04 16:52:58,932 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: ''
+2025-10-04 16:52:58,932 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 1: ''
+2025-10-04 16:52:58,937 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: ''
+2025-10-04 16:52:58,937 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 1: ''
+2025-10-04 16:52:58,941 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: ''
+2025-10-04 16:52:58,948 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: ''
+2025-10-04 16:52:58,948 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 1: ''
+2025-10-04 16:52:58,948 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 2: ''
+2025-10-04 16:52:58,948 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 3: ''
+2025-10-04 16:52:58,950 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: ''
+2025-10-04 16:52:58,950 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 1: ''
+2025-10-04 16:52:58,950 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 2: ''
+2025-10-04 16:52:58,953 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: ''
+2025-10-04 16:52:58,954 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: ''
+2025-10-04 16:52:58,960 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: ''
+2025-10-04 16:52:58,960 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 1: ''
+2025-10-04 16:52:58,961 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 2: ''
+2025-10-04 16:52:58,961 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 3: ''
+2025-10-04 16:52:58,961 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 4: ''
+2025-10-04 16:52:58,961 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 5: ''
+2025-10-04 16:52:58,961 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 6: ''
+2025-10-04 16:52:58,961 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 7: ''
+2025-10-04 16:52:58,961 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 8: ''
+2025-10-04 16:52:58,961 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 9: ''
+2025-10-04 16:52:58,961 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 10: ''
+2025-10-04 16:52:58,961 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 11: ''
+2025-10-04 16:52:58,961 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 12: ''
+2025-10-04 16:52:58,970 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: ''
+2025-10-04 16:52:58,971 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 1: ''
+2025-10-04 16:52:58,975 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: ''
+2025-10-04 16:52:58,975 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 1: ''
+2025-10-04 16:52:58,983 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: ''
+2025-10-04 16:52:58,983 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 1: ''
+2025-10-04 16:52:58,983 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 2: ''
+2025-10-04 16:52:58,983 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 3: ''
+2025-10-04 16:52:58,983 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 4: ''
+2025-10-04 16:52:58,987 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: ''
+2025-10-04 16:52:58,988 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 1: ''
+2025-10-04 16:52:58,992 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: ''
+2025-10-04 16:52:58,992 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 1: ''
+2025-10-04 16:52:58,992 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 2: ''
+2025-10-04 16:52:58,992 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 3: ''
+2025-10-04 16:52:58,992 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 4: ''
+2025-10-04 16:52:58,992 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 5: ''
+2025-10-04 16:52:58,992 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 6: ''
+2025-10-04 16:52:58,992 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 7: ''
+2025-10-04 16:52:58,992 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 8: ''
+2025-10-04 16:52:58,995 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: ''
+2025-10-04 16:52:59,003 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: ''
+2025-10-04 16:52:59,016 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: ''
+2025-10-04 16:52:59,016 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 1: ''
+2025-10-04 16:52:59,061 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: ''
+2025-10-04 16:52:59,061 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 1: ''
+2025-10-04 16:52:59,061 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 2: ''
+2025-10-04 16:52:59,068 |     INFO | _apply_content_stream_mapping: 370 | Content stream rewrite produced no changes; fallback to overlay pipeline
+2025-10-04 16:52:59,068 |  WARNING | _apply_overlay_mode_mapping: 301 | Content stream rewrite produced no changes; falling back to PyMuPDF text rewrite
+2025-10-04 16:52:59,092 |     INFO | process_pdf_with_pymupdf: 397 | Processing PDF with PyMuPDF in font mode
+2025-10-04 16:52:59,092 |     INFO | process_pdf_with_pymupdf: 398 | Pattern: cherry
+2025-10-04 16:52:59,100 |    DEBUG |         replace_func: 216 | Replacing 'cherry' with 'berry!'
+2025-10-04 16:52:59,103 |     INFO | _process_page_direct_replacement: 200 | Page 2: Direct replacement 'cherry"' → 'berry!"'
+2025-10-04 16:52:59,179 |     INFO | process_pdf_font_mode:  73 | Made 1 direct text replacements
+2025-10-04 16:52:59,318 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_165258_841/output.pdf (1138013 bytes)
+2025-10-04 16:52:59,319 |     INFO |         finalize_run: 222 | === Run Complete: 20251004_165258_841 (Duration: 0.48s) ===
+2025-10-04 16:52:59,319 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_165258_841
+2025-10-04 16:52:59,319 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_165258_841/run_metadata.json
+2025-10-04 16:52:59,319 |     INFO |         finalize_run: 233 | Run completed successfully with 1 mappings applied
+2025-10-04 16:53:38,546 |     INFO |  log_text_extraction:  90 | Extracted text (137 chars): 'Retrieval Augmented Generation\nAdapted from Christopher Manning and Graham Neubig slides \nCSE 576: Topics in Natural \nLanguage Processing'
+2025-10-04 16:53:38,547 |    DEBUG |  log_text_extraction:  95 | Full extracted text saved to: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_165258_841/extracted_text.txt
+2025-10-04 16:53:53,163 |     INFO |  log_text_extraction:  90 | Extracted text (4000 chars): 'CSE 576: Topics in Natural Language Processing\nDr. Vivek Gupta\nSpring 2025\n07/04/2025\nLanguage Modeling: Attention\nAttention\n• Attention provides a solution to the bottleneck problem.\n• Core idea: on each step of the decoder, use direct connection to the encoder to focus \non a particular part of the source sequence\n• First, we will show via diagram (no equations), then we will show with equations\n37\nThe starting point: mean-pooling for RNNs\n38\n• Starting point: a very basic way of ‘passing infor...'
+2025-10-04 16:53:53,163 |    DEBUG |  log_text_extraction:  95 | Full extracted text saved to: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_165258_841/extracted_text.txt

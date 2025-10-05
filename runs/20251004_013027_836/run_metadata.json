@@ -1,0 +1,26 @@
+{
+  "run_id": "20251004_013027_836",
+  "start_time": "2025-10-04T01:30:27.838977",
+  "mode": "overlay",
+  "mappings": {
+    "CH2=CH2": "CH2=CH3",
+    "7": "6",
+    "propane": "ethene"
+  },
+  "steps": [],
+  "errors": [],
+  "results": {
+    "output_pdf": {
+      "filename": "output.pdf",
+      "size_bytes": 690195,
+      "path": "/Users/ashishrajshekhar/codex_code_glyph/runs/20251004_013027_836/output.pdf"
+    }
+  },
+  "input_pdf": {
+    "filename": "input.pdf",
+    "size_bytes": 47677,
+    "path": "/Users/ashishrajshekhar/codex_code_glyph/runs/20251004_013027_836/input.pdf"
+  },
+  "end_time": "2025-10-04T01:30:27.933278",
+  "duration_seconds": 0.094301
+}

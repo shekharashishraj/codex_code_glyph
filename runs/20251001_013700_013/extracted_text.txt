@@ -1,0 +1,46 @@
+Distributed Database Systems  
+ 
+ 
+ 
+ 
+FALL – 2025  
+ 
+ 
+ 
+ 
+Assignment -1 
+Ashish Raj Shekhar  
+1223100216 
+1. Docker screenshot
+  
+ 
+2.  Mockaroo json dataset creation screenshot
+ 
+3. Insert the data using insert_many
+ 
+4. Total number of orders and total orders grouped by state
+ 
+5. Product and their frequencies
+ 
+6. Orders where amount is greater than 1000 and in California 
+ 
+7. 10 states with amount exceeding more than 500
+ 
+8. Customers with order more than 2000
+ 
+9. New York orders on 10/21/2021
+ 
+10. The aggregation pipelines helps us perform operations with a sequential ﬂow where 
+in the ﬁrst step we extract the data , then load it and then perform tranformations 
+like an etl piepline. 
+a. $match : this is used to ﬁlter the documents 
+b. $sort: we use this to display the fetched result in the desired 
+order(ASC/DESC) 
+And similarly we have others like sort, limit etc. 
+ 
+ 
+ 
+Here each state takes documents from the initial query as input , applies sorting based on 
+greater than condition operations then provides the result back to the customer. 
+also ﬁnd_order_totals function  uses $group to combine orders per state after counting the 
+collection and then uses $sort puts the states in ascending order.

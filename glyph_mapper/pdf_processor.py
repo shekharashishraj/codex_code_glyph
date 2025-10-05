@@ -13,8 +13,22 @@ from PyPDF2 import PdfReader, PdfWriter
 from PyPDF2.generic import ArrayObject, ContentStream, NameObject, NumberObject, TextStringObject
 
 from .logger import get_logger
-from .tj_array_processor_v2 import process_tj_array_with_word_replacement_v2
 from .cross_array_processor import process_content_stream_with_cross_array_support
+
+try:  # Optional OCR dependencies
+    import pytesseract
+    from pytesseract import Output as _TESS_OUTPUT
+except ImportError:  # pragma: no cover - optional dependency not installed
+    pytesseract = None
+    _TESS_OUTPUT = None
+
+try:  # Pillow is required for pytesseract image handling
+    from PIL import Image
+except ImportError:  # pragma: no cover - optional dependency not installed
+    Image = None
+
+
+OCR_AVAILABLE: bool = pytesseract is not None and Image is not None
 
 
 WordRect = Tuple[float, float, float, float]
@@ -25,6 +39,21 @@ class OverlayTarget:
     page: int
     rect: WordRect
     image: bytes
+
+
+@dataclasses.dataclass
+class OCRWord:
+    text: str
+    norm: str
+    rect: fitz.Rect
+    height: float
+
+
+@dataclasses.dataclass
+class OCRMatch:
+    rect: fitz.Rect
+    replacement: str
+    font_size: float
 
 
 _SPACE_THRESHOLD = -120  # TJ adjustments more negative than this approximate a space.
@@ -199,6 +228,7 @@ def _collect_overlay_targets(
                 if replacement is None:
                     continue
                 rect = (float(x0), float(y0), float(x1), float(y1))
+
                 # Capture the ORIGINAL text as it appears in the PDF - perfect size matching
                 pix = page.get_pixmap(clip=fitz.Rect(*rect), dpi=220, alpha=False)
                 original_image = pix.tobytes("png")
@@ -235,11 +265,11 @@ def _apply_overlays(pdf_bytes: bytes, overlays: List[OverlayTarget]) -> bytes:
 
 def apply_word_mapping(pdf_bytes: bytes, mapping: Dict[str, str], mode: str = "overlay") -> bytes:
     """Apply the provided ``mapping`` and return the modified PDF bytes.
-    
+
     Args:
         pdf_bytes: Original PDF content
         mapping: Dictionary of word mappings
-        mode: Processing mode - "overlay" or "font"
+        mode: Processing mode - "overlay", "font", or "ocr"
     """
     logger = get_logger()
     
@@ -263,6 +293,8 @@ def apply_word_mapping(pdf_bytes: bytes, mapping: Dict[str, str], mode: str = "o
     try:
         if mode == "font":
             result = _apply_font_mode_mapping(pdf_bytes, clean_mapping)
+        elif mode == "ocr":
+            result = apply_image_ocr_mapping(pdf_bytes, clean_mapping)
         else:
             result = _apply_overlay_mode_mapping(pdf_bytes, clean_mapping)
         
@@ -276,115 +308,353 @@ def apply_word_mapping(pdf_bytes: bytes, mapping: Dict[str, str], mode: str = "o
         raise
 
 
+def apply_image_overlay_mapping(pdf_bytes: bytes, mapping: Dict[str, str]) -> bytes:
+    """Convenience wrapper that forces the overlay pipeline for image-heavy PDFs."""
+    from .pymupdf_processor import process_pdf_with_pymupdf
+
+    return process_pdf_with_pymupdf(pdf_bytes, mapping, mode="overlay")
 
 
-def _apply_overlay_mode_mapping(pdf_bytes: bytes, clean_mapping: Dict[str, str]) -> bytes:
-    """Apply word mapping using the original overlay technique."""
-    mapping_cf = {key.casefold(): value for key, value in clean_mapping.items()}
-    overlays, discovered_tokens = _collect_overlay_targets(pdf_bytes, clean_mapping, mapping_cf)
 
-    effective_mapping = dict(clean_mapping)
-    effective_mapping.update(discovered_tokens)
-    mapping_cf.update({key.casefold(): value for key, value in discovered_tokens.items()})
 
-    pattern = _build_pattern(effective_mapping.keys(), ignore_case=True)
-    if pattern is None:
+def apply_image_ocr_mapping(
+    pdf_bytes: bytes,
+    mapping: Dict[str, str],
+    *,
+    dpi: int = 220,
+    min_confidence: int = 60,
+) -> bytes:
+    """Perform OCR-driven replacements for raster-centric PDFs."""
+
+    _ensure_ocr_dependencies()
+
+    if not mapping:
         return pdf_bytes
 
-    reader = PdfReader(io.BytesIO(pdf_bytes))
-    writer = PdfWriter()
+    doc = fitz.open(stream=pdf_bytes, filetype="pdf")
+    try:
+        scale = dpi / 72.0
+        replacements_applied = 0
+
+        prepared = _prepare_ocr_mappings(mapping)
+        if not prepared:
+            return pdf_bytes
+
+        for page in doc:
+            pix = page.get_pixmap(matrix=fitz.Matrix(scale, scale), alpha=False)
+            image = Image.open(io.BytesIO(pix.tobytes("png"))).convert("RGB")
+            words = _extract_ocr_words(image, page.rect, scale, min_confidence)
+            if not words:
+                continue
+
+            matches = _match_ocr_words(words, prepared)
+            if not matches:
+                continue
+
+            for match in matches:
+                page.insert_textbox(
+                    match.rect,
+                    match.replacement,
+                    fontsize=match.font_size,
+                    fontname="helv",
+                    render_mode=3,
+                    color=(0, 0, 0),
+                    overlay=True,
+                )
+                replacements_applied += 1
+
+        if replacements_applied == 0:
+            return pdf_bytes
+
+        buffer = io.BytesIO()
+        doc.save(buffer, garbage=4, deflate=True)
+        return buffer.getvalue()
+    finally:
+        doc.close()
+
+
+def _ensure_ocr_dependencies() -> None:
+    if not OCR_AVAILABLE:
+        raise RuntimeError("pytesseract and Pillow are required for OCR-based mapping")
+
+
+def _normalize_ocr_token(token: str) -> str:
+    return re.sub(r"[^0-9A-Za-z]+", "", token).casefold()
+
+
+def _tokenize_mapping_key(key: str) -> List[str]:
+    tokens = [t for t in re.findall(r"[0-9A-Za-z]+", key)]
+    cleaned = [_normalize_ocr_token(t) for t in tokens if _normalize_ocr_token(t)]
+    if not cleaned:
+        fallback = _normalize_ocr_token(key)
+        if fallback:
+            cleaned = [fallback]
+    return cleaned
+
+
+def _prepare_ocr_mappings(mapping: Dict[str, str]) -> List[Tuple[List[str], str]]:
+    prepared: List[Tuple[List[str], str]] = []
+    for original, replacement in mapping.items():
+        tokens = _tokenize_mapping_key(original)
+        if tokens:
+            prepared.append((tokens, replacement))
+    return prepared
+
+
+def _extract_ocr_words(image: "Image.Image", page_rect: fitz.Rect, scale: float, min_confidence: int) -> List[OCRWord]:
+    if not OCR_AVAILABLE:
+        return []
+    data = pytesseract.image_to_data(image, output_type=_TESS_OUTPUT.DICT)  # type: ignore[arg-type]
+    words: List[OCRWord] = []
+    n_items = len(data.get("text", []))
+    for idx in range(n_items):
+        raw = data["text"][idx].strip()
+        if not raw:
+            continue
+        try:
+            conf = float(data["conf"][idx])
+        except (KeyError, ValueError):
+            conf = -1
+        if conf < min_confidence:
+            continue
+        norm = _normalize_ocr_token(raw)
+        if not norm:
+            continue
+        left = float(data["left"][idx])
+        top = float(data["top"][idx])
+        width = float(data["width"][idx])
+        height = float(data["height"][idx])
+        x0 = left / scale
+        y0 = top / scale
+        x1 = (left + width) / scale
+        y1 = (top + height) / scale
+        rect = fitz.Rect(x0, y0, x1, y1)
+        rect = fitz.Rect(
+            max(page_rect.x0, rect.x0),
+            max(page_rect.y0, rect.y0),
+            min(page_rect.x1, rect.x1),
+            min(page_rect.y1, rect.y1),
+        )
+        words.append(
+            OCRWord(
+                text=raw,
+                norm=norm,
+                rect=rect,
+                height=height / scale,
+            )
+        )
+    return words
+
+
+def _match_ocr_words(words: List[OCRWord], prepared: List[Tuple[List[str], str]]) -> List[OCRMatch]:
+    matches: List[OCRMatch] = []
+    used: Set[int] = set()
+    norms = [word.norm for word in words]
+    for tokens, replacement in prepared:
+        span = len(tokens)
+        if span == 0 or span > len(words):
+            continue
+        i = 0
+        while i <= len(words) - span:
+            if any(idx in used for idx in range(i, i + span)):
+                i += 1
+                continue
+            window = norms[i : i + span]
+            if window == tokens:
+                rects = [words[i + offset].rect for offset in range(span)]
+                union = fitz.Rect(
+                    min(r.x0 for r in rects),
+                    min(r.y0 for r in rects),
+                    max(r.x1 for r in rects),
+                    max(r.y1 for r in rects),
+                )
+                union = fitz.Rect(
+                    union.x0 - 0.8,
+                    union.y0 - 0.8,
+                    union.x1 + 0.8,
+                    union.y1 + 0.8,
+                )
+                font_size = max(8.0, sum(words[i + offset].height for offset in range(span)) / span)
+                matches.append(OCRMatch(rect=union, replacement=replacement, font_size=font_size))
+                used.update(range(i, i + span))
+                i += span
+            else:
+                i += 1
+    return matches
+
+
+def _apply_overlay_mode_mapping(
+    pdf_bytes: bytes,
+    clean_mapping: Dict[str, str],
+    *,
+    sanitize: bool = True,
+) -> bytes:
+    """Apply word mapping prioritising text-layer rewrites before raster fallbacks."""
+
     logger = get_logger()
+
+    overlay_mapping = _expand_mapping_variants(clean_mapping)
+    mapping_cf = {key.casefold(): value for key, value in overlay_mapping.items()}
+    overlays, discovered = _collect_overlay_targets(pdf_bytes, overlay_mapping, mapping_cf)
+    if overlays:
+        logger.logger.info("Captured %d overlay targets", len(overlays))
+
+    rewritten = _apply_content_stream_mapping(pdf_bytes, clean_mapping)
+    if rewritten is not None:
+        logger.logger.info("Content stream rewrite succeeded")
+        processed = _sanitize_text_layer(rewritten) if sanitize else rewritten
+        if overlays:
+            logger.logger.info("Re-applying %d overlays to preserve visual appearance", len(overlays))
+            processed = _apply_overlays(processed, overlays)
+        return processed
+
+    logger.logger.warning("Content stream rewrite unavailable; falling back to PyMuPDF font mode")
+    from .pymupdf_processor import process_pdf_with_pymupdf
+
+    font_bytes = process_pdf_with_pymupdf(pdf_bytes, clean_mapping, mode="font")
+    return _sanitize_text_layer(font_bytes) if sanitize else font_bytes
+
+
+def _expand_mapping_variants(clean_mapping: Dict[str, str]) -> Dict[str, str]:
+    """Return mapping augmented with space-punctuated variants for split glyph cases."""
+    if not clean_mapping:
+        return {}
+
+    expanded = dict(clean_mapping)
+    punctuations = [",", ";", ":", "."]
+    for original, replacement in clean_mapping.items():
+        for punct in punctuations:
+            if punct in original:
+                spaced_original = original.replace(punct, f" {punct}")
+                spaced_replacement = replacement.replace(punct, f" {punct}")
+                expanded.setdefault(spaced_original, spaced_replacement)
+    return expanded
+
+
+def _apply_content_stream_mapping(pdf_bytes: bytes, clean_mapping: Dict[str, str]) -> Optional[bytes]:
+    """Attempt in-place text replacement using PyPDF2 content stream rewriting."""
+    if not clean_mapping:
+        return None
+
+    logger = get_logger()
+    reader = PdfReader(io.BytesIO(pdf_bytes))
+
+    effective_mapping = _expand_mapping_variants(clean_mapping)
+    pattern = _build_pattern(effective_mapping.keys(), ignore_case=True)
+    if pattern is None:
+        return None
+
+    mapping_cf = {key.casefold(): value for key, value in effective_mapping.items()}
+
+    any_modified = False
+    for page_number, page in enumerate(reader.pages):
+        if NameObject("/Contents") not in page:
+            continue
+
+        content = ContentStream(page[NameObject("/Contents")].get_object(), reader)
+        modified_ops, page_modified = process_content_stream_with_cross_array_support(
+            content.operations,
+            pattern,
+            effective_mapping,
+            mapping_cf,
+        )
+
+        if not page_modified:
+            continue
+
+        new_stream = ContentStream(None, reader)
+        new_stream.operations = modified_ops
+        if hasattr(content, "forced_encoding"):
+            new_stream.forced_encoding = content.forced_encoding
+        page[NameObject("/Contents")] = new_stream
+        any_modified = True
+        logger.logger.info("Page %d updated via content stream rewrite", page_number + 1)
+
+    if not any_modified:
+        logger.logger.info("Content stream rewrite produced no changes; fallback to overlay pipeline")
+        return None
+
+    writer = PdfWriter()
+    writer.append_pages_from_reader(reader)
+    output = io.BytesIO()
+    writer.write(output)
+    logger.logger.info("Successfully applied content stream replacements without overlays")
+    return output.getvalue()
+
+
+def _sanitize_text_layer(pdf_bytes: bytes) -> bytes:
+    """Remove null glyph placeholders and normalize text encoding."""
+    reader = PdfReader(io.BytesIO(pdf_bytes))
     modified = False
 
-    for page_num, page in enumerate(reader.pages):
-        content = ContentStream(page.get_contents(), reader)
-        
-        logger.logger.info(f"Processing page {page_num + 1} with {len(content.operations)} operations")
+    for page in reader.pages:
+        if NameObject("/Contents") not in page:
+            continue
 
-        # Use cross-array processor to replace text in content stream
-        modified_operations, page_modified = process_content_stream_with_cross_array_support(
-            content.operations, pattern, effective_mapping, mapping_cf
-        )
-        
+        content = ContentStream(page[NameObject("/Contents")].get_object(), reader)
+        new_operations = []
+        page_modified = False
+
+        for operands, operator in content.operations:
+            if operator == b"Tj" and operands:
+                text_obj = operands[0]
+                if isinstance(text_obj, TextStringObject):
+                    raw_bytes = getattr(text_obj, "original_bytes", b"")
+                    if raw_bytes and set(raw_bytes) <= {0}:
+                        page_modified = True
+                        continue  # Drop null-only text object
+            elif operator == b"TJ" and operands:
+                array_obj = operands[0]
+                if isinstance(array_obj, ArrayObject):
+                    sanitized_array = ArrayObject()
+                    array_modified = False
+                    for item in array_obj:
+                        if isinstance(item, TextStringObject):
+                            raw_bytes = getattr(item, "original_bytes", b"")
+                            if raw_bytes and set(raw_bytes) <= {0}:
+                                array_modified = True
+                                continue
+                        sanitized_array.append(item)
+                    if sanitized_array:
+                        if array_modified:
+                            page_modified = True
+                            new_operations.append(([sanitized_array], operator))
+                        else:
+                            new_operations.append((operands, operator))
+                        continue
+                    page_modified = True
+                    continue
+
+            new_operations.append((operands, operator))
+
         if page_modified:
-            content.operations = modified_operations
-            page[NameObject("/Contents")] = content
             modified = True
-        
-        writer.add_page(page)
+            sanitized_stream = ContentStream(None, reader)
+            sanitized_stream.operations = new_operations
+            if hasattr(content, "forced_encoding"):
+                sanitized_stream.forced_encoding = content.forced_encoding
+            page[NameObject("/Contents")] = sanitized_stream
 
-    remapped_bytes = io.BytesIO()
-    writer.write(remapped_bytes)
+    if not modified:
+        return pdf_bytes
 
-    return _apply_overlays(remapped_bytes.getvalue(), overlays)
+    writer = PdfWriter()
+    writer.append_pages_from_reader(reader)
+    output = io.BytesIO()
+    writer.write(output)
+    return output.getvalue()
 
 
 def _apply_font_mode_mapping(pdf_bytes: bytes, clean_mapping: Dict[str, str]) -> bytes:
-    """Apply word mapping using font-level glyph modification."""
-    from .font_manipulator import (
-        create_character_mapping_from_words,
-        create_remapped_font,
-        extract_font_from_pdf,
-        embed_font_in_pdf,
-        analyze_font_characters
-    )
-    
-    # Extract or identify the primary font from the PDF
-    font_path = extract_font_from_pdf(pdf_bytes)
-    if not font_path:
-        # Fallback to overlay mode if no font can be extracted
-        return _apply_overlay_mode_mapping(pdf_bytes, clean_mapping)
-    
-    # Convert word mappings to character mappings
-    char_mappings = create_character_mapping_from_words(clean_mapping)
-    
-    if not char_mappings:
-        # If no character-level mappings possible, fallback to overlay mode
-        return _apply_overlay_mode_mapping(pdf_bytes, clean_mapping)
-    
-    # Check if all required characters are available in the font
-    all_chars = set(char_mappings.keys()) | set(char_mappings.values())
-    char_availability = analyze_font_characters(font_path, all_chars)
-    
-    missing_chars = [char for char, available in char_availability.items() if not available]
-    if missing_chars:
-        # Some characters not available in font, fallback to overlay mode
-        return _apply_overlay_mode_mapping(pdf_bytes, clean_mapping)
-    
-    # Create the remapped font
+    """Apply word mapping using the malicious T-font pipeline with overlay fallback."""
+    logger = get_logger()
+    logger.logger.info("Using T-font malicious font remapping")
+
     try:
-        remapped_font_bytes = create_remapped_font(font_path, char_mappings)
-        
-        # Apply text replacement in PDF content streams (same as overlay mode but without overlays)
-        mapping_cf = {key.casefold(): value for key, value in clean_mapping.items()}
-        pattern = _build_pattern(clean_mapping.keys(), ignore_case=True)
-        
-        if pattern is None:
-            return pdf_bytes
-        
-        reader = PdfReader(io.BytesIO(pdf_bytes))
-        writer = PdfWriter()
-        
-        for page in reader.pages:
-            content = ContentStream(page.get_contents(), reader)
-            
-            # Use cross-array processor for comprehensive pattern matching
-            modified_operations, page_modified = process_content_stream_with_cross_array_support(
-                content.operations, pattern, clean_mapping, mapping_cf
-            )
-            
-            if page_modified:
-                content.operations = modified_operations
-                page[NameObject("/Contents")] = content
-            
-            writer.add_page(page)
-        
-        remapped_bytes = io.BytesIO()
-        writer.write(remapped_bytes)
-        
-        # Embed the custom font into the PDF
-        return embed_font_in_pdf(remapped_bytes.getvalue(), remapped_font_bytes)
-        
-    except Exception:
-        # If font manipulation fails, fallback to overlay mode
+        from .tfont_processor import TFontError, apply_tfont_mapping
+
+        return apply_tfont_mapping(pdf_bytes, clean_mapping)
+    except Exception as e:
+        logger.log_error(e, "font_mode_mapping")
+        logger.logger.warning("T-font pipeline failed, reverting to overlay mode")
         return _apply_overlay_mode_mapping(pdf_bytes, clean_mapping)

@@ -28,7 +28,7 @@
           {% else %}
             <div class="alert alert-warning">
               <h6>No text preview available</h6>
-              <p class="mb-0">You can still attempt a remap using the manual entry form below if you know the words present in the PDF.</p>
+              <p class="mb-0">You can still attempt a remap using the manual entry form below if you know the words present in the PDF. For scanned pages, try <strong>OCR Mode</strong> in the mapping panel.</p>
             </div>
           {% endif %}
           
@@ -53,26 +53,31 @@
         <div class="card-header">
           <h2 class="h5 mb-0">Word Mappings</h2>
           <small class="text-muted">Define how selected words should be replaced</small>
-          
-          <!-- Mode Selection -->
-          <div class="mt-2">
-            <small class="text-muted d-block mb-1">Processing Mode:</small>
-            <div class="btn-group btn-group-sm" role="group" aria-label="Processing mode">
-              <input type="radio" class="btn-check" name="processing_mode" id="mode-overlay" value="overlay" checked>
-              <label class="btn btn-outline-primary" for="mode-overlay" title="Uses image overlays to preserve visual appearance">
-                <i class="bi bi-layers"></i> Overlay Mode
-              </label>
-              
-              <input type="radio" class="btn-check" name="processing_mode" id="mode-font" value="font">
-              <label class="btn btn-outline-primary" for="mode-font" title="Modifies font glyphs at the font level">
-                <i class="bi bi-fonts"></i> Font Mode
-              </label>
-            </div>
-          </div>
         </div>
         <div class="card-body">
           <form method="post" action="{{ url_for('remap_pdf') }}" data-role="mapping-form">
             <input type="hidden" name="pdf_data" value="{{ pdf_data }}" />
+            
+            <div class="mb-3">
+              <small class="text-muted d-block mb-1">Processing Mode:</small>
+              <div class="btn-group btn-group-sm flex-wrap" role="group" aria-label="Processing mode">
+                <input type="radio" class="btn-check" name="processing_mode" id="mode-overlay" value="overlay" checked>
+                <label class="btn btn-outline-primary" for="mode-overlay" title="Uses image overlays to preserve visual appearance">
+                  <i class="bi bi-layers"></i> Overlay Mode
+                </label>
+                
+                <input type="radio" class="btn-check" name="processing_mode" id="mode-font" value="font">
+                <label class="btn btn-outline-primary" for="mode-font" title="Modifies font glyphs at the font level">
+                  <i class="bi bi-fonts"></i> Font Mode
+                </label>
+                
+                <input type="radio" class="btn-check" name="processing_mode" id="mode-ocr" value="ocr">
+                <label class="btn btn-outline-primary" for="mode-ocr" title="Runs OCR to replace text inside rasterized or scanned PDFs">
+                  <i class="bi bi-camera"></i> OCR Mode
+                </label>
+              </div>
+              <small class="d-block text-muted mt-1">Overlay keeps the original look; use Font or OCR when you want the replacement to appear visually.</small>
+            </div>
             
             <div id="selected-mappings" class="mb-3">
               <!-- Selected word mappings will appear here -->

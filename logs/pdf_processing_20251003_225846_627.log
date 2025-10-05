@@ -1,0 +1,31 @@
+2025-10-03 22:58:46,629 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20251003_225846_627 ===
+2025-10-03 22:58:46,636 |     INFO |            remap_pdf:  82 | Starting PDF remapping with 1 mappings in overlay mode
+2025-10-03 22:58:46,636 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251003_225846_627/input.pdf (129464 bytes)
+2025-10-03 22:58:46,637 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-10-03 22:58:46,637 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-10-03 22:58:46,637 |     INFO |         log_mappings:  83 |   'Classification' → 'Segmentation'
+2025-10-03 22:58:46,637 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-10-03 22:58:46,637 |     INFO |         log_mappings:  83 |   'Classification' → 'Segmentation'
+2025-10-03 22:58:46,639 |     INFO | _apply_overlay_mode_mapping: 286 | Using PyMuPDF for overlay mode processing
+2025-10-03 22:58:46,640 |     INFO | process_pdf_with_pymupdf: 293 | Processing PDF with PyMuPDF in overlay mode
+2025-10-03 22:58:46,640 |     INFO | process_pdf_with_pymupdf: 294 | Pattern: Classification
+2025-10-03 22:58:46,656 |    DEBUG |         replace_func: 197 | Replacing 'Classification' with 'Segmentation'
+2025-10-03 22:58:46,666 |    DEBUG |  _capture_text_image: 219 | Captured text image: 8081 bytes
+2025-10-03 22:58:46,666 |     INFO | _process_page_overlay: 126 | Page 1: ' (Image Classification with PyTorch)' → ' (Image Segmentation with PyTorch)' at (135.45404052734375, 340.4362487792969, 311.990966796875, 351.3453674316406)
+2025-10-03 22:58:46,667 |    DEBUG |         replace_func: 197 | Replacing 'Classification' with 'Segmentation'
+2025-10-03 22:58:46,669 |    DEBUG |  _capture_text_image: 219 | Captured text image: 7000 bytes
+2025-10-03 22:58:46,669 |     INFO | _process_page_overlay: 126 | Page 1: ' Investigating Bias in Image Classification' → ' Investigating Bias in Image Segmentation' at (98.26827239990234, 487.7842712402344, 331.0392150878906, 498.6933898925781)
+2025-10-03 22:58:46,669 |    DEBUG |         replace_func: 197 | Replacing 'classification' with 'Segmentation'
+2025-10-03 22:58:46,672 |    DEBUG |  _capture_text_image: 219 | Captured text image: 10005 bytes
+2025-10-03 22:58:46,672 |     INFO | _process_page_overlay: 126 | Page 1: 'Compare your classification network versus a machine learning baseline of' → 'Compare your Segmentation network versus a machine learning baseline of' at (104.11898040771484, 641.2083129882812, 453.4173889160156, 652.117431640625)
+2025-10-03 22:58:46,683 |     INFO | process_pdf_overlay_mode:  41 | Created 3 overlays across 3 pages
+2025-10-03 22:58:46,700 |    DEBUG | _apply_overlays_pymupdf: 258 | Applied overlay on page 1
+2025-10-03 22:58:46,708 |    DEBUG | _apply_overlays_pymupdf: 258 | Applied overlay on page 1
+2025-10-03 22:58:46,716 |    DEBUG | _apply_overlays_pymupdf: 258 | Applied overlay on page 1
+2025-10-03 22:58:46,720 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251003_225846_627/output.pdf (498472 bytes)
+2025-10-03 22:58:46,720 |     INFO |         finalize_run: 222 | === Run Complete: 20251003_225846_627 (Duration: 0.09s) ===
+2025-10-03 22:58:46,720 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20251003_225846_627
+2025-10-03 22:58:46,720 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251003_225846_627/run_metadata.json
+2025-10-03 22:58:46,720 |     INFO |         finalize_run: 233 | Run completed successfully with 1 mappings applied
+2025-10-03 23:04:09,431 |     INFO |  log_text_extraction:  90 | Extracted text (3681 chars): 'Name_____________________________________ \nSection_______ \nTA_____________ \n7.016 Problem Set 1- 2018 \n(This material is COPYRIGHT protected.) \nQuestion 1 \nThe following is the “line-angle” drawing of melanin, a pigment that determines hair color.  Note: The \ncarbon (C) and the hydrogen (H) atoms are not shown but implied. \na) Clearly label ALL C and H atoms on the line angle drawing and \nwrite the molecular formula of melanin in the space below. \nb) On the line angle drawing, box one nonpolar f...'
+2025-10-03 23:04:09,432 |    DEBUG |  log_text_extraction:  95 | Full extracted text saved to: /Users/ashishrajshekhar/codex_code_glyph/runs/20251003_225846_627/extracted_text.txt

@@ -1,0 +1,104 @@
+Arizona State University
+Page 1 of 1
+Unofficial Transcript
+Name:           Ashish Raj Shekhar
+Student ID:   1223100216
+_____________________________________________________________
+Print Date: 
+06/10/2025
+External Degrees
+Manipal University
+Bachelor of Technology
+11/01/2022
+Beginning of Graduate Record 
+      
+   
+2025 Spring 
+Course
+Description
+Attempted
+Earned
+Grade
+Points
+CSE  575 
+Statistical Machine 
+Learning
+3.000
+3.000
+A
+12.000
+CSE  576 
+Topics/Natural 
+Language Proc
+3.000
+3.000
+A
+12.000
+CSE  598 
+Special Topics
+3.000
+3.000
+A
+12.000
+Course Topic:
+Advances in Robot Learning 
+Attempted
+Earned
+Points
+Term GPA:
+4.00 
+Term Totals
+9.000
+9.000
+36.000
+Cum GPA:
+4.00 
+Cum Totals
+9.000
+9.000
+36.000
+      
+   
+2025 Fall 
+Course
+Description
+Attempted
+Earned
+Grade
+Points
+CSE  512 
+Distributed Database 
+Systems
+3.000
+0.000
+NR
+0.000
+CSE  535 
+Mobile Computing
+3.000
+0.000
+NR
+0.000
+CSE  559 
+Algorithms in 
+Computation Bio
+3.000
+0.000
+NR
+0.000
+Attempted
+Earned
+Points
+Term GPA:
+0.00 
+Term Totals
+0.000
+0.000
+0.000
+Cum GPA:
+4.00 
+Cum Totals
+9.000
+9.000
+36.000
+END OF TRANSCRIPT

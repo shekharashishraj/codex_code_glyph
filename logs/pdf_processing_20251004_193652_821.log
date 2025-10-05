@@ -1,0 +1,263 @@
+2025-10-04 19:36:52,824 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20251004_193652_821 ===
+2025-10-04 19:36:52,859 |     INFO |            remap_pdf:  82 | Starting PDF remapping with 5 mappings in overlay mode
+2025-10-04 19:36:52,860 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_193652_821/input.pdf (1017984 bytes)
+2025-10-04 19:36:52,860 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-10-04 19:36:52,860 |     INFO |         log_mappings:  81 | Word mappings to apply: 5 total
+2025-10-04 19:36:52,860 |     INFO |         log_mappings:  83 |   'F' → 'G'
+2025-10-04 19:36:52,860 |     INFO |         log_mappings:  83 |   'F(x))' → 'G(x))'
+2025-10-04 19:36:52,860 |     INFO |         log_mappings:  83 |   'F(x)' → 'G(x)'
+2025-10-04 19:36:52,860 |     INFO |         log_mappings:  83 |   'Backpropagation' → 'Frntpropagation'
+2025-10-04 19:36:52,860 |     INFO |         log_mappings:  83 |   'Rectified' → 'Lectified'
+2025-10-04 19:36:52,860 |     INFO |         log_mappings:  81 | Word mappings to apply: 5 total
+2025-10-04 19:36:52,860 |     INFO |         log_mappings:  83 |   'F' → 'G'
+2025-10-04 19:36:52,860 |     INFO |         log_mappings:  83 |   'F(x))' → 'G(x))'
+2025-10-04 19:36:52,860 |     INFO |         log_mappings:  83 |   'F(x)' → 'G(x)'
+2025-10-04 19:36:52,860 |     INFO |         log_mappings:  83 |   'Backpropagation' → 'Frntpropagation'
+2025-10-04 19:36:52,860 |     INFO |         log_mappings:  83 |   'Rectified' → 'Lectified'
+2025-10-04 19:36:52,864 |     INFO | log_pattern_building:  99 | Building regex pattern for 5 words (ignore_case=True)
+2025-10-04 19:36:52,864 |    DEBUG | log_pattern_building: 100 | Words to match: ['F', 'F(x))', 'F(x)', 'Backpropagation', 'Rectified']
+2025-10-04 19:36:52,864 |    DEBUG | log_pattern_building: 101 | Compiled pattern: Backpropagation|Rectified|F\(x\)\)|F\(x\)|F
+2025-10-04 19:36:52,867 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '!"#$%&\'%"(")*\'+,*+,-./&"0,'
+2025-10-04 19:36:52,873 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '2\'3,)\',4&"*+,",-./&"0,-.)5'
+2025-10-04 19:36:52,873 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '7/),*+,4&"*+*+(,*+%/)18,(.),)9.,\'/)%/)'
+2025-10-04 19:36:52,873 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: ':\';%"&.,\'/)%/),)\',#\'&&.#),"+13.&1<,=\'\'$,"),0\'11,>/+#)*\'+,?'
+2025-10-04 19:36:52,873 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '@AB/1),"+A,&.%.")C'
+2025-10-04 19:36:52,874 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '!"#$%&\'%"(")*\'+,).001,/1,9\'3,)\',;"$.,",1*+(0.,"AB/1);.+),/1*+('
+2025-10-04 19:36:52,874 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '#"0#/0/1D'
+2025-10-04 19:36:52,874 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: '2\'3,)\',4&"*+,",-./&"0,-.)5 7/),*+,4&"*+*+(,*+%/)18,(.),)9.,\'/)%/) :\';%"&.,\'/)%/),)\',#\'&&.#),"+13.&1<,=\'\'$,"),0\'11,>/+#)*\'+,?'
+2025-10-04 19:36:52,874 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 1: '7/),*+,4&"*+*+(,*+%/)18,(.),)9.,\'/)%/) :\';%"&.,\'/)%/),)\',#\'&&.#),"+13.&1<,=\'\'$,"),0\'11,>/+#)*\'+,? @AB/1),"+A,&.%.")C'
+2025-10-04 19:36:52,874 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 2: ':\';%"&.,\'/)%/),)\',#\'&&.#),"+13.&1<,=\'\'$,"),0\'11,>/+#)*\'+,? @AB/1),"+A,&.%.")C !"#$%&\'%"(")*\'+,).001,/1,9\'3,)\',;"$.,",1*+(0.,"AB/1);.+),/1*+('
+2025-10-04 19:36:52,874 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 3: '@AB/1),"+A,&.%.")C !"#$%&\'%"(")*\'+,).001,/1,9\'3,)\',;"$.,",1*+(0.,"AB/1);.+),/1*+( #"0#/0/1D'
+2025-10-04 19:36:52,874 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 4: '!"#$%&\'%"(")*\'+,).001,/1,9\'3,)\',;"$.,",1*+(0.,"AB/1);.+),/1*+( #"0#/0/1D'
+2025-10-04 19:36:52,876 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '2\'3,9"E.,3.,)&"*+.A,F.>\'&.5'
+2025-10-04 19:36:52,876 |     INFO |     process_tj_array:  97 | TJ Array - Applied 1 replacements
+2025-10-04 19:36:52,876 |     INFO |     process_tj_array:  99 |   'F' → 'G' at positions 20-21
+2025-10-04 19:36:52,876 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: 'G&"A*.+),H.1#.+)C'
+2025-10-04 19:36:52,876 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: 'J"$.,%&.A*#)*\'+'
+2025-10-04 19:36:52,876 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: ':"0#/0").,=\'11'
+2025-10-04 19:36:52,876 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: ':"0#/0").,(&"A*.+),\'>,)9.,0\'11,>/+#)*\'+,'
+2025-10-04 19:36:52,876 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: 'D,%"&";.).&1'
+2025-10-04 19:36:52,876 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: 'N%A").,%"&";.).&1,FO,)"$*+(,",1).%,*+,)9.,\'%%\'1*).,A*&.#)*\'+'
+2025-10-04 19:36:52,876 |     INFO |     process_tj_array:  97 | TJ Array - Applied 1 replacements
+2025-10-04 19:36:52,876 |     INFO |     process_tj_array:  99 |   'F' → 'G' at positions 18-19
+2025-10-04 19:36:52,876 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: 'Q).&").'
+2025-10-04 19:36:52,876 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: '2\'3,9"E.,3.,)&"*+.A,G.>\'&.5 G&"A*.+),H.1#.+)C J"$.,%&.A*#)*\'+'
+2025-10-04 19:36:52,876 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 1: 'G&"A*.+),H.1#.+)C J"$.,%&.A*#)*\'+ :"0#/0").,=\'11'
+2025-10-04 19:36:52,877 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 2: 'J"$.,%&.A*#)*\'+ :"0#/0").,=\'11 :"0#/0").,(&"A*.+),\'>,)9.,0\'11,>/+#)*\'+,'
+2025-10-04 19:36:52,877 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 3: ':"0#/0").,=\'11 :"0#/0").,(&"A*.+),\'>,)9.,0\'11,>/+#)*\'+, D,%"&";.).&1'
+2025-10-04 19:36:52,877 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 4: ':"0#/0").,(&"A*.+),\'>,)9.,0\'11,>/+#)*\'+, D,%"&";.).&1 N%A").,%"&";.).&1,GO,)"$*+(,",1).%,*+,)9.,\'%%\'1*).,A*&.#)*\'+'
+2025-10-04 19:36:52,877 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 5: 'D,%"&";.).&1 N%A").,%"&";.).&1,GO,)"$*+(,",1).%,*+,)9.,\'%%\'1*).,A*&.#)*\'+ Q).&").'
+2025-10-04 19:36:52,877 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 6: 'N%A").,%"&";.).&1,GO,)"$*+(,",1).%,*+,)9.,\'%%\'1*).,A*&.#)*\'+ Q).&").'
+2025-10-04 19:36:52,877 |     INFO | _apply_content_stream_mapping: 358 | Page 3 updated via content stream rewrite
+2025-10-04 19:36:52,878 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '2\'3,9"E.,3.,)&"*+.A,F.>\'&.5'
+2025-10-04 19:36:52,878 |     INFO |     process_tj_array:  97 | TJ Array - Applied 1 replacements
+2025-10-04 19:36:52,879 |     INFO |     process_tj_array:  99 |   'F' → 'G' at positions 20-21
+2025-10-04 19:36:52,879 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: 'G&"A*.+),H.1#.+)C'
+2025-10-04 19:36:52,879 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: 'J"$.,%&.A*#)*\'+'
+2025-10-04 19:36:52,879 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: ':"0#/0").,=\'11'
+2025-10-04 19:36:52,879 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: ':"0#/0").,(&"A*.+),\'>,)9.,0\'11,>/+#)*\'+,'
+2025-10-04 19:36:52,879 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: 'D,%"&";.).&1'
+2025-10-04 19:36:52,879 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: 'N%A").,%"&";.).&1,FO,)"$*+(,",1).%,*+,)9.,\'%%\'1*).,A*&.#)*\'+'
+2025-10-04 19:36:52,879 |     INFO |     process_tj_array:  97 | TJ Array - Applied 1 replacements
+2025-10-04 19:36:52,879 |     INFO |     process_tj_array:  99 |   'F' → 'G' at positions 18-19
+2025-10-04 19:36:52,879 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: 'Q).&").'
+2025-10-04 19:36:52,879 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: '2\'3,9"E.,3.,)&"*+.A,G.>\'&.5 G&"A*.+),H.1#.+)C J"$.,%&.A*#)*\'+'
+2025-10-04 19:36:52,879 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 1: 'G&"A*.+),H.1#.+)C J"$.,%&.A*#)*\'+ :"0#/0").,=\'11'
+2025-10-04 19:36:52,879 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 2: 'J"$.,%&.A*#)*\'+ :"0#/0").,=\'11 :"0#/0").,(&"A*.+),\'>,)9.,0\'11,>/+#)*\'+,'
+2025-10-04 19:36:52,879 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 3: ':"0#/0").,=\'11 :"0#/0").,(&"A*.+),\'>,)9.,0\'11,>/+#)*\'+, D,%"&";.).&1'
+2025-10-04 19:36:52,879 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 4: ':"0#/0").,(&"A*.+),\'>,)9.,0\'11,>/+#)*\'+, D,%"&";.).&1 N%A").,%"&";.).&1,GO,)"$*+(,",1).%,*+,)9.,\'%%\'1*).,A*&.#)*\'+'
+2025-10-04 19:36:52,880 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 5: 'D,%"&";.).&1 N%A").,%"&";.).&1,GO,)"$*+(,",1).%,*+,)9.,\'%%\'1*).,A*&.#)*\'+ Q).&").'
+2025-10-04 19:36:52,880 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 6: 'N%A").,%"&";.).&1,GO,)"$*+(,",1).%,*+,)9.,\'%%\'1*).,A*&.#)*\'+ Q).&").'
+2025-10-04 19:36:52,880 |     INFO | _apply_content_stream_mapping: 358 | Page 4 updated via content stream rewrite
+2025-10-04 19:36:52,888 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: 'R..A>\'&3"&A,-./&"0,-.)3\'&$'
+2025-10-04 19:36:52,918 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: 'R\'&3"&A,7&\'%"(")*\'+'
+2025-10-04 19:36:52,926 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: 'R\'&3"&A,7&\'%"(")*\'+'
+2025-10-04 19:36:52,927 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: ':"0#/0").,."#9,="O.&'
+2025-10-04 19:36:52,927 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: 'R\'&3"&A,7&\'%"(")*\'+ :"0#/0").,."#9,="O.&'
+2025-10-04 19:36:52,935 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: 'R\'&3"&A,7&\'%"(")*\'+'
+2025-10-04 19:36:52,944 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: 'R\'&3"&A,7&\'%"(")*\'+'
+2025-10-04 19:36:52,944 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: 'SE"0/").<'
+2025-10-04 19:36:52,944 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: 'R\'&3"&A,7&\'%"(")*\'+ SE"0/").<'
+2025-10-04 19:36:52,946 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '2\'3,9"E.,3.,)&"*+.A,F.>\'&.5'
+2025-10-04 19:36:52,946 |     INFO |     process_tj_array:  97 | TJ Array - Applied 1 replacements
+2025-10-04 19:36:52,946 |     INFO |     process_tj_array:  99 |   'F' → 'G' at positions 20-21
+2025-10-04 19:36:52,946 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: 'G&"A*.+),H.1#.+)C'
+2025-10-04 19:36:52,946 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: 'J"$.,%&.A*#)*\'+'
+2025-10-04 19:36:52,946 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: ':"0#/0").,=\'11'
+2025-10-04 19:36:52,946 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: ':"0#/0").,(&"A*.+),\'>,)9.,0\'11,>/+#)*\'+,'
+2025-10-04 19:36:52,946 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: 'D,%"&";.).&1'
+2025-10-04 19:36:52,946 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: 'N%A").,%"&";.).&1,FO,)"$*+(,",1).%,*+,)9.,\'%%\'1*).,A*&.#)*\'+'
+2025-10-04 19:36:52,946 |     INFO |     process_tj_array:  97 | TJ Array - Applied 1 replacements
+2025-10-04 19:36:52,946 |     INFO |     process_tj_array:  99 |   'F' → 'G' at positions 18-19
+2025-10-04 19:36:52,946 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: 'Q).&").'
+2025-10-04 19:36:52,946 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: '2\'3,9"E.,3.,)&"*+.A,G.>\'&.5 G&"A*.+),H.1#.+)C J"$.,%&.A*#)*\'+'
+2025-10-04 19:36:52,946 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 1: 'G&"A*.+),H.1#.+)C J"$.,%&.A*#)*\'+ :"0#/0").,=\'11'
+2025-10-04 19:36:52,946 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 2: 'J"$.,%&.A*#)*\'+ :"0#/0").,=\'11 :"0#/0").,(&"A*.+),\'>,)9.,0\'11,>/+#)*\'+,'
+2025-10-04 19:36:52,947 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 3: ':"0#/0").,=\'11 :"0#/0").,(&"A*.+),\'>,)9.,0\'11,>/+#)*\'+, D,%"&";.).&1'
+2025-10-04 19:36:52,947 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 4: ':"0#/0").,(&"A*.+),\'>,)9.,0\'11,>/+#)*\'+, D,%"&";.).&1 N%A").,%"&";.).&1,GO,)"$*+(,",1).%,*+,)9.,\'%%\'1*).,A*&.#)*\'+'
+2025-10-04 19:36:52,947 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 5: 'D,%"&";.).&1 N%A").,%"&";.).&1,GO,)"$*+(,",1).%,*+,)9.,\'%%\'1*).,A*&.#)*\'+ Q).&").'
+2025-10-04 19:36:52,947 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 6: 'N%A").,%"&";.).&1,GO,)"$*+(,",1).%,*+,)9.,\'%%\'1*).,A*&.#)*\'+ Q).&").'
+2025-10-04 19:36:52,947 |     INFO | _apply_content_stream_mapping: 358 | Page 10 updated via content stream rewrite
+2025-10-04 19:36:52,948 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '!"#$%"$&\'(&)(\'%*$+,\'-.*/%0'
+2025-10-04 19:36:52,948 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: "12'./$,)(*"
+2025-10-04 19:36:52,948 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: '!"#$%"$&\'(&)(\'%*$+,\'-.*/%0 12\'./$,)(*'
+2025-10-04 19:36:52,949 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '2\'3,)\',4&"*+,",-./&"0,-.)5'
+2025-10-04 19:36:52,950 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '2\'3,#\'/0A,3.,#9"+(.,)9.,3.*(9)1,)\',;"$.,\'/&,=\'11,R/+#)*\'+,0\'3.&5'
+2025-10-04 19:36:52,950 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '49*+$,\'>,+./&"0,+.),"1,",>/+#)*\'+,R<,T,'
+2025-10-04 19:36:52,950 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: 'R,*1,",#\';%0.X,#\';%/)")*\'+,*+E\'0E*+(,;"+O,3.*(9)1,'
+2025-10-04 19:36:52,950 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: ")9.&.>'&.,A.>*+.,'/&,;'A.0["
+2025-10-04 19:36:52,950 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: "='11,R/+#)*'+,*1,?\\"
+2025-10-04 19:36:52,950 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '\\X[['
+2025-10-04 19:36:52,950 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: '2\'3,)\',4&"*+,",-./&"0,-.)5 2\'3,#\'/0A,3.,#9"+(.,)9.,3.*(9)1,)\',;"$.,\'/&,=\'11,R/+#)*\'+,0\'3.&5 49*+$,\'>,+./&"0,+.),"1,",>/+#)*\'+,R<,T,'
+2025-10-04 19:36:52,950 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 1: '2\'3,#\'/0A,3.,#9"+(.,)9.,3.*(9)1,)\',;"$.,\'/&,=\'11,R/+#)*\'+,0\'3.&5 49*+$,\'>,+./&"0,+.),"1,",>/+#)*\'+,R<,T, R,*1,",#\';%0.X,#\';%/)")*\'+,*+E\'0E*+(,;"+O,3.*(9)1,'
+2025-10-04 19:36:52,950 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 2: '49*+$,\'>,+./&"0,+.),"1,",>/+#)*\'+,R<,T, R,*1,",#\';%0.X,#\';%/)")*\'+,*+E\'0E*+(,;"+O,3.*(9)1,'
+2025-10-04 19:36:52,950 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 3: 'R,*1,",#\';%0.X,#\';%/)")*\'+,*+E\'0E*+(,;"+O,3.*(9)1, )9.&.>\'&.,A.>*+.,\'/&,;\'A.0['
+2025-10-04 19:36:52,950 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 4: ")9.&.>'&.,A.>*+.,'/&,;'A.0[ ='11,R/+#)*'+,*1,?\\"
+2025-10-04 19:36:52,951 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 5: ")9.&.>'&.,A.>*+.,'/&,;'A.0[ ='11,R/+#)*'+,*1,?\\ \\X[["
+2025-10-04 19:36:52,951 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 6: "='11,R/+#)*'+,*1,?\\ \\X[["
+2025-10-04 19:36:52,952 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '2\'3,)\',4&"*+,",-./&"0,-.)5'
+2025-10-04 19:36:52,952 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: ">'&,.E.&O,3.*(9),*+,)9.,+.)3'&$D"
+2025-10-04 19:36:52,952 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '49*1,).001,/1,39"),A*&.#)*\'+,)\',"AB/1),."#9,'
+2025-10-04 19:36:52,952 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '*>,3.,3"+),)\',0\'3.&,'
+2025-10-04 19:36:52,952 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: "'/&,0'11,>/+#)*'+D"
+2025-10-04 19:36:52,953 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: 'J"$.,"+,"AB/1);.+),"+A,&.%.")C'
+2025-10-04 19:36:52,953 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: '2\'3,)\',4&"*+,",-./&"0,-.)5 >\'&,.E.&O,3.*(9),*+,)9.,+.)3\'&$D 49*1,).001,/1,39"),A*&.#)*\'+,)\',"AB/1),."#9,'
+2025-10-04 19:36:52,953 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 1: '>\'&,.E.&O,3.*(9),*+,)9.,+.)3\'&$D 49*1,).001,/1,39"),A*&.#)*\'+,)\',"AB/1),."#9, *>,3.,3"+),)\',0\'3.&,'
+2025-10-04 19:36:52,953 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 2: '49*1,).001,/1,39"),A*&.#)*\'+,)\',"AB/1),."#9, *>,3.,3"+),)\',0\'3.&, \'/&,0\'11,>/+#)*\'+D'
+2025-10-04 19:36:52,953 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 3: '*>,3.,3"+),)\',0\'3.&, \'/&,0\'11,>/+#)*\'+D J"$.,"+,"AB/1);.+),"+A,&.%.")C'
+2025-10-04 19:36:52,953 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 4: '\'/&,0\'11,>/+#)*\'+D J"$.,"+,"AB/1);.+),"+A,&.%.")C'
+2025-10-04 19:36:52,963 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: 'R..A>\'&3"&A,-./&"0,-.)3\'&$'
+2025-10-04 19:36:52,963 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: 'Y"+)<'
+2025-10-04 19:36:52,963 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: 'R..A>\'&3"&A,-./&"0,-.)3\'&$ Y"+)<'
+2025-10-04 19:36:52,964 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: ':"0#/0/1,)\',)9.,].1#/.'
+2025-10-04 19:36:52,964 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: 'N1.,#"0#/0/18,#9"*+,&/0.8,.)#D,.)#D'
+2025-10-04 19:36:52,964 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '-/;.&*#"0,*11/.1,)\',F.,#\'+1*A.&.A'
+2025-10-04 19:36:52,964 |     INFO |     process_tj_array:  97 | TJ Array - Applied 1 replacements
+2025-10-04 19:36:52,964 |     INFO |     process_tj_array:  99 |   'F' → 'G' at positions 20-21
+2025-10-04 19:36:52,964 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: ':"0#/0/1,)\',)9.,].1#/. N1.,#"0#/0/18,#9"*+,&/0.8,.)#D,.)#D'
+2025-10-04 19:36:52,965 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 1: 'N1.,#"0#/0/18,#9"*+,&/0.8,.)#D,.)#D -/;.&*#"0,*11/.1,)\',G.,#\'+1*A.&.A'
+2025-10-04 19:36:52,965 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 2: '-/;.&*#"0,*11/.1,)\',G.,#\'+1*A.&.A'
+2025-10-04 19:36:52,965 |     INFO | _apply_content_stream_mapping: 358 | Page 15 updated via content stream rewrite
+2025-10-04 19:36:52,973 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '7/+#90*+.'
+2025-10-04 19:36:52,973 |     INFO |  _apply_v2_processor:  81 | Tj replacement: 'F' → 'G'
+2025-10-04 19:36:52,973 |     INFO |  _apply_v2_processor:  81 | Tj replacement: 'F' → 'G'
+2025-10-04 19:36:52,973 |     INFO |  _apply_v2_processor:  81 | Tj replacement: 'F' → 'G'
+2025-10-04 19:36:52,973 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '].#"00,)9")<,'
+2025-10-04 19:36:52,973 |     INFO |  _apply_v2_processor:  81 | Tj replacement: 'F' → 'G'
+2025-10-04 19:36:52,973 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '49\'/(9,)9.O,"%%."&,#\';%0.X8,"F\'E.,"&.,."1O,)\',#\';%/).C,'
+2025-10-04 19:36:52,973 |     INFO |     process_tj_array:  97 | TJ Array - Applied 1 replacements
+2025-10-04 19:36:52,973 |     INFO |     process_tj_array:  99 |   'F' → 'G' at positions 29-30
+2025-10-04 19:36:52,973 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: '7/+#90*+. ].#"00,)9")<, 49\'/(9,)9.O,"%%."&,#\';%0.X8,"G\'E.,"&.,."1O,)\',#\';%/).C,'
+2025-10-04 19:36:52,973 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 1: '].#"00,)9")<, 49\'/(9,)9.O,"%%."&,#\';%0.X8,"G\'E.,"&.,."1O,)\',#\';%/).C,'
+2025-10-04 19:36:52,973 |     INFO | _apply_content_stream_mapping: 358 | Page 16 updated via content stream rewrite
+2025-10-04 19:36:52,984 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '!"#$%&\'%"(")*\'+'
+2025-10-04 19:36:52,984 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: 'Y"+)<'
+2025-10-04 19:36:52,984 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: '!"#$%&\'%"(")*\'+ Y"+)<'
+2025-10-04 19:36:52,995 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '!"#$%&\'%"(")*\'+'
+2025-10-04 19:36:53,005 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '!"#$%&\'%"(")*\'+'
+2025-10-04 19:36:53,018 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '!"#$%&\'%"(")*\'+'
+2025-10-04 19:36:53,020 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '2\'3,9"E.,3.,)&"*+.A,F.>\'&.5'
+2025-10-04 19:36:53,020 |     INFO |     process_tj_array:  97 | TJ Array - Applied 1 replacements
+2025-10-04 19:36:53,020 |     INFO |     process_tj_array:  99 |   'F' → 'G' at positions 20-21
+2025-10-04 19:36:53,020 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: 'G&"A*.+),H.1#.+)C'
+2025-10-04 19:36:53,020 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: 'J"$.,%&.A*#)*\'+'
+2025-10-04 19:36:53,020 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: ':"0#/0").,=\'11'
+2025-10-04 19:36:53,021 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: ':"0#/0").,(&"A*.+),\'>,)9.,0\'11,>/+#)*\'+,'
+2025-10-04 19:36:53,021 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: 'D,%"&";.).&1'
+2025-10-04 19:36:53,021 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: 'N%A").,%"&";.).&1,FO,)"$*+(,",1).%,*+,)9.,\'%%\'1*).,A*&.#)*\'+'
+2025-10-04 19:36:53,021 |     INFO |     process_tj_array:  97 | TJ Array - Applied 1 replacements
+2025-10-04 19:36:53,021 |     INFO |     process_tj_array:  99 |   'F' → 'G' at positions 18-19
+2025-10-04 19:36:53,021 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: 'Q).&").'
+2025-10-04 19:36:53,021 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: '2\'3,9"E.,3.,)&"*+.A,G.>\'&.5 G&"A*.+),H.1#.+)C J"$.,%&.A*#)*\'+'
+2025-10-04 19:36:53,021 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 1: 'G&"A*.+),H.1#.+)C J"$.,%&.A*#)*\'+ :"0#/0").,=\'11'
+2025-10-04 19:36:53,021 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 2: 'J"$.,%&.A*#)*\'+ :"0#/0").,=\'11 :"0#/0").,(&"A*.+),\'>,)9.,0\'11,>/+#)*\'+,'
+2025-10-04 19:36:53,021 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 3: ':"0#/0").,=\'11 :"0#/0").,(&"A*.+),\'>,)9.,0\'11,>/+#)*\'+, D,%"&";.).&1'
+2025-10-04 19:36:53,021 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 4: ':"0#/0").,(&"A*.+),\'>,)9.,0\'11,>/+#)*\'+, D,%"&";.).&1 N%A").,%"&";.).&1,GO,)"$*+(,",1).%,*+,)9.,\'%%\'1*).,A*&.#)*\'+'
+2025-10-04 19:36:53,021 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 5: 'D,%"&";.).&1 N%A").,%"&";.).&1,GO,)"$*+(,",1).%,*+,)9.,\'%%\'1*).,A*&.#)*\'+ Q).&").'
+2025-10-04 19:36:53,021 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 6: 'N%A").,%"&";.).&1,GO,)"$*+(,",1).%,*+,)9.,\'%%\'1*).,A*&.#)*\'+ Q).&").'
+2025-10-04 19:36:53,022 |     INFO | _apply_content_stream_mapping: 358 | Page 21 updated via content stream rewrite
+2025-10-04 19:36:53,028 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '^"+*19*+(,G&"A*.+)1'
+2025-10-04 19:36:53,028 |     INFO |  _apply_v2_processor:  81 | Tj replacement: 'F' → 'G'
+2025-10-04 19:36:53,028 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '].;.;F.&<,'
+2025-10-04 19:36:53,028 |     INFO |     process_tj_array:  97 | TJ Array - Applied 1 replacements
+2025-10-04 19:36:53,028 |     INFO |     process_tj_array:  99 |   'F' → 'G' at positions 5-6
+2025-10-04 19:36:53,028 |     INFO |  _apply_v2_processor:  81 | Tj replacement: 'F' → 'G'
+2025-10-04 19:36:53,029 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '@1,3.,9"E.,;\'&.,0"O.&18,)9.,(&"A*.+),(.)1,E.&O,1;"00,"),)9.,."&0O,'
+2025-10-04 19:36:53,029 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '0"O.&1D'
+2025-10-04 19:36:53,029 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: 'R\'&,)9*1,&."1\'+8,\')9.&,"#)*E")*\'+1,\\1/#9,"1,'
+2025-10-04 19:36:53,029 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '].=N'
+2025-10-04 19:36:53,029 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '[,9"E.,F.#\';.,;\'&.,'
+2025-10-04 19:36:53,029 |     INFO |     process_tj_array:  97 | TJ Array - Applied 1 replacements
+2025-10-04 19:36:53,029 |     INFO |     process_tj_array:  99 |   'F' → 'G' at positions 7-8
+2025-10-04 19:36:53,029 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '].#"00,)9")<'
+2025-10-04 19:36:53,029 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: '^"+*19*+(,G&"A*.+)1 ].;.;G.&<, @1,3.,9"E.,;\'&.,0"O.&18,)9.,(&"A*.+),(.)1,E.&O,1;"00,"),)9.,."&0O,'
+2025-10-04 19:36:53,029 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 1: '].;.;G.&<, @1,3.,9"E.,;\'&.,0"O.&18,)9.,(&"A*.+),(.)1,E.&O,1;"00,"),)9.,."&0O, 0"O.&1D'
+2025-10-04 19:36:53,029 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 2: '@1,3.,9"E.,;\'&.,0"O.&18,)9.,(&"A*.+),(.)1,E.&O,1;"00,"),)9.,."&0O, 0"O.&1D'
+2025-10-04 19:36:53,029 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 3: '0"O.&1D R\'&,)9*1,&."1\'+8,\')9.&,"#)*E")*\'+1,\\1/#9,"1,'
+2025-10-04 19:36:53,029 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 4: 'R\'&,)9*1,&."1\'+8,\')9.&,"#)*E")*\'+1,\\1/#9,"1, ].=N'
+2025-10-04 19:36:53,030 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 5: 'R\'&,)9*1,&."1\'+8,\')9.&,"#)*E")*\'+1,\\1/#9,"1, ].=N [,9"E.,G.#\';.,;\'&.,'
+2025-10-04 19:36:53,030 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 6: '].=N [,9"E.,G.#\';.,;\'&., ].#"00,)9")<'
+2025-10-04 19:36:53,030 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 7: '[,9"E.,G.#\';.,;\'&., ].#"00,)9")<'
+2025-10-04 19:36:53,030 |     INFO | _apply_content_stream_mapping: 358 | Page 24 updated via content stream rewrite
+2025-10-04 19:36:53,030 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '6)9.&,@#)*E")*\'+,R/+#)*\'+1'
+2025-10-04 19:36:53,034 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '2O%.&F\'0*#,4"+(.+),R/+#)*\'+'
+2025-10-04 19:36:53,034 |     INFO |     process_tj_array:  97 | TJ Array - Applied 1 replacements
+2025-10-04 19:36:53,034 |     INFO |     process_tj_array:  99 |   'F' → 'G' at positions 5-6
+2025-10-04 19:36:53,034 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: 'P=JD'
+2025-10-04 19:36:53,034 |     INFO |  _apply_v2_processor:  81 | Tj replacement: 'F' → 'G'
+2025-10-04 19:36:53,035 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '2O%.&F\'0*#,)"+(.+),>/+#)*\'+'
+2025-10-04 19:36:53,035 |     INFO |     process_tj_array:  97 | TJ Array - Applied 1 replacements
+2025-10-04 19:36:53,035 |     INFO |     process_tj_array:  99 |   'F' → 'G' at positions 5-6
+2025-10-04 19:36:53,035 |     INFO |  _apply_v2_processor:  81 | Tj replacement: 'F' → 'G'
+2025-10-04 19:36:53,035 |     INFO |  _apply_v2_processor:  81 | Tj replacement: 'F' → 'G'
+2025-10-04 19:36:53,035 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: '2O%.&G\'0*#,4"+(.+),R/+#)*\'+ P=JD 2O%.&G\'0*#,)"+(.+),>/+#)*\'+'
+2025-10-04 19:36:53,035 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 1: 'P=JD 2O%.&G\'0*#,)"+(.+),>/+#)*\'+'
+2025-10-04 19:36:53,035 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 2: '2O%.&G\'0*#,)"+(.+),>/+#)*\'+'
+2025-10-04 19:36:53,035 |     INFO | _apply_content_stream_mapping: 358 | Page 26 updated via content stream rewrite
+2025-10-04 19:36:53,035 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '2O%.&F\'0*#,4"+(.+),R/+#)*\'+'
+2025-10-04 19:36:53,035 |     INFO |     process_tj_array:  97 | TJ Array - Applied 1 replacements
+2025-10-04 19:36:53,036 |     INFO |     process_tj_array:  99 |   'F' → 'G' at positions 5-6
+2025-10-04 19:36:53,036 |     INFO | _apply_content_stream_mapping: 358 | Page 27 updated via content stream rewrite
+2025-10-04 19:36:53,039 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '].#)*>*.A,=*+."&,N+*),\\'
+2025-10-04 19:36:53,040 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '].=N'
+2025-10-04 19:36:53,040 |     INFO |  _apply_v2_processor:  81 | Tj replacement: 'b'\x00\x8f\x00\x83\x00\x9a'' → 'b'\x00\x8G\x00\x83\x00\x9a''
+2025-10-04 19:36:53,040 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '4A.7'
+2025-10-04 19:36:53,040 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '4A.7'
+2025-10-04 19:36:53,040 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '4A.7'
+2025-10-04 19:36:53,040 |     INFO |  _apply_v2_processor:  81 | Tj replacement: 'F' → 'G'
+2025-10-04 19:36:53,040 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: '].#)*>*.A,=*+."&,N+*),\\ ].=N 4A.7'
+2025-10-04 19:36:53,040 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 1: '].=N 4A.7 4A.7'
+2025-10-04 19:36:53,040 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 2: '4A.7 4A.7 4A.7'
+2025-10-04 19:36:53,040 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 3: '4A.7 4A.7'
+2025-10-04 19:36:53,040 |     INFO | _apply_content_stream_mapping: 358 | Page 28 updated via content stream rewrite
+2025-10-04 19:36:53,041 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '].#)*>*.A,=*+."&,N+*),\\'
+2025-10-04 19:36:53,041 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '].=N'
+2025-10-04 19:36:53,041 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: '].#)*>*.A,=*+."&,N+*),\\ ].=N'
+2025-10-04 19:36:53,045 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '].=N'
+2025-10-04 19:36:53,045 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '.4A.7'
+2025-10-04 19:36:53,045 |     INFO |  _apply_v2_processor:  81 | Tj replacement: 'b'\x00\x8f\x00\x83\x00\x9a'' → 'b'\x00\x8G\x00\x83\x00\x9a''
+2025-10-04 19:36:53,045 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '.4A.7'
+2025-10-04 19:36:53,045 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '.4A.7'
+2025-10-04 19:36:53,046 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '.4A.7'
+2025-10-04 19:36:53,046 |     INFO |  _apply_v2_processor:  81 | Tj replacement: 'F' → 'G'
+2025-10-04 19:36:53,046 |     INFO |  _apply_v2_processor:  81 | Tj replacement: 'F' → 'G'
+2025-10-04 19:36:53,046 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: '].=N .4A.7'
+2025-10-04 19:36:53,046 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 1: '].=N .4A.7 .4A.7'
+2025-10-04 19:36:53,046 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 2: '.4A.7 .4A.7 .4A.7'
+2025-10-04 19:36:53,046 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 3: '.4A.7 .4A.7 .4A.7'
+2025-10-04 19:36:53,046 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 4: '.4A.7 .4A.7'
+2025-10-04 19:36:53,046 |     INFO | _apply_content_stream_mapping: 358 | Page 30 updated via content stream rewrite
+2025-10-04 19:36:53,047 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: '].=N'
+2025-10-04 19:36:53,047 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: '].=N'
+2025-10-04 19:36:53,048 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: 'Y9"),+.X)5'
+2025-10-04 19:36:53,048 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: 'Y.,+\'3,$+\'3,9\'3,)\',;"$.,",1*+(0.,/%A").,)\',",;\'A.0,(*E.+,1\';.,'
+2025-10-04 19:36:53,048 |    DEBUG |     process_tj_array:  90 | TJ Array - Combined text: "!/),9'3,A',3.,A',)9.,>/00,"
+2025-10-04 19:36:53,048 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: 'Y9"),+.X)5 Y.,+\'3,$+\'3,9\'3,)\',;"$.,",1*+(0.,/%A").,)\',",;\'A.0,(*E.+,1\';., !/),9\'3,A\',3.,A\',)9.,>/00,'
+2025-10-04 19:36:53,048 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 1: 'Y.,+\'3,$+\'3,9\'3,)\',;"$.,",1*+(0.,/%A").,)\',",;\'A.0,(*E.+,1\';., !/),9\'3,A\',3.,A\',)9.,>/00,'
+2025-10-04 19:36:53,115 |     INFO | _apply_content_stream_mapping: 368 | Successfully applied content stream replacements without overlays
+2025-10-04 19:36:53,115 |     INFO | _apply_overlay_mode_mapping: 295 | Content stream rewritten successfully; skipping overlay rasterisation
+2025-10-04 19:36:53,279 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_193652_821/output.pdf (832604 bytes)
+2025-10-04 19:36:53,280 |     INFO |         finalize_run: 222 | === Run Complete: 20251004_193652_821 (Duration: 0.46s) ===
+2025-10-04 19:36:53,280 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_193652_821
+2025-10-04 19:36:53,280 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_193652_821/run_metadata.json
+2025-10-04 19:36:53,280 |     INFO |         finalize_run: 233 | Run completed successfully with 5 mappings applied

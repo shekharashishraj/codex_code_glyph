@@ -1,0 +1,22 @@
+2025-10-04 01:35:46,200 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20251004_013546_199 ===
+2025-10-04 01:35:46,200 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_013546_199/input.pdf (395336 bytes)
+2025-10-04 01:35:46,201 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-10-04 01:35:46,201 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-10-04 01:35:46,201 |     INFO |         log_mappings:  83 |   'water?' → 'aciid?'
+2025-10-04 01:35:46,201 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-10-04 01:35:46,201 |     INFO |         log_mappings:  83 |   'water?' → 'aciid?'
+2025-10-04 01:35:46,205 |     INFO | _apply_overlay_mode_mapping: 286 | Using PyMuPDF for overlay mode processing
+2025-10-04 01:35:46,205 |     INFO | process_pdf_with_pymupdf: 350 | Processing PDF with PyMuPDF in overlay mode
+2025-10-04 01:35:46,205 |     INFO | process_pdf_with_pymupdf: 351 | Pattern: water\?
+2025-10-04 01:35:46,249 |    DEBUG |         replace_func: 215 | Replacing 'water?' with 'aciid?'
+2025-10-04 01:35:46,253 |     INFO | _process_page_overlay: 144 | Page 1: 'c) Do you think melanin would dissolve in water? Why or why not? ' → 'c) Do you think melanin would dissolve in aciid? Why or why not? ' at (211.91990661621094, 288.2424011230469, 544.5057983398438, 300.3096008300781)
+2025-10-04 01:35:46,297 |    DEBUG |         replace_func: 215 | Replacing 'water?' with 'aciid?'
+2025-10-04 01:35:46,299 |     INFO | _process_page_overlay: 144 | Page 5: 'bilayer in water? ' → 'bilayer in aciid? ' at (90.01083374023438, 553.2108154296875, 173.11143493652344, 565.2744140625)
+2025-10-04 01:35:46,312 |     INFO | process_pdf_overlay_mode:  41 | Created 2 overlays across 7 pages
+2025-10-04 01:35:46,324 |    DEBUG | _apply_overlays_pymupdf: 257 | Applied overlay on page 1
+2025-10-04 01:35:46,330 |    DEBUG | _apply_overlays_pymupdf: 257 | Applied overlay on page 5
+2025-10-04 01:35:46,347 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_013546_199/output.pdf (741966 bytes)
+2025-10-04 01:35:46,348 |     INFO |         finalize_run: 222 | === Run Complete: 20251004_013546_199 (Duration: 0.15s) ===
+2025-10-04 01:35:46,348 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_013546_199
+2025-10-04 01:35:46,349 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_013546_199/run_metadata.json
+2025-10-04 01:35:46,349 |     INFO |         finalize_run: 233 | Run completed successfully with 1 mappings applied

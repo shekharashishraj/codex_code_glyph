@@ -1,0 +1,3 @@
+2025-10-04 20:01:39,201 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20251004_200139_199 ===
+2025-10-04 20:01:39,204 |    DEBUG |         replace_func: 218 | Replacing 'Vivek' with 'Anish'
+2025-10-04 20:01:39,204 |     INFO | _process_page_overlay: 145 | Page 1: 'Dr. Vivek Gupta' → 'Dr. Anish Gupta' at (261.2256774902344, 234.05812072753906, 458.63763427734375, 264.05810546875)

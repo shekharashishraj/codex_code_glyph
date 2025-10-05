@@ -1,0 +1,44 @@
+2025-10-04 01:50:25,124 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20251004_015025_123 ===
+2025-10-04 01:50:25,128 |     INFO |            remap_pdf:  82 | Starting PDF remapping with 2 mappings in overlay mode
+2025-10-04 01:50:25,129 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_015025_123/input.pdf (83391 bytes)
+2025-10-04 01:50:25,129 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-10-04 01:50:25,129 |     INFO |         log_mappings:  81 | Word mappings to apply: 2 total
+2025-10-04 01:50:25,129 |     INFO |         log_mappings:  83 |   'RNN' → 'CNN'
+2025-10-04 01:50:25,129 |     INFO |         log_mappings:  83 |   'RNNs' → 'CNNs'
+2025-10-04 01:50:25,129 |     INFO |         log_mappings:  81 | Word mappings to apply: 2 total
+2025-10-04 01:50:25,129 |     INFO |         log_mappings:  83 |   'RNN' → 'CNN'
+2025-10-04 01:50:25,129 |     INFO |         log_mappings:  83 |   'RNNs' → 'CNNs'
+2025-10-04 01:50:25,129 |     INFO | _apply_overlay_mode_mapping: 286 | Using PyMuPDF for overlay mode processing
+2025-10-04 01:50:25,129 |     INFO | process_pdf_with_pymupdf: 367 | Processing PDF with PyMuPDF in overlay mode
+2025-10-04 01:50:25,129 |     INFO | process_pdf_with_pymupdf: 368 | Pattern: RNNs|RNN
+2025-10-04 01:50:25,137 |    DEBUG |         replace_func: 218 | Replacing 'RNNs' with 'CNNs'
+2025-10-04 01:50:25,143 |     INFO | _process_page_overlay: 147 | Page 1: 'RNNs and LSTM Quiz' → 'CNNs and LSTM Quiz' at (206.8990020751953, 112.24063110351562, 405.1201171875, 131.45602416992188)
+2025-10-04 01:50:25,143 |    DEBUG |         replace_func: 218 | Replacing 'RNN' with 'CNN'
+2025-10-04 01:50:25,143 |    DEBUG |         replace_func: 218 | Replacing 'RNNs' with 'CNNs'
+2025-10-04 01:50:25,146 |     INFO | _process_page_overlay: 147 | Page 1: 'Q1. What is the primary benefit of stacking multiple RNN layers (i.e., stacked RNNs)?' → 'Q1. What is the primary benefit of stacking multiple CNN layers (i.e., stacked CNNs)?' at (46.36399841308594, 230.58717346191406, 531.3644409179688, 243.49627685546875)
+2025-10-04 01:50:25,146 |    DEBUG |         replace_func: 218 | Replacing 'RNNs' with 'CNNs'
+2025-10-04 01:50:25,149 |     INFO | _process_page_overlay: 147 | Page 1: 'Q2. Which of the following is the main reason RNNs struggle with long–term dependen-' → 'Q2. Which of the following is the main reason CNNs struggle with long–term dependen-' at (46.36399841308594, 352.9341125488281, 540.9861450195312, 365.8432312011719)
+2025-10-04 01:50:25,149 |    DEBUG |         replace_func: 218 | Replacing 'RNN' with 'CNN'
+2025-10-04 01:50:25,153 |     INFO | _process_page_overlay: 147 | Page 1: 'Q3. What differentiates an LSTM cell from a standard RNN cell?' → 'Q3. What differentiates an LSTM cell from a standard CNN cell?' at (46.36399841308594, 488.8291320800781, 412.34613037109375, 501.7382507324219)
+2025-10-04 01:50:25,158 |    DEBUG |         replace_func: 218 | Replacing 'RNNs' with 'CNNs'
+2025-10-04 01:50:25,163 |     INFO | _process_page_overlay: 147 | Page 2: 'Q6. Bidirectional RNNs are often used for POS tagging but not machine translation.' → 'Q6. Bidirectional CNNs are often used for POS tagging but not machine translation.' at (46.36399841308594, 209.6671905517578, 540.9752807617188, 222.5762939453125)
+2025-10-04 01:50:25,163 |    DEBUG |         replace_func: 218 | Replacing 'RNN' with 'CNN'
+2025-10-04 01:50:25,166 |     INFO | _process_page_overlay: 147 | Page 2: 'Q7. Designing an RNN model for variable–length legal documents with long dependencies:' → 'Q7. Designing an CNN model for variable–length legal documents with long dependencies:' at (46.36399841308594, 287.1761779785156, 540.96435546875, 300.0852966308594)
+2025-10-04 01:50:25,166 |    DEBUG |         replace_func: 218 | Replacing 'RNN' with 'CNN'
+2025-10-04 01:50:25,168 |     INFO | _process_page_overlay: 147 | Page 2: '(a) Choose between vanilla RNN or LSTM.' → '(a) Choose between vanilla CNN or LSTM.' at (73.42399597167969, 307.50018310546875, 284.92236328125, 320.4093017578125)
+2025-10-04 01:50:25,168 |    DEBUG |         replace_func: 218 | Replacing 'RNN' with 'CNN'
+2025-10-04 01:50:25,172 |     INFO | _process_page_overlay: 147 | Page 2: 'Q8. Consider a vanilla RNN with recurrent weight matrix Wh and sequence length 50.' → 'Q8. Consider a vanilla CNN with recurrent weight matrix Wh and sequence length 50.' at (46.363990783691406, 443.3411865234375, 540.9942016601562, 458.0273132324219)
+2025-10-04 01:50:25,172 |     INFO | process_pdf_overlay_mode:  41 | Created 8 overlays across 2 pages
+2025-10-04 01:50:25,179 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 01:50:25,183 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 01:50:25,196 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 01:50:25,199 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 01:50:25,202 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 2
+2025-10-04 01:50:25,205 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 2
+2025-10-04 01:50:25,210 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 2
+2025-10-04 01:50:25,219 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 2
+2025-10-04 01:50:25,224 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_015025_123/output.pdf (1423699 bytes)
+2025-10-04 01:50:25,224 |     INFO |         finalize_run: 222 | === Run Complete: 20251004_015025_123 (Duration: 0.10s) ===
+2025-10-04 01:50:25,224 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_015025_123
+2025-10-04 01:50:25,224 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_015025_123/run_metadata.json
+2025-10-04 01:50:25,224 |     INFO |         finalize_run: 233 | Run completed successfully with 2 mappings applied

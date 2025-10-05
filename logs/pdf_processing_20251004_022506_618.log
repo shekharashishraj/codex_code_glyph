@@ -1,0 +1,31 @@
+2025-10-04 02:25:06,620 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20251004_022506_618 ===
+2025-10-04 02:25:06,628 |     INFO |            remap_pdf:  82 | Starting PDF remapping with 3 mappings in overlay mode
+2025-10-04 02:25:06,629 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_022506_618/input.pdf (128664 bytes)
+2025-10-04 02:25:06,629 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-10-04 02:25:06,629 |     INFO |         log_mappings:  81 | Word mappings to apply: 3 total
+2025-10-04 02:25:06,629 |     INFO |         log_mappings:  83 |   'Representation' → 'Recorgnition'
+2025-10-04 02:25:06,629 |     INFO |         log_mappings:  83 |   'human-like' → 'idiotlike'
+2025-10-04 02:25:06,629 |     INFO |         log_mappings:  83 |   'intelligence' → 'stupidity'
+2025-10-04 02:25:06,629 |     INFO |         log_mappings:  81 | Word mappings to apply: 3 total
+2025-10-04 02:25:06,629 |     INFO |         log_mappings:  83 |   'Representation' → 'Recorgnition'
+2025-10-04 02:25:06,630 |     INFO |         log_mappings:  83 |   'human-like' → 'idiotlike'
+2025-10-04 02:25:06,630 |     INFO |         log_mappings:  83 |   'intelligence' → 'stupidity'
+2025-10-04 02:25:06,630 |     INFO | _apply_overlay_mode_mapping: 286 | Using PyMuPDF for overlay mode processing
+2025-10-04 02:25:06,630 |     INFO | process_pdf_with_pymupdf: 367 | Processing PDF with PyMuPDF in overlay mode
+2025-10-04 02:25:06,630 |     INFO | process_pdf_with_pymupdf: 368 | Pattern: Representation|intelligence|human\-like
+2025-10-04 02:25:06,640 |    DEBUG |         replace_func: 218 | Replacing 'Representation' with 'Recorgnition'
+2025-10-04 02:25:06,648 |     INFO | _process_page_overlay: 147 | Page 1: 'Knowledge Representation and Reasoning: Questions' → 'Knowledge Recorgnition and Reasoning: Questions' at (120.61100006103516, 112.2557601928711, 491.4508361816406, 131.47116088867188)
+2025-10-04 02:25:06,648 |    DEBUG |         replace_func: 218 | Replacing 'Representation' with 'Recorgnition'
+2025-10-04 02:25:06,653 |     INFO | _process_page_overlay: 147 | Page 1: 'Question - 1: What is the primary aim of Knowledge Representation and Rea-' → 'Question - 1: What is the primary aim of Knowledge Recorgnition and Rea-' at (71.0, 214.1166534423828, 541.1417236328125, 228.0718536376953)
+2025-10-04 02:25:06,653 |    DEBUG |         replace_func: 218 | Replacing 'intelligence' with 'stupidity'
+2025-10-04 02:25:06,653 |    DEBUG |         replace_func: 218 | Replacing 'human-like' with 'idiotlike'
+2025-10-04 02:25:06,656 |     INFO | _process_page_overlay: 147 | Page 1: '• c. To understand the nature of intelligence and cognition to simulate human-like abilities in' → '• c. To understand the nature of stupidity and cognition to simulate idiotlike abilities in' at (87.39500427246094, 292.21868896484375, 541.0642700195312, 305.32928466796875)
+2025-10-04 02:25:06,673 |     INFO | process_pdf_overlay_mode:  41 | Created 3 overlays across 4 pages
+2025-10-04 02:25:06,679 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 02:25:06,684 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 02:25:06,701 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 02:25:06,706 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_022506_618/output.pdf (770535 bytes)
+2025-10-04 02:25:06,706 |     INFO |         finalize_run: 222 | === Run Complete: 20251004_022506_618 (Duration: 0.09s) ===
+2025-10-04 02:25:06,706 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_022506_618
+2025-10-04 02:25:06,706 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_022506_618/run_metadata.json
+2025-10-04 02:25:06,706 |     INFO |         finalize_run: 233 | Run completed successfully with 3 mappings applied

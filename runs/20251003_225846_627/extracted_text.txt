@@ -1,0 +1,343 @@
+Name_____________________________________ 
+Section_______ 
+TA_____________ 
+7.016 Problem Set 1- 2018 
+(This material is COPYRIGHT protected.) 
+Question 1 
+The following is the “line-angle” drawing of melanin, a pigment that determines hair color.  Note: The 
+carbon (C) and the hydrogen (H) atoms are not shown but implied. 
+a) Clearly label ALL C and H atoms on the line angle drawing and 
+write the molecular formula of melanin in the space below. 
+b) On the line angle drawing, box one nonpolar functional group and 
+circle all electronegative elements. 
+c) Do you think melanin would dissolve in water? Why or why not? 
+Question 2 
+There are two types of melanin pigment in hair follicles: pheomelanin (which promotes red or blond 
+hair color) and eumelanin (which promotes black or brown hair color). The following is the simplified 
+outline of eumelanin and pheomelanin synthesis. 
+a) The E1-E5 catalyzed reactions proceed spontaneously in the 
+forward direction (shown by an •) and NOT in the reverse direction 
+(shown by •) within a cell. Explain why this is so. 
+b) You identify three individuals: Individual A lacks a functional E2, 
+Individual B has a hyperactive form of E3 enzyme and Individual C 
+has a functional E5 but lacks a functional E4. 
+i. 
+Which metabolite(s) would build up in the melanin synthesizing 
+cells of Individual A? 
+ii. 
+Which metabolite(s) would build up in the melanin synthesizing cells of Individual B? 
+iii. 
+What would be the hair color of Individual C? Explain your choice assuming that cysteine is 
+present. 
+1 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+  
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Name_____________________________________ 
+Section_______ 
+TA_____________ 
+Question 2 continued 
+c) Which class of macromolecules is cysteine a monomer of: carbohydrates/ lipids/ nucleic acids/ 
+proteins? Briefly explain why cysteine is different from other monomers that make the class of 
+macromolecules that you chose. 
+Question 3 
+a) Complete the statements below by choosing from the following: the same/ higher/ lower. The 
+reaction catalyzed by a hypoactive form of E3 (1000- fold less active than the normal form of E3) has … 
+i. 
+_______________ free energy change as the reaction catalyzed by normal E3. 
+ii. 
+_______________ reaction rate compared to the reaction catalyzed by normal E3. 
+iii. 
+_______________ reaction equilibrium compared to the reaction catalyzed by normal E3 
+iv. 
+_______________ activation energy compared to the reaction catalyzed by normal E3 
+b) For the E3 catalyzed step, the free energy change (ΔG) = -1.8 kcals/mole. 
+i. 
+The E3 catalyzed reaction is 
+exergonic/ endergonic reaction. 
+an example of an 
+ii. 
+On the left, draw the energy profile of the reaction 
+catalyzed by E3. Label the reactants (R), products (P), 
+ΔG and activation energy (EAC) of the reaction. 
+c) E3 is optimally active at pH 7.4 and 37OC. If the same E3­
+catalyzed reaction were conducted in vitro (in a test tube) at 
+pH 7.4 and 50OC, would you expect to see more/ less/ the 
+same level of melanin synthesis? Explain why. Note: 
+Provide an explanation with respect to the three dimensional 
+(3D-) conformation of E3 enzyme. Your expl

@@ -1,0 +1,384 @@
+Backpropagation in Neural 
+Nets
+How to Train a Neural Net?
+Training Data
+Output
+•
+Put in Training inputs, get the output
+•
+Compare output to correct answers: Look at loss function J
+•
+Adjust and repeat!
+•
+Backpropagation tells us how to make a single adjustment using
+calculus.
+How have we trained before?
+•
+Gradient Descent!
+1.
+Make prediction
+2.
+Calculate Loss
+3.
+Calculate gradient of the loss function w.r.t. parameters
+4.
+Update parameters by taking a step in the opposite direction
+5.
+Iterate
+How have we trained before?
+•
+Gradient Descent!
+1.
+Make prediction
+2.
+Calculate Loss
+3.
+Calculate gradient of the loss function w.r.t. parameters
+4.
+Update parameters by taking a step in the opposite direction
+5.
+Iterate
+} ‘The Forward Pass’
+𝑦1
+Feedforward Neural Network
+𝑥1
+𝑥2
+𝑥3
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+ො𝑦1
+ො𝑦2
+ො𝑦3
+𝑦2
+𝑦3
+𝑦1
+Forward Propagation
+𝑥1
+𝑥2
+𝑥3
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+ො𝑦1
+ො𝑦2
+ො𝑦3
+𝑦2
+𝑦3
+Input
+𝑦1
+Forward Propagation
+𝑥1
+𝑥2
+𝑥3
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+ො𝑦1
+ො𝑦2
+ො𝑦3
+𝑦2
+𝑦3
+Calculate each Layer
+𝑦1
+Forward Propagation
+𝑥1
+𝑥2
+𝑥3
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+ො𝑦1
+ො𝑦2
+ො𝑦3
+𝑦2
+𝑦3
+Output
+𝑦1
+Forward Propagation
+𝑥1
+𝑥2
+𝑥3
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+ො𝑦1
+ො𝑦2
+ො𝑦3
+𝑦2
+𝑦3
+Evaluate:
+𝐽𝑦𝑖, ෝ𝑦𝑖
+How have we trained before?
+•
+Gradient Descent!
+1.
+Make prediction
+2.
+Calculate Loss
+3.
+Calculate gradient of the loss function w.r.t. parameters
+4.
+Update parameters by taking a step in the opposite direction
+5.
+Iterate
+How to calculate gradient?
+●
+Chain rule
+How to Train a Neural Net?
+•
+How could we change the weights to make our Loss Function lower?
+•
+Think of neural net as a function F: X -> Y
+•
+F is a complex computation involving many weights W_k
+•
+Given the structure, the weights “define” the function F (and 
+therefore define our model)
+•
+Loss Function is J(y,F(x))
+PS. Loss function may also look like L(y, F(x))
+PS. F(x) is the current prediction or y^; y is the ground truth (label)
+How to Train a Neural Net?
+•
+Get
+𝜕𝐽
+𝜕𝑊𝑘for every weight in the network.
+•
+This tells us what direction to adjust each Wk if we want to lower 
+our loss function.
+•
+Make an adjustment and repeat!
+𝑦1
+Feedforward Neural Network
+𝑥1
+𝑥2
+𝑥3
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+ො𝑦1
+ො𝑦2
+ො𝑦3
+𝑦2
+𝑦3
+𝜕𝐽𝑦𝑖, ෝ𝑦𝑖
+𝜕𝑊𝑘
+𝑊(1)
+𝑊(2)
+𝑊(3)
+Want:
+Calculus to the Rescue
+•
+Use calculus, chain rule, etc. etc.
+•
+Functions are chosen to have “nice” derivatives
+•
+Numerical issues to be considered
+Punchline
+𝜕𝐽
+𝜕𝑊(2) = (ො𝑦−𝑦) ⋅𝑊3 ⋅𝜎′ 𝑧(3) ⋅𝑎(2)
+𝜕𝐽
+𝜕𝑊(1) =
+ො𝑦−𝑦⋅𝑊3 ⋅𝜎′ 𝑧(3) ⋅𝑊2 ⋅𝜎′ 𝑧2
+⋅𝑋
+𝜕𝐽
+𝜕𝑊(3) = (ො𝑦−𝑦) ⋅𝑎(3)
+•
+Recall that: 𝜎′ 𝑧= 𝜎(𝑧)(1 −𝜎(𝑧))
+•
+Though they appear complex, above are easy to compute! 
+𝑦1
+Backpropagation
+𝑥1
+𝑥2
+𝑥3
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+ො𝑦1
+ො𝑦2
+ො𝑦3
+𝑦2
+𝑦3
+𝜕𝐽𝑦𝑖, ෝ𝑦𝑖
+𝜕𝑊𝑘
+𝑊(1)
+𝑊(2)
+𝑊(3)
+Want:
+𝑦1
+Backpropagation
+𝑥1
+𝑥2
+𝑥3
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+ො𝑦1
+ො𝑦2
+ො𝑦3
+𝑦2
+𝑦3
+𝑊(1)
+𝑊(2)
+𝜕𝐽𝑦𝑖, ෝ𝑦𝑖
+𝜕𝑊3
+𝑦1
+Backpropagation
+𝑥1
+𝑥2
+𝑥3
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+ො𝑦1
+ො𝑦2
+ො𝑦3
+𝑦2
+𝑦3
+𝜕𝐽𝑦𝑖, ෝ𝑦𝑖
+𝜕𝑊3
+𝜕𝐽𝑦𝑖, ෝ𝑦𝑖
+𝜕𝑊2
+𝑊(1)
+𝑦1
+Backpropagation
+𝑥1
+𝑥2
+𝑥3
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+𝜎
+ො𝑦1
+ො𝑦2
+ො𝑦3
+𝑦2
+𝑦3
+𝜕𝐽𝑦𝑖, ෝ𝑦𝑖
+𝜕𝑊3
+𝜕𝐽𝑦𝑖, ෝ𝑦𝑖
+𝜕𝑊2
+𝜕𝐽𝑦𝑖, ෝ𝑦𝑖
+𝜕𝑊1
+How have we trained before?
+•
+Gradient Descent!
+1.
+Make prediction
+2.
+Calculate Loss
+3.
+Calculate gradient of the loss function w.r.t. parameters
+4.
+Update parameters by taking a step in the opposite direction
+5.
+Iterate
+In short, Backpropagation ~= passing back the loss
+Vanishing Gradients
+𝜕𝐽
+𝜕𝑊(1) =
+ො𝑦−𝑦⋅𝑊3 ⋅𝜎′ 𝑧(3) ⋅𝑊2 ⋅𝜎′ 𝑧2
+⋅𝑋
+•
+Remember: 𝜎′ 𝑧= 𝜎𝑧
+1 −𝜎𝑧
+≤.25
+•
+As we have more layers, the gradient gets very small at the early 
+layers.
+•
+This is known as the “vanishing gradient” problem.
+•
+For this reason, other activations (such as ReLU) have become more 
+common.
+Recall that:
+Other Activation Functions
+Hyperbolic Tangent Function
+𝑡𝑎𝑛ℎ𝑧= sinh(𝑧)
+cosh(𝑧) = 𝑒2𝑥−1
+𝑒2𝑥+ 1
+•
+Hyperbolic tangent function
+•
+Pronounced “tanch”
+𝑡𝑎𝑛ℎ0 = 0
+𝑡𝑎𝑛ℎ∞= 1
+𝑡𝑎𝑛ℎ−∞= −1
+Hyperbolic Tangent Function
+Rectified Linear Unit (ReLU)
+𝑅𝑒𝐿𝑈𝑧= ቊ0,
+𝑧< 0
+𝑧,
+𝑧≥0
+= max 0, 𝑧
+𝑅𝑒𝐿𝑈0 = 0
+𝑅𝑒𝐿𝑈𝑧= 𝑧
+𝑅𝑒𝐿𝑈−𝑧= 0
+for (𝑧≫0)
+Rectified Linear Unit (ReLU)
+“Leaky” Rectified Linear Unit (ReLU)
+𝐿𝑅𝑒𝐿𝑈𝑧= ቊ𝛼𝑧,
+𝑧< 0
+𝑧,
+𝑧≥0
+= max 𝛼𝑧, 𝑧
+for (𝛼< 1)
+𝐿𝑅𝑒𝐿𝑈0 = 0
+𝐿𝑅𝑒𝐿𝑈𝑧= 𝑧
+𝐿𝑅𝑒𝐿𝑈−𝑧= −𝛼𝑧
+for (𝑧≫0)
+“Leaky” Rectified Linear Unit (ReLU)
+What next?
+•
+We now know how to make a single u

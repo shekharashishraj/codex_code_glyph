@@ -1,0 +1,25 @@
+2025-10-04 01:49:39,309 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20251004_014939_309 ===
+2025-10-04 01:49:39,314 |     INFO |            remap_pdf:  82 | Starting PDF remapping with 1 mappings in overlay mode
+2025-10-04 01:49:39,315 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_014939_309/input.pdf (84652 bytes)
+2025-10-04 01:49:39,315 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-10-04 01:49:39,315 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-10-04 01:49:39,315 |     INFO |         log_mappings:  83 |   'primary' → 'cmpsit'
+2025-10-04 01:49:39,315 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-10-04 01:49:39,315 |     INFO |         log_mappings:  83 |   'primary' → 'cmpsit'
+2025-10-04 01:49:39,315 |     INFO | _apply_overlay_mode_mapping: 286 | Using PyMuPDF for overlay mode processing
+2025-10-04 01:49:39,315 |     INFO | process_pdf_with_pymupdf: 367 | Processing PDF with PyMuPDF in overlay mode
+2025-10-04 01:49:39,315 |     INFO | process_pdf_with_pymupdf: 368 | Pattern: primary
+2025-10-04 01:49:39,332 |    DEBUG |         replace_func: 218 | Replacing 'primary' with 'cmpsit'
+2025-10-04 01:49:39,339 |     INFO | _process_page_overlay: 147 | Page 1: 'schema. Show entities and attributes, primary key, foreign key, relationships, and car-' → 'schema. Show entities and attributes, cmpsit key, foreign key, relationships, and car-' at (71.0, 599.604248046875, 540.9785766601562, 612.5133666992188)
+2025-10-04 01:49:39,339 |    DEBUG |         replace_func: 218 | Replacing 'primary' with 'cmpsit'
+2025-10-04 01:49:39,343 |     INFO | _process_page_overlay: 147 | Page 1: 'tuples, primary key, foreign key, and integrity constraints in the context of the given' → 'tuples, cmpsit key, foreign key, and integrity constraints in the context of the given' at (71.0, 690.6632690429688, 540.9675903320312, 703.5723876953125)
+2025-10-04 01:49:39,349 |     INFO | process_pdf_overlay_mode:  41 | Created 2 overlays across 2 pages
+2025-10-04 01:49:39,355 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 01:49:39,359 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 01:49:39,362 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_014939_309/output.pdf (467371 bytes)
+2025-10-04 01:49:39,363 |     INFO |         finalize_run: 222 | === Run Complete: 20251004_014939_309 (Duration: 0.05s) ===
+2025-10-04 01:49:39,363 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_014939_309
+2025-10-04 01:49:39,363 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_014939_309/run_metadata.json
+2025-10-04 01:49:39,363 |     INFO |         finalize_run: 233 | Run completed successfully with 1 mappings applied
+2025-10-04 01:50:09,464 |     INFO |  log_text_extraction:  90 | Extracted text (1708 chars): 'RNNs and LSTM Quiz\nMultiple Choice Questions\nQ1. What is the primary benefit of stacking multiple RNN layers (i.e., stacked RNNs)?\nA. Faster training\nB. Lower memory usage\nC. Better learning of hierarchical features\nD. Simpler architecture\nQ2. Which of the following is the main reason RNNs struggle with long–term dependen-\ncies?\nA. Overfitting\nB. Vanishing gradients\nC. Lack of non–linearity\nD. Insufficient data\nQ3. What differentiates an LSTM cell from a standard RNN cell?\nA. It uses ReLU instea...'
+2025-10-04 01:50:09,465 |    DEBUG |  log_text_extraction:  95 | Full extracted text saved to: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_014939_309/extracted_text.txt

@@ -1,0 +1,51 @@
+2025-10-04 13:52:39,094 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20251004_135239_090 ===
+2025-10-04 13:52:39,104 |     INFO |            remap_pdf:  82 | Starting PDF remapping with 2 mappings in overlay mode
+2025-10-04 13:52:39,105 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_135239_090/input.pdf (106016 bytes)
+2025-10-04 13:52:39,105 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-10-04 13:52:39,105 |     INFO |         log_mappings:  81 | Word mappings to apply: 2 total
+2025-10-04 13:52:39,105 |     INFO |         log_mappings:  83 |   '2019' → '2020'
+2025-10-04 13:52:39,105 |     INFO |         log_mappings:  83 |   '2018' → '2019'
+2025-10-04 13:52:39,105 |     INFO |         log_mappings:  81 | Word mappings to apply: 2 total
+2025-10-04 13:52:39,105 |     INFO |         log_mappings:  83 |   '2019' → '2020'
+2025-10-04 13:52:39,105 |     INFO |         log_mappings:  83 |   '2018' → '2019'
+2025-10-04 13:52:39,105 |     INFO | _apply_overlay_mode_mapping: 286 | Using PyMuPDF for overlay mode processing
+2025-10-04 13:52:39,106 |     INFO | process_pdf_with_pymupdf: 367 | Processing PDF with PyMuPDF in overlay mode
+2025-10-04 13:52:39,106 |     INFO | process_pdf_with_pymupdf: 368 | Pattern: 2019|2018
+2025-10-04 13:52:39,126 |    DEBUG |         replace_func: 218 | Replacing '2019' with '2020'
+2025-10-04 13:52:39,135 |     INFO | _process_page_overlay: 147 | Page 1: 'Fiscal Year 2019' → 'Fiscal Year 2020' at (351.55999755859375, 92.98979187011719, 410.41265869140625, 103.82365417480469)
+2025-10-04 13:52:39,136 |    DEBUG |         replace_func: 218 | Replacing '2018' with '2019'
+2025-10-04 13:52:39,138 |     INFO | _process_page_overlay: 147 | Page 1: 'Fiscal Year 2018 ' → 'Fiscal Year 2019 ' at (428.53985595703125, 89.40797424316406, 490.4200134277344, 104.69197845458984)
+2025-10-04 13:52:39,139 |    DEBUG |         replace_func: 218 | Replacing '2019' with '2020'
+2025-10-04 13:52:39,140 |     INFO | _process_page_overlay: 147 | Page 1: '2019 ' → '2020 ' at (452.17999267578125, 277.8680114746094, 473.20001220703125, 293.1520080566406)
+2025-10-04 13:52:39,141 |    DEBUG |         replace_func: 218 | Replacing '2018' with '2019'
+2025-10-04 13:52:39,142 |     INFO | _process_page_overlay: 147 | Page 1: '2018' → '2019' at (523.4600219726562, 281.4498291015625, 541.510986328125, 292.28369140625)
+2025-10-04 13:52:39,142 |    DEBUG |         replace_func: 218 | Replacing '2019' with '2020'
+2025-10-04 13:52:39,148 |     INFO | _process_page_overlay: 147 | Page 1: 'Texas facility as it increased production during fiscal 2019, as well as the value at which the Company's live poultry ' → 'Texas facility as it increased production during fiscal 2020, as well as the value at which the Company's live poultry ' at (52.999969482421875, 414.9320373535156, 522.4952392578125, 428.024169921875)
+2025-10-04 13:52:39,148 |    DEBUG |         replace_func: 218 | Replacing '2019' with '2020'
+2025-10-04 13:52:39,148 |    DEBUG |         replace_func: 218 | Replacing '2018' with '2019'
+2025-10-04 13:52:39,152 |     INFO | _process_page_overlay: 147 | Page 1: 'of $2.8 million at October 31, 2019 and of $9.6 million at October 31, 2018 to reduce the values of live broiler inventories on ' → 'of $2.8 million at October 31, 2020 and of $9.6 million at October 31, 2019 to reduce the values of live broiler inventories on ' at (52.999908447265625, 518.4315795898438, 559.284423828125, 531.523681640625)
+2025-10-04 13:52:39,152 |    DEBUG |         replace_func: 218 | Replacing '2019' with '2020'
+2025-10-04 13:52:39,152 |    DEBUG |         replace_func: 218 | Replacing '2018' with '2019'
+2025-10-04 13:52:39,156 |     INFO | _process_page_overlay: 147 | Page 1: '31, 2019, as compared to October 31, 2018, as well as an increase in production volume at the Company's prepared chicken ' → '31, 2020, as compared to October 31, 2019, as well as an increase in production volume at the Company's prepared chicken ' at (52.998992919921875, 599.9119873046875, 552.4590454101562, 613.0040893554688)
+2025-10-04 13:52:39,156 |    DEBUG |         replace_func: 218 | Replacing '2019' with '2020'
+2025-10-04 13:52:39,160 |     INFO | _process_page_overlay: 147 | Page 1: 'facility in Flowood, Mississippi. During fiscal 2019, the facility processed approximately 129.1 million pounds of prepared ' → 'facility in Flowood, Mississippi. During fiscal 2020, the facility processed approximately 129.1 million pounds of prepared ' at (52.998992919921875, 611.4319458007812, 551.0263671875, 624.5240478515625)
+2025-10-04 13:52:39,160 |    DEBUG |         replace_func: 218 | Replacing '2018' with '2019'
+2025-10-04 13:52:39,164 |     INFO | _process_page_overlay: 147 | Page 1: 'chicken products, as compared to approximately 107.6 million pounds during fiscal 2018. Approximately 1.2 million pounds ' → 'chicken products, as compared to approximately 107.6 million pounds during fiscal 2019. Approximately 1.2 million pounds ' at (52.99897766113281, 622.9519653320312, 557.6959228515625, 636.0440673828125)
+2025-10-04 13:52:39,164 |    DEBUG |         replace_func: 218 | Replacing '2019' with '2020'
+2025-10-04 13:52:39,169 |     INFO | _process_page_overlay: 147 | Page 1: 'of that increase was in inventory at October 31, 2019, representing an approximately 12% increase in inventory volume.  ' → 'of that increase was in inventory at October 31, 2020, representing an approximately 12% increase in inventory volume.  ' at (52.998992919921875, 632.64794921875, 541.419921875, 647.9319458007812)
+2025-10-04 13:52:39,169 |     INFO | process_pdf_overlay_mode:  41 | Created 10 overlays across 1 pages
+2025-10-04 13:52:39,187 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 13:52:39,198 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 13:52:39,205 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 13:52:39,210 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 13:52:39,216 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 13:52:39,221 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 13:52:39,227 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 13:52:39,233 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 13:52:39,239 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 13:52:39,246 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 13:52:39,254 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_135239_090/output.pdf (2466862 bytes)
+2025-10-04 13:52:39,255 |     INFO |         finalize_run: 222 | === Run Complete: 20251004_135239_090 (Duration: 0.16s) ===
+2025-10-04 13:52:39,255 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_135239_090
+2025-10-04 13:52:39,255 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_135239_090/run_metadata.json
+2025-10-04 13:52:39,255 |     INFO |         finalize_run: 233 | Run completed successfully with 2 mappings applied

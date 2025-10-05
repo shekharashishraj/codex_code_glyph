@@ -1,0 +1,25 @@
+2025-10-04 21:48:06,112 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20251004_214806_109 ===
+2025-10-04 21:48:06,118 |     INFO |            remap_pdf:  82 | Starting PDF remapping with 1 mappings in overlay mode
+2025-10-04 21:48:06,118 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_214806_109/input.pdf (67254 bytes)
+2025-10-04 21:48:06,118 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-10-04 21:48:06,118 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-10-04 21:48:06,118 |     INFO |         log_mappings:  83 |   'heterogenous' → 'homogenous'
+2025-10-04 21:48:06,118 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-10-04 21:48:06,118 |     INFO |         log_mappings:  83 |   'heterogenous' → 'homogenous'
+2025-10-04 21:48:06,122 |     INFO | log_pattern_building:  99 | Building regex pattern for 1 words (ignore_case=True)
+2025-10-04 21:48:06,122 |    DEBUG | log_pattern_building: 100 | Words to match: ['heterogenous']
+2025-10-04 21:48:06,122 |    DEBUG | log_pattern_building: 101 | Compiled pattern: heterogenous
+2025-10-04 21:48:06,293 |     INFO | _apply_content_stream_mapping: 361 | Content stream rewrite produced no changes; fallback to overlay pipeline
+2025-10-04 21:48:06,294 |  WARNING | _apply_overlay_mode_mapping: 298 | Content stream rewrite failed; using PyMuPDF font mode
+2025-10-04 21:48:06,294 |     INFO | process_pdf_with_pymupdf: 399 | Processing PDF with PyMuPDF in font mode
+2025-10-04 21:48:06,294 |     INFO | process_pdf_with_pymupdf: 400 | Pattern: heterogenous
+2025-10-04 21:48:06,308 |    DEBUG |         replace_func: 218 | Replacing 'heterogenous' with 'homogenous'
+2025-10-04 21:48:06,324 |     INFO | _process_page_direct_replacement: 202 | Page 1: Direct replacement 'Characteristics of CC - Ability to support heterogenous clients (thin and thick)' → 'Characteristics of CC - Ability to support homogenous clients (thin and thick)'
+2025-10-04 21:48:06,335 |     INFO | process_pdf_font_mode:  73 | Made 1 direct text replacements
+2025-10-04 21:48:06,342 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_214806_109/output.pdf (219373 bytes)
+2025-10-04 21:48:06,342 |     INFO |         finalize_run: 222 | === Run Complete: 20251004_214806_109 (Duration: 0.23s) ===
+2025-10-04 21:48:06,342 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_214806_109
+2025-10-04 21:48:06,342 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_214806_109/run_metadata.json
+2025-10-04 21:48:06,342 |     INFO |         finalize_run: 233 | Run completed successfully with 1 mappings applied
+2025-10-04 21:55:03,681 |     INFO |  log_text_extraction:  90 | Extracted text (2248 chars): 'Homework 1\nAPM 523\nArizona State University\nProblem 1\nImplement the Golden Section Search algorithm for finding a minimum of\nf(x) = 10 + x2 −10 cos(2πx),\nx ∈[a, b],\nwhere a = 1.6 and b = 2.4. You can use a tolerance ϵ = 10−4 and maximum\niterations 100. What is xmin and what is f(xmin) ?\nProblem 2\nImplement the Nelder-Mead simplex algorithm and test it on the even Rosen-\nbrock function\nf(x) =\nn/2\nX\ni=1\n100(x2\n2i−1 −x2i)2 + (1 −x2i−1)2\nYou can use the following parameters\nX0 =\n\x020\nIn\n\x03\n(initial ver...'
+2025-10-04 21:55:03,682 |    DEBUG |  log_text_extraction:  95 | Full extracted text saved to: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_214806_109/extracted_text.txt

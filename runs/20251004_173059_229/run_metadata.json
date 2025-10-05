@@ -1,0 +1,24 @@
+{
+  "run_id": "20251004_173059_229",
+  "start_time": "2025-10-04T17:30:59.230307",
+  "mode": "overlay",
+  "mappings": {
+    "Vivek": "Anish"
+  },
+  "steps": [],
+  "errors": [],
+  "results": {
+    "output_pdf": {
+      "filename": "output.pdf",
+      "size_bytes": 4155471,
+      "path": "/Users/ashishrajshekhar/codex_code_glyph/runs/20251004_173059_229/output.pdf"
+    }
+  },
+  "input_pdf": {
+    "filename": "input.pdf",
+    "size_bytes": 3979403,
+    "path": "/Users/ashishrajshekhar/codex_code_glyph/runs/20251004_173059_229/input.pdf"
+  },
+  "end_time": "2025-10-04T17:31:02.345283",
+  "duration_seconds": 3.114976
+}

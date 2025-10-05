@@ -1,0 +1,15 @@
+2025-10-02 01:59:06,485 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20251002_015906_484 ===
+2025-10-02 01:59:06,485 |     INFO | process_pdf_with_pymupdf: 293 | Processing PDF with PyMuPDF in overlay mode
+2025-10-02 01:59:06,485 |     INFO | process_pdf_with_pymupdf: 294 | Pattern: Distributed|Systems
+2025-10-02 01:59:06,561 |    DEBUG |         replace_func: 197 | Replacing 'Distributed' with 'Displacement'
+2025-10-02 01:59:06,561 |    DEBUG |         replace_func: 197 | Replacing 'Systems' with 'Interns'
+2025-10-02 01:59:06,563 |    DEBUG |  _capture_text_image: 219 | Captured text image: 5659 bytes
+2025-10-02 01:59:06,563 |     INFO | _process_page_overlay: 126 | Page 1: 'Distributed Database Systems  ' → 'Displacement Database Interns  ' at (180.4706573486328, 72.48259735107422, 342.0121765136719, 87.13459777832031)
+2025-10-02 01:59:07,253 |     INFO | process_pdf_overlay_mode:  41 | Created 1 overlays across 7 pages
+2025-10-02 01:59:07,258 |    DEBUG | _apply_overlays_pymupdf: 258 | Applied overlay on page 1
+2025-10-02 01:59:07,261 |     INFO | process_pdf_with_pymupdf: 293 | Processing PDF with PyMuPDF in font mode
+2025-10-02 01:59:07,261 |     INFO | process_pdf_with_pymupdf: 294 | Pattern: Distributed|Systems
+2025-10-02 01:59:07,322 |    DEBUG |         replace_func: 197 | Replacing 'Distributed' with 'Displacement'
+2025-10-02 01:59:07,322 |    DEBUG |         replace_func: 197 | Replacing 'Systems' with 'Interns'
+2025-10-02 01:59:07,325 |     INFO | _process_page_direct_replacement: 181 | Page 1: Direct replacement 'Distributed Database Systems  ' → 'Displacement Database Interns  '
+2025-10-02 01:59:08,052 |     INFO | process_pdf_font_mode:  70 | Made 1 direct text replacements

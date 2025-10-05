@@ -1,0 +1,44 @@
+2025-10-04 02:26:12,158 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20251004_022612_156 ===
+2025-10-04 02:26:12,165 |     INFO |            remap_pdf:  82 | Starting PDF remapping with 5 mappings in overlay mode
+2025-10-04 02:26:12,165 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_022612_156/input.pdf (128664 bytes)
+2025-10-04 02:26:12,165 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-10-04 02:26:12,165 |     INFO |         log_mappings:  81 | Word mappings to apply: 5 total
+2025-10-04 02:26:12,166 |     INFO |         log_mappings:  83 |   'Representation' → 'Recorgnition'
+2025-10-04 02:26:12,166 |     INFO |         log_mappings:  83 |   'human-like' → 'idiotlike'
+2025-10-04 02:26:12,166 |     INFO |         log_mappings:  83 |   'intelligence' → 'stupidity'
+2025-10-04 02:26:12,166 |     INFO |         log_mappings:  83 |   'default' → 'deduce'
+2025-10-04 02:26:12,166 |     INFO |         log_mappings:  83 |   'assumptions”' → 'evidence'
+2025-10-04 02:26:12,166 |     INFO |         log_mappings:  81 | Word mappings to apply: 5 total
+2025-10-04 02:26:12,166 |     INFO |         log_mappings:  83 |   'Representation' → 'Recorgnition'
+2025-10-04 02:26:12,166 |     INFO |         log_mappings:  83 |   'human-like' → 'idiotlike'
+2025-10-04 02:26:12,166 |     INFO |         log_mappings:  83 |   'intelligence' → 'stupidity'
+2025-10-04 02:26:12,166 |     INFO |         log_mappings:  83 |   'default' → 'deduce'
+2025-10-04 02:26:12,166 |     INFO |         log_mappings:  83 |   'assumptions”' → 'evidence'
+2025-10-04 02:26:12,166 |     INFO | _apply_overlay_mode_mapping: 286 | Using PyMuPDF for overlay mode processing
+2025-10-04 02:26:12,167 |     INFO | process_pdf_with_pymupdf: 367 | Processing PDF with PyMuPDF in overlay mode
+2025-10-04 02:26:12,167 |     INFO | process_pdf_with_pymupdf: 368 | Pattern: Representation|intelligence|assumptions”|human\-like|default
+2025-10-04 02:26:12,176 |    DEBUG |         replace_func: 218 | Replacing 'Representation' with 'Recorgnition'
+2025-10-04 02:26:12,183 |     INFO | _process_page_overlay: 147 | Page 1: 'Knowledge Representation and Reasoning: Questions' → 'Knowledge Recorgnition and Reasoning: Questions' at (120.61100006103516, 112.2557601928711, 491.4508361816406, 131.47116088867188)
+2025-10-04 02:26:12,184 |    DEBUG |         replace_func: 218 | Replacing 'Representation' with 'Recorgnition'
+2025-10-04 02:26:12,187 |     INFO | _process_page_overlay: 147 | Page 1: 'Question - 1: What is the primary aim of Knowledge Representation and Rea-' → 'Question - 1: What is the primary aim of Knowledge Recorgnition and Rea-' at (71.0, 214.1166534423828, 541.1417236328125, 228.0718536376953)
+2025-10-04 02:26:12,187 |    DEBUG |         replace_func: 218 | Replacing 'intelligence' with 'stupidity'
+2025-10-04 02:26:12,187 |    DEBUG |         replace_func: 218 | Replacing 'human-like' with 'idiotlike'
+2025-10-04 02:26:12,190 |     INFO | _process_page_overlay: 147 | Page 1: '• c. To understand the nature of intelligence and cognition to simulate human-like abilities in' → '• c. To understand the nature of stupidity and cognition to simulate idiotlike abilities in' at (87.39500427246094, 292.21868896484375, 541.0642700195312, 305.32928466796875)
+2025-10-04 02:26:12,190 |    DEBUG |         replace_func: 218 | Replacing 'default' with 'deduce'
+2025-10-04 02:26:12,190 |    DEBUG |         replace_func: 218 | Replacing 'assumptions”' with 'evidence'
+2025-10-04 02:26:12,193 |     INFO | _process_page_overlay: 147 | Page 1: 'based on some default assumptions” when information is insufficient, potentially' → 'based on some deduce evidence when information is insufficient, potentially' at (71.0, 369.2916259765625, 541.189697265625, 383.246826171875)
+2025-10-04 02:26:12,193 |    DEBUG |         replace_func: 218 | Replacing 'Default' with 'deduce'
+2025-10-04 02:26:12,195 |     INFO | _process_page_overlay: 147 | Page 1: '• d. Default reasoning' → '• d. deduce reasoning' at (87.39500427246094, 468.86468505859375, 198.11508178710938, 481.97528076171875)
+2025-10-04 02:26:12,212 |     INFO | process_pdf_overlay_mode:  41 | Created 5 overlays across 4 pages
+2025-10-04 02:26:12,218 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 02:26:12,223 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 02:26:12,241 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 02:26:12,245 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 02:26:12,249 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 02:26:12,253 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_022612_156/output.pdf (1005521 bytes)
+2025-10-04 02:26:12,254 |     INFO |         finalize_run: 222 | === Run Complete: 20251004_022612_156 (Duration: 0.09s) ===
+2025-10-04 02:26:12,254 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_022612_156
+2025-10-04 02:26:12,254 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_022612_156/run_metadata.json
+2025-10-04 02:26:12,254 |     INFO |         finalize_run: 233 | Run completed successfully with 5 mappings applied
+2025-10-04 02:28:52,980 |     INFO |  log_text_extraction:  90 | Extracted text (3989 chars): 'ASHISH RAJ SHEKHAR\nJoint Holder :- JITENDRA SINGH\nS/O: JITENDRA SINGH,FRIENDS COLONY\nPAKARI ARA,BHOJPUR\nBHOJPUR\nCustomer No :906315578\nBIHAR-INDIA\nScheme :SAVINGS-EASYACCESS\n802301\nCurrency :INR\nStatement of Axis Account No :921010020340608 for the period (From : 22-12-2021  To : 21-01-2022)\nTran Date\nChq No\nParticulars\nDebit\nCredit\nBalance\nInit.\nBr\nOPENING BALANCE\n            5683.36\n22-12-2021\nECOM\nPUR/APPLE.COM/BIL/0008001009009/221221/\n08:11\n               219.00\n             5464.36 4100\n22...'
+2025-10-04 02:28:52,981 |    DEBUG |  log_text_extraction:  95 | Full extracted text saved to: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_022612_156/extracted_text.txt

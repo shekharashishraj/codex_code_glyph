@@ -1,0 +1,22 @@
+2025-10-04 14:50:01,600 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20251004_145001_599 ===
+2025-10-04 14:50:01,601 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_145001_599/input.pdf (106016 bytes)
+2025-10-04 14:50:01,601 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-10-04 14:50:01,601 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-10-04 14:50:01,601 |     INFO |         log_mappings:  83 |   'Tyler,' → 'Austin,'
+2025-10-04 14:50:01,601 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-10-04 14:50:01,602 |     INFO |         log_mappings:  83 |   'Tyler,' → 'Austin,'
+2025-10-04 14:50:01,635 |     INFO | _apply_overlay_mode_mapping: 286 | Using PyMuPDF for overlay mode processing
+2025-10-04 14:50:01,636 |     INFO | process_pdf_with_pymupdf: 397 | Processing PDF with PyMuPDF in overlay mode
+2025-10-04 14:50:01,636 |     INFO | process_pdf_with_pymupdf: 398 | Pattern: Tyler,
+2025-10-04 14:50:01,653 |    DEBUG |         replace_func: 216 | Replacing 'Tyler,' with 'Austin,'
+2025-10-04 14:50:01,654 |     INFO | _process_page_overlay: 145 | Page 1: 'The increase in live inventories is attributable to an increase in the quantity of live birds in inventory at the Company's Tyler, ' → 'The increase in live inventories is attributable to an increase in the quantity of live birds in inventory at the Company's Austin, ' at (53.0, 403.47216796875, 557.9689331054688, 416.5643005371094)
+2025-10-04 14:50:01,654 |    DEBUG |         replace_func: 216 | Replacing 'Tyler,' with 'Austin,'
+2025-10-04 14:50:01,655 |     INFO | _process_page_overlay: 145 | Page 1: 'increase in the inventory volume at the Tyler, Texas facility.  ' → 'increase in the inventory volume at the Austin, Texas facility.  ' at (53.0, 563.16796875, 302.32000732421875, 578.4519653320312)
+2025-10-04 14:50:01,655 |     INFO | process_pdf_overlay_mode:  44 | Created 2 overlays across 1 pages
+2025-10-04 14:50:01,702 |    DEBUG | _apply_overlays_pymupdf: 290 | Applied overlay on page 1
+2025-10-04 14:50:01,731 |    DEBUG | _apply_overlays_pymupdf: 290 | Applied overlay on page 1
+2025-10-04 14:50:01,734 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_145001_599/output.pdf (695565 bytes)
+2025-10-04 14:50:01,735 |     INFO |         finalize_run: 222 | === Run Complete: 20251004_145001_599 (Duration: 0.13s) ===
+2025-10-04 14:50:01,735 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_145001_599
+2025-10-04 14:50:01,735 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_145001_599/run_metadata.json
+2025-10-04 14:50:01,735 |     INFO |         finalize_run: 233 | Run completed successfully with 1 mappings applied

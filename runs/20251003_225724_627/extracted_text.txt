@@ -1,0 +1,58 @@
+EEE 515
+ASSIGNMENT 3
+Spring 2025
+First Submission due on Sunday, March 30th at 11:59 pm
+Answer all problems following the instructions. You must use the Latex template
+for your solutions. Please compile the Latex template and submit the PDF report
+to Canvas.
+Instruction Guidelines:
+Please use the Latex template for your solutions. Presentation is very important (and worth 10%
+of the grade). For every problem, you will write up your solution, assign yourself a numerical
+grade with reasons/justification for the grade, and acknowledge any web sources, classmate
+help that you used in this assignment. Note: ChatGPT usage is allowed for problems, but you
+are responsible for ensuring the validity of its solutions and justifications. Also note that writing
+of the report can also use genAI tools, but your reasons/justifications/explanations in the report
+should be backed up with evidence (figures, numerical calculations, etc.) wherever possible.
+Problem 1. (Image Classification with PyTorch) (20 points)
+This problem is designed to familiarize you with PyTorch, the main software package we will be
+using in this class for training deep learning models.
+1. PyTorch 60-Minute Blitz
+Go through the PyTorch 60-Minute Blitz tutorial from https://pytorch.org/tutorials/
+beginner/deep_learning_60min_blitz.html and complete the sections on Tensors, A
+Gentle Introduction to torch.autograd, and Neural Networks. These sections will
+introduce you to the basic concepts of PyTorch, which are crucial for understanding the
+tasks below.
+2. Investigating Bias in Image Classification (10 points)
+Try the experiment of dataset bias featured in https://arxiv.org/pdf/1911.11834.pdf
+Create two datasets: (1) Take five of the ten classes, and convert all the images in those
+classes to grayscale, and then stack the same gray image 3 times into the RGB channels.
+Leave the other five classes the same. (2) Convert all data to grayscale, stack the same gray
+image 3 times into the RGB channels. Report the accuracy of the previous neural network
+on Datasets (1) and (2). Which one performs better? Try one of the strategies mentioned
+in the paper to mitigate bias (doesn’t have to be the paper’s method, it can be one of the
+baselines). Discuss what your strategy was and how you implemented it.
+3. PCA Comparison (10 points)
+Compare your classification network versus a machine learning baseline of principle com-
+ponent analysis (PCA), following approaches in the literature, for example:https:
+//sites.cs.ucsb.edu/~mturk/Papers/mturk-CVPR91.pdf, https://ieeexplore.ieee.
+org/document/8038237, https://www.mdpi.com/2073-8994/11/1/1. Describe your PCA
+method in detail (with equations) and report the accuracy of a PCA approach to your own
+neural network. It would be helpful to show your principal components for classes, or any
+other interpretable information that you get from PCA.
+1
+Problem 2. Vision Transformer (Segmentation Task)(30 points)
+In this problem, we will explore the task of image segmentation using a pretrained model and
+build a small application around it. You will apply segmentation to a selfie image, simulate a
+blurred background effect, and use monocular depth estimation to create realistic lens blur.
+1. Explore the Hugging Face Segmentation Models Library for image segmentation. Choose
+any model of your choice. Take a picture of a foreground object against a complex back-
+ground, and demonstrate that the chosen model can successfully segment the foreground
+from the background.
+Display the input image and the output mask, where the back-
+ground should be completely black, and only the foreground object should appear in white.
+(5 points)
+2. Add a Gaussian blur with σ = 15 to the background of the segmented image, leaving the
+foreground sharp. This simulates the background blur effect often seen in video conferencing
+tools like Zoom. Display the input image and the output image with blurred background
+side by side. (5 points)
+3. Explore the Hugging Face Monocular Depth

@@ -1,0 +1,109 @@
+CSE 576: Topics in Natural Language Processing
+Dr. Vivek Gupta
+Spring 2025
+02/03/2025
+Bayesian Networks
+2
+📌 Why Probability in NLP?
+●
+Used for predicting next words, resolving ambiguity in text. Example: "I ate a 
+cherry" is more likely than "Eye eight uh Jerry".
+📌 N-Gram Language Models: 
+●
+Estimate the probability of each word given its prior context.
+●
+Markov Assumption: Future state depends only on the previous N-1 states.
+●
+Unigram, bigrams, trigrams etc. 
+📌 Evaluation of Language Models
+●
+Perplexity: Measures how well a model fits test data.
+●
+Lower perplexity = better language model.
+Recap: N-grams
+3
+📌 Challenges with N-Gram Models
+●
+Data sparsity: MLE assigns zero probability to unseen words.
+●
+Smoothing techniques: Laplace, Good-Turing, Backoff, Kneser-Ney.
+●
+Long-distance dependencies: N-grams struggle to model syntactic and semantic 
+dependencies.
+📌 Takeaway:
+●
+N-grams work well for local dependencies but fail for longer contexts.
+●
+We need a better way to model probabilities beyond local context!
+●
+🔜 Enter Bayesian Networks!
+Recap: N-grams
+📌 Limitations of N-Grams
+🚧 Fixed-size context: Cannot model dependencies across long distances.
+🚧 Ignores uncertainty: Doesn't factor in external knowledge.
+📌 Example: Long-Distance Dependencies
+💬 Sentence: "The computer that crashed yesterday was running an update."
+●
+N-grams might incorrectly predict "The computer that crashed yesterday were 
+running an update."
+●
+Why? "Was" depends on "computer," but the word "yesterday" separates them.
+✅ Bayesian Networks can capture dependencies between distant words!
+📌 Example: Word Sense Disambiguation (external knowledge)
+💬 Sentence 1: "The bank approved my loan."
+💬 Sentence 2: "I sat by the river bank."
+●
+N-grams only predict based on previous words, ignoring meaning.
+●
+✅ Bayesian Networks can infer the correct sense of "bank" using context!
+Why Do We Need Bayesian Networks? - Where N-Grams Fall Short
+Example: Handling Noisy Input (Speech Recognition & OCR Errors)
+📌 Why N-Grams Struggle with Noisy Data
+●
+N-grams assume clean input and struggle to handle spelling variations, typos, or 
+speech recognition errors.
+●
+They only consider local word probabilities without higher-level reasoning.
+📌 Example: Speech Recognition Failure
+🎤 User says: "I need to book a flight to Nice." (city in France)
+🔄 Speech recognition system transcribes: "I need to book a flight to niece."
+❌ N-gram model: "Niece" is more probable than "Nice" in general, so it chooses the 
+wrong word.
+✅ Bayesian Networks:
+●
+Uses contextual dependencies (e.g., "flight" → likely a city, not a relative).
+●
+Adjusts probabilities dynamically based on the sentence structure.
+●
+Predicts "Nice" as the correct word given the travel-related context.
+Why Do We Need Bayesian Networks? - Where N-Grams Fall Short
+📌 Example: Optical Character Recognition (OCR) Errors
+📝 Scanned document says: "He loves reading b00ks."
+🔄 OCR misreads: "He loves reading looks."
+❌ N-grams: "Looks" is more common than "books," so it accepts the incorrect word.
+✅ Bayesian Networks:
+●
+Uses semantic dependencies to check if the corrected word fits the sentence context.
+●
+Determines that "books" is more likely than "looks" after "reading."
+Why Do We Need Bayesian Networks? - Where N-Grams Fall Short
+🔗 Graph-Based Representation:
+●
+Unlike N-grams, which use linear dependencies, 
+●
+Bayesian Networks use a Directed Acyclic Graph (DAG) to capture relationships between 
+variables.
+●
+Each node represents a random variable (e.g., word, symptom, POS tag).
+●
+Each edge represents a probabilistic dependency (e.g., "flu" → "fever").
+📊 Models Joint Probability Efficiently:
+●
+Bayesian Networks factorize the full joint probability distribution, reducing computation.
+●
+Instead of storing massive probability tables, they break it down into conditional probability 
+tables (CPTs).
+💡 Captures Conditional Dependencies:
+●
+Context-aware predictions → Takes into account multiple factors, unlike N-grams, which rely 
+only on fixed-length history.

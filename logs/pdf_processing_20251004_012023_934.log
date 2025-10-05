@@ -1,0 +1,37 @@
+2025-10-04 01:20:23,939 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20251004_012023_934 ===
+2025-10-04 01:20:23,942 |     INFO |            remap_pdf:  82 | Starting PDF remapping with 3 mappings in overlay mode
+2025-10-04 01:20:23,943 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_012023_934/input.pdf (47677 bytes)
+2025-10-04 01:20:23,943 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-10-04 01:20:23,943 |     INFO |         log_mappings:  81 | Word mappings to apply: 3 total
+2025-10-04 01:20:23,943 |     INFO |         log_mappings:  83 |   'CH2=CH2' → 'CH2=CH3'
+2025-10-04 01:20:23,943 |     INFO |         log_mappings:  83 |   '7' → '6'
+2025-10-04 01:20:23,943 |     INFO |         log_mappings:  83 |   'propane' → 'ethene'
+2025-10-04 01:20:23,943 |     INFO |         log_mappings:  81 | Word mappings to apply: 3 total
+2025-10-04 01:20:23,943 |     INFO |         log_mappings:  83 |   'CH2=CH2' → 'CH2=CH3'
+2025-10-04 01:20:23,943 |     INFO |         log_mappings:  83 |   '7' → '6'
+2025-10-04 01:20:23,943 |     INFO |         log_mappings:  83 |   'propane' → 'ethene'
+2025-10-04 01:20:23,944 |     INFO | _apply_overlay_mode_mapping: 286 | Using PyMuPDF for overlay mode processing
+2025-10-04 01:20:23,944 |     INFO | process_pdf_with_pymupdf: 293 | Processing PDF with PyMuPDF in overlay mode
+2025-10-04 01:20:23,944 |     INFO | process_pdf_with_pymupdf: 294 | Pattern: CH2=CH2|propane|7
+2025-10-04 01:20:23,958 |    DEBUG |         replace_func: 197 | Replacing '7' with '6'
+2025-10-04 01:20:23,963 |    DEBUG |  _capture_text_image: 219 | Captured text image: 780 bytes
+2025-10-04 01:20:23,963 |     INFO | _process_page_overlay: 126 | Page 1: '7' → '6' at (304.7300109863281, 36.210330963134766, 311.75, 51.75260925292969)
+2025-10-04 01:20:23,963 |    DEBUG |         replace_func: 197 | Replacing '7' with '6'
+2025-10-04 01:20:23,968 |    DEBUG |  _capture_text_image: 219 | Captured text image: 7656 bytes
+2025-10-04 01:20:23,968 |     INFO | _process_page_overlay: 126 | Page 1: '2.  An alkane with 7 carbon atoms contains _____ hydrogen atoms.   ' → '2.  An alkane with 6 carbon atoms contains _____ hydrogen atoms.   ' at (90.02400207519531, 106.58566284179688, 367.239990234375, 117.61138153076172)
+2025-10-04 01:20:23,969 |    DEBUG |         replace_func: 197 | Replacing 'propane' with 'ethene'
+2025-10-04 01:20:23,973 |    DEBUG |  _capture_text_image: 219 | Captured text image: 6992 bytes
+2025-10-04 01:20:23,973 |     INFO | _process_page_overlay: 126 | Page 1: '5.  The reaction of propane with bromine is called?      ' → '5.  The reaction of ethene with bromine is called?      ' at (90.02400207519531, 340.0156555175781, 309.5, 351.0413818359375)
+2025-10-04 01:20:23,973 |    DEBUG |         replace_func: 197 | Replacing '7' with '6'
+2025-10-04 01:20:23,976 |    DEBUG |  _capture_text_image: 219 | Captured text image: 2488 bytes
+2025-10-04 01:20:23,976 |     INFO | _process_page_overlay: 126 | Page 1: '7. The name of  ' → '6. The name of  ' at (90.02400207519531, 445.03564453125, 155.3319854736328, 456.0613708496094)
+2025-10-04 01:20:23,976 |     INFO | process_pdf_overlay_mode:  41 | Created 4 overlays across 1 pages
+2025-10-04 01:20:23,992 |    DEBUG | _apply_overlays_pymupdf: 258 | Applied overlay on page 1
+2025-10-04 01:20:24,003 |    DEBUG | _apply_overlays_pymupdf: 258 | Applied overlay on page 1
+2025-10-04 01:20:24,013 |    DEBUG | _apply_overlays_pymupdf: 258 | Applied overlay on page 1
+2025-10-04 01:20:24,024 |    DEBUG | _apply_overlays_pymupdf: 258 | Applied overlay on page 1
+2025-10-04 01:20:24,031 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_012023_934/output.pdf (690195 bytes)
+2025-10-04 01:20:24,031 |     INFO |         finalize_run: 222 | === Run Complete: 20251004_012023_934 (Duration: 0.09s) ===
+2025-10-04 01:20:24,031 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_012023_934
+2025-10-04 01:20:24,031 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_012023_934/run_metadata.json
+2025-10-04 01:20:24,031 |     INFO |         finalize_run: 233 | Run completed successfully with 3 mappings applied

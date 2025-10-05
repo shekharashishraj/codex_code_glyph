@@ -1,0 +1,20 @@
+2025-10-04 02:07:01,723 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20251004_020701_721 ===
+2025-10-04 02:07:01,729 |     INFO |            remap_pdf:  82 | Starting PDF remapping with 1 mappings in overlay mode
+2025-10-04 02:07:01,730 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_020701_721/input.pdf (128664 bytes)
+2025-10-04 02:07:01,730 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-10-04 02:07:01,730 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-10-04 02:07:01,730 |     INFO |         log_mappings:  83 |   'human-like' → 'mnkey-like'
+2025-10-04 02:07:01,731 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-10-04 02:07:01,731 |     INFO |         log_mappings:  83 |   'human-like' → 'mnkey-like'
+2025-10-04 02:07:01,731 |     INFO | _apply_overlay_mode_mapping: 286 | Using PyMuPDF for overlay mode processing
+2025-10-04 02:07:01,731 |     INFO | process_pdf_with_pymupdf: 367 | Processing PDF with PyMuPDF in overlay mode
+2025-10-04 02:07:01,731 |     INFO | process_pdf_with_pymupdf: 368 | Pattern: human\-like
+2025-10-04 02:07:01,742 |    DEBUG |         replace_func: 218 | Replacing 'human-like' with 'mnkey-like'
+2025-10-04 02:07:01,749 |     INFO | _process_page_overlay: 147 | Page 1: '• c. To understand the nature of intelligence and cognition to simulate human-like abilities in' → '• c. To understand the nature of intelligence and cognition to simulate mnkey-like abilities in' at (87.39500427246094, 292.21868896484375, 541.0642700195312, 305.32928466796875)
+2025-10-04 02:07:01,765 |     INFO | process_pdf_overlay_mode:  41 | Created 1 overlays across 4 pages
+2025-10-04 02:07:01,798 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 02:07:01,801 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_020701_721/output.pdf (346045 bytes)
+2025-10-04 02:07:01,802 |     INFO |         finalize_run: 222 | === Run Complete: 20251004_020701_721 (Duration: 0.08s) ===
+2025-10-04 02:07:01,802 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_020701_721
+2025-10-04 02:07:01,802 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_020701_721/run_metadata.json
+2025-10-04 02:07:01,802 |     INFO |         finalize_run: 233 | Run completed successfully with 1 mappings applied

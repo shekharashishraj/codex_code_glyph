@@ -1,0 +1,7 @@
+2025-10-04 20:01:03,646 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20251004_200103_645 ===
+2025-10-04 20:01:03,647 |     INFO | process_pdf_with_pymupdf: 358 | Processing PDF with PyMuPDF in overlay mode
+2025-10-04 20:01:03,647 |     INFO | process_pdf_with_pymupdf: 359 | Pattern: Vivek
+2025-10-04 20:01:03,650 |    DEBUG |         replace_func: 218 | Replacing 'Vivek' with 'Anish'
+2025-10-04 20:01:03,650 |     INFO | _process_page_overlay: 145 | Page 1: 'Dr. Vivek Gupta' → 'Dr. Anish Gupta' at (261.2256774902344, 234.05812072753906, 458.63763427734375, 264.05810546875)
+2025-10-04 20:01:04,469 |     INFO | process_pdf_overlay_mode:  44 | Created 1 overlays across 64 pages
+2025-10-04 20:01:04,475 |    DEBUG | _apply_overlays_pymupdf: 251 | Redrew overlay spans on page 1

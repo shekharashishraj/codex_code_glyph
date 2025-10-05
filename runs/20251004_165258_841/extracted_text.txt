@@ -1,0 +1,225 @@
+CSE 576: Topics in Natural Language Processing
+Dr. Vivek Gupta
+Spring 2025
+07/04/2025
+Language Modeling: Attention
+Attention
+• Attention provides a solution to the bottleneck problem.
+• Core idea: on each step of the decoder, use direct connection to the encoder to focus 
+on a particular part of the source sequence
+• First, we will show via diagram (no equations), then we will show with equations
+37
+The starting point: mean-pooling for RNNs
+38
+• Starting point: a very basic way of ‘passing information from the encoder’ is to average
+the
+movie
+a
+lot
+overall
+I
+enjoyed
+positive
+Sentence 
+encoding
+How to compute 
+sentence encoding?
+Usually better: 
+Take element-wise 
+max or mean of all 
+hidden states
+Attention is weighted averaging, which lets you do lookups!
+39
+Attention is just a weighted average – this is very powerful if the weights are learned!
+In a lookup table, we have a table of keys 
+that map to values. The query matches 
+one of the keys, returning its value.
+In attention, the query matches all keys softly, 
+to a weight between 0 and 1. The keys’ values 
+are multiplied by the weights and summed.
+Sequence-to-sequence with attention
+Encoder 
+RNN
+Source sentence (input)
+<START>
+il           a         m’      entarté
+Decoder RNN
+Attention 
+scores
+dot product
+40
+Core idea: on each step of the decoder, use direct connection to the encoder to focus on a 
+particular part of the source sequence
+Sequence-to-sequence with attention
+Encoder 
+RNN
+Source sentence (input)
+<START>
+il           a         m’      entarté
+Decoder RNN
+Attention 
+scores
+dot product
+41
+Sequence-to-sequence with attention
+Encoder 
+RNN
+Source sentence (input)
+<START>
+il           a         m’      entarté
+Decoder RNN
+Attention 
+scores
+dot product
+42
+Sequence-to-sequence with attention
+Encoder 
+RNN
+Source sentence (input)
+<START>
+il           a         m’      entarté
+Decoder RNN
+Attention 
+scores
+dot product
+43
+Sequence-to-sequence with attention
+Encoder 
+RNN
+Source sentence (input)
+<START>
+il           a         m’      entarté
+Decoder RNN
+Attention 
+scores
+On this decoder timestep, we’re 
+mostly focusing on the first 
+encoder hidden state (”he”)
+Attention 
+distribution
+Take softmax to turn the scores 
+into a probability distribution
+44
+Sequence-to-sequence with attention
+Encoder 
+RNN
+Source sentence (input)
+<START>
+il           a         m’      entarté
+Decoder RNN
+Attention 
+distribution
+Attention 
+scores
+Attention 
+output
+Use the attention distribution to take a 
+weighted sum of the encoder hidden states.
+The attention output mostly contains 
+information from the hidden states that 
+received high attention.
+45
+Sequence-to-sequence with attention
+Encoder 
+RNN
+Source sentence (input)
+<START>
+il           a         m’      entarté
+Decoder RNN
+Attention 
+distribution
+Attention 
+scores
+Attention 
+output
+Concatenate attention output 
+with decoder hidden state, then 
+use to compute ො𝑦1 as before
+ො𝑦1 
+he
+46
+Sequence-to-sequence with attention
+Encoder 
+RNN
+Source sentence (input)
+<START>
+il           a         m’      entarté
+Decoder RNN
+Attention 
+scores
+he
+Attention 
+distribution
+Attention 
+output
+ො𝑦2 
+hit
+47
+Sometimes we take the 
+attention output from the 
+previous step, and also 
+feed it into the decoder 
+(along with the usual 
+decoder input). We do 
+this in Assignment 4.
+Sequence-to-sequence with attention
+Encoder 
+RNN
+Source sentence (input)
+<START>
+il           a         m’      entarté
+Decoder RNN
+Attention 
+scores
+Attention 
+distribution
+Attention 
+output
+he
+hit
+ො𝑦3 
+me
+48
+Sequence-to-sequence with attention
+Encoder 
+RNN
+Source sentence (input)
+<START>
+il           a         m’      entarté
+Decoder RNN
+Attention 
+scores
+Attention 
+distribution
+Attention 
+output
+he
+hit
+me
+ො𝑦4 
+with
+49
+Sequence-to-sequence with attention
+Encoder 
+RNN
+Source sentence (input)
+<START>
+il           a         m’      entarté
+Decoder RNN
+Attention 
+scores
+Attention 
+distribution
+Attention 
+output
+he
+hit
+with
+ො𝑦5 
+a
+me
+50
+Sequence-to-sequence with attention
+Encoder 
+RNN
+Source sente

@@ -1,0 +1,44 @@
+2025-10-04 13:53:28,334 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20251004_135328_329 ===
+2025-10-04 13:53:28,341 |     INFO |            remap_pdf:  82 | Starting PDF remapping with 1 mappings in overlay mode
+2025-10-04 13:53:28,341 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_135328_329/input.pdf (106016 bytes)
+2025-10-04 13:53:28,341 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-10-04 13:53:28,341 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-10-04 13:53:28,341 |     INFO |         log_mappings:  83 |   'chicken' → 'mutton'
+2025-10-04 13:53:28,341 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-10-04 13:53:28,341 |     INFO |         log_mappings:  83 |   'chicken' → 'mutton'
+2025-10-04 13:53:28,341 |     INFO | _apply_overlay_mode_mapping: 286 | Using PyMuPDF for overlay mode processing
+2025-10-04 13:53:28,342 |     INFO | process_pdf_with_pymupdf: 367 | Processing PDF with PyMuPDF in overlay mode
+2025-10-04 13:53:28,342 |     INFO | process_pdf_with_pymupdf: 368 | Pattern: chicken
+2025-10-04 13:53:28,360 |    DEBUG |         replace_func: 218 | Replacing 'chicken' with 'mutton'
+2025-10-04 13:53:28,396 |     INFO | _process_page_overlay: 147 | Page 1: 'Fresh, vacuum-sealed chicken ' → 'Fresh, vacuum-sealed mutton ' at (55.63999938964844, 104.88801574707031, 181.36000061035156, 120.1720199584961)
+2025-10-04 13:53:28,396 |    DEBUG |         replace_func: 218 | Replacing 'chicken' with 'mutton'
+2025-10-04 13:53:28,399 |     INFO | _process_page_overlay: 147 | Page 1: 'Fresh, chill-packed chicken ' → 'Fresh, chill-packed mutton ' at (55.63999938964844, 118.86787414550781, 170.86000061035156, 134.15187072753906)
+2025-10-04 13:53:28,399 |    DEBUG |         replace_func: 218 | Replacing 'chicken' with 'mutton'
+2025-10-04 13:53:28,401 |     INFO | _process_page_overlay: 147 | Page 1: 'Fresh, ice-packed chicken ' → 'Fresh, ice-packed mutton ' at (55.63999938964844, 133.8678741455078, 164.74000549316406, 149.15187072753906)
+2025-10-04 13:53:28,401 |    DEBUG |         replace_func: 218 | Replacing 'chicken' with 'mutton'
+2025-10-04 13:53:28,403 |     INFO | _process_page_overlay: 147 | Page 1: 'Prepared chicken ' → 'Prepared mutton ' at (55.63999938964844, 148.8679962158203, 129.760009765625, 164.15199279785156)
+2025-10-04 13:53:28,403 |    DEBUG |         replace_func: 218 | Replacing 'chicken' with 'mutton'
+2025-10-04 13:53:28,405 |     INFO | _process_page_overlay: 147 | Page 1: 'Frozen chicken ' → 'Frozen mutton ' at (55.63999938964844, 163.8679962158203, 122.0199966430664, 179.15199279785156)
+2025-10-04 13:53:28,405 |    DEBUG |         replace_func: 218 | Replacing 'chicken' with 'mutton'
+2025-10-04 13:53:28,407 |     INFO | _process_page_overlay: 147 | Page 1: 'Prepared chicken ' → 'Prepared mutton ' at (55.63999938964844, 349.9280090332031, 129.760009765625, 365.2120056152344)
+2025-10-04 13:53:28,408 |    DEBUG |         replace_func: 218 | Replacing 'chicken' with 'mutton'
+2025-10-04 13:53:28,412 |     INFO | _process_page_overlay: 147 | Page 1: 'The increase in prepared chicken inventory is attributable to the mix of the different finished products in inventory at October ' → 'The increase in prepared mutton inventory is attributable to the mix of the different finished products in inventory at October ' at (53.0, 588.4520874023438, 560.3056030273438, 601.544189453125)
+2025-10-04 13:53:28,412 |    DEBUG |         replace_func: 218 | Replacing 'chicken' with 'mutton'
+2025-10-04 13:53:28,416 |     INFO | _process_page_overlay: 147 | Page 1: '31, 2019, as compared to October 31, 2018, as well as an increase in production volume at the Company's prepared chicken ' → '31, 2019, as compared to October 31, 2018, as well as an increase in production volume at the Company's prepared mutton ' at (52.998992919921875, 599.9119873046875, 552.4590454101562, 613.0040893554688)
+2025-10-04 13:53:28,416 |    DEBUG |         replace_func: 218 | Replacing 'chicken' with 'mutton'
+2025-10-04 13:53:28,420 |     INFO | _process_page_overlay: 147 | Page 1: 'chicken products, as compared to approximately 107.6 million pounds during fiscal 2018. Approximately 1.2 million pounds ' → 'mutton products, as compared to approximately 107.6 million pounds during fiscal 2018. Approximately 1.2 million pounds ' at (52.99897766113281, 622.9519653320312, 557.6959228515625, 636.0440673828125)
+2025-10-04 13:53:28,421 |     INFO | process_pdf_overlay_mode:  41 | Created 9 overlays across 1 pages
+2025-10-04 13:53:28,431 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 13:53:28,437 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 13:53:28,443 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 13:53:28,449 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 13:53:28,456 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 13:53:28,462 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 13:53:28,468 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 13:53:28,474 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 13:53:28,479 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 13:53:28,484 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_135328_329/output.pdf (1765520 bytes)
+2025-10-04 13:53:28,484 |     INFO |         finalize_run: 222 | === Run Complete: 20251004_135328_329 (Duration: 0.15s) ===
+2025-10-04 13:53:28,484 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_135328_329
+2025-10-04 13:53:28,484 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_135328_329/run_metadata.json
+2025-10-04 13:53:28,484 |     INFO |         finalize_run: 233 | Run completed successfully with 1 mappings applied

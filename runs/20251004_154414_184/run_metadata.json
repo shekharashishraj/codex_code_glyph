@@ -1,0 +1,37 @@
+{
+  "run_id": "20251004_154414_184",
+  "start_time": "2025-10-04T15:44:14.184719",
+  "mode": "overlay",
+  "mappings": {
+    "Tyler,": "Austin,"
+  },
+  "steps": [],
+  "errors": [
+    {
+      "context": "apply_overlay_page_0",
+      "error_type": "Exception",
+      "error_message": "need font file or buffer",
+      "timestamp": "2025-10-04T15:44:14.293290"
+    },
+    {
+      "context": "apply_overlay_page_0",
+      "error_type": "Exception",
+      "error_message": "need font file or buffer",
+      "timestamp": "2025-10-04T15:44:14.297588"
+    }
+  ],
+  "results": {
+    "output_pdf": {
+      "filename": "output.pdf",
+      "size_bytes": 187534,
+      "path": "/Users/ashishrajshekhar/codex_code_glyph/runs/20251004_154414_184/output.pdf"
+    }
+  },
+  "input_pdf": {
+    "filename": "input.pdf",
+    "size_bytes": 106016,
+    "path": "/Users/ashishrajshekhar/codex_code_glyph/runs/20251004_154414_184/input.pdf"
+  },
+  "end_time": "2025-10-04T15:44:14.318390",
+  "duration_seconds": 0.133671
+}

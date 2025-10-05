@@ -1,0 +1,67 @@
+2025-10-04 12:28:08,457 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20251004_122808_455 ===
+2025-10-04 12:28:08,465 |     INFO |            remap_pdf:  82 | Starting PDF remapping with 8 mappings in overlay mode
+2025-10-04 12:28:08,466 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_122808_455/input.pdf (124349 bytes)
+2025-10-04 12:28:08,466 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-10-04 12:28:08,466 |     INFO |         log_mappings:  81 | Word mappings to apply: 8 total
+2025-10-04 12:28:08,466 |     INFO |         log_mappings:  83 |   '10' → '11'
+2025-10-04 12:28:08,466 |     INFO |         log_mappings:  83 |   '−10' → '--11'
+2025-10-04 12:28:08,466 |     INFO |         log_mappings:  83 |   '1000' → '100'
+2025-10-04 12:28:08,466 |     INFO |         log_mappings:  83 |   '∈[0,' → '∈[-1,'
+2025-10-04 12:28:08,466 |     INFO |         log_mappings:  83 |   'decrease.' → 'increase'
+2025-10-04 12:28:08,466 |     INFO |         log_mappings:  83 |   'whether' → 'false'
+2025-10-04 12:28:08,466 |     INFO |         log_mappings:  83 |   'regression' → 'clsfctin'
+2025-10-04 12:28:08,466 |     INFO |         log_mappings:  83 |   'min' → 'max'
+2025-10-04 12:28:08,466 |     INFO |         log_mappings:  81 | Word mappings to apply: 8 total
+2025-10-04 12:28:08,467 |     INFO |         log_mappings:  83 |   '10' → '11'
+2025-10-04 12:28:08,467 |     INFO |         log_mappings:  83 |   '−10' → '--11'
+2025-10-04 12:28:08,467 |     INFO |         log_mappings:  83 |   '1000' → '100'
+2025-10-04 12:28:08,467 |     INFO |         log_mappings:  83 |   '∈[0,' → '∈[-1,'
+2025-10-04 12:28:08,467 |     INFO |         log_mappings:  83 |   'decrease.' → 'increase'
+2025-10-04 12:28:08,467 |     INFO |         log_mappings:  83 |   'whether' → 'false'
+2025-10-04 12:28:08,467 |     INFO |         log_mappings:  83 |   'regression' → 'clsfctin'
+2025-10-04 12:28:08,467 |     INFO |         log_mappings:  83 |   'min' → 'max'
+2025-10-04 12:28:08,467 |     INFO | _apply_overlay_mode_mapping: 286 | Using PyMuPDF for overlay mode processing
+2025-10-04 12:28:08,468 |     INFO | process_pdf_with_pymupdf: 367 | Processing PDF with PyMuPDF in overlay mode
+2025-10-04 12:28:08,468 |     INFO | process_pdf_with_pymupdf: 368 | Pattern: regression|decrease\.|whether|1000|∈\[0,|−10|min|10
+2025-10-04 12:28:08,479 |    DEBUG |         replace_func: 218 | Replacing 'min' with 'max'
+2025-10-04 12:28:08,484 |     INFO | _process_page_overlay: 147 | Page 1: 'Implement the Golden Section Search algorithm for finding a minimum of' → 'Implement the Golden Section Search algorithm for finding a maximum of' at (132.76800537109375, 304.9359130859375, 457.6559143066406, 316.89849853515625)
+2025-10-04 12:28:08,484 |    DEBUG |         replace_func: 218 | Replacing '10' with '11'
+2025-10-04 12:28:08,484 |    DEBUG |         replace_func: 218 | Replacing '10' with '11'
+2025-10-04 12:28:08,486 |     INFO | _process_page_overlay: 147 | Page 1: 'f(x) = 10 + x2 −10 cos(2πx),' → 'f(x) = 11 + x2 −11 cos(2πx),' at (214.06900024414062, 320.6227722167969, 345.4156188964844, 336.8284912109375)
+2025-10-04 12:28:08,486 |    DEBUG |         replace_func: 218 | Replacing '10' with '11'
+2025-10-04 12:28:08,488 |     INFO | _process_page_overlay: 147 | Page 1: 'where a = 1.6 and b = 2.4. You can use a tolerance ϵ = 10−4 and maximum' → 'where a = 1.6 and b = 2.4. You can use a tolerance ϵ = 11−4 and maximum' at (132.76800537109375, 341.1799011230469, 478.4871520996094, 356.75848388671875)
+2025-10-04 12:28:08,488 |    DEBUG |         replace_func: 218 | Replacing '10' with '11'
+2025-10-04 12:28:08,488 |    DEBUG |         replace_func: 218 | Replacing 'min' with 'max'
+2025-10-04 12:28:08,488 |    DEBUG |         replace_func: 218 | Replacing 'min' with 'max'
+2025-10-04 12:28:08,490 |     INFO | _process_page_overlay: 147 | Page 1: 'iterations 100. What is xmin and what is f(xmin) ?' → 'iterations 110. What is xmax and what is f(xmax) ?' at (132.76800537109375, 356.7508850097656, 357.3603820800781, 370.20745849609375)
+2025-10-04 12:28:08,490 |    DEBUG |         replace_func: 218 | Replacing '10' with '11'
+2025-10-04 12:28:08,491 |     INFO | _process_page_overlay: 147 | Page 1: '100(x2' → '110(x2' at (258.8710021972656, 449.86163330078125, 289.3580627441406, 463.6014099121094)
+2025-10-04 12:28:08,491 |    DEBUG |         replace_func: 218 | Replacing '10' with '11'
+2025-10-04 12:28:08,492 |     INFO | _process_page_overlay: 147 | Page 1: 'ϵ = 10−4 (stopping) ,' → 'ϵ = 11−4 (stopping) ,' at (283.2359619140625, 496.09576416015625, 377.515625, 512.1713562011719)
+2025-10-04 12:28:08,492 |    DEBUG |         replace_func: 218 | Replacing '1000' with '100'
+2025-10-04 12:28:08,493 |     INFO | _process_page_overlay: 147 | Page 1: 'M = 1000 (max iter)' → 'M = 100 (max iter)' at (387.1419677734375, 500.2087707519531, 481.0008850097656, 512.1713562011719)
+2025-10-04 12:28:08,499 |    DEBUG |         replace_func: 218 | Replacing 'decrease.' with 'increase'
+2025-10-04 12:28:08,502 |     INFO | _process_page_overlay: 147 | Page 2: 'fact decrease. Hint: You may use the definition of convexity: f(αx+(1−α)y) ≤' → 'fact increase Hint: You may use the definition of convexity: f(αx+(1−α)y) ≤' at (132.7680206298828, 163.86781311035156, 478.48199462890625, 175.95953369140625)
+2025-10-04 12:28:08,502 |    DEBUG |         replace_func: 218 | Replacing 'min' with 'max'
+2025-10-04 12:28:08,504 |     INFO | _process_page_overlay: 147 | Page 2: 'λ. Moreover, the value for αk = min' → 'λ. Moreover, the value for αk = max' at (132.76800537109375, 317.3518981933594, 292.4971618652344, 330.8084716796875)
+2025-10-04 12:28:08,505 |    DEBUG |         replace_func: 218 | Replacing 'regression' with 'clsfctin'
+2025-10-04 12:28:08,507 |     INFO | _process_page_overlay: 147 | Page 2: 'Consider a logistic regression problem with two classes. Given a training set P' → 'Consider a logistic clsfctin problem with two classes. Given a training set P' at (132.76803588867188, 387.71185302734375, 477.0960388183594, 399.6744384765625)
+2025-10-04 12:28:08,507 |    DEBUG |         replace_func: 218 | Replacing 'whether' with 'false'
+2025-10-04 12:28:08,509 |     INFO | _process_page_overlay: 147 | Page 2: 'on the data P, there may be other trivial separators. Prove whether f(x) is' → 'on the data P, there may be other trivial separators. Prove false f(x) is' at (132.7680206298828, 500.9537658691406, 478.4748229980469, 512.9163513183594)
+2025-10-04 12:28:08,510 |     INFO | process_pdf_overlay_mode:  41 | Created 11 overlays across 2 pages
+2025-10-04 12:28:08,522 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 12:28:08,558 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 12:28:08,595 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 12:28:08,611 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 12:28:08,617 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 12:28:08,630 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 12:28:08,636 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 12:28:08,663 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 2
+2025-10-04 12:28:08,674 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 2
+2025-10-04 12:28:08,680 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 2
+2025-10-04 12:28:08,692 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 2
+2025-10-04 12:28:08,699 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_122808_455/output.pdf (1378150 bytes)
+2025-10-04 12:28:08,700 |     INFO |         finalize_run: 222 | === Run Complete: 20251004_122808_455 (Duration: 0.24s) ===
+2025-10-04 12:28:08,700 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_122808_455
+2025-10-04 12:28:08,700 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_122808_455/run_metadata.json
+2025-10-04 12:28:08,700 |     INFO |         finalize_run: 233 | Run completed successfully with 8 mappings applied

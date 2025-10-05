@@ -1,0 +1,143 @@
+Example Questions Data Mining, with Answers
+Lecturer: dr Arno Knobbe
+This example exam is provided for the students’ beneﬁt. The number of
+questions provided here is not an indication of the number of questions
+of the actual exam (which may be longer or shorter). Also, the nature
+and topic of the questions may be different in the actual exam. A topic
+not featuring in these questions is not an indication that it should not be
+studied for the exam.
+General remarks
+• The exam is multiple choice, and answers will need to be marked in a separate
+answer sheet. Be sure to provide your personal details, including your student
+number (just numbers, no ‘s’).
+• For each question, there is exactly one correct answer.
+• The sequence of the answers per question has been produced by a random se-
+quence generator, so will not contain any patterns.
+• It might be wise to ﬁrst note your answer in draft on the question form, before
+copying it to the answer form.
+• A calculator is allowed. Mobile phones are not permitted. Please switch off your
+phone to avoid disturbing your fellow students.
+• The grades will be registered within 15 working days in uSis. Due to new privacy
+regulations, the grades cannot be posted publicly.
+• You are allowed to take home the exam questions, should you wish to do so.
+• Cheating in any form will have serious consequences.
+Question 1
+Name a data mining tool that works with a canvas to design you data mining workﬂow.
+(A) Cortana
+(B) KNIME
+(C) Python
+(D) Weka
+1
+Question 2
+Which of the following statements is correct?
+(A) Leave-One-Out is a method aimed at missing values.
+(B) Leave-One-Out is a better choice than 10-fold cross-validation when dealing with
+large data (large n).
+(C) Leave-One-Out is simply cross-validation with k = n.
+(D) When I’m not satisﬁed with the accuracy using 10-fold cross-validation, I can try
+Leave-One-Out to get a better score.
+Question 3
+What does the Apriori principle refer to?
+(A) The fact that the Apriori algorithm is one of the most principal ones.
+(B) The principle that there is no one algorithm that works best on all datasets.
+(C) The fact that a superset of an itemset X has at most the support of X.
+(D) The notion that the prior of the target is a good lower bound for the accuracy of a
+classiﬁer.
+Question 4
+What is the formula for the entropy of a nominal attribute?
+(A) P
+i
+pilg(pi)
+(B) −P
+i
+pilg(pi)
+(C) −P
+i
+lg(pi)
+(D) plg(p)
+Question 5
+Which of the following statements is correct?
+(A) The information gain of an attribute can be any positive number.
+(B) The information gain of an attribute can be less than 0.
+(C) The information gain of an attribute is at most 1.
+(D) The information gain of an attribute is bounded (from above) by the entropy of the
+target.
+2
+Question 6
+Which of the following are sets of quality measures for subgroups in Subgroup Dis-
+covery? Pick the largest correct set.
+(A) WRAcc, z-score, R2.
+(B) WRAcc, z-score, Explained Variance, information gain.
+(C) WRAcc, z-score, joint entropy.
+(D) WRAcc, z-score, Explained Variance.
+Story A, Frequent Pattern Mining
+The following ‘story’ asks you to complete an itemset lattice with the following labels:
+I= infrequent itemset, F=frequent itemset, M=maximal frequent itemset, C=closed fre-
+quent itemset. The upcoming questions test whether you computed the labels correctly.
+The lattice provided here can be used as a draft, and doesn’t need to be handed in. Only
+the answers to the multiple choice questions are relevant.
+Given a transactional database with the following itemsets over {A, . . . , E}, and a
+minimal support minsup = 0.3:
+tid
+Items
+1
+{A, C, B, E}
+2
+{D}
+3
+{A, B, E}
+4
+{A, C}
+5
+{A, D, C}
+6
+{C, B, E}
+7
+{D, C}
+8
+{A, C, B, E}
+9
+{B, E}
+10
+{D, C}
+Question 7 (Story A)
+Which itemset in Story A is frequent?
+(A) {D, E}
+(B) {A, D}
+(C) {A, B}
+(D) {B, D}
+3
+AB
+AC
+AD
+AE
+BC
+BD
+BE
+CD
+CE
+DE
+A
+B
+C
+D
+E
+∅
+ABC
+ABD
+ABE
+ACD
+ACE
+ADE
+BCD
+BCE
+BDE
+CDE
+ABCD
+ABCE
+ABDE
+ACDE
+BCDE
+ABCDE
+Question 8 (Story A)
+What are the maximal (frequent) itemsets in the

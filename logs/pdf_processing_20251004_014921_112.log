@@ -1,0 +1,23 @@
+2025-10-04 01:49:21,114 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20251004_014921_112 ===
+2025-10-04 01:49:21,119 |     INFO |            remap_pdf:  82 | Starting PDF remapping with 1 mappings in overlay mode
+2025-10-04 01:49:21,119 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_014921_112/input.pdf (84652 bytes)
+2025-10-04 01:49:21,120 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-10-04 01:49:21,120 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-10-04 01:49:21,120 |     INFO |         log_mappings:  83 |   'primary' → 'cmpsite'
+2025-10-04 01:49:21,120 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-10-04 01:49:21,120 |     INFO |         log_mappings:  83 |   'primary' → 'cmpsite'
+2025-10-04 01:49:21,120 |     INFO | _apply_overlay_mode_mapping: 286 | Using PyMuPDF for overlay mode processing
+2025-10-04 01:49:21,120 |     INFO | process_pdf_with_pymupdf: 367 | Processing PDF with PyMuPDF in overlay mode
+2025-10-04 01:49:21,120 |     INFO | process_pdf_with_pymupdf: 368 | Pattern: primary
+2025-10-04 01:49:21,134 |    DEBUG |         replace_func: 218 | Replacing 'primary' with 'cmpsite'
+2025-10-04 01:49:21,142 |     INFO | _process_page_overlay: 147 | Page 1: 'schema. Show entities and attributes, primary key, foreign key, relationships, and car-' → 'schema. Show entities and attributes, cmpsite key, foreign key, relationships, and car-' at (71.0, 599.604248046875, 540.9785766601562, 612.5133666992188)
+2025-10-04 01:49:21,142 |    DEBUG |         replace_func: 218 | Replacing 'primary' with 'cmpsite'
+2025-10-04 01:49:21,145 |     INFO | _process_page_overlay: 147 | Page 1: 'tuples, primary key, foreign key, and integrity constraints in the context of the given' → 'tuples, cmpsite key, foreign key, and integrity constraints in the context of the given' at (71.0, 690.6632690429688, 540.9675903320312, 703.5723876953125)
+2025-10-04 01:49:21,150 |     INFO | process_pdf_overlay_mode:  41 | Created 2 overlays across 2 pages
+2025-10-04 01:49:21,157 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 01:49:21,160 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 01:49:21,163 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_014921_112/output.pdf (467376 bytes)
+2025-10-04 01:49:21,163 |     INFO |         finalize_run: 222 | === Run Complete: 20251004_014921_112 (Duration: 0.05s) ===
+2025-10-04 01:49:21,164 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_014921_112
+2025-10-04 01:49:21,164 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_014921_112/run_metadata.json
+2025-10-04 01:49:21,164 |     INFO |         finalize_run: 233 | Run completed successfully with 1 mappings applied

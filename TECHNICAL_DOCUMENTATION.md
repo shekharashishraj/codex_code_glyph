@@ -94,15 +94,16 @@ def generate_word_occurrences(pdf_bytes: bytes) -> Dict[str, List[Dict[str, obje
 This is the most complex part of the system, involving multiple sophisticated techniques.
 
 ```python
-def apply_word_mapping(pdf_bytes: bytes, mapping: Dict[str, str]) -> bytes:
+def apply_word_mapping(pdf_bytes: bytes, mapping: Dict[str, str], mode: str = "overlay") -> bytes:
 ```
 
 **High-Level Process**:
-1. Clean and normalize input mappings
-2. Generate glyph overlays for visual preservation
-3. Modify PDF content streams for text replacement
-4. Apply overlays to final document
-5. Return modified PDF bytes
+1. Clean and normalize input mappings, determine processing mode (`overlay`, `font`, or `ocr`)
+2. Execute the selected pipeline:
+   - Overlay mode captures glyph bitmaps up front and rewrites content streams underneath
+   - Font mode attempts glyph swaps via fontTools, falling back to overlay on failure
+   - OCR mode rasterizes each page, runs Tesseract, and edits the detected regions directly
+3. Persist the updated PDF bytes (including overlays/redactions) and return them to the caller
 
 #### 2.4 Glyph Overlay System
 
@@ -169,7 +170,21 @@ for operands, operator in content.operations:
 - Character spacing
 - Text positioning accuracy
 
-#### 2.6 Pattern Matching and Case Handling
+#### 2.6 OCR Pipeline for Scanned Pages
+
+Raster-first documents (lecture slides exported as images, scanned worksheets, etc.) bypass the standard text utilities. The helper `apply_image_ocr_mapping()` activates when the caller requests `mode="ocr"` or when the web UI radio button is selected.
+
+**Workflow**:
+1. Render each page via PyMuPDF at a configurable DPI (220 by default) and wrap the bytes in a Pillow `Image` object.
+2. Run `pytesseract.image_to_data` to obtain token-level bounding boxes plus confidence scores.
+3. Normalize OCR tokens (`_normalize_ocr_token` / `_tokenize_mapping_key`) so mixed casing, punctuation, and spacing still match entries in the mapping dictionary.
+4. Identify in-order matches (`_match_ocr_words`) and record their rectangles plus an estimated font size.
+5. Inject the replacement text via `page.insert_textbox(..., render_mode=3)` so it is invisible in the rendered page while remaining extractable for copy/paste and downstream parsing.
+6. Skip saving when no matches materialize so unmodified PDFs return untouched bytes.
+
+The OCR path requires the system Tesseract binary in addition to the Python packages (`pytesseract` and Pillow). When dependencies are missing the function raises a `RuntimeError`, allowing callers to surface a friendly error.
+
+#### 2.7 Pattern Matching and Case Handling
 
 ```python
 def _build_pattern(words: Iterable[str], *, ignore_case: bool = False) -> Optional[Pattern[str]]:
@@ -195,7 +210,7 @@ This dual-layer approach allows:
 - Graceful fallback for case variations
 - Maintains user intent for case-sensitive mappings
 
-#### 2.7 Text Segmentation and Reconstruction
+#### 2.8 Text Segmentation and Reconstruction
 
 ```python
 def _segment_text(text: str, pattern: Pattern[str], mapping: Dict[str, str], mapping_cf: Dict[str, str]) -> Optional[List[Tuple[str, Optional[str]]]]:

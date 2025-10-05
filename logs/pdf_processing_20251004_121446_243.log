@@ -1,0 +1,38 @@
+2025-10-04 12:14:46,246 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20251004_121446_243 ===
+2025-10-04 12:14:46,255 |     INFO |            remap_pdf:  82 | Starting PDF remapping with 2 mappings in overlay mode
+2025-10-04 12:14:46,256 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_121446_243/input.pdf (124349 bytes)
+2025-10-04 12:14:46,256 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-10-04 12:14:46,256 |     INFO |         log_mappings:  81 | Word mappings to apply: 2 total
+2025-10-04 12:14:46,256 |     INFO |         log_mappings:  83 |   '10' → '11'
+2025-10-04 12:14:46,256 |     INFO |         log_mappings:  83 |   '−10' → '-11'
+2025-10-04 12:14:46,256 |     INFO |         log_mappings:  81 | Word mappings to apply: 2 total
+2025-10-04 12:14:46,256 |     INFO |         log_mappings:  83 |   '10' → '11'
+2025-10-04 12:14:46,256 |     INFO |         log_mappings:  83 |   '−10' → '-11'
+2025-10-04 12:14:46,256 |     INFO | _apply_overlay_mode_mapping: 286 | Using PyMuPDF for overlay mode processing
+2025-10-04 12:14:46,256 |     INFO | process_pdf_with_pymupdf: 367 | Processing PDF with PyMuPDF in overlay mode
+2025-10-04 12:14:46,256 |     INFO | process_pdf_with_pymupdf: 368 | Pattern: −10|10
+2025-10-04 12:14:46,267 |    DEBUG |         replace_func: 218 | Replacing '10' with '11'
+2025-10-04 12:14:46,267 |    DEBUG |         replace_func: 218 | Replacing '10' with '11'
+2025-10-04 12:14:46,277 |     INFO | _process_page_overlay: 147 | Page 1: 'f(x) = 10 + x2 −10 cos(2πx),' → 'f(x) = 11 + x2 −11 cos(2πx),' at (214.06900024414062, 320.6227722167969, 345.4156188964844, 336.8284912109375)
+2025-10-04 12:14:46,277 |    DEBUG |         replace_func: 218 | Replacing '10' with '11'
+2025-10-04 12:14:46,280 |     INFO | _process_page_overlay: 147 | Page 1: 'where a = 1.6 and b = 2.4. You can use a tolerance ϵ = 10−4 and maximum' → 'where a = 1.6 and b = 2.4. You can use a tolerance ϵ = 11−4 and maximum' at (132.76800537109375, 341.1799011230469, 478.4871520996094, 356.75848388671875)
+2025-10-04 12:14:46,280 |    DEBUG |         replace_func: 218 | Replacing '10' with '11'
+2025-10-04 12:14:46,282 |     INFO | _process_page_overlay: 147 | Page 1: 'iterations 100. What is xmin and what is f(xmin) ?' → 'iterations 110. What is xmin and what is f(xmin) ?' at (132.76800537109375, 356.7508850097656, 357.3603820800781, 370.20745849609375)
+2025-10-04 12:14:46,282 |    DEBUG |         replace_func: 218 | Replacing '10' with '11'
+2025-10-04 12:14:46,283 |     INFO | _process_page_overlay: 147 | Page 1: '100(x2' → '110(x2' at (258.8710021972656, 449.86163330078125, 289.3580627441406, 463.6014099121094)
+2025-10-04 12:14:46,283 |    DEBUG |         replace_func: 218 | Replacing '10' with '11'
+2025-10-04 12:14:46,284 |     INFO | _process_page_overlay: 147 | Page 1: 'ϵ = 10−4 (stopping) ,' → 'ϵ = 11−4 (stopping) ,' at (283.2359619140625, 496.09576416015625, 377.515625, 512.1713562011719)
+2025-10-04 12:14:46,284 |    DEBUG |         replace_func: 218 | Replacing '10' with '11'
+2025-10-04 12:14:46,285 |     INFO | _process_page_overlay: 147 | Page 1: 'M = 1000 (max iter)' → 'M = 1100 (max iter)' at (387.1419677734375, 500.2087707519531, 481.0008850097656, 512.1713562011719)
+2025-10-04 12:14:46,293 |     INFO | process_pdf_overlay_mode:  41 | Created 6 overlays across 2 pages
+2025-10-04 12:14:46,343 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 12:14:46,382 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 12:14:46,398 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 12:14:46,404 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 12:14:46,417 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 12:14:46,422 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 12:14:46,428 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_121446_243/output.pdf (790639 bytes)
+2025-10-04 12:14:46,428 |     INFO |         finalize_run: 222 | === Run Complete: 20251004_121446_243 (Duration: 0.18s) ===
+2025-10-04 12:14:46,428 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_121446_243
+2025-10-04 12:14:46,429 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_121446_243/run_metadata.json
+2025-10-04 12:14:46,429 |     INFO |         finalize_run: 233 | Run completed successfully with 2 mappings applied

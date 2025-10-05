@@ -37,10 +37,18 @@ Main orchestration layer with two processing modes:
 5. Embeds modified font back into PDF
 6. Falls back to overlay mode if font manipulation fails
 
+##### **OCR Mode**
+1. Rasterizes each page at a configurable DPI (220 by default)
+2. Runs Tesseract OCR via `pytesseract` + Pillow to extract word rectangles
+3. Normalizes tokens to match mapping keys even when the PDF has mixed casing/punctuation
+4. Inserts replacement text with invisible render mode so the accessible layer updates while the visual raster remains intact
+5. Returns the untouched PDF when no replacements are matched or when OCR dependencies are missing
+
 **Key Functions**:
 - `extract_text_preview()` - Text extraction with 4000 char limit
 - `generate_word_occurrences()` - Word frequency analysis
 - `apply_word_mapping()` - Main processing entry point
+- `apply_image_ocr_mapping()` - OCR-first fallback for raster-heavy PDFs
 - `_collect_overlay_targets()` - Captures original glyph images
 - `_apply_overlays()` - Applies image overlays to PDF
 
@@ -75,19 +83,41 @@ Handles patterns split across multiple TJ operations (e.g., "0.9:" split as "0" 
 - Missing decimal points reconstructed during matching
 
 #### 5. **Font Manipulator** (`glyph_mapper/font_manipulator.py`)
-Font-level glyph manipulation using fontTools.
+Complete font-level glyph manipulation system using fontTools.
 
-**Functions**:
-- `create_remapped_font()` - Swaps glyph mappings in cmap table
-- `analyze_font_characters()` - Checks character availability
-- `extract_font_from_pdf()` - Extracts embedded fonts (placeholder)
-- `create_character_mapping_from_words()` - Converts word mappings to char mappings
-- `embed_font_in_pdf()` - Embeds custom font into PDF resources
+**Core Functions**:
 
-**Limitations**:
-- Only handles same-length word mappings
-- Requires all characters available in source font
-- Falls back to overlay mode on any failure
+1. **Font Selection**:
+   - `get_available_fonts()` - Discovers available fonts (project + system)
+   - `extract_font_info_from_pdf()` - Analyzes PDF font usage
+   - `select_best_font_for_pdf()` - Intelligently selects best font match
+   - Priority: DejaVuSans > Arial > Times New Roman > Helvetica > Geneva
+
+2. **Character Mapping**:
+   - `create_character_mapping_from_words()` - Converts word → char mappings
+   - Handles same-length words (direct char-by-char mapping)
+   - Handles different-length words (intelligent heuristics for unique chars)
+   - Detects and warns about mapping conflicts
+
+3. **Font Modification**:
+   - `create_remapped_font()` - Swaps glyphs in cmap table
+   - Modifies Unicode BMP character map (Platform 3, Encoding 1)
+   - Preserves all other font tables and metrics
+
+4. **Font Embedding**:
+   - `create_font_descriptor()` - Creates PDF font descriptor with full metrics
+   - `embed_font_in_pdf()` - Properly embeds TTF font into PDF
+   - Creates font stream object with complete font file
+   - Adds font descriptor with bounding box, ascent, descent, metrics
+   - Replaces existing fonts while preserving images/annotations
+
+**Features**:
+- Full font descriptor support (bounding box, italic angle, stem width)
+- Proper font stream embedding with Length/Length1
+- WinAnsiEncoding for broad compatibility
+- Preserves ALL non-font PDF resources (images, annotations, metadata)
+- Comprehensive logging at each step
+- Automatic fallback to overlay mode on errors
 
 #### 6. **Logger** (`glyph_mapper/logger.py`)
 Comprehensive logging system with structured metadata.
@@ -154,6 +184,45 @@ fontTools           # Font glyph manipulation (font mode only)
 4. Apply coordinated replacements across arrays
 5. Preserve array structure and kerning
 
+### Font Mode Processing (Complete Algorithm)
+1. **Font Analysis**:
+   - Extract font information from PDF (names, types, embedding status)
+   - Match PDF fonts with available system fonts
+   - Select best font using priority order
+
+2. **Character Mapping Creation**:
+   - Analyze word mappings to infer character mappings
+   - Same-length words: direct character-by-character mapping
+   - Different-length words: map unique characters using set difference
+   - Validate all required characters exist in selected font
+
+3. **Font Glyph Remapping**:
+   - Load selected font using fontTools
+   - Access Unicode BMP cmap table (Platform 3, Encoding 1)
+   - For each character mapping (old_char → new_char):
+     - Get glyph names for both characters
+     - Remap old_char's code point to new_char's glyph
+   - Save modified font to bytes
+
+4. **Content Stream Rewriting**:
+   - Parse PDF content streams
+   - Apply cross-array processor for pattern matching
+   - Replace text strings (e.g., "dog" → "cat")
+   - Preserve all non-text operations
+
+5. **Font Embedding**:
+   - Create font descriptor with metrics from modified font
+   - Create font stream object with complete TTF bytes
+   - Create font dictionary with Type, Subtype, BaseFont, Descriptor
+   - Replace existing font resources on each page
+   - Preserve ALL other page resources (images, annotations, etc.)
+
+6. **Result**:
+   - Text visually displays replacement words
+   - Actual glyphs rendered match character mappings
+   - File size smaller than overlay mode (no embedded images)
+   - PDF structure fully preserved
+
 ## File Structure
 ```
 ├── app.py                              # Flask web application
@@ -183,10 +252,20 @@ fontTools           # Font glyph manipulation (font mode only)
 - **Cons**: Increases file size (embedded images)
 - **Use Case**: Default for all PDFs
 
-### Font Mode
-- **Pros**: Smaller file size, true text replacement
-- **Cons**: Experimental, many edge cases, limited to char-level swaps
-- **Use Case**: Same-length words with available glyphs
+### Font Mode (Fully Implemented)
+- **Pros**:
+  - Smaller file size (no image overlays)
+  - True text replacement at glyph level
+  - Preserves PDF structure, images, and annotations
+  - Handles different-length word mappings intelligently
+  - Uses high-quality fonts (DejaVuSans, Arial, Times New Roman)
+- **Implementation**:
+  - Analyzes PDF fonts and selects best matching font
+  - Creates character-level mappings from word mappings
+  - Swaps glyphs in font character map (cmap table)
+  - Properly embeds font with descriptors and streams
+  - Replaces PDF fonts while preserving all other content
+- **Use Case**: Preferred for text-heavy PDFs, cleaner output
 
 ## Error Handling
 - Font mode failures → automatic fallback to overlay mode

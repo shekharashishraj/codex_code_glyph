@@ -1,0 +1,43 @@
+2025-10-04 01:30:27,839 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20251004_013027_836 ===
+2025-10-04 01:30:27,842 |     INFO |            remap_pdf:  82 | Starting PDF remapping with 3 mappings in overlay mode
+2025-10-04 01:30:27,843 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_013027_836/input.pdf (47677 bytes)
+2025-10-04 01:30:27,843 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-10-04 01:30:27,843 |     INFO |         log_mappings:  81 | Word mappings to apply: 3 total
+2025-10-04 01:30:27,843 |     INFO |         log_mappings:  83 |   'CH2=CH2' → 'CH2=CH3'
+2025-10-04 01:30:27,843 |     INFO |         log_mappings:  83 |   '7' → '6'
+2025-10-04 01:30:27,843 |     INFO |         log_mappings:  83 |   'propane' → 'ethene'
+2025-10-04 01:30:27,843 |     INFO |         log_mappings:  81 | Word mappings to apply: 3 total
+2025-10-04 01:30:27,843 |     INFO |         log_mappings:  83 |   'CH2=CH2' → 'CH2=CH3'
+2025-10-04 01:30:27,843 |     INFO |         log_mappings:  83 |   '7' → '6'
+2025-10-04 01:30:27,843 |     INFO |         log_mappings:  83 |   'propane' → 'ethene'
+2025-10-04 01:30:27,843 |     INFO | _apply_overlay_mode_mapping: 286 | Using PyMuPDF for overlay mode processing
+2025-10-04 01:30:27,844 |     INFO | process_pdf_with_pymupdf: 293 | Processing PDF with PyMuPDF in overlay mode
+2025-10-04 01:30:27,844 |     INFO | process_pdf_with_pymupdf: 294 | Pattern: CH2=CH2|propane|7
+2025-10-04 01:30:27,861 |    DEBUG |         replace_func: 197 | Replacing '7' with '6'
+2025-10-04 01:30:27,866 |    DEBUG |  _capture_text_image: 219 | Captured text image: 780 bytes
+2025-10-04 01:30:27,866 |     INFO | _process_page_overlay: 126 | Page 1: '7' → '6' at (304.7300109863281, 36.210330963134766, 311.75, 51.75260925292969)
+2025-10-04 01:30:27,866 |    DEBUG |         replace_func: 197 | Replacing '7' with '6'
+2025-10-04 01:30:27,871 |    DEBUG |  _capture_text_image: 219 | Captured text image: 7656 bytes
+2025-10-04 01:30:27,871 |     INFO | _process_page_overlay: 126 | Page 1: '2.  An alkane with 7 carbon atoms contains _____ hydrogen atoms.   ' → '2.  An alkane with 6 carbon atoms contains _____ hydrogen atoms.   ' at (90.02400207519531, 106.58566284179688, 367.239990234375, 117.61138153076172)
+2025-10-04 01:30:27,871 |    DEBUG |         replace_func: 197 | Replacing 'propane' with 'ethene'
+2025-10-04 01:30:27,875 |    DEBUG |  _capture_text_image: 219 | Captured text image: 6992 bytes
+2025-10-04 01:30:27,875 |     INFO | _process_page_overlay: 126 | Page 1: '5.  The reaction of propane with bromine is called?      ' → '5.  The reaction of ethene with bromine is called?      ' at (90.02400207519531, 340.0156555175781, 309.5, 351.0413818359375)
+2025-10-04 01:30:27,876 |    DEBUG |         replace_func: 197 | Replacing '7' with '6'
+2025-10-04 01:30:27,879 |    DEBUG |  _capture_text_image: 219 | Captured text image: 2488 bytes
+2025-10-04 01:30:27,879 |     INFO | _process_page_overlay: 126 | Page 1: '7. The name of  ' → '6. The name of  ' at (90.02400207519531, 445.03564453125, 155.3319854736328, 456.0613708496094)
+2025-10-04 01:30:27,879 |     INFO | process_pdf_overlay_mode:  41 | Created 4 overlays across 1 pages
+2025-10-04 01:30:27,894 |    DEBUG | _apply_overlays_pymupdf: 258 | Applied overlay on page 1
+2025-10-04 01:30:27,905 |    DEBUG | _apply_overlays_pymupdf: 258 | Applied overlay on page 1
+2025-10-04 01:30:27,915 |    DEBUG | _apply_overlays_pymupdf: 258 | Applied overlay on page 1
+2025-10-04 01:30:27,926 |    DEBUG | _apply_overlays_pymupdf: 258 | Applied overlay on page 1
+2025-10-04 01:30:27,933 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_013027_836/output.pdf (690195 bytes)
+2025-10-04 01:30:27,933 |     INFO |         finalize_run: 222 | === Run Complete: 20251004_013027_836 (Duration: 0.09s) ===
+2025-10-04 01:30:27,933 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_013027_836
+2025-10-04 01:30:27,933 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_013027_836/run_metadata.json
+2025-10-04 01:30:27,933 |     INFO |         finalize_run: 233 | Run completed successfully with 3 mappings applied
+2025-10-04 01:31:05,915 |     INFO |  log_text_extraction:  90 | Extracted text (117 chars): '\u200bThe cockroach DB has shown error to prevent skew anamoaly but the postgres sql has gone\u200b\n\u200bthrough the both of them.\u200b'
+2025-10-04 01:31:05,916 |    DEBUG |  log_text_extraction:  95 | Full extracted text saved to: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_013027_836/extracted_text.txt
+2025-10-04 01:31:16,537 |     INFO |  log_text_extraction:  90 | Extracted text (1986 chars): '9/7/25, 9:15\u202fPM\nQuiz: Module1-quiz\nPage 1 of 4\nhttps://canvas.asu.edu/courses/230642/quizzes/1761790/take\nModule1-quiz\nStarted: Sep 7 at 9:07pm\nQuiz Instructions\n\uea6a\nQuestion 1 1 pts\n\uea6a\nQuestion 2 1 pts\n\uea6a\nQuestion 3 1 pts\n\uea6a\nQuestion 4 1 pts\nWhich of the following propositional connectives are unary? Select all that apply!\nImplication ( \n )\nNegation ( \n )\nConjunction ( \n )\nDisjunction ( \n )\nA propositional formula F is a tautology if every interpretation satisfies F.\nTrue\nFalse\nGiven the proposition...'
+2025-10-04 01:31:16,537 |    DEBUG |  log_text_extraction:  95 | Full extracted text saved to: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_013027_836/extracted_text.txt
+2025-10-04 01:32:09,210 |     INFO |  log_text_extraction:  90 | Extracted text (1708 chars): 'RNNs and LSTM Quiz\nMultiple Choice Questions\nQ1. What is the primary benefit of stacking multiple RNN layers (i.e., stacked RNNs)?\nA. Faster training\nB. Lower memory usage\nC. Better learning of hierarchical features\nD. Simpler architecture\nQ2. Which of the following is the main reason RNNs struggle with long–term dependen-\ncies?\nA. Overfitting\nB. Vanishing gradients\nC. Lack of non–linearity\nD. Insufficient data\nQ3. What differentiates an LSTM cell from a standard RNN cell?\nA. It uses ReLU instea...'
+2025-10-04 01:32:09,212 |    DEBUG |  log_text_extraction:  95 | Full extracted text saved to: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_013027_836/extracted_text.txt

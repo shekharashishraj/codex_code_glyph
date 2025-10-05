@@ -1,0 +1,22 @@
+2025-10-04 02:19:20,712 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20251004_021920_711 ===
+2025-10-04 02:19:20,713 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_021920_711/input.pdf (128664 bytes)
+2025-10-04 02:19:20,713 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-10-04 02:19:20,713 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-10-04 02:19:20,713 |     INFO |         log_mappings:  83 |   'Knowledge' → 'Wisdom'
+2025-10-04 02:19:20,713 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-10-04 02:19:20,714 |     INFO |         log_mappings:  83 |   'Knowledge' → 'Wisdom'
+2025-10-04 02:19:20,714 |     INFO | _apply_overlay_mode_mapping: 286 | Using PyMuPDF for overlay mode processing
+2025-10-04 02:19:20,714 |     INFO | process_pdf_with_pymupdf: 384 | Processing PDF with PyMuPDF in overlay mode
+2025-10-04 02:19:20,715 |     INFO | process_pdf_with_pymupdf: 385 | Pattern: Knowledge
+2025-10-04 02:19:20,734 |    DEBUG |         replace_func: 213 | Replacing 'Knowledge' with 'Wisdom'
+2025-10-04 02:19:20,734 |     INFO | _process_page_overlay: 142 | Page 1: 'Knowledge Representation and Reasoning: Questions' → 'Wisdom Representation and Reasoning: Questions' at (120.61100006103516, 112.2557601928711, 491.4508361816406, 131.47116088867188)
+2025-10-04 02:19:20,734 |    DEBUG |         replace_func: 213 | Replacing 'Knowledge' with 'Wisdom'
+2025-10-04 02:19:20,735 |     INFO | _process_page_overlay: 142 | Page 1: 'Question - 1: What is the primary aim of Knowledge Representation and Rea-' → 'Question - 1: What is the primary aim of Wisdom Representation and Rea-' at (71.0, 214.1166534423828, 541.1417236328125, 228.0718536376953)
+2025-10-04 02:19:20,750 |     INFO | process_pdf_overlay_mode:  41 | Created 2 overlays across 4 pages
+2025-10-04 02:19:20,761 |    DEBUG | _apply_overlays_pymupdf: 277 | Applied overlay on page 1
+2025-10-04 02:19:20,775 |    DEBUG | _apply_overlays_pymupdf: 277 | Applied overlay on page 1
+2025-10-04 02:19:20,778 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_021920_711/output.pdf (576955 bytes)
+2025-10-04 02:19:20,779 |     INFO |         finalize_run: 222 | === Run Complete: 20251004_021920_711 (Duration: 0.07s) ===
+2025-10-04 02:19:20,779 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_021920_711
+2025-10-04 02:19:20,779 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_021920_711/run_metadata.json
+2025-10-04 02:19:20,780 |     INFO |         finalize_run: 233 | Run completed successfully with 1 mappings applied

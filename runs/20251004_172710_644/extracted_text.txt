@@ -1,0 +1,204 @@
+CSE 576: Topics in Natural Language Processing
+Dr. Vivek Gupta
+Spring 2025
+09/04/2025
+Language Modeling: 
+Pretraining
+The pretraining revolution
+Gains from pretrained language models
+Pretraining has had a major, tangible impact on how well NLP systems work
+Pretraining – scaling unsupervised learning on the internet
+Key ideas in pretraining
+•
+Make sure your model can process large-scale, diverse datasets
+•
+Don’t use labeled data (otherwise you can’t scale!)
+•
+Compute-aware scaling 
+Word structure and subword models
+5
+Let’s take a look at the assumptions we’ve made about a language’s vocabulary.
+We assume a fixed vocab of tens of thousands of words, built from the training set.
+All novel words seen at test time are mapped to a single UNK. 
+ 
+ 
+ 
+ 
+word  
+ 
+vocab mapping 
+embedding
+ 
+ 
+hat 
+ 
+→ 
+pizza (index)  
+ 
+ 
+ 
+ 
+learn  
+→ 
+tasty (index) 
+ 
+ 
+taaaaasty 
+→ 
+UNK (index) 
+ 
+ 
+laern  
+→ 
+UNK (index) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Transformerify → 
+UNK (index) 
+ 
+ 
+ 
+ 
+ 
+ 
+Common 
+words
+Variations
+misspellings
+novel items
+The byte-pair encoding algorithm
+6
+Subword modeling in NLP encompasses a wide range of methods for reasoning about 
+structure below the word level. (Parts of words, characters, bytes.)
+•
+The dominant modern paradigm is to learn a vocabulary of parts of words (subword tokens).
+•
+At training and testing time, each word is split into a sequence of known subwords.
+Byte-pair encoding is a simple, effective strategy for defining a subword vocabulary.
+1.
+Start with a vocabulary containing only characters and an “end-of-word” symbol.
+2.
+Using a corpus of text, find the most common adjacent characters “a,b”; add “ab” as a subword.
+3.
+Replace instances of the character pair with the new subword; repeat until desired vocab size.
+Originally used in NLP for machine translation; now a similar method (WordPiece) is used in pretrained 
+models.
+[Sennrich et al., 2016, Wu et al., 2016]
+Word structure and subword models
+7
+Common words end up being a part of the subword vocabulary, while rarer words are split 
+into (sometimes intuitive, sometimes not) components.
+In the worst case, words are split into as many subwords as they have characters.
+ 
+ 
+ 
+ 
+word  
+ 
+vocab mapping 
+embedding
+ 
+ 
+hat 
+ 
+→ 
+hat 
+ 
+ 
+ 
+ 
+ 
+learn  
+→ 
+learn 
+ 
+ 
+taaaaasty 
+→ 
+taa## aaa## sty 
+ 
+ 
+laern  
+→ 
+la## ern## 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Transformerify → 
+Transformer## ify 
+ 
+ 
+ 
+ 
+ 
+ 
+Common 
+words
+Variations
+misspellings
+novel items
+Outline
+8
+1. A brief note on subword modeling
+2. Motivating model pretraining from word embeddings
+3. Model pretraining three ways
+1. Encoders
+2. Encoder-Decoders
+3. Decoders
+4. What do we think pretraining is teaching?
+Motivating word meaning and context
+9
+Recall the adage we mentioned at the beginning of the course:
+ 
+“You shall know a word by the company it keeps” (J. R. Firth 1957: 11)
+This quote is a summary of distributional semantics, and motivated word2vec. But:
+ 
+“… the complete meaning of a word is always contextual,
+ 
+and no study of meaning apart from a complete context
+ 
+can be taken seriously.” (J. R. Firth 1935)
+Consider I record the record: the two instances of record mean different things.
+[Thanks to Yoav Goldberg on Twitter for pointing out the 1935 Firth quote.]
+Where we were: pretrained word embeddings
+10
+Circa 2017:
+•
+Start with pretrained word embeddings (no 
+context!)
+•
+Learn how to incorporate context in an LSTM 
+or Transformer while training on the task.
+Some issues to think about:
+•
+The training data we have for our 
+downstream task (like question answering) 
+must be sufficient to teach all contextual 
+aspects of language.
+•
+Most of the parameters in our network are 
+randomly initialized!
+… the movie was … 
+ෝ𝒚
+Not pretrained
+pretrained
+(word embeddings)
+[Recall, movie gets the same word embedding, 
+no matter what sentence it shows up in]
+Where we’re going: pretraining whole models
+11
+In modern NLP:
+•
+All (or almost all) parameters in NLP 
+networks are initialized via pretraining.
+•
+Pretraining methods hide parts of the inp

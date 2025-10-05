@@ -36,7 +36,27 @@ class TJArrayProcessorV2:
 
         for array_index, item in enumerate(array_obj):
             if isinstance(item, TextStringObject):
-                raw_text = str(item)
+                # Properly decode PDF text string - PyPDF2 TextStringObject has proper decoding
+                try:
+                    # Try to get the properly decoded text from PyPDF2
+                    if hasattr(item, 'get_data'):
+                        raw_text = item.get_data().decode('utf-8', errors='replace')
+                    elif hasattr(item, 'original_bytes'):
+                        raw_text = item.original_bytes.decode('utf-8', errors='replace')
+                    else:
+                        # Fallback to string conversion, but handle encoding properly
+                        raw_text = str(item)
+                        # If it looks like encoded bytes, try to decode
+                        if all(ord(c) < 256 for c in raw_text):
+                            try:
+                                # Try Latin-1 decoding which maps bytes 1:1 to Unicode
+                                raw_text = raw_text.encode('latin-1').decode('utf-8', errors='replace')
+                            except:
+                                pass
+                except Exception:
+                    # Ultimate fallback
+                    raw_text = str(item)
+
                 cleaned_text = self._clean_special_chars(raw_text)
 
                 segment_index = len(text_segments)

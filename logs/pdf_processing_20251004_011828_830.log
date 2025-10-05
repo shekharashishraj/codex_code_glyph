@@ -1,0 +1,31 @@
+2025-10-04 01:18:28,832 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20251004_011828_830 ===
+2025-10-04 01:18:28,836 |     INFO |            remap_pdf:  82 | Starting PDF remapping with 2 mappings in overlay mode
+2025-10-04 01:18:28,836 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_011828_830/input.pdf (47677 bytes)
+2025-10-04 01:18:28,837 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-10-04 01:18:28,837 |     INFO |         log_mappings:  81 | Word mappings to apply: 2 total
+2025-10-04 01:18:28,837 |     INFO |         log_mappings:  83 |   'CH2=CH2' → 'CH2=CH3'
+2025-10-04 01:18:28,837 |     INFO |         log_mappings:  83 |   '7' → '6'
+2025-10-04 01:18:28,837 |     INFO |         log_mappings:  81 | Word mappings to apply: 2 total
+2025-10-04 01:18:28,837 |     INFO |         log_mappings:  83 |   'CH2=CH2' → 'CH2=CH3'
+2025-10-04 01:18:28,837 |     INFO |         log_mappings:  83 |   '7' → '6'
+2025-10-04 01:18:28,837 |     INFO | _apply_overlay_mode_mapping: 286 | Using PyMuPDF for overlay mode processing
+2025-10-04 01:18:28,837 |     INFO | process_pdf_with_pymupdf: 293 | Processing PDF with PyMuPDF in overlay mode
+2025-10-04 01:18:28,837 |     INFO | process_pdf_with_pymupdf: 294 | Pattern: CH2=CH2|7
+2025-10-04 01:18:28,849 |    DEBUG |         replace_func: 197 | Replacing '7' with '6'
+2025-10-04 01:18:28,854 |    DEBUG |  _capture_text_image: 219 | Captured text image: 780 bytes
+2025-10-04 01:18:28,854 |     INFO | _process_page_overlay: 126 | Page 1: '7' → '6' at (304.7300109863281, 36.210330963134766, 311.75, 51.75260925292969)
+2025-10-04 01:18:28,854 |    DEBUG |         replace_func: 197 | Replacing '7' with '6'
+2025-10-04 01:18:28,861 |    DEBUG |  _capture_text_image: 219 | Captured text image: 7656 bytes
+2025-10-04 01:18:28,861 |     INFO | _process_page_overlay: 126 | Page 1: '2.  An alkane with 7 carbon atoms contains _____ hydrogen atoms.   ' → '2.  An alkane with 6 carbon atoms contains _____ hydrogen atoms.   ' at (90.02400207519531, 106.58566284179688, 367.239990234375, 117.61138153076172)
+2025-10-04 01:18:28,862 |    DEBUG |         replace_func: 197 | Replacing '7' with '6'
+2025-10-04 01:18:28,866 |    DEBUG |  _capture_text_image: 219 | Captured text image: 2488 bytes
+2025-10-04 01:18:28,866 |     INFO | _process_page_overlay: 126 | Page 1: '7. The name of  ' → '6. The name of  ' at (90.02400207519531, 445.03564453125, 155.3319854736328, 456.0613708496094)
+2025-10-04 01:18:28,866 |     INFO | process_pdf_overlay_mode:  41 | Created 3 overlays across 1 pages
+2025-10-04 01:18:28,883 |    DEBUG | _apply_overlays_pymupdf: 258 | Applied overlay on page 1
+2025-10-04 01:18:28,894 |    DEBUG | _apply_overlays_pymupdf: 258 | Applied overlay on page 1
+2025-10-04 01:18:28,904 |    DEBUG | _apply_overlays_pymupdf: 258 | Applied overlay on page 1
+2025-10-04 01:18:28,912 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_011828_830/output.pdf (502987 bytes)
+2025-10-04 01:18:28,912 |     INFO |         finalize_run: 222 | === Run Complete: 20251004_011828_830 (Duration: 0.08s) ===
+2025-10-04 01:18:28,912 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_011828_830
+2025-10-04 01:18:28,912 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_011828_830/run_metadata.json
+2025-10-04 01:18:28,912 |     INFO |         finalize_run: 233 | Run completed successfully with 2 mappings applied

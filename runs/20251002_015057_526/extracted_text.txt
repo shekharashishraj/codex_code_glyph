@@ -1,0 +1,65 @@
+Quiz 1 
+1. Select the correct option: GPT-3 is a ____-gram model. 
+ 
+(15 marks) 
+a.. 1024 
+b. 2048 
+c.  4096 
+d. 8192 
+2. In one line, explain why hallucinations can still occur in LLMs despite using 
+advanced prompting techniques like Chain of Thought (CoT). 
+(15 marks) 
+3. In one sentence, explain how Self-Verification helps reduce factual 
+errors in an LLM’s output.   
+ 
+ 
+ 
+ 
+ 
+ 
+(15 marks) 
+4. True or False: Advanced prompting techniques (such as Chain of Thought 
+and Self-Ask) can enhance an LLM’s reasoning but may also amplify 
+biases from training data, leading to more persuasive yet incorrect 
+responses when the initial reasoning is flawed. Provide a one-line 
+explanation. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(15 marks) 
+5. Match the following   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(40 marks) 
+ 
+ 
+Prompting Technique 
+Primary Function/Characteristic 
+a. Zero-Shot CoT 
+1. Prompts the model to create a variety of 
+reasoning paths on its own, then integrate the 
+best results 
+b. Auto-CoT 
+2. Asks follow-up questions to refine the model’s 
+understanding and its final output 
+c. Self-Ask 
+3. Provides a step-by-step explanation in one 
+prompt without any additional examples 
+d. Program of Thoughts 
+(PoT) 
+4. Uses code-like structures or “scripts” to break 
+down and solve tasks methodically 
+e. Tree of Thoughts 
+5. Explores branching pathways to evaluate 
+multiple partial solutions hierarchically

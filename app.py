@@ -72,6 +72,8 @@ def create_app() -> Flask:
         originals = request.form.getlist("original")
         replacements = request.form.getlist("replacement")
         processing_mode = request.form.get("processing_mode", "overlay")
+        if processing_mode not in {"overlay", "font", "ocr"}:
+            processing_mode = "overlay"
         
         mapping: Dict[str, str] = {
             original: replacement

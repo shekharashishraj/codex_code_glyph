@@ -1,0 +1,17 @@
+2025-10-04 01:18:06,502 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20251004_011806_500 ===
+2025-10-04 01:18:06,505 |     INFO |            remap_pdf:  82 | Starting PDF remapping with 1 mappings in overlay mode
+2025-10-04 01:18:06,505 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_011806_500/input.pdf (47677 bytes)
+2025-10-04 01:18:06,505 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-10-04 01:18:06,505 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-10-04 01:18:06,505 |     INFO |         log_mappings:  83 |   'CH2=CH2' → 'CH2=CH3'
+2025-10-04 01:18:06,505 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-10-04 01:18:06,505 |     INFO |         log_mappings:  83 |   'CH2=CH2' → 'CH2=CH3'
+2025-10-04 01:18:06,506 |     INFO | _apply_overlay_mode_mapping: 286 | Using PyMuPDF for overlay mode processing
+2025-10-04 01:18:06,506 |     INFO | process_pdf_with_pymupdf: 293 | Processing PDF with PyMuPDF in overlay mode
+2025-10-04 01:18:06,506 |     INFO | process_pdf_with_pymupdf: 294 | Pattern: CH2=CH2
+2025-10-04 01:18:06,520 |     INFO | process_pdf_overlay_mode:  45 | No text replacements made
+2025-10-04 01:18:06,528 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_011806_500/output.pdf (62390 bytes)
+2025-10-04 01:18:06,528 |     INFO |         finalize_run: 222 | === Run Complete: 20251004_011806_500 (Duration: 0.03s) ===
+2025-10-04 01:18:06,529 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_011806_500
+2025-10-04 01:18:06,529 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_011806_500/run_metadata.json
+2025-10-04 01:18:06,529 |     INFO |         finalize_run: 233 | Run completed successfully with 1 mappings applied

@@ -1,0 +1,24 @@
+{
+  "run_id": "20251004_153729_279",
+  "start_time": "2025-10-04T15:37:29.280532",
+  "mode": "overlay",
+  "mappings": {
+    "Tyler,": "Austin,"
+  },
+  "steps": [],
+  "errors": [],
+  "results": {
+    "output_pdf": {
+      "filename": "output.pdf",
+      "size_bytes": 257904,
+      "path": "/Users/ashishrajshekhar/codex_code_glyph/runs/20251004_153729_279/output.pdf"
+    }
+  },
+  "input_pdf": {
+    "filename": "input.pdf",
+    "size_bytes": 106016,
+    "path": "/Users/ashishrajshekhar/codex_code_glyph/runs/20251004_153729_279/input.pdf"
+  },
+  "end_time": "2025-10-04T15:37:29.430893",
+  "duration_seconds": 0.150361
+}

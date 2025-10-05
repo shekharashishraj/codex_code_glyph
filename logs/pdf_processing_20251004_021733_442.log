@@ -1,0 +1,20 @@
+2025-10-04 02:17:33,444 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20251004_021733_442 ===
+2025-10-04 02:17:33,451 |     INFO |            remap_pdf:  82 | Starting PDF remapping with 1 mappings in overlay mode
+2025-10-04 02:17:33,452 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_021733_442/input.pdf (128664 bytes)
+2025-10-04 02:17:33,452 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-10-04 02:17:33,452 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-10-04 02:17:33,452 |     INFO |         log_mappings:  83 |   'human-like' → 'mnkey-like'
+2025-10-04 02:17:33,452 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-10-04 02:17:33,452 |     INFO |         log_mappings:  83 |   'human-like' → 'mnkey-like'
+2025-10-04 02:17:33,452 |     INFO | _apply_overlay_mode_mapping: 286 | Using PyMuPDF for overlay mode processing
+2025-10-04 02:17:33,453 |     INFO | process_pdf_with_pymupdf: 367 | Processing PDF with PyMuPDF in overlay mode
+2025-10-04 02:17:33,453 |     INFO | process_pdf_with_pymupdf: 368 | Pattern: human\-like
+2025-10-04 02:17:33,469 |    DEBUG |         replace_func: 218 | Replacing 'human-like' with 'mnkey-like'
+2025-10-04 02:17:33,477 |     INFO | _process_page_overlay: 147 | Page 1: '• c. To understand the nature of intelligence and cognition to simulate human-like abilities in' → '• c. To understand the nature of intelligence and cognition to simulate mnkey-like abilities in' at (87.39500427246094, 292.21868896484375, 541.0642700195312, 305.32928466796875)
+2025-10-04 02:17:33,506 |     INFO | process_pdf_overlay_mode:  41 | Created 1 overlays across 4 pages
+2025-10-04 02:17:33,530 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 02:17:33,537 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_021733_442/output.pdf (346045 bytes)
+2025-10-04 02:17:33,539 |     INFO |         finalize_run: 222 | === Run Complete: 20251004_021733_442 (Duration: 0.09s) ===
+2025-10-04 02:17:33,539 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_021733_442
+2025-10-04 02:17:33,539 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_021733_442/run_metadata.json
+2025-10-04 02:17:33,539 |     INFO |         finalize_run: 233 | Run completed successfully with 1 mappings applied

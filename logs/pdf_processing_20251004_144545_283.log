@@ -1,0 +1,5 @@
+2025-10-04 14:45:45,284 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20251004_144545_283 ===
+2025-10-04 14:45:45,309 |    DEBUG |         replace_func: 213 | Replacing 'Tyler,' with 'Austin,'
+2025-10-04 14:45:45,310 |     INFO | _process_page_overlay: 142 | Page 1: 'The increase in live inventories is attributable to an increase in the quantity of live birds in inventory at the Company's Tyler, ' → 'The increase in live inventories is attributable to an increase in the quantity of live birds in inventory at the Company's Austin, ' at (53.0, 403.47216796875, 557.9689331054688, 416.5643005371094)
+2025-10-04 14:45:45,310 |    DEBUG |         replace_func: 213 | Replacing 'Tyler,' with 'Austin,'
+2025-10-04 14:45:45,311 |     INFO | _process_page_overlay: 142 | Page 1: 'increase in the inventory volume at the Tyler, Texas facility.  ' → 'increase in the inventory volume at the Austin, Texas facility.  ' at (53.0, 563.16796875, 302.32000732421875, 578.4519653320312)

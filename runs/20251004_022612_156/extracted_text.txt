@@ -1,0 +1,196 @@
+ASHISH RAJ SHEKHAR
+Joint Holder :- JITENDRA SINGH
+S/O: JITENDRA SINGH,FRIENDS COLONY
+PAKARI ARA,BHOJPUR
+BHOJPUR
+Customer No :906315578
+BIHAR-INDIA
+Scheme :SAVINGS-EASYACCESS
+802301
+Currency :INR
+Statement of Axis Account No :921010020340608 for the period (From : 22-12-2021  To : 21-01-2022)
+Tran Date
+Chq No
+Particulars
+Debit
+Credit
+Balance
+Init.
+Br
+OPENING BALANCE
+            5683.36
+22-12-2021
+ECOM
+PUR/APPLE.COM/BIL/0008001009009/221221/
+08:11
+               219.00
+             5464.36 4100
+22-12-2021
+UPI/P2M/135664399617/Zomato/HDFC
+BANK/ZomatoOn
+               180.95
+             5283.41 4100
+22-12-2021
+UPI/P2M/135658644564/Shri ram /Paytm
+Pay/Payment
+               100.00
+             5183.41 4100
+22-12-2021
+UPI/P2M/135687185426/Paytm Air/Paytm
+Pay/Oid1671
+               301.00
+             4882.41 4100
+22-12-2021
+UPI/P2A/135681865922/PRAVIN SI/Bank of
+B/Payment
+               480.00
+             4402.41 4100
+22-12-2021
+UPI/P2A/135601638142/PRAVIN SI/Bank of
+B/NA
+               340.00
+             4062.41 4100
+22-12-2021
+UPI/P2M/135614843216/Hotal pre/Paytm
+Pay/Payment
+               300.00
+             3762.41 4100
+22-12-2021
+UPI/P2M/135673325796/Zomato/HDFC
+BANK/ZomatoOn
+               275.80
+             3486.61 4100
+23-12-2021
+UPI/P2A/135724774349/CHAITANYA/UCO
+Bank/NA
+               500.00
+             2986.61 4100
+23-12-2021
+UPI/P2M/135786123464/Zomato/HDFC
+BANK/ZomatoOn
+               180.95
+             2805.66 4100
+23-12-2021
+UPI/P2A/135702076263/NAND KISH/Bank of
+B/Payment
+                40.00
+             2765.66 4100
+23-12-2021
+UPI/P2M/135747539440/SHUBHAM A/Paytm
+Pay/Payment
+               100.00
+             2665.66 4100
+24-12-2021
+UPI/P2M/135891743046/Zomato Lt/Paytm
+Pay/Zomato
+               265.00
+             2400.66 4100
+24-12-2021
+POS/KAILASH CHAND &
+C/JAIPUR/241221/12:32
+               500.00
+             1900.66 4100
+24-12-2021
+UPI/P2M/135823716969/GIRIRAJ S/Paytm
+Pay/Payment
+                35.00
+             1865.66 4100
+24-12-2021
+UPI/P2M/135878286445/KHUSHI JU/Paytm
+Pay/Payment
+                58.00
+             1807.66 4100
+24-12-2021
+UPI/P2M/135840991559/KHUSHI JU/Paytm
+Pay/Payment
+               100.00
+             1707.66 4100
+24-12-2021
+UPI/P2A/135848338046/VISHAL SI/Canara
+Ba/Payment
+               150.00
+             1557.66 4100
+24-12-2021
+MOB/TPFT/MOHAMMAD SAJID
+/921010031014150
+              
+8000.00
+             9557.66 2845
+24-12-2021
+UPI/P2A/135847632386/JITENDR  /Dakshin
+B/UPI
+             
+15000.00
+            24557.66 4100
+24-12-2021
+UPI/P2M/135875546794/KARAN SIN/Paytm
+Pay/Payment
+               900.00
+            23657.66 4100
+25-12-2021
+UPI/P2M/135926268019/BharatPe
+/YesBank_Y/Payment
+               200.00
+            23457.66 4100
+25-12-2021
+UPI/P2A/135919689433/TANYA GUP/Union
+Ban/UPI
+              
+7000.00
+            16457.66 4100
+25-12-2021
+UPI/P2M/135902212317/Jai manga/Paytm
+Pay/Payment
+               100.00
+            16357.66 4100
+25-12-2021
+POS/GRAND CHANAKYA
+HO/JAIPUR/251221/23:43
+              
+1049.00
+            15308.66 4100
+25-12-2021
+UPI/P2M/136063534822/MUKESH KU/Paytm
+Pay/Payment
+                83.00
+            15225.66 4100
+26-12-2021
+UPI/P2A/136029410002/GOURAV  ./Kotak
+Mah/Payment
+               250.00
+            14975.66 4100
+26-12-2021
+UPI/P2M/136073498921/Paytm Air/Paytm
+Pay/Oid1676
+               239.00
+            14736.66 4100
+26-12-2021
+UPI/P2M/136073651497/MS SERVIC/Paytm
+Pay/Oid2021
+              
+2000.00
+            12736.66 4100
+26-12-2021
+UPI/P2A/136073667453/Paytm/Paytm Pay/Fuel
+pay
+                15.00
+            12751.66 4100
+26-12-2021
+UPI/P2M/136042165336/Jay shera/Paytm
+Pay/Payment
+               125.00
+            12626.66 4100
+26-12-2021
+UPI/P2A/136044541015/Mrs ULASI/Central
+B/Payment
+               700.00
+            11926.66 4100
+26-12-2021
+UPI/P2M/136078953175/HOTEL HIG/Paytm
+Pay/Payment
+               262.00
+            11664.66 4100
+26-12-2021
+UPI/P2M/136090659856/Ghanshyam/Paytm
+Pay/Oid2021
+                18.00

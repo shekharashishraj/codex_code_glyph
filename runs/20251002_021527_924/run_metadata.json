@@ -1,0 +1,37 @@
+{
+  "run_id": "20251002_021527_924",
+  "start_time": "2025-10-02T02:15:27.924743",
+  "mode": "font",
+  "mappings": {
+    "dog": "cat"
+  },
+  "steps": [],
+  "errors": [
+    {
+      "context": "apply_tfont_mapping",
+      "error_type": "TFontError",
+      "error_message": "Font /F1 lacks a descriptor for embedding",
+      "timestamp": "2025-10-02T02:15:27.955167"
+    },
+    {
+      "context": "font_mode_mapping",
+      "error_type": "TFontError",
+      "error_message": "Font /F1 lacks a descriptor for embedding",
+      "timestamp": "2025-10-02T02:15:27.955476"
+    }
+  ],
+  "results": {
+    "output_pdf": {
+      "filename": "output.pdf",
+      "size_bytes": 456983,
+      "path": "/Users/ashishrajshekhar/codex_code_glyph/runs/20251002_021527_924/output.pdf"
+    }
+  },
+  "input_pdf": {
+    "filename": "input.pdf",
+    "size_bytes": 1504,
+    "path": "/Users/ashishrajshekhar/codex_code_glyph/runs/20251002_021527_924/input.pdf"
+  },
+  "end_time": "2025-10-02T02:15:27.977750",
+  "duration_seconds": 0.053007
+}

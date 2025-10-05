@@ -1,0 +1,22 @@
+2025-10-04 13:56:47,295 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20251004_135647_291 ===
+2025-10-04 13:56:47,311 |     INFO |            remap_pdf:  82 | Starting PDF remapping with 1 mappings in overlay mode
+2025-10-04 13:56:47,312 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_135647_291/input.pdf (214536 bytes)
+2025-10-04 13:56:47,312 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-10-04 13:56:47,312 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-10-04 13:56:47,312 |     INFO |         log_mappings:  83 |   'five' → 'four'
+2025-10-04 13:56:47,312 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-10-04 13:56:47,312 |     INFO |         log_mappings:  83 |   'five' → 'four'
+2025-10-04 13:56:47,312 |     INFO | _apply_overlay_mode_mapping: 286 | Using PyMuPDF for overlay mode processing
+2025-10-04 13:56:47,312 |     INFO | process_pdf_with_pymupdf: 367 | Processing PDF with PyMuPDF in overlay mode
+2025-10-04 13:56:47,312 |     INFO | process_pdf_with_pymupdf: 368 | Pattern: five
+2025-10-04 13:56:47,342 |    DEBUG |         replace_func: 218 | Replacing 'five' with 'four'
+2025-10-04 13:56:47,348 |     INFO | _process_page_overlay: 147 | Page 2: 'Q4. Write at least five queries for the given schema. For each query, provide a natural ' → 'Q4. Write at least four queries for the given schema. For each query, provide a natural ' at (71.0, 292.5400085449219, 544.3639526367188, 307.91998291015625)
+2025-10-04 13:56:47,348 |     INFO | process_pdf_overlay_mode:  41 | Created 1 overlays across 2 pages
+2025-10-04 13:56:47,363 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 2
+2025-10-04 13:56:47,367 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_135647_291/output.pdf (644630 bytes)
+2025-10-04 13:56:47,367 |     INFO |         finalize_run: 222 | === Run Complete: 20251004_135647_291 (Duration: 0.07s) ===
+2025-10-04 13:56:47,367 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_135647_291
+2025-10-04 13:56:47,367 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_135647_291/run_metadata.json
+2025-10-04 13:56:47,367 |     INFO |         finalize_run: 233 | Run completed successfully with 1 mappings applied
+2025-10-04 14:21:06,613 |     INFO |  log_text_extraction:  90 | Extracted text (3129 chars): '55 \n2. Disaggregation of Revenue \nThe following table disaggregates our net sales by product category (in millions): \nProduct Category \nFiscal Year 2019\nFiscal Year 2018 \nFiscal Year 2017\nFresh, vacuum-sealed chicken \n$\n1,310.2\n$\n1,139.3  \n$\n1,339.1\nFresh, chill-packed chicken \n1,137.7 \n1,158.3  \n1,044.7 \nFresh, ice-packed chicken \n511.5 \n503.6  \n547.1 \nPrepared chicken \n240.8 \n207.6  \n170.8 \nFrozen chicken \n213.0 \n211.5  \n223.9 \nOther \n27.1 \n15.7  \n16.6 \nTotal net sales \n$\n3,440.3\n$\n3,236.0  \n$...'
+2025-10-04 14:21:06,614 |    DEBUG |  log_text_extraction:  95 | Full extracted text saved to: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_135647_291/extracted_text.txt

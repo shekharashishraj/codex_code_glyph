@@ -1,0 +1,23 @@
+2025-10-04 14:45:14,047 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20251004_144514_046 ===
+2025-10-04 14:45:14,047 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_144514_046/input.pdf (744 bytes)
+2025-10-04 14:45:14,048 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-10-04 14:45:14,048 |     INFO |         log_mappings:  81 | Word mappings to apply: 2 total
+2025-10-04 14:45:14,048 |     INFO |         log_mappings:  83 |   'hello' → 'hello'
+2025-10-04 14:45:14,048 |     INFO |         log_mappings:  83 |   'world' → 'earth'
+2025-10-04 14:45:14,048 |     INFO |         log_mappings:  81 | Word mappings to apply: 2 total
+2025-10-04 14:45:14,049 |     INFO |         log_mappings:  83 |   'hello' → 'hello'
+2025-10-04 14:45:14,049 |     INFO |         log_mappings:  83 |   'world' → 'earth'
+2025-10-04 14:45:14,054 |     INFO | _apply_overlay_mode_mapping: 286 | Using PyMuPDF for overlay mode processing
+2025-10-04 14:45:14,055 |     INFO | process_pdf_with_pymupdf: 353 | Processing PDF with PyMuPDF in overlay mode
+2025-10-04 14:45:14,055 |     INFO | process_pdf_with_pymupdf: 354 | Pattern: hello|world
+2025-10-04 14:45:14,060 |    DEBUG |         replace_func: 213 | Replacing 'hello' with 'hello'
+2025-10-04 14:45:14,060 |    DEBUG |         replace_func: 213 | Replacing 'world' with 'earth'
+2025-10-04 14:45:14,061 |     INFO | _process_page_overlay: 142 | Page 1: 'hello world' → 'hello earth' at (71.0, 49.5, 168.5800018310547, 78.9800033569336)
+2025-10-04 14:45:14,061 |     INFO | process_pdf_overlay_mode:  41 | Created 1 overlays across 1 pages
+2025-10-04 14:45:14,063 |  WARNING |         _ensure_font: 299 | Falling back to Helvetica for overlay text because font 'Helvetica' was not embedded.
+2025-10-04 14:45:14,064 |    DEBUG | _apply_overlays_pymupdf: 246 | Redrew overlay spans on page 1
+2025-10-04 14:45:14,065 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_144514_046/output.pdf (1522 bytes)
+2025-10-04 14:45:14,066 |     INFO |         finalize_run: 222 | === Run Complete: 20251004_144514_046 (Duration: 0.02s) ===
+2025-10-04 14:45:14,066 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_144514_046
+2025-10-04 14:45:14,066 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_144514_046/run_metadata.json
+2025-10-04 14:45:14,066 |     INFO |         finalize_run: 233 | Run completed successfully with 2 mappings applied

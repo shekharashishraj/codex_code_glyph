@@ -1,0 +1,20 @@
+2025-10-04 00:52:07,405 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20251004_005207_404 ===
+2025-10-04 00:52:07,405 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_005207_404/input.pdf (395336 bytes)
+2025-10-04 00:52:07,406 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-10-04 00:52:07,406 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-10-04 00:52:07,406 |     INFO |         log_mappings:  83 |   'water?' → 'aciid?'
+2025-10-04 00:52:07,406 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-10-04 00:52:07,406 |     INFO |         log_mappings:  83 |   'water?' → 'aciid?'
+2025-10-04 00:52:07,411 |     INFO | _apply_overlay_mode_mapping: 286 | Using PyMuPDF for overlay mode processing
+2025-10-04 00:52:07,411 |     INFO | process_pdf_with_pymupdf: 345 | Processing PDF with PyMuPDF in overlay mode
+2025-10-04 00:52:07,411 |     INFO | process_pdf_with_pymupdf: 346 | Pattern: water\?
+2025-10-04 00:52:07,455 |     INFO | _process_page_overlay: 138 | Page 1: 'water?' → 'aciid?' at (416.76348876953125, 288.2460021972656, 449.6624755859375, 300.3096008300781)
+2025-10-04 00:52:07,497 |     INFO | _process_page_overlay: 138 | Page 5: 'water?' → 'aciid?' at (137.09776306152344, 553.2108154296875, 169.9956512451172, 565.2744140625)
+2025-10-04 00:52:07,510 |     INFO | process_pdf_overlay_mode:  41 | Created 2 overlays across 7 pages
+2025-10-04 00:52:07,520 |    DEBUG | _apply_overlays_pymupdf: 252 | Applied overlay on page 1
+2025-10-04 00:52:07,529 |    DEBUG | _apply_overlays_pymupdf: 252 | Applied overlay on page 5
+2025-10-04 00:52:07,548 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_005207_404/output.pdf (587130 bytes)
+2025-10-04 00:52:07,549 |     INFO |         finalize_run: 222 | === Run Complete: 20251004_005207_404 (Duration: 0.14s) ===
+2025-10-04 00:52:07,549 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_005207_404
+2025-10-04 00:52:07,549 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_005207_404/run_metadata.json
+2025-10-04 00:52:07,549 |     INFO |         finalize_run: 233 | Run completed successfully with 1 mappings applied

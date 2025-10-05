@@ -1,0 +1,27 @@
+2025-10-04 01:17:18,662 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20251004_011718_658 ===
+2025-10-04 01:17:18,677 |     INFO |            remap_pdf:  82 | Starting PDF remapping with 1 mappings in overlay mode
+2025-10-04 01:17:18,678 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_011718_658/input.pdf (395336 bytes)
+2025-10-04 01:17:18,678 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-10-04 01:17:18,678 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-10-04 01:17:18,678 |     INFO |         log_mappings:  83 |   'water?' → 'aciid?'
+2025-10-04 01:17:18,678 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-10-04 01:17:18,678 |     INFO |         log_mappings:  83 |   'water?' → 'aciid?'
+2025-10-04 01:17:18,678 |     INFO | _apply_overlay_mode_mapping: 286 | Using PyMuPDF for overlay mode processing
+2025-10-04 01:17:18,679 |     INFO | process_pdf_with_pymupdf: 293 | Processing PDF with PyMuPDF in overlay mode
+2025-10-04 01:17:18,679 |     INFO | process_pdf_with_pymupdf: 294 | Pattern: water\?
+2025-10-04 01:17:18,716 |    DEBUG |         replace_func: 197 | Replacing 'water?' with 'aciid?'
+2025-10-04 01:17:18,750 |    DEBUG |  _capture_text_image: 219 | Captured text image: 7485 bytes
+2025-10-04 01:17:18,750 |     INFO | _process_page_overlay: 126 | Page 1: 'Do you think melanin would dissolve in water? ' → 'Do you think melanin would dissolve in aciid? ' at (224.7611083984375, 288.2424011230469, 452.7318420410156, 300.3096008300781)
+2025-10-04 01:17:18,786 |    DEBUG |         replace_func: 197 | Replacing 'water?' with 'aciid?'
+2025-10-04 01:17:18,789 |    DEBUG |  _capture_text_image: 219 | Captured text image: 3713 bytes
+2025-10-04 01:17:18,789 |     INFO | _process_page_overlay: 126 | Page 5: 'bilayer in water? ' → 'bilayer in aciid? ' at (90.01083374023438, 553.2108154296875, 173.11143493652344, 565.2744140625)
+2025-10-04 01:17:18,799 |     INFO | process_pdf_overlay_mode:  41 | Created 2 overlays across 7 pages
+2025-10-04 01:17:18,810 |    DEBUG | _apply_overlays_pymupdf: 258 | Applied overlay on page 1
+2025-10-04 01:17:18,819 |    DEBUG | _apply_overlays_pymupdf: 258 | Applied overlay on page 5
+2025-10-04 01:17:18,837 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_011718_658/output.pdf (681613 bytes)
+2025-10-04 01:17:18,837 |     INFO |         finalize_run: 222 | === Run Complete: 20251004_011718_658 (Duration: 0.17s) ===
+2025-10-04 01:17:18,837 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_011718_658
+2025-10-04 01:17:18,837 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_011718_658/run_metadata.json
+2025-10-04 01:17:18,837 |     INFO |         finalize_run: 233 | Run completed successfully with 1 mappings applied
+2025-10-04 01:17:48,313 |     INFO |  log_text_extraction:  90 | Extracted text (1607 chars): 'Multiple Choice Questions                   Unit (7)                                                   Chem-100 \n \n \n \n \n \n1.  The functional group contained in the compound CH2=CH2 is a(n)   \nA. \nester \nB. \nketone \nC. \nalkene \nD. \nalcohol \n \n \n \n \n              \n2.  An alkane with 7 carbon atoms contains _____ hydrogen atoms.   \nA. \n16 \nB. \n14 \nC. \n20 \nD. \n18 \n \n \n3.  The IUPAC name of  \n  is                                    \nA. \n2-ethyl-2-methylpentane \nB. \n2-methyl-3-ethylpentane \nC. \n2-eth...'
+2025-10-04 01:17:48,315 |    DEBUG |  log_text_extraction:  95 | Full extracted text saved to: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_011718_658/extracted_text.txt

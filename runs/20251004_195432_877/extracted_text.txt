@@ -1,0 +1,91 @@
+Quiz 1 (Intro)
+1.
+Characteristics of CC - Ability to support heterogenous clients (thin and thick)
+2.
+Characteristics of CC - customers can provision their own resources, serve multiple users concurrently, broad n/w
+connectivity
+3.
+Characteristics of CC - Location independence, statistical multiplexing, pay as you go, automatic resource control
+4.
+Cloud services resources - processing, storage, databases
+5.
+PaaS user access - applications, libraries and runtimes
+6.
+Example of PaaS - docker.com, LXC
+7.
+Public > Private ? - scalability and no upfront cost
+8.
+Broad network access - Grid and Cloud
+9.
+Technologies enabling cloud comp - virtualisation, service oriented arch, self-managing comp sys
+10. AWS EC2 states - pending, rebooting, terminate, stopped, running
+11. Scalable without other AWS services - SQS
+12. Reliable storage - S3
+13. Enabling tech for CC - Virtualization, internet, datacenter
+14. Essential to hybrid cloud - data portability across public and private
+15. Private > public - security
+Quiz 2 (Virtual Machines)
+1.
+Which are the major forms of virtualization - memory, storage, machines, network
+2.
+Which are the benefits of virtualization? - consolidating, sharing
+3.
+Which have access to the user ISA? - App, Libs and runtimes
+4.
+Which have access to the System ISA - Host OS
+5.
+ABI - System Calls & User ISA
+6.
+ISA VMs - Classic VM, Hosted VM & Emulator
+7.
+ABI VM - Java VM
+8.
+System VMs - Classic and hosted VM
+9.
+System VMs - The VMM emulates the system ISA used by a VM. Most of the instructions used by an application run
+directly on hardware. The virtual ISA is identical to the physical ISA
+10. Non-hosted VMs, what runs in privileged mode (kernel mode) - VMM
+11. With hosted VMs, what runs in privileged mode (kernel mode) - VMM & Host OS
+12. Which page tables are used by MMU for memory address translations? - Physical page table (for host OS). Shadow
+page table (for VMs)
+13. Reasons for page fault - page not allocated, page swapped out by guest OS
+14. With non-hosted VMs, what are involved when an application in a VM reads a file - Guest OS, VMM & Hard Disk
+15. How are a VM’s I/Os to a virtual disk virtualized - The I/O system calls trapped into VMM. VMM emulates the VM I/Os
+Quiz 3 (Virtual Network)
+1.
+What is the first step in the STP algorithm? - picking root port
+2.
+What does tunnel mean? - The process of encapsulating an entire packet into another packet and transmit it over to its
+destination
+3.
+Purpose of OVS-vswitchd module - A daemon that manages and controls Open vSwitch switches on the local machine
+4.
+Which of the following protocols does not run on the data link(L2) layer - SSL
+5.
+Which layers of network are required to provide support for the GRE tunnels? - L2,L3
+6.
+What is the main difference between the control channel and data channel in L2TP? CC provides more reliable
+communication than DC
+7.
+Where id does the VLAN protocol run with? VLAN ID
+8.
+VxLAN runs on top of which protocol? - UDP
+9.
+Examples of a passenger protocol - IP (TCP yes- VPN)
+10. Two major components of OVS - ovsdb-server & ovs-vswitchd
+11. Advantage of using VLAN - Allowing many logical networks to use the same network infrastructure.
+12. Which domain is reduced by a network bridge? - collision domain
+13. Tunnels and private networks are ________ network virtualization. - Applications of
+14. Which is used to maintain/find the linux bridge forwarding table/records? - hash table
+15. What is the main difference between Linux bridge and OVS? - Linux bridge is managed by local host, while OVS can be
+managed remotely.
+Quiz 4 (OVS, NFV & SDN)
+1.
+Purpose of network function virtualization (NFV) - NFV enables agile virtual networking services leveraging general
+purpose server
+2.
+Which plane is responsible for the switching operation in a traditional router’s internal architecture - data plane
+3.
+Which layer is responsible for compiling the requirements of SDN requests? - Virtualization Layer
+4.
+Why is it difficult to test a new routing algorith

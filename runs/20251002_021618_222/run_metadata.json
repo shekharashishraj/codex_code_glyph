@@ -1,0 +1,32 @@
+{
+  "run_id": "20251002_021618_222",
+  "start_time": "2025-10-02T02:16:18.223757",
+  "mode": "font",
+  "mappings": {
+    "Dogs": "Cats",
+    "foxes": "birds"
+  },
+  "steps": [],
+  "errors": [
+    {
+      "context": "font_mode_mapping",
+      "error_type": "TypeError",
+      "error_message": "argument of type 'IndirectObject' is not iterable",
+      "timestamp": "2025-10-02T02:16:18.250790"
+    }
+  ],
+  "results": {
+    "output_pdf": {
+      "filename": "output.pdf",
+      "size_bytes": 235011,
+      "path": "/Users/ashishrajshekhar/codex_code_glyph/runs/20251002_021618_222/output.pdf"
+    }
+  },
+  "input_pdf": {
+    "filename": "input.pdf",
+    "size_bytes": 803,
+    "path": "/Users/ashishrajshekhar/codex_code_glyph/runs/20251002_021618_222/input.pdf"
+  },
+  "end_time": "2025-10-02T02:16:18.265662",
+  "duration_seconds": 0.041905
+}

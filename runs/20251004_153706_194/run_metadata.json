@@ -1,0 +1,25 @@
+{
+  "run_id": "20251004_153706_194",
+  "start_time": "2025-10-04T15:37:06.194910",
+  "mode": "overlay",
+  "mappings": {
+    "Tyler,": "Austin,"
+  },
+  "steps": [],
+  "errors": [
+    {
+      "context": "apply_word_mapping(overlay)",
+      "error_type": "AttributeError",
+      "error_message": "'ContentStream' object has no attribute 'forced_encoding'",
+      "timestamp": "2025-10-04T15:37:06.351214"
+    }
+  ],
+  "results": {},
+  "input_pdf": {
+    "filename": "input.pdf",
+    "size_bytes": 106016,
+    "path": "/Users/ashishrajshekhar/codex_code_glyph/runs/20251004_153706_194/input.pdf"
+  },
+  "end_time": "2025-10-04T15:37:06.351377",
+  "duration_seconds": 0.156467
+}

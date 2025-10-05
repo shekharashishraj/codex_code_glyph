@@ -1,0 +1,150 @@
+2025-10-02 01:49:10,676 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20251002_014910_670 ===
+2025-10-02 01:49:10,838 |     INFO |            remap_pdf:  82 | Starting PDF remapping with 1 mappings in overlay mode
+2025-10-02 01:49:10,839 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251002_014910_670/input.pdf (2752656 bytes)
+2025-10-02 01:49:10,839 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-10-02 01:49:10,839 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-10-02 01:49:10,839 |     INFO |         log_mappings:  83 |   'Ashish' → 'Shiven'
+2025-10-02 01:49:10,839 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-10-02 01:49:10,840 |     INFO |         log_mappings:  83 |   'Ashish' → 'Shiven'
+2025-10-02 01:49:10,853 |     INFO | log_pattern_building:  99 | Building regex pattern for 1 words (ignore_case=True)
+2025-10-02 01:49:10,853 |    DEBUG | log_pattern_building: 100 | Words to match: ['Ashish']
+2025-10-02 01:49:10,853 |    DEBUG | log_pattern_building: 101 | Compiled pattern: Ashish
+2025-10-02 01:49:10,862 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 1 with 515 operations
+2025-10-02 01:49:10,863 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '#$%&#\'(%)*!"+%+\'+$)!,-$%).$!'
+2025-10-02 01:49:10,863 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '/011!'
+2025-10-02 01:49:10,863 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '0$$#67'
+2025-10-02 01:49:10,863 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '.)7%!'
+2025-10-02 01:49:10,863 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '0$:#$:!;'
+2025-10-02 01:49:10,864 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '+<!,:)=:+&!'
+2025-10-02 01:49:10,864 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'AB=)&!$B&'
+2025-10-02 01:49:10,864 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: ':A%'
+2025-10-02 01:49:10,864 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: '#$%&#\'(%)*!"+%+\'+$)!,-$%).$! /011! 0$$#67'
+2025-10-02 01:49:10,865 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 1: '/011! 0$$#67 .)7%!'
+2025-10-02 01:49:10,865 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 2: '0$$#67 .)7%! 0$:#$:!;'
+2025-10-02 01:49:10,865 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 3: '.)7%! 0$:#$:!; +<!,:)=:+&!'
+2025-10-02 01:49:10,865 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 4: '0$:#$:!; +<!,:)=:+&! AB=)&!$B&'
+2025-10-02 01:49:10,865 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 5: '+<!,:)=:+&! AB=)&!$B& :A%'
+2025-10-02 01:49:10,865 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 6: 'AB=)&!$B& :A%'
+2025-10-02 01:49:10,870 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 2 with 137 operations
+2025-10-02 01:49:10,870 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'CAB'
+2025-10-02 01:49:10,870 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '+&AA!<$A7!*+%+$)%!B&)+%#A7!$B&))7$:A%'
+2025-10-02 01:49:10,870 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: 'CAB +&AA!<$A7!*+%+$)%!B&)+%#A7!$B&))7$:A%'
+2025-10-02 01:49:10,872 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 3 with 239 operations
+2025-10-02 01:49:10,872 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'D7$)&%!%:)!*+%+!($#76!#7$)&%E.+7-'
+2025-10-02 01:49:10,872 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'A%+H!'
+2025-10-02 01:49:10,872 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: "7(.')&!AI!A&*)&$"
+2025-10-02 01:49:10,872 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '+7*!%A'
+2025-10-02 01:49:10,872 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: "%+H!A&*)&$!6&A(J)*!'-!"
+2025-10-02 01:49:10,872 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '$%+%)'
+2025-10-02 01:49:10,873 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: "D7$)&%!%:)!*+%+!($#76!#7$)&%E.+7- A%+H! 7(.')&!AI!A&*)&$"
+2025-10-02 01:49:10,873 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 1: "A%+H! 7(.')&!AI!A&*)&$ +7*!%A"
+2025-10-02 01:49:10,873 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 2: "7(.')&!AI!A&*)&$ +7*!%A %+H!A&*)&$!6&A(J)*!'-!"
+2025-10-02 01:49:10,873 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 3: "+7*!%A %+H!A&*)&$!6&A(J)*!'-! $%+%)"
+2025-10-02 01:49:10,873 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 4: "%+H!A&*)&$!6&A(J)*!'-! $%+%)"
+2025-10-02 01:49:10,874 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 4 with 79 operations
+2025-10-02 01:49:10,874 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'K&A*(B%!+7*!%:)#&!I&)L()'
+2025-10-02 01:49:10,874 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '7B#)$'
+2025-10-02 01:49:10,874 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: 'K&A*(B%!+7*!%:)#&!I&)L() 7B#)$'
+2025-10-02 01:49:10,876 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 5 with 150 operations
+2025-10-02 01:49:10,876 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'M&*)&$!N:)'
+2025-10-02 01:49:10,876 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '&)!+.A(7%!#$!6&)+%)&!%:+7!9444!+7*!#7!'
+2025-10-02 01:49:10,876 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'O+H#IA&7#+'
+2025-10-02 01:49:10,877 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: 'M&*)&$!N:) &)!+.A(7%!#$!6&)+%)&!%:+7!9444!+7*!#7! O+H#IA&7#+'
+2025-10-02 01:49:10,878 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 1: '&)!+.A(7%!#$!6&)+%)&!%:+7!9444!+7*!#7! O+H#IA&7#+'
+2025-10-02 01:49:10,891 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 6 with 900 operations
+2025-10-02 01:49:10,891 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '94!$%'
+2025-10-02 01:49:10,891 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '+%)$'
+2025-10-02 01:49:10,891 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'N#%'
+2025-10-02 01:49:10,891 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: ':!+.A(7%!)QB))*#'
+2025-10-02 01:49:10,891 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '76!.A&)!%:+7!544'
+2025-10-02 01:49:10,891 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '($%A.)&$!'
+2025-10-02 01:49:10,891 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'N#%:!A&*)&!.A&)!%:+7!3444'
+2025-10-02 01:49:10,891 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'T)N!'
+2025-10-02 01:49:10,891 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'UA&='
+2025-10-02 01:49:10,891 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'A&*)'
+2025-10-02 01:49:10,891 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '&$!A7!94V39V34'
+2025-10-02 01:49:10,891 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'G:)!+66&)6+%#A7!J#'
+2025-10-02 01:49:10,891 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'J)H#7)$!:)HJ$!($!J)&IA&.!AJ)&+%#A7$!'
+2025-10-02 01:49:10,892 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'N#%:!+!$)L()7%#+H!WAN'
+2025-10-02 01:49:10,892 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'N:)&)!'
+2025-10-02 01:49:10,892 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '#7!%:)!X&$%!$%)J!N)!)Q%&+B%!%:)!*+%+!Y!%:)7!HA+*!#%!+7*!%:)7!J)&IA&.!%&+7IA&.+%#A7$!'
+2025-10-02 01:49:10,892 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'H#=)!+7!)%H!J#)JH#7)'
+2025-10-02 01:49:10,892 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'Z.+%B:![!%:#$!#$!($)*!%A!XH%)&!%:)!*AB(.)7%$'
+2025-10-02 01:49:10,892 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'Z$A&%[!N)!($)!%:#$!%A!*#$JH+'
+2025-10-02 01:49:10,892 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'I)%'
+2025-10-02 01:49:10,892 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'B:)*!&)$(H%!#7!%:)!*)$#&)*!'
+2025-10-02 01:49:10,892 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'A&*)&\\0,OV"],O^'
+2025-10-02 01:49:10,892 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '7*!'
+2025-10-02 01:49:10,892 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '$#.#H+&H-!N)!:+_)!A%:)&'
+2025-10-02 01:49:10,892 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '$!H#=)!$A&%'
+2025-10-02 01:49:10,893 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'Y!H#.#%'
+2025-10-02 01:49:10,893 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: ')%B@'
+2025-10-02 01:49:10,893 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: '94!$% +%)$ N#%'
+2025-10-02 01:49:10,893 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 1: '+%)$ N#% :!+.A(7%!)QB))*#'
+2025-10-02 01:49:10,893 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 2: 'N#% :!+.A(7%!)QB))*# 76!.A&)!%:+7!544'
+2025-10-02 01:49:10,893 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 3: ':!+.A(7%!)QB))*# 76!.A&)!%:+7!544 ($%A.)&$!'
+2025-10-02 01:49:10,893 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 4: '76!.A&)!%:+7!544 ($%A.)&$! N#%:!A&*)&!.A&)!%:+7!3444'
+2025-10-02 01:49:10,893 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 5: '($%A.)&$! N#%:!A&*)&!.A&)!%:+7!3444 T)N!'
+2025-10-02 01:49:10,893 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 6: 'N#%:!A&*)&!.A&)!%:+7!3444 T)N! UA&='
+2025-10-02 01:49:10,893 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 7: 'T)N! UA&= A&*)'
+2025-10-02 01:49:10,893 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 8: 'UA&= A&*) &$!A7!94V39V34'
+2025-10-02 01:49:10,893 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 9: 'A&*) &$!A7!94V39V34 G:)!+66&)6+%#A7!J#'
+2025-10-02 01:49:10,894 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 10: '&$!A7!94V39V34 G:)!+66&)6+%#A7!J# J)H#7)$!:)HJ$!($!J)&IA&.!AJ)&+%#A7$!'
+2025-10-02 01:49:10,894 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 11: 'G:)!+66&)6+%#A7!J# J)H#7)$!:)HJ$!($!J)&IA&.!AJ)&+%#A7$! N#%:!+!$)L()7%#+H!WAN'
+2025-10-02 01:49:10,894 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 12: 'J)H#7)$!:)HJ$!($!J)&IA&.!AJ)&+%#A7$! N#%:!+!$)L()7%#+H!WAN N:)&)!'
+2025-10-02 01:49:10,894 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 13: 'N#%:!+!$)L()7%#+H!WAN N:)&)! #7!%:)!X&$%!$%)J!N)!)Q%&+B%!%:)!*+%+!Y!%:)7!HA+*!#%!+7*!%:)7!J)&IA&.!%&+7IA&.+%#A7$!'
+2025-10-02 01:49:10,894 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 14: 'N:)&)! #7!%:)!X&$%!$%)J!N)!)Q%&+B%!%:)!*+%+!Y!%:)7!HA+*!#%!+7*!%:)7!J)&IA&.!%&+7IA&.+%#A7$! H#=)!+7!)%H!J#)JH#7)'
+2025-10-02 01:49:10,895 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 15: '#7!%:)!X&$%!$%)J!N)!)Q%&+B%!%:)!*+%+!Y!%:)7!HA+*!#%!+7*!%:)7!J)&IA&.!%&+7IA&.+%#A7$! H#=)!+7!)%H!J#)JH#7) Z.+%B:![!%:#$!#$!($)*!%A!XH%)&!%:)!*AB(.)7%$'
+2025-10-02 01:49:10,895 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 16: 'H#=)!+7!)%H!J#)JH#7) Z.+%B:![!%:#$!#$!($)*!%A!XH%)&!%:)!*AB(.)7%$ Z$A&%[!N)!($)!%:#$!%A!*#$JH+'
+2025-10-02 01:49:10,895 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 17: 'Z.+%B:![!%:#$!#$!($)*!%A!XH%)&!%:)!*AB(.)7%$ Z$A&%[!N)!($)!%:#$!%A!*#$JH+ I)%'
+2025-10-02 01:49:10,895 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 18: 'Z$A&%[!N)!($)!%:#$!%A!*#$JH+ I)% B:)*!&)$(H%!#7!%:)!*)$#&)*!'
+2025-10-02 01:49:10,896 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 19: 'I)% B:)*!&)$(H%!#7!%:)!*)$#&)*! A&*)&\\0,OV"],O^'
+2025-10-02 01:49:10,896 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 20: 'B:)*!&)$(H%!#7!%:)!*)$#&)*! A&*)&\\0,OV"],O^ 7*!'
+2025-10-02 01:49:10,896 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 21: 'A&*)&\\0,OV"],O^ 7*! $#.#H+&H-!N)!:+_)!A%:)&'
+2025-10-02 01:49:10,896 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 22: '7*! $#.#H+&H-!N)!:+_)!A%:)& $!H#=)!$A&%'
+2025-10-02 01:49:10,896 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 23: '$#.#H+&H-!N)!:+_)!A%:)& $!H#=)!$A&% Y!H#.#%'
+2025-10-02 01:49:10,896 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 24: '$!H#=)!$A&% Y!H#.#% )%B@'
+2025-10-02 01:49:10,896 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 25: 'Y!H#.#% )%B@'
+2025-10-02 01:49:10,901 |     INFO | _apply_overlay_mode_mapping: 302 | Processing page 7 with 641 operations
+2025-10-02 01:49:10,901 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: ')&)!'
+2025-10-02 01:49:10,901 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: ')+B:!$%+%)!%+=)$!'
+2025-10-02 01:49:10,901 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '*AB(.)7%$!I&A.!'
+2025-10-02 01:49:10,901 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '%:)!#7#%#+H!L()'
+2025-10-02 01:49:10,901 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '&-!+$!'
+2025-10-02 01:49:10,901 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '(%!Y!+JJH#)$!'
+2025-10-02 01:49:10,901 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: "$A&%#76!'+$)*!A7!"
+2025-10-02 01:49:10,901 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '6&)+%)&!%:+7!BA7'
+2025-10-02 01:49:10,901 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: "AJ)&+%#A7$!%:)7!J&A_#*)$!%:)!&)$(H%!'+B=!%A!%:)!B($%A.)&"
+2025-10-02 01:49:10,901 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '+H$A'
+2025-10-02 01:49:10,901 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'X7*EA&*)&E%A%+H$'
+2025-10-02 01:49:10,901 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'I(7B%#A7'
+2025-10-02 01:49:10,901 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '($)$!Z6&A(J!%A!'
+2025-10-02 01:49:10,901 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: "BA.'#7)"
+2025-10-02 01:49:10,901 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'A&*)&$!J)&!$%+%)!+I%)&!BA(7%#76!%:)!'
+2025-10-02 01:49:10,902 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'BAHH)B%#A7'
+2025-10-02 01:49:10,902 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '+7*!'
+2025-10-02 01:49:10,902 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: '($)'
+2025-10-02 01:49:10,902 |    DEBUG |     process_tj_array:  70 | TJ Array - Combined text: 'Z$A&%!J(%$!%:)!$%+%)$!#7!+$B)7*#76!A&*)&@'
+2025-10-02 01:49:10,902 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 0: ')&)! )+B:!$%+%)!%+=)$! *AB(.)7%$!I&A.!'
+2025-10-02 01:49:10,902 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 1: ')+B:!$%+%)!%+=)$! *AB(.)7%$!I&A.! %:)!#7#%#+H!L()'
+2025-10-02 01:49:10,902 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 2: '*AB(.)7%$!I&A.! %:)!#7#%#+H!L() &-!+$!'
+2025-10-02 01:49:10,903 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 3: '%:)!#7#%#+H!L() &-!+$! (%!Y!+JJH#)$!'
+2025-10-02 01:49:10,903 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 4: "&-!+$! (%!Y!+JJH#)$! $A&%#76!'+$)*!A7!"
+2025-10-02 01:49:10,903 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 5: "(%!Y!+JJH#)$! $A&%#76!'+$)*!A7! 6&)+%)&!%:+7!BA7"
+2025-10-02 01:49:10,903 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 6: "$A&%#76!'+$)*!A7! 6&)+%)&!%:+7!BA7 AJ)&+%#A7$!%:)7!J&A_#*)$!%:)!&)$(H%!'+B=!%A!%:)!B($%A.)&"
+2025-10-02 01:49:10,904 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 7: "6&)+%)&!%:+7!BA7 AJ)&+%#A7$!%:)7!J&A_#*)$!%:)!&)$(H%!'+B=!%A!%:)!B($%A.)& +H$A"
+2025-10-02 01:49:10,904 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 8: "AJ)&+%#A7$!%:)7!J&A_#*)$!%:)!&)$(H%!'+B=!%A!%:)!B($%A.)& +H$A X7*EA&*)&E%A%+H$"
+2025-10-02 01:49:10,904 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 9: '+H$A X7*EA&*)&E%A%+H$ I(7B%#A7'
+2025-10-02 01:49:10,904 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 10: 'X7*EA&*)&E%A%+H$ I(7B%#A7 ($)$!Z6&A(J!%A!'
+2025-10-02 01:49:10,904 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 11: "I(7B%#A7 ($)$!Z6&A(J!%A! BA.'#7)"
+2025-10-02 01:49:10,904 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 12: "($)$!Z6&A(J!%A! BA.'#7) A&*)&$!J)&!$%+%)!+I%)&!BA(7%#76!%:)!"
+2025-10-02 01:49:10,904 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 13: "BA.'#7) A&*)&$!J)&!$%+%)!+I%)&!BA(7%#76!%:)! BAHH)B%#A7"
+2025-10-02 01:49:10,904 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 14: 'A&*)&$!J)&!$%+%)!+I%)&!BA(7%#76!%:)! BAHH)B%#A7 +7*!'
+2025-10-02 01:49:10,905 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 15: 'BAHH)B%#A7 +7*! ($)'
+2025-10-02 01:49:10,905 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 16: '+7*! ($) Z$A&%!J(%$!%:)!$%+%)$!#7!+$B)7*#76!A&*)&@'
+2025-10-02 01:49:10,905 |    DEBUG | _find_cross_array_matches: 137 | Cross-array window 17: '($) Z$A&%!J(%$!%:)!$%+%)$!#7!+$B)7*#76!A&*)&@'
+2025-10-02 01:49:10,921 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251002_014910_670/output.pdf (2756133 bytes)
+2025-10-02 01:49:10,921 |     INFO |         finalize_run: 222 | === Run Complete: 20251002_014910_670 (Duration: 0.24s) ===
+2025-10-02 01:49:10,921 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20251002_014910_670
+2025-10-02 01:49:10,921 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251002_014910_670/run_metadata.json
+2025-10-02 01:49:10,921 |     INFO |         finalize_run: 233 | Run completed successfully with 1 mappings applied

@@ -1,0 +1,37 @@
+2025-10-02 02:15:51,825 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20251002_021551_823 ===
+2025-10-02 02:15:51,826 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251002_021551_823/input.pdf (803 bytes)
+2025-10-02 02:15:51,826 |     INFO |   log_mode_selection:  76 | Processing mode selected: font
+2025-10-02 02:15:51,826 |     INFO |         log_mappings:  81 | Word mappings to apply: 2 total
+2025-10-02 02:15:51,826 |     INFO |         log_mappings:  83 |   'Dogs' → 'Cats'
+2025-10-02 02:15:51,826 |     INFO |         log_mappings:  83 |   'foxes' → 'birds'
+2025-10-02 02:15:51,826 |     INFO |         log_mappings:  81 | Word mappings to apply: 2 total
+2025-10-02 02:15:51,827 |     INFO |         log_mappings:  83 |   'Dogs' → 'Cats'
+2025-10-02 02:15:51,827 |     INFO |         log_mappings:  83 |   'foxes' → 'birds'
+2025-10-02 02:15:51,827 |     INFO | _apply_font_mode_mapping: 294 | Using T-font malicious font remapping
+2025-10-02 02:15:51,856 |     INFO | log_pattern_building:  99 | Building regex pattern for 2 words (ignore_case=True)
+2025-10-02 02:15:51,856 |    DEBUG | log_pattern_building: 100 | Words to match: ['Dogs', 'foxes']
+2025-10-02 02:15:51,857 |    DEBUG | log_pattern_building: 101 | Compiled pattern: foxes|Dogs
+2025-10-02 02:15:51,857 |    DEBUG | log_text_segment_analysis: 113 | Text segmentation for '' → '':
+2025-10-02 02:15:51,857 |    DEBUG | log_text_segment_analysis: 114 |   Original text: 'Dogs guard houses while foxes nap.'
+2025-10-02 02:15:51,857 |    DEBUG | log_text_segment_analysis: 115 |   Segments: [('Dogs', 'Cats'), (' guard houses while ', None), ('foxes', 'birds'), (' nap.', None)]
+2025-10-02 02:15:51,858 |     INFO | log_text_segment_analysis: 129 | Text replacement in segment: ["'Dogs' → 'Cats'", "'foxes' → 'birds'"]
+2025-10-02 02:15:51,858 |    DEBUG | log_text_segment_analysis: 130 |   Result: 'Cats guard houses while birds nap.'
+2025-10-02 02:15:51,858 |     INFO |        _segment_text: 140 | Found 2 replacements in text segment: ['Dogs→Cats', 'foxes→birds']
+2025-10-02 02:15:51,858 |     INFO | _update_page_content: 204 | Updated content stream with malicious font mappings
+2025-10-02 02:15:51,858 |     INFO |  apply_tfont_mapping: 280 | Page 1 updated for T-font mode
+2025-10-02 02:15:51,859 |    ERROR |            log_error: 177 | Error in font_mode_mapping: TypeError: argument of type 'IndirectObject' is not iterable
+2025-10-02 02:15:51,859 |  WARNING | _apply_font_mode_mapping: 302 | T-font pipeline failed, reverting to overlay mode
+2025-10-02 02:15:51,860 |     INFO | _apply_overlay_mode_mapping: 286 | Using PyMuPDF for overlay mode processing
+2025-10-02 02:15:51,860 |     INFO | process_pdf_with_pymupdf: 293 | Processing PDF with PyMuPDF in overlay mode
+2025-10-02 02:15:51,860 |     INFO | process_pdf_with_pymupdf: 294 | Pattern: foxes|Dogs
+2025-10-02 02:15:51,866 |    DEBUG |         replace_func: 197 | Replacing 'Dogs' with 'Cats'
+2025-10-02 02:15:51,866 |    DEBUG |         replace_func: 197 | Replacing 'foxes' with 'birds'
+2025-10-02 02:15:51,870 |    DEBUG |  _capture_text_image: 219 | Captured text image: 9651 bytes
+2025-10-02 02:15:51,870 |     INFO | _process_page_overlay: 126 | Page 1: 'Dogs guard houses while foxes nap.' → 'Cats guard houses while birds nap.' at (50.0, 99.9999771118164, 340.1419677734375, 124.73197937011719)
+2025-10-02 02:15:51,870 |     INFO | process_pdf_overlay_mode:  41 | Created 1 overlays across 1 pages
+2025-10-02 02:15:51,875 |    DEBUG | _apply_overlays_pymupdf: 258 | Applied overlay on page 1
+2025-10-02 02:15:51,876 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251002_021551_823/output.pdf (235011 bytes)
+2025-10-02 02:15:51,877 |     INFO |         finalize_run: 222 | === Run Complete: 20251002_021551_823 (Duration: 0.05s) ===
+2025-10-02 02:15:51,877 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20251002_021551_823
+2025-10-02 02:15:51,878 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251002_021551_823/run_metadata.json
+2025-10-02 02:15:51,878 |  WARNING |         finalize_run: 231 | Run completed with 1 errors

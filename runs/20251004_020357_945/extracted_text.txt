@@ -1,0 +1,94 @@
+Knowledge Representation and Reasoning: Questions
+Multiple Choice Questions
+Question - 1: What is the primary aim of Knowledge Representation and Rea-
+soning?
+• a. To enable computers to process vast amounts of data efficiently.
+• b. To develop advanced machine learning algorithms.
+• c. To understand the nature of intelligence and cognition to simulate human-like abilities in
+computers.
+• d. To create complex robotic systems for automation.
+Question - 2: Which type of reasoning is described as “jumping to conclusions
+based on some default assumptions” when information is insufficient, potentially
+leading to unsound conclusions that may need to be withdrawn?
+• a. Deductive reasoning
+• b. Abductive reasoning
+• c. Epistemic reasoning
+• d. Default reasoning
+Question - 3: In propositional logic, what is an “atom”?
+• a. A logical connective like 'and' or 'or'.
+• b. A formula composed of multiple propositions.
+• c. The smallest unit to which a truth value (true/false) can be assigned.
+• d. A symbol representing a numerical value.
+Question - 4: Which of the following connectives is considered a unary proposi-
+tional connective?
+• a. Conjunction (∧)
+• b. Implication (→)
+• c. Disjunction (√)
+• d. Negation (¬)
+1
+Question - 5: A propositional formula F is a tautology if:
+• a. At least one interpretation satisfies F.
+• b. F can be reduced to a Conjunctive Normal Form (CNF).
+• c. Every interpretation satisfies F.
+• d. Its negation (¬F) is satisfiable.
+Question - 6: What does it mean for a propositional formula F to be satisfiable?
+• a. F is true for all possible interpretations.
+• b. There exists at least one interpretation that satisfies F.
+• c. F contains no logical connectives.
+• d. F can be reduced to an empty clause.
+Question - 7: Which of the following is equivalent to saying that F entails G
+(F ⊨G)?
+• a. F ∧G is a tautology.
+• b. F ↔G is satisfiable.
+• c. (F ∧¬G) is unsatisfiable.
+• d. ¬F ∨G is a contradiction.
+Question - 8: What is the total number of subformulas that can be formed for
+the propositional formula
+¬(p ∧q) ∨(r →¬p)
+• a. 8
+• b. 10
+• c. 7
+• d. 9
+Question - 9: What is a key characteristic of a Herbrand interpretation for a
+given signature σ (containing at least one object constant)?
+• a. Its universe is any non-empty set of individuals.
+• b. Its universe is the set of all ground (variable-free) terms of σ, and every ground term is
+interpreted as itself.
+• c. It always makes all quantified formulas true.
+• d. It must contain at least one function constant of arity greater than 0.
+2
+Question - 10: Which of the following statements about SAT solvers is correct?
+• a. SAT solvers only accept formulas in Disjunctive Normal Form (DNF).
+• b. SAT solvers decide satisfiability of propositional formulas, often using DPLL.
+• c. SAT solvers can only handle problems with at most 100 variables.
+• d. SAT solvers are inefficient and rarely used in practice.
+Question - 11: Every atom, ⊤, ⊥, and any recursive combination of formulas with
+connectives are considered valid formulas in propositional logic.
+• a. True
+• b. False
+Question - 12: Which of the following statements is a tautology?
+• a. (p →q) ∧(p ∧¬q)
+• b. (p →q) →(¬p ∨q)
+• c. (p →(q →p))
+• d. ¬p ∨p
+Question - 13: Which of the following is a key limitation of propositional logic
+that First-Order Logic overcomes?
+• a. Inability to represent negation
+• b. Inability to express relations between individuals and relations
+• c. Inability to use logical connectives such as ∧and ✓
+• d. Inability to reason with truth values
+Question - 14: Which of the following is a valid term in FOL?
+• a. ∀x P(x)
+• b. P(x) ∧Q(y)
+• c. father(john)
+Question - 15: What is the Herbrand Universe of a signature σ?
+• a. The set of all formulas in σ.
+• b. The set of all predicates in σ.
+• c. The set of all ground terms of σ.
+• d. The set of all interpretations over σ.
+3
+Question - 16: Which of the following is an example of a terminological axiom
+in FOL?
+• a. ∀x (Teenager(x) →¬Adult(x))
+• b. Child(John)
+• c. Affects(J

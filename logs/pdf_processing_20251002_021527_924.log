@@ -1,0 +1,45 @@
+2025-10-02 02:15:27,924 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20251002_021527_924 ===
+2025-10-02 02:15:27,925 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251002_021527_924/input.pdf (1504 bytes)
+2025-10-02 02:15:27,925 |     INFO |   log_mode_selection:  76 | Processing mode selected: font
+2025-10-02 02:15:27,925 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-10-02 02:15:27,926 |     INFO |         log_mappings:  83 |   'dog' → 'cat'
+2025-10-02 02:15:27,926 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-10-02 02:15:27,926 |     INFO |         log_mappings:  83 |   'dog' → 'cat'
+2025-10-02 02:15:27,926 |     INFO | _apply_font_mode_mapping: 294 | Using T-font malicious font remapping
+2025-10-02 02:15:27,950 |     INFO | log_pattern_building:  99 | Building regex pattern for 1 words (ignore_case=True)
+2025-10-02 02:15:27,951 |    DEBUG | log_pattern_building: 100 | Words to match: ['dog']
+2025-10-02 02:15:27,951 |    DEBUG | log_pattern_building: 101 | Compiled pattern: dog
+2025-10-02 02:15:27,952 |    DEBUG | log_text_segment_analysis: 113 | Text segmentation for '' → '':
+2025-10-02 02:15:27,952 |    DEBUG | log_text_segment_analysis: 114 |   Original text: 'The quick brown fox jumps over the lazy dog.'
+2025-10-02 02:15:27,952 |    DEBUG | log_text_segment_analysis: 115 |   Segments: [('The quick brown fox jumps over the lazy ', None), ('dog', 'cat'), ('.', None)]
+2025-10-02 02:15:27,953 |     INFO | log_text_segment_analysis: 129 | Text replacement in segment: ["'dog' → 'cat'"]
+2025-10-02 02:15:27,953 |    DEBUG | log_text_segment_analysis: 130 |   Result: 'The quick brown fox jumps over the lazy cat.'
+2025-10-02 02:15:27,953 |     INFO |        _segment_text: 140 | Found 1 replacements in text segment: ['dog→cat']
+2025-10-02 02:15:27,953 |    DEBUG | log_text_segment_analysis: 113 | Text segmentation for '' → '':
+2025-10-02 02:15:27,953 |    DEBUG | log_text_segment_analysis: 114 |   Original text: 'Cats chase mice while dogs guard houses.'
+2025-10-02 02:15:27,953 |    DEBUG | log_text_segment_analysis: 115 |   Segments: [('Cats chase mice while ', None), ('dog', 'cat'), ('s guard houses.', None)]
+2025-10-02 02:15:27,954 |     INFO | log_text_segment_analysis: 129 | Text replacement in segment: ["'dog' → 'cat'"]
+2025-10-02 02:15:27,954 |    DEBUG | log_text_segment_analysis: 130 |   Result: 'Cats chase mice while cats guard houses.'
+2025-10-02 02:15:27,954 |     INFO |        _segment_text: 140 | Found 1 replacements in text segment: ['dog→cat']
+2025-10-02 02:15:27,954 |     INFO | _update_page_content: 204 | Updated content stream with malicious font mappings
+2025-10-02 02:15:27,954 |     INFO |  apply_tfont_mapping: 280 | Page 1 updated for T-font mode
+2025-10-02 02:15:27,954 |    ERROR |            log_error: 177 | Error in apply_tfont_mapping: TFontError: Font /F1 lacks a descriptor for embedding
+2025-10-02 02:15:27,955 |    ERROR |            log_error: 177 | Error in font_mode_mapping: TFontError: Font /F1 lacks a descriptor for embedding
+2025-10-02 02:15:27,955 |  WARNING | _apply_font_mode_mapping: 302 | T-font pipeline failed, reverting to overlay mode
+2025-10-02 02:15:27,956 |     INFO | _apply_overlay_mode_mapping: 286 | Using PyMuPDF for overlay mode processing
+2025-10-02 02:15:27,956 |     INFO | process_pdf_with_pymupdf: 293 | Processing PDF with PyMuPDF in overlay mode
+2025-10-02 02:15:27,956 |     INFO | process_pdf_with_pymupdf: 294 | Pattern: dog
+2025-10-02 02:15:27,961 |    DEBUG |         replace_func: 197 | Replacing 'dog' with 'cat'
+2025-10-02 02:15:27,965 |    DEBUG |  _capture_text_image: 219 | Captured text image: 11271 bytes
+2025-10-02 02:15:27,965 |     INFO | _process_page_overlay: 126 | Page 1: 'The quick brown fox jumps over the lazy dog.' → 'The quick brown fox jumps over the lazy cat.' at (72.0, 104.68977355957031, 393.0239562988281, 126.67376708984375)
+2025-10-02 02:15:27,965 |    DEBUG |         replace_func: 197 | Replacing 'dog' with 'cat'
+2025-10-02 02:15:27,968 |    DEBUG |  _capture_text_image: 219 | Captured text image: 9024 bytes
+2025-10-02 02:15:27,968 |     INFO | _process_page_overlay: 126 | Page 1: 'Cats chase mice while dogs guard houses.' → 'Cats chase mice while cats guard houses.' at (72.0, 144.6897735595703, 376.1279602050781, 166.67376708984375)
+2025-10-02 02:15:27,968 |     INFO | process_pdf_overlay_mode:  41 | Created 2 overlays across 1 pages
+2025-10-02 02:15:27,973 |    DEBUG | _apply_overlays_pymupdf: 258 | Applied overlay on page 1
+2025-10-02 02:15:27,976 |    DEBUG | _apply_overlays_pymupdf: 258 | Applied overlay on page 1
+2025-10-02 02:15:27,977 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251002_021527_924/output.pdf (456983 bytes)
+2025-10-02 02:15:27,978 |     INFO |         finalize_run: 222 | === Run Complete: 20251002_021527_924 (Duration: 0.05s) ===
+2025-10-02 02:15:27,978 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20251002_021527_924
+2025-10-02 02:15:27,978 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251002_021527_924/run_metadata.json
+2025-10-02 02:15:27,978 |  WARNING |         finalize_run: 231 | Run completed with 2 errors

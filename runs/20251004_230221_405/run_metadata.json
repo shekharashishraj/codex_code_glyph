@@ -1,0 +1,28 @@
+{
+  "run_id": "20251004_230221_405",
+  "start_time": "2025-10-04T23:02:21.407316",
+  "mode": "overlay",
+  "mappings": {
+    "minimum": "maxmum",
+    "1,": "0,",
+    "8": "6",
+    "1000": "2001",
+    "quadratic": "lineaar"
+  },
+  "steps": [],
+  "errors": [],
+  "results": {
+    "output_pdf": {
+      "filename": "output.pdf",
+      "size_bytes": 140867,
+      "path": "/Users/ashishrajshekhar/codex_code_glyph/runs/20251004_230221_405/output.pdf"
+    }
+  },
+  "input_pdf": {
+    "filename": "input.pdf",
+    "size_bytes": 124349,
+    "path": "/Users/ashishrajshekhar/codex_code_glyph/runs/20251004_230221_405/input.pdf"
+  },
+  "end_time": "2025-10-04T23:02:21.527871",
+  "duration_seconds": 0.120555
+}

@@ -1,0 +1,27 @@
+2025-10-04 02:29:02,916 |     INFO |             __init__:  60 | === Starting PDF Processing Run: 20251004_022902_915 ===
+2025-10-04 02:29:02,917 |     INFO |            remap_pdf:  82 | Starting PDF remapping with 1 mappings in overlay mode
+2025-10-04 02:29:02,918 |     INFO |        log_input_pdf:  67 | Input PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_022902_915/input.pdf (16269 bytes)
+2025-10-04 02:29:02,918 |     INFO |   log_mode_selection:  76 | Processing mode selected: overlay
+2025-10-04 02:29:02,918 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-10-04 02:29:02,918 |     INFO |         log_mappings:  83 |   'ASHISH' → 'ANEESH'
+2025-10-04 02:29:02,918 |     INFO |         log_mappings:  81 | Word mappings to apply: 1 total
+2025-10-04 02:29:02,919 |     INFO |         log_mappings:  83 |   'ASHISH' → 'ANEESH'
+2025-10-04 02:29:02,919 |     INFO | _apply_overlay_mode_mapping: 286 | Using PyMuPDF for overlay mode processing
+2025-10-04 02:29:02,919 |     INFO | process_pdf_with_pymupdf: 367 | Processing PDF with PyMuPDF in overlay mode
+2025-10-04 02:29:02,919 |     INFO | process_pdf_with_pymupdf: 368 | Pattern: ASHISH
+2025-10-04 02:29:02,938 |    DEBUG |         replace_func: 218 | Replacing 'ASHISH' with 'ANEESH'
+2025-10-04 02:29:02,941 |     INFO | _process_page_overlay: 147 | Page 1: 'ASHISH RAJ SHEKHAR' → 'ANEESH RAJ SHEKHAR' at (37.0, 58.604000091552734, 140.0159912109375, 73.06900024414062)
+2025-10-04 02:29:02,970 |    DEBUG |         replace_func: 218 | Replacing 'ASHISH' with 'ANEESH'
+2025-10-04 02:29:02,973 |     INFO | _process_page_overlay: 147 | Page 3: 'UPI/P2A/201267303014/ASHISH  R/Indian' → 'UPI/P2A/201267303014/ANEESH  R/Indian' at (131.13999938964844, 388.52301025390625, 293.64599609375, 402.52899169921875)
+2025-10-04 02:29:02,979 |     INFO | process_pdf_overlay_mode:  41 | Created 2 overlays across 4 pages
+2025-10-04 02:29:02,983 |  WARNING |         _ensure_font: 313 | Falling back to Helvetica for overlay text because font 'Times-Bold' was not embedded.
+2025-10-04 02:29:02,986 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 1
+2025-10-04 02:29:02,989 |  WARNING |         _ensure_font: 313 | Falling back to Helvetica for overlay text because font 'Times-Roman' was not embedded.
+2025-10-04 02:29:02,990 |    DEBUG | _apply_overlays_pymupdf: 260 | Applied overlay on page 3
+2025-10-04 02:29:02,992 |     INFO |       log_output_pdf: 190 | Output PDF saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_022902_915/output.pdf (158868 bytes)
+2025-10-04 02:29:02,992 |     INFO |         finalize_run: 222 | === Run Complete: 20251004_022902_915 (Duration: 0.08s) ===
+2025-10-04 02:29:02,992 |     INFO |         finalize_run: 223 | Run directory: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_022902_915
+2025-10-04 02:29:02,992 |     INFO |         finalize_run: 224 | Metadata saved: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_022902_915/run_metadata.json
+2025-10-04 02:29:02,992 |     INFO |         finalize_run: 233 | Run completed successfully with 1 mappings applied
+2025-10-04 12:14:31,457 |     INFO |  log_text_extraction:  90 | Extracted text (2248 chars): 'Homework 1\nAPM 523\nArizona State University\nProblem 1\nImplement the Golden Section Search algorithm for finding a minimum of\nf(x) = 10 + x2 −10 cos(2πx),\nx ∈[a, b],\nwhere a = 1.6 and b = 2.4. You can use a tolerance ϵ = 10−4 and maximum\niterations 100. What is xmin and what is f(xmin) ?\nProblem 2\nImplement the Nelder-Mead simplex algorithm and test it on the even Rosen-\nbrock function\nf(x) =\nn/2\nX\ni=1\n100(x2\n2i−1 −x2i)2 + (1 −x2i−1)2\nYou can use the following parameters\nX0 =\n\x020\nIn\n\x03\n(initial ver...'
+2025-10-04 12:14:31,459 |    DEBUG |  log_text_extraction:  95 | Full extracted text saved to: /Users/ashishrajshekhar/codex_code_glyph/runs/20251004_022902_915/extracted_text.txt
