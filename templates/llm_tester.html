@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM PDF Parsing Tester</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .upload-section {
+            border: 2px dashed #3498db;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .upload-section:hover {
+            border-color: #2980b9;
+            background-color: #f8f9fa;
+        }
+
+        .upload-section input[type="file"] {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .mapping-section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .mapping-row {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+
+        .mapping-row input {
+            flex: 1;
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        .btn {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #2980b9;
+        }
+
+        .btn-secondary {
+            background: #95a5a6;
+        }
+
+        .btn-secondary:hover {
+            background: #7f8c8d;
+        }
+
+        .btn-success {
+            background: #27ae60;
+        }
+
+        .btn-success:hover {
+            background: #229954;
+        }
+
+        .progress {
+            background: #ecf0f1;
+            border-radius: 10px;
+            padding: 3px;
+            margin: 20px 0;
+        }
+
+        .progress-bar {
+            background: #3498db;
+            height: 30px;
+            border-radius: 8px;
+            transition: width 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .results-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .results-table th,
+        .results-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .results-table th {
+            background: #34495e;
+            color: white;
+            position: sticky;
+            top: 0;
+        }
+
+        .status-success {
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        .status-error {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .status-partial {
+            color: #f39c12;
+            font-weight: bold;
+        }
+
+        .text-preview {
+            font-family: monospace;
+            background: #f8f9fa;
+            padding: 8px;
+            border-radius: 4px;
+            max-width: 300px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .approach-section {
+            border-left: 4px solid #3498db;
+            padding-left: 20px;
+            margin: 30px 0;
+        }
+
+        .approach-1 { border-left-color: #e74c3c; }
+        .approach-2 { border-left-color: #27ae60; }
+        .approach-3 { border-left-color: #f39c12; }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .stat-label {
+            color: #7f8c8d;
+            margin-top: 5px;
+        }
+
+        #loading {
+            display: none;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .alert {
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 6px;
+            border-left: 4px solid;
+        }
+
+        .alert-info {
+            background: #d1ecf1;
+            border-color: #17a2b8;
+            color: #0c5460;
+        }
+
+        .alert-warning {
+            background: #fff3cd;
+            border-color: #ffc107;
+            color: #856404;
+        }
+
+        .alert-success {
+            background: #d4edda;
+            border-color: #28a745;
+            color: #155724;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧪 LLM PDF Parsing Tester</h1>
+        <p class="text-center">Test how different LLMs parse your manipulated PDFs</p>
+
+        <form id="testForm" enctype="multipart/form-data">
+            <div class="upload-section">
+                <h3>📁 Upload Test PDF</h3>
+                <p>Choose a PDF to test with all 3 manipulation approaches</p>
+                <input type="file" id="pdfFile" name="pdf" accept=".pdf" required>
+            </div>
+
+            <div class="mapping-section">
+                <h3>🔄 Word Mappings</h3>
+
+                <!-- Auto-generation toggle -->
+                <div style="margin-bottom: 20px; padding: 15px; background: #e8f4f8; border-radius: 8px;">
+                    <label style="display: flex; align-items: center; cursor: pointer;">
+                        <input type="checkbox" id="useAutoMappings" style="margin-right: 10px; transform: scale(1.2);">
+                        <strong>🤖 Auto-generate mappings from PDF content</strong>
+                    </label>
+                    <p style="margin: 10px 0 0 0; color: #666; font-size: 14px;">
+                        Automatically analyze the PDF and create strategic word replacements
+                    </p>
+                </div>
+
+                <!-- Auto-generation options (hidden by default) -->
+                <div id="autoMappingOptions" style="display: none; margin-bottom: 20px; padding: 15px; background: #f0f8ff; border-radius: 8px; border-left: 4px solid #3498db;">
+                    <h4>🎯 Auto-Generation Strategy</h4>
+                    <select id="autoStrategy" name="auto_strategy" style="padding: 8px; border: 1px solid #ddd; border-radius: 4px; margin-bottom: 10px;">
+                        <option value="conservative">Conservative (5-8 safe replacements)</option>
+                        <option value="moderate" selected>Moderate (8-12 balanced replacements)</option>
+                        <option value="aggressive">Aggressive (12-15 maximum replacements)</option>
+                        <option value="strategic">Strategic (high-impact selections)</option>
+                    </select>
+                    <br>
+                    <button type="button" id="generateMappings" class="btn" style="background: #27ae60; margin-top: 10px;">
+                        🔍 Analyze PDF & Generate Mappings
+                    </button>
+                    <div id="generationStatus" style="margin-top: 10px;"></div>
+                </div>
+
+                <!-- Manual mapping input -->
+                <div id="manualMappingSection">
+                    <p><strong>Manual Input:</strong> Define which words to replace (e.g., "dog" → "dragon")</p>
+                    <div id="mappingRows">
+                        <div class="mapping-row">
+                            <input type="text" name="original[]" placeholder="Original word (e.g., dog.)" value="dog.">
+                            <span>→</span>
+                            <input type="text" name="replacement[]" placeholder="Replacement word (e.g., dragon!)" value="dragon!">
+                            <button type="button" onclick="removeMappingRow(this)" class="btn btn-secondary">✕</button>
+                        </div>
+                        <div class="mapping-row">
+                            <input type="text" name="original[]" placeholder="Original word (e.g., dogs)" value="dogs">
+                            <span>→</span>
+                            <input type="text" name="replacement[]" placeholder="Replacement word (e.g., owls)" value="owls">
+                            <button type="button" onclick="removeMappingRow(this)" class="btn btn-secondary">✕</button>
+                        </div>
+                    </div>
+                    <button type="button" onclick="addMappingRow()" class="btn btn-secondary">+ Add Mapping</button>
+                </div>
+
+                <!-- Generated mappings display -->
+                <div id="generatedMappings" style="display: none; margin-top: 20px; padding: 15px; background: #f8fff8; border-radius: 8px; border-left: 4px solid #27ae60;">
+                    <h4>🎉 Generated Mappings</h4>
+                    <div id="generatedMappingsList"></div>
+                    <div style="margin-top: 15px;">
+                        <button type="button" id="useGenerated" class="btn btn-success">✅ Use Generated Mappings</button>
+                        <button type="button" id="editGenerated" class="btn btn-secondary">✏️ Edit Generated Mappings</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Test mode toggle for UI testing -->
+            <div style="margin: 20px 0; padding: 15px; background: #fff3cd; border-radius: 8px; border-left: 4px solid #ffc107;">
+                <label style="display: flex; align-items: center; cursor: pointer;">
+                    <input type="checkbox" id="testMode" style="margin-right: 10px; transform: scale(1.2);">
+                    <strong>🧪 Test Mode (Skip actual API calls)</strong>
+                </label>
+                <p style="margin: 10px 0 0 0; color: #856404; font-size: 14px;">
+                    Enable this to test the UI without making real OpenAI API calls. Uses mock data for demonstration.
+                </p>
+            </div>
+
+            <div style="text-align: center; margin: 30px 0;">
+                <button type="submit" class="btn btn-success">🚀 Run LLM Tests</button>
+            </div>
+        </form>
+
+        <div id="loading">
+            <div class="spinner"></div>
+            <p>Testing approaches and running LLM analysis...</p>
+            <div class="progress">
+                <div id="progressBar" class="progress-bar" style="width: 0%">0%</div>
+            </div>
+        </div>
+
+        <div id="results" style="display: none;">
+            <h2>📊 Test Results</h2>
+
+            <div class="stats" id="statsContainer">
+                <!-- Stats will be populated by JavaScript -->
+            </div>
+
+            <div class="alert alert-info">
+                <strong>How to Read Results:</strong><br>
+                • 🟢 <strong>Success:</strong> LLM parsed replacement text (approach working)<br>
+                • 🔴 <strong>Original Detected:</strong> LLM still seeing original text (approach failed)<br>
+                • ⚪ <strong>Neither:</strong> LLM couldn't extract text or extracted something else
+            </div>
+
+            <div id="resultsContent">
+                <!-- Results table will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function addMappingRow() {
+            const container = document.getElementById('mappingRows');
+            const row = document.createElement('div');
+            row.className = 'mapping-row';
+            row.innerHTML = `
+                <input type="text" name="original[]" placeholder="Original word">
+                <span>→</span>
+                <input type="text" name="replacement[]" placeholder="Replacement word">
+                <button type="button" onclick="removeMappingRow(this)" class="btn btn-secondary">✕</button>
+            `;
+            container.appendChild(row);
+        }
+
+        function removeMappingRow(button) {
+            if (document.querySelectorAll('.mapping-row').length > 1) {
+                button.parentElement.remove();
+            }
+        }
+
+        // Auto-mapping functionality
+        document.getElementById('useAutoMappings').addEventListener('change', function() {
+            const autoOptions = document.getElementById('autoMappingOptions');
+            const manualSection = document.getElementById('manualMappingSection');
+
+            if (this.checked) {
+                autoOptions.style.display = 'block';
+                manualSection.style.opacity = '0.5';
+                manualSection.style.pointerEvents = 'none';
+            } else {
+                autoOptions.style.display = 'none';
+                manualSection.style.opacity = '1';
+                manualSection.style.pointerEvents = 'auto';
+                document.getElementById('generatedMappings').style.display = 'none';
+            }
+        });
+
+        document.getElementById('generateMappings').addEventListener('click', async function() {
+            const pdfFile = document.getElementById('pdfFile').files[0];
+            if (!pdfFile) {
+                alert('Please select a PDF file first');
+                return;
+            }
+
+            const strategy = document.getElementById('autoStrategy').value;
+            const statusDiv = document.getElementById('generationStatus');
+
+            statusDiv.innerHTML = '<div class="spinner" style="width: 20px; height: 20px;"></div> Analyzing PDF content...';
+
+            const formData = new FormData();
+            formData.append('pdf', pdfFile);
+            formData.append('strategy', strategy);
+
+            try {
+                const response = await fetch('/auto-generate-mappings', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+
+                if (!response.ok) {
+                    throw new Error(result.error || 'Generation failed');
+                }
+
+                // Display generated mappings
+                displayGeneratedMappings(result);
+                statusDiv.innerHTML = '✅ Mappings generated successfully!';
+
+            } catch (error) {
+                statusDiv.innerHTML = '❌ Error: ' + error.message;
+            }
+        });
+
+        function displayGeneratedMappings(result) {
+            const mappingsList = document.getElementById('generatedMappingsList');
+            const generatedSection = document.getElementById('generatedMappings');
+
+            let html = `
+                <div class="stats" style="margin-bottom: 15px;">
+                    <div class="stat-card" style="padding: 10px; margin: 5px;">
+                        <div style="font-size: 1.2em; font-weight: bold;">${Object.keys(result.mappings).length}</div>
+                        <div style="font-size: 0.9em; color: #666;">Mappings</div>
+                    </div>
+                    <div class="stat-card" style="padding: 10px; margin: 5px;">
+                        <div style="font-size: 1.2em; font-weight: bold;">${result.analysis.domain}</div>
+                        <div style="font-size: 0.9em; color: #666;">Domain</div>
+                    </div>
+                    <div class="stat-card" style="padding: 10px; margin: 5px;">
+                        <div style="font-size: 1.2em; font-weight: bold;">${result.analysis.unique_words}</div>
+                        <div style="font-size: 0.9em; color: #666;">Unique Words</div>
+                    </div>
+                </div>
+                <div style="background: white; padding: 10px; border-radius: 5px; border: 1px solid #ddd;">
+                    <strong>Generated ${result.strategy} mappings:</strong>
+                    <div style="margin-top: 10px;">
+            `;
+
+            for (const [original, replacement] of Object.entries(result.mappings)) {
+                html += `<div style="display: flex; align-items: center; margin: 5px 0; padding: 5px; background: #f8f9fa; border-radius: 3px;">
+                    <span style="font-family: monospace; flex: 1;">${original}</span>
+                    <span style="margin: 0 10px;">→</span>
+                    <span style="font-family: monospace; flex: 1; color: #27ae60;">${replacement}</span>
+                </div>`;
+            }
+
+            html += '</div></div>';
+            mappingsList.innerHTML = html;
+            generatedSection.style.display = 'block';
+
+            // Store generated mappings for later use
+            window.generatedMappings = result.mappings;
+        }
+
+        document.getElementById('useGenerated').addEventListener('click', function() {
+            // The form submission will handle using auto-generated mappings
+            document.getElementById('manualMappingSection').style.display = 'none';
+            alert('✅ Auto-generated mappings will be used for testing!');
+        });
+
+        document.getElementById('editGenerated').addEventListener('click', function() {
+            // Populate manual mapping rows with generated mappings
+            clearMappingRows();
+
+            for (const [original, replacement] of Object.entries(window.generatedMappings)) {
+                addMappingRowWithValues(original, replacement);
+            }
+
+            // Switch back to manual mode
+            document.getElementById('useAutoMappings').checked = false;
+            document.getElementById('autoMappingOptions').style.display = 'none';
+            document.getElementById('manualMappingSection').style.opacity = '1';
+            document.getElementById('manualMappingSection').style.pointerEvents = 'auto';
+            document.getElementById('manualMappingSection').style.display = 'block';
+            document.getElementById('generatedMappings').style.display = 'none';
+        });
+
+        function clearMappingRows() {
+            document.getElementById('mappingRows').innerHTML = '';
+        }
+
+        function addMappingRowWithValues(original, replacement) {
+            const container = document.getElementById('mappingRows');
+            const row = document.createElement('div');
+            row.className = 'mapping-row';
+            row.innerHTML = `
+                <input type="text" name="original[]" placeholder="Original word" value="${original}">
+                <span>→</span>
+                <input type="text" name="replacement[]" placeholder="Replacement word" value="${replacement}">
+                <button type="button" onclick="removeMappingRow(this)" class="btn btn-secondary">✕</button>
+            `;
+            container.appendChild(row);
+        }
+
+        document.getElementById('testForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            // Show loading
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('results').style.display = 'none';
+
+            // Prepare form data
+            const formData = new FormData(this);
+
+            // Add auto-mapping flag
+            if (document.getElementById('useAutoMappings').checked) {
+                formData.append('use_auto_mappings', 'true');
+                formData.append('auto_strategy', document.getElementById('autoStrategy').value);
+            }
+
+            // Add test mode flag
+            if (document.getElementById('testMode').checked) {
+                formData.append('test_mode', 'true');
+            }
+
+            try {
+                // Set a timeout for the request (5 minutes)
+                const timeoutId = setTimeout(() => {
+                    document.getElementById('loading').style.display = 'none';
+                    alert('Request timed out. The process is taking longer than expected. Please try again or use a simpler PDF.');
+                }, 300000); // 5 minutes
+
+                // Submit form and track progress
+                const response = await fetch('/test-llm-parsing', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                clearTimeout(timeoutId); // Clear timeout if request completes
+
+                if (!response.ok) {
+                    let errorMessage = 'Test failed';
+                    try {
+                        const error = await response.json();
+                        errorMessage = error.error || 'Test failed';
+                    } catch (e) {
+                        errorMessage = `HTTP ${response.status}: ${response.statusText}`;
+                    }
+                    throw new Error(errorMessage);
+                }
+
+                const result = await response.json();
+
+                // Update progress to 100%
+                updateProgress(100);
+                const progressBar = document.getElementById('progressBar');
+                if (progressBar) {
+                    progressBar.textContent = '100% - Complete!';
+                }
+
+                // Hide loading and show results
+                setTimeout(() => {
+                    document.getElementById('loading').style.display = 'none';
+                    displayResults(result);
+                    document.getElementById('results').style.display = 'block';
+                }, 1000);
+
+            } catch (error) {
+                document.getElementById('loading').style.display = 'none';
+                console.error('Test error:', error);
+
+                // Show detailed error message
+                const errorMsg = error.message.includes('fetch')
+                    ? 'Network error: Please check your connection and try again.'
+                    : error.message;
+
+                alert('Error running tests: ' + errorMsg);
+            }
+        });
+
+        let progressSteps = 0;
+        const maxSteps = 12; // 3 approaches × 4 models
+
+        function updateProgress(percent) {
+            const progressBar = document.getElementById('progressBar');
+            progressBar.style.width = percent + '%';
+            progressBar.textContent = percent + '%';
+        }
+
+        // Simulate progress for demonstration
+        function simulateProgress() {
+            let progress = 0;
+            let step = 0;
+            const steps = [
+                { progress: 20, message: "Generating mappings..." },
+                { progress: 35, message: "Creating approach 1 PDF..." },
+                { progress: 50, message: "Creating approach 2 PDF..." },
+                { progress: 65, message: "Creating approach 3 PDF..." },
+                { progress: 80, message: "Testing with OpenAI models..." },
+                { progress: 90, message: "Analyzing results..." },
+                { progress: 95, message: "Finalizing report..." }
+            ];
+
+            const interval = setInterval(() => {
+                if (step < steps.length) {
+                    progress = steps[step].progress;
+                    updateProgress(progress);
+
+                    // Update progress message if we have a progress bar text element
+                    const progressBar = document.getElementById('progressBar');
+                    if (progressBar) {
+                        progressBar.textContent = `${progress}% - ${steps[step].message}`;
+                    }
+
+                    step++;
+                } else {
+                    clearInterval(interval);
+                }
+            }, 1500); // Slower progression for better UX
+        }
+
+        function displayResults(data) {
+            const statsContainer = document.getElementById('statsContainer');
+            const resultsContent = document.getElementById('resultsContent');
+
+            // Display statistics
+            statsContainer.innerHTML = `
+                <div class="stat-card">
+                    <div class="stat-number">${data.total_tests}</div>
+                    <div class="stat-label">Total Tests</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">${data.successful_tests}</div>
+                    <div class="stat-label">Successful</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">${Math.round(data.approach_2_effectiveness)}%</div>
+                    <div class="stat-label">Dual Layer Effectiveness</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">${Math.round(data.approach_3_effectiveness)}%</div>
+                    <div class="stat-label">Precision Overlay Effectiveness</div>
+                </div>
+            `;
+
+            // Display detailed results
+            let resultsHTML = '';
+
+            for (const [approach, results] of Object.entries(data.results)) {
+                const approachClass = approach.includes('approach_1') ? 'approach-1' :
+                                     approach.includes('approach_2') ? 'approach-2' :
+                                     approach.includes('approach_3') ? 'approach-3' : '';
+
+                resultsHTML += `
+                    <div class="approach-section ${approachClass}">
+                        <h3>${formatApproachName(approach)}</h3>
+                        <table class="results-table">
+                            <thead>
+                                <tr>
+                                    <th>Model</th>
+                                    <th>Method</th>
+                                    <th>Status</th>
+                                    <th>Original Detected</th>
+                                    <th>Replacement Detected</th>
+                                    <th>Response Time</th>
+                                    <th>Extracted Text Preview</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                `;
+
+                for (const result of results) {
+                    const statusClass = result.success ? 'status-success' : 'status-error';
+                    const statusText = result.success ? '✅ Success' : '❌ Error';
+                    const originalIcon = result.contains_original ? '🔴' : '⚪';
+                    const replacementIcon = result.contains_replacement ? '🟢' : '⚪';
+
+                    resultsHTML += `
+                        <tr>
+                            <td><strong>${result.model_name}</strong></td>
+                            <td>${result.parsing_method}</td>
+                            <td class="${statusClass}">${statusText}</td>
+                            <td>${originalIcon}</td>
+                            <td>${replacementIcon}</td>
+                            <td>${result.response_time.toFixed(2)}s</td>
+                            <td><div class="text-preview" title="${result.extracted_text}">${result.extracted_text.substring(0, 50)}...</div></td>
+                        </tr>
+                    `;
+                }
+
+                resultsHTML += `
+                            </tbody>
+                        </table>
+                    </div>
+                `;
+            }
+
+            resultsContent.innerHTML = resultsHTML;
+        }
+
+        function formatApproachName(approach) {
+            const names = {
+                'original': '📄 Original PDF (Control)',
+                'approach_1_custom_fonts': '🔤 Approach 1: Custom Font Remapping',
+                'approach_2_dual_layer': '👁️ Approach 2: Dual-Layer Text Rendering',
+                'approach_3_precision_overlays': '🎯 Approach 3: Precision Overlays'
+            };
+            return names[approach] || approach;
+        }
+
+        // Start progress simulation when form is submitted
+        document.getElementById('testForm').addEventListener('submit', function() {
+            setTimeout(simulateProgress, 500);
+        });
+    </script>
+</body>
+</html>

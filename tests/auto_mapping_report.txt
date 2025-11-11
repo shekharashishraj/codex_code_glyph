@@ -1,0 +1,57 @@
+📋 AUTOMATIC MAPPING GENERATION REPORT
+==================================================
+
+📄 DOCUMENT ANALYSIS:
+   • Domain: general
+   • Total words: 15
+   • Unique words: 16
+   • Sentences: 2
+
+📊 TOP WORDS ANALYSIS:
+    1. The          (  1 occurrences)
+    2. quick        (  1 occurrences)
+    3. brown        (  1 occurrences)
+    4. fox          (  1 occurrences)
+    5. jumps        (  1 occurrences)
+    6. over         (  1 occurrences)
+    7. the          (  1 occurrences)
+    8. lazy         (  1 occurrences)
+    9. dog.         (  1 occurrences)
+   10. Cats         (  1 occurrences)
+
+🎯 MAPPING STRATEGIES SUMMARY:
+   • Conservative:  1 mappings (Score: 10)
+   • Moderate    :  8 mappings (Score: 80)
+   • Aggressive  : 12 mappings (Score: 120)
+   • Strategic   :  0 mappings (Score: 0)
+
+🔄 CONSERVATIVE MAPPINGS:
+   • brown           → bronze          (freq: 1)
+
+🔄 MODERATE MAPPINGS:
+   • brown           → bronze          (freq: 1)
+   • Cats            → dogs            (freq: 1)
+   • mice            → rats            (freq: 1)
+   • dogs            → cats            (freq: 1)
+   • dog             → cat             (freq: 1)
+   • cats            → dogs            (freq: 1)
+   • quick           → fishes          (freq: 1)
+   • jumps           → fishes          (freq: 1)
+
+🔄 AGGRESSIVE MAPPINGS:
+   • brown           → bronze          (freq: 1)
+   • Cats            → dogs            (freq: 1)
+   • mice            → rats            (freq: 1)
+   • dogs            → cats            (freq: 1)
+   • dog             → cat             (freq: 1)
+   • cats            → dogs            (freq: 1)
+   • quick           → fishes          (freq: 1)
+   • jumps           → fishes          (freq: 1)
+   • chase           → fishes          (freq: 1)
+   • while           → fishes          (freq: 1)
+   • guard           → fishes          (freq: 1)
+   • houses.         → walking         (freq: 0)
+
+💡 RECOMMENDATIONS:
+   • Best strategy: aggressive (12 mappings)
+   • High-frequency coverage: 7/5 top words

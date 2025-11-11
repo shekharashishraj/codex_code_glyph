@@ -1,0 +1,55 @@
+📋 INTEGRATED AUTO-PROCESSING REPORT
+============================================================
+
+🎯 SELECTED STRATEGY: MODERATE
+   • Mappings generated: 8
+
+🔄 WORD MAPPINGS:
+    1. brown           → bronze
+    2. Cats            → dogs
+    3. mice            → rats
+    4. dogs            → cats
+    5. dog             → cat
+    6. cats            → dogs
+    7. quick           → fishes
+    8. jumps           → fishes
+
+📊 ALL STRATEGY OPTIONS:
+   • Conservative:  1 mappings
+   • Moderate    :  8 mappings
+   • Aggressive  : 12 mappings
+   • Strategic   :  0 mappings
+
+✅ VALIDATION RESULTS:
+   • original                 : 🔴 NEEDS WORK (Score: 0.00)
+     Original words detected: 🔴 YES
+     Replacement words detected: 🟢 YES
+
+   • approach_1_custom_fonts  : 🟡 GOOD (Score: 0.70)
+     Original words detected: 🔴 YES
+     Replacement words detected: 🟢 YES
+
+   • approach_2_dual_layer    : 🟡 GOOD (Score: 0.70)
+     Original words detected: 🔴 YES
+     Replacement words detected: 🟢 YES
+
+   • approach_3_precision_overlays: 🟡 GOOD (Score: 0.70)
+     Original words detected: 🔴 YES
+     Replacement words detected: 🟢 YES
+
+💾 GENERATED FILES:
+   • tests/auto_original.pdf
+   • tests/auto_approach_1_custom_fonts.pdf
+   • tests/auto_approach_2_dual_layer.pdf
+   • tests/auto_approach_3_precision_overlays.pdf
+
+💡 RECOMMENDATIONS:
+   • Best performing approach: approach_1_custom_fonts
+   • Best score achieved: 0.70
+   • Working approaches: 3/3
+   • ✅ Multiple approaches working - excellent success rate!
+
+🧪 NEXT STEPS:
+   • Run LLM tests to validate against real models
+   • Use web interface: http://127.0.0.1:5001/llm-tester
+   • Upload the generated PDF files for testing

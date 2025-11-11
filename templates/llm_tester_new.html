@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced PDF Manipulation & LLM Testing System</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+            font-size: 1.2em;
+        }
+
+        .section {
+            border: 2px solid #e74c3c;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            background: #fff;
+        }
+
+        .section h2 {
+            color: #e74c3c;
+            margin-top: 0;
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 10px;
+        }
+
+        .upload-area {
+            border: 2px dashed #3498db;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .upload-area:hover {
+            border-color: #2980b9;
+            background-color: #f8f9fa;
+        }
+
+        .upload-area input[type="file"] {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 300px;
+        }
+
+        .btn {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            margin: 5px;
+        }
+
+        .btn:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+        }
+
+        .btn-success {
+            background: #27ae60;
+        }
+
+        .btn-success:hover {
+            background: #229954;
+        }
+
+        .btn-warning {
+            background: #f39c12;
+        }
+
+        .btn-warning:hover {
+            background: #d68910;
+        }
+
+        .btn-danger {
+            background: #e74c3c;
+        }
+
+        .btn-danger:hover {
+            background: #c0392b;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 10px 0;
+        }
+
+        .progress-container {
+            display: none;
+            margin: 20px 0;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 25px;
+            background-color: #f0f0f0;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #3498db, #2ecc71);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        .progress-text {
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .result-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+
+        .result-card h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+
+        .pdf-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .mapping-display {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        .mapping-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .log-viewer {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: monospace;
+            max-height: 300px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+        }
+
+        .status-indicator {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+
+        .status-success {
+            background: #2ecc71;
+        }
+
+        .status-warning {
+            background: #f39c12;
+        }
+
+        .status-error {
+            background: #e74c3c;
+        }
+
+        .alert {
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .alert-error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .collapsible {
+            cursor: pointer;
+            padding: 10px;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 16px;
+            background: #3498db;
+            color: white;
+            border-radius: 5px;
+            margin: 5px 0;
+            width: 100%;
+        }
+
+        .collapsible:hover {
+            background: #2980b9;
+        }
+
+        .collapsible-content {
+            display: none;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Advanced PDF Manipulation & LLM Testing</h1>
+        <p class="subtitle">Create PDFs that look identical but parse differently for AI models</p>
+
+        <!-- Step 1: Upload & Generate Mappings -->
+        <div class="section">
+            <h2>📄 Step 1: Upload PDF & Generate Mappings</h2>
+
+            <div class="upload-area">
+                <h3>Upload Your PDF</h3>
+                <input type="file" id="pdfFile" accept=".pdf" required>
+                <br>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="autoGenerate" checked>
+                    <label for="autoGenerate">🤖 Auto-generate mappings from PDF content</label>
+                </div>
+
+                <div id="strategySelection" style="margin-top: 15px;">
+                    <label for="strategy">Strategy:</label>
+                    <select id="strategy" class="form-control" style="width: auto; display: inline-block;">
+                        <option value="conservative">Conservative (5-8 mappings)</option>
+                        <option value="moderate" selected>Moderate (8-12 mappings)</option>
+                        <option value="aggressive">Aggressive (12-15 mappings)</option>
+                        <option value="strategic">Strategic (High-impact words)</option>
+                    </select>
+                </div>
+            </div>
+
+            <button class="btn btn-success" onclick="generateMappings()">🔍 Analyze PDF & Generate Mappings</button>
+
+            <div class="progress-container" id="mappingProgress">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="mappingProgressBar"></div>
+                </div>
+                <div class="progress-text" id="mappingProgressText">Starting analysis...</div>
+            </div>
+
+            <div id="mappingResults" style="display: none;">
+                <h3>Generated Word Mappings:</h3>
+                <div id="mappingsDisplay" class="mapping-display"></div>
+                <div id="analysisInfo" class="alert alert-success"></div>
+            </div>
+        </div>
+
+        <!-- Step 2: Generate PDF Variants -->
+        <div class="section">
+            <h2>🛠️ Step 2: Generate PDF Manipulation Variants</h2>
+            <p>Create 4 PDF versions: Original + 3 Advanced Approaches</p>
+
+            <button class="btn btn-warning" onclick="generateAllPDFs()" id="generateBtn" disabled>
+                🚀 Generate All PDF Variants
+            </button>
+
+            <div class="progress-container" id="generationProgress">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="generationProgressBar"></div>
+                </div>
+                <div class="progress-text" id="generationProgressText">Generating PDFs...</div>
+            </div>
+
+            <div id="generatedPDFs" class="results-grid"></div>
+        </div>
+
+        <!-- Step 3: LLM Testing -->
+        <div class="section">
+            <h2>🧪 Step 3: LLM Testing & Validation</h2>
+
+            <div class="form-group">
+                <label for="openaiApiKey">OpenAI API Key (for real testing):</label>
+                <input type="password" id="openaiApiKey" class="form-control" placeholder="sk-...">
+                <small>Leave empty to use mock testing mode</small>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="testMode" checked>
+                <label for="testMode">🧪 Test Mode (Mock results - no API calls)</label>
+            </div>
+
+            <button class="btn btn-danger" onclick="testAllPDFs()">🔬 Test All PDFs with All Models</button>
+
+            <div id="testingResults"></div>
+        </div>
+
+        <!-- Logs Section -->
+        <div class="section">
+            <button class="collapsible" onclick="toggleLogs()">📋 View System Logs</button>
+            <div class="collapsible-content" id="logsContent">
+                <div id="logViewer" class="log-viewer">Loading logs...</div>
+                <button class="btn" onclick="refreshLogs()">🔄 Refresh Logs</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentMappings = {};
+        let generatedFiles = [];
+
+        function generateMappings() {
+            const fileInput = document.getElementById('pdfFile');
+            const autoGenerate = document.getElementById('autoGenerate').checked;
+            const strategy = document.getElementById('strategy').value;
+
+            if (!fileInput.files[0]) {
+                alert('Please select a PDF file first');
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('pdf', fileInput.files[0]);
+            formData.append('strategy', strategy);
+
+            showProgress('mappingProgress', 'mappingProgressBar', 'mappingProgressText', 'Analyzing PDF content...');
+
+            fetch('/auto-generate-mappings', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                hideProgress('mappingProgress');
+
+                if (data.success) {
+                    currentMappings = data.mappings;
+                    displayMappings(data);
+                    document.getElementById('generateBtn').disabled = false;
+                } else {
+                    showAlert('error', data.error);
+                }
+            })
+            .catch(error => {
+                hideProgress('mappingProgress');
+                showAlert('error', 'Error: ' + error.message);
+            });
+        }
+
+        function displayMappings(data) {
+            const resultsDiv = document.getElementById('mappingResults');
+            const mappingsDiv = document.getElementById('mappingsDisplay');
+            const analysisDiv = document.getElementById('analysisInfo');
+
+            let mappingsHtml = '';
+            for (const [original, replacement] of Object.entries(data.mappings)) {
+                mappingsHtml += `
+                    <div class="mapping-item">
+                        <span><strong>${original}</strong></span>
+                        <span>→</span>
+                        <span><em>${replacement}</em></span>
+                    </div>
+                `;
+            }
+            mappingsDiv.innerHTML = mappingsHtml;
+
+            analysisDiv.innerHTML = `
+                <strong>Analysis Results:</strong><br>
+                📊 Strategy: ${data.strategy} (${Object.keys(data.mappings).length} mappings)<br>
+                🎯 Domain: ${data.analysis.domain}<br>
+                📝 Vocabulary: ${data.analysis.unique_words} unique words (${data.analysis.total_words} total)
+            `;
+
+            resultsDiv.style.display = 'block';
+        }
+
+        function generateAllPDFs() {
+            const fileInput = document.getElementById('pdfFile');
+
+            if (!fileInput.files[0]) {
+                alert('Please select a PDF file first');
+                return;
+            }
+
+            if (Object.keys(currentMappings).length === 0) {
+                alert('Please generate mappings first');
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('pdf', fileInput.files[0]);
+            formData.append('mappings', JSON.stringify(currentMappings));
+
+            showProgress('generationProgress', 'generationProgressBar', 'generationProgressText', 'Generating PDF variants...');
+
+            fetch('/generate-all-pdfs', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                hideProgress('generationProgress');
+
+                if (data.success) {
+                    generatedFiles = data.generated_files;
+                    displayGeneratedPDFs(data.generated_files);
+                    showAlert('success', data.message);
+                } else {
+                    showAlert('error', data.error);
+                }
+            })
+            .catch(error => {
+                hideProgress('generationProgress');
+                showAlert('error', 'Error: ' + error.message);
+            });
+        }
+
+        function displayGeneratedPDFs(files) {
+            const container = document.getElementById('generatedPDFs');
+            let html = '';
+
+            files.forEach(filename => {
+                const displayName = filename.replace('generated_', '').replace('.pdf', '').replace('_', ' ');
+                const approachName = displayName.charAt(0).toUpperCase() + displayName.slice(1);
+
+                html += `
+                    <div class="result-card">
+                        <h3>📄 ${approachName}</h3>
+                        <div class="pdf-actions">
+                            <button class="btn btn-success" onclick="viewPDF('${filename}')">👁️ View</button>
+                            <button class="btn" onclick="downloadPDF('${filename}')">⬇️ Download</button>
+                            <button class="btn btn-warning" onclick="testSinglePDF('${filename}')">🧪 Test</button>
+                        </div>
+                        <div id="test-results-${filename}" style="margin-top: 10px;"></div>
+                    </div>
+                `;
+            });
+
+            container.innerHTML = html;
+        }
+
+        function viewPDF(filename) {
+            window.open(`/view-pdf/${filename}`, '_blank');
+        }
+
+        function downloadPDF(filename) {
+            window.location.href = `/download-pdf/${filename}`;
+        }
+
+        function testSinglePDF(filename) {
+            const testMode = document.getElementById('testMode').checked;
+            const apiKey = document.getElementById('openaiApiKey').value;
+
+            const formData = new FormData();
+            formData.append('filename', filename);
+            formData.append('mappings', JSON.stringify(currentMappings));
+            formData.append('test_mode', testMode);
+            if (apiKey) {
+                formData.append('openai_api_key', apiKey);
+            }
+
+            const resultDiv = document.getElementById(`test-results-${filename}`);
+            resultDiv.innerHTML = '<div class="alert alert-success">🔄 Testing in progress...</div>';
+
+            fetch('/test-single-pdf', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    displayTestResults(filename, data.results, data.test_mode);
+                } else {
+                    resultDiv.innerHTML = `<div class="alert alert-error">❌ ${data.error}</div>`;
+                }
+            })
+            .catch(error => {
+                resultDiv.innerHTML = `<div class="alert alert-error">❌ Error: ${error.message}</div>`;
+            });
+        }
+
+        function displayTestResults(filename, results, testMode) {
+            const resultDiv = document.getElementById(`test-results-${filename}`);
+            let html = `<h4>🤖 LLM Test Results ${testMode ? '(Mock)' : '(Real API)'}</h4>`;
+
+            results.forEach(result => {
+                const statusIcon = result.success ? '✅' : '❌';
+                const originalIcon = result.contains_original ? '🔴' : '✅';
+                const replacementIcon = result.contains_replacement ? '✅' : '❌';
+
+                html += `
+                    <div style="margin: 10px 0; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                        <strong>${statusIcon} ${result.model_name}</strong><br>
+                        Original detected: ${originalIcon}<br>
+                        Replacement detected: ${replacementIcon}<br>
+                        ${result.response_time ? `Response time: ${result.response_time}s` : ''}
+                        ${result.error ? `<br>Error: ${result.error}` : ''}
+                    </div>
+                `;
+            });
+
+            resultDiv.innerHTML = html;
+        }
+
+        function testAllPDFs() {
+            if (generatedFiles.length === 0) {
+                alert('Please generate PDF variants first');
+                return;
+            }
+
+            generatedFiles.forEach(filename => {
+                testSinglePDF(filename);
+            });
+        }
+
+        function showProgress(containerId, barId, textId, text) {
+            document.getElementById(containerId).style.display = 'block';
+            document.getElementById(textId).textContent = text;
+
+            let progress = 0;
+            const interval = setInterval(() => {
+                progress += 10;
+                document.getElementById(barId).style.width = progress + '%';
+
+                if (progress >= 90) {
+                    clearInterval(interval);
+                }
+            }, 200);
+        }
+
+        function hideProgress(containerId) {
+            document.getElementById(containerId).style.display = 'none';
+        }
+
+        function showAlert(type, message) {
+            const alertClass = type === 'error' ? 'alert-error' : 'alert-success';
+            const alertHtml = `<div class="alert ${alertClass}">${message}</div>`;
+
+            // Add alert to the top of the first section
+            const firstSection = document.querySelector('.section');
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = alertHtml;
+            firstSection.insertBefore(tempDiv.firstChild, firstSection.firstChild);
+
+            // Remove after 5 seconds
+            setTimeout(() => {
+                const alert = firstSection.querySelector('.alert');
+                if (alert) alert.remove();
+            }, 5000);
+        }
+
+        function toggleLogs() {
+            const content = document.getElementById('logsContent');
+            if (content.style.display === 'none' || !content.style.display) {
+                content.style.display = 'block';
+                refreshLogs();
+            } else {
+                content.style.display = 'none';
+            }
+        }
+
+        function refreshLogs() {
+            const logViewer = document.getElementById('logViewer');
+            logViewer.textContent = 'Loading logs...';
+
+            fetch('/logs')
+            .then(response => response.json())
+            .then(data => {
+                if (data.logs) {
+                    logViewer.textContent = data.logs.join('');
+                    logViewer.scrollTop = logViewer.scrollHeight;
+                } else {
+                    logViewer.textContent = 'Error loading logs: ' + (data.error || 'Unknown error');
+                }
+            })
+            .catch(error => {
+                logViewer.textContent = 'Error loading logs: ' + error.message;
+            });
+        }
+
+        // Auto-refresh logs every 30 seconds if visible
+        setInterval(() => {
+            const content = document.getElementById('logsContent');
+            if (content.style.display === 'block') {
+                refreshLogs();
+            }
+        }, 30000);
+    </script>
+</body>
+</html>
